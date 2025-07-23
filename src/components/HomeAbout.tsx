@@ -54,7 +54,7 @@ const HomeAbout: React.FC = () => {
           name="description"
           content="Discover how B2T empowers businesses through tailored strategies, digital innovation, and scalable transformation services. Partner with us for real results."
         />
-        <link rel="canonical" href="https://your-domain.com/#about" />
+        <link rel="canonical" href="https://brick2tech.com/about" />
       </Helmet>
 
       {/* Heading */}
@@ -67,7 +67,7 @@ const HomeAbout: React.FC = () => {
         variants={fadeIn("up")}
       >
         About{" "}
-        <span className="text-blue-600">Brcik 2 Technologies</span>
+        <span className="text-[#0098d4]">Brick 2 Technologies</span>
       </motion.h2>
 
       {/* Image & Text */}

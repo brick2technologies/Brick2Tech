@@ -59,7 +59,6 @@ const features = [
   },
 ];
 
-
 const SEOPage: React.FC = () => {
   return (
     <>
@@ -73,10 +72,7 @@ const SEOPage: React.FC = () => {
           name="keywords"
           content="SEO Hyderabad, SEO services, technical SEO, local SEO, keyword strategy, backlink building"
         />
-        <meta
-          property="og:title"
-          content="Top SEO Services in Hyderabad | Brick2Tech"
-        />
+        <meta property="og:title" content="Top SEO Services in Hyderabad | Brick2Tech" />
         <meta
           property="og:description"
           content="Rank higher on Google with proven SEO strategies tailored for Hyderabad businesses."
@@ -85,57 +81,43 @@ const SEOPage: React.FC = () => {
       </Helmet>
 
       <main
-        className="bg-white text-gray-800 overflow-x-hidden"
+        className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="SEO Service Page"
       >
         {/* Hero Section */}
         <motion.section
-  className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-900 text-white px-4 sm:px-6 md:px-8 py-16"
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true }}
-  variants={fadeUp}
-  custom={0}
-  aria-label="SEO Hero Section"
->
-  {/* Background Image */}
-  <div className="absolute inset-0 z-0">
-    <img
-      src="https://images.unsplash.com/photo-1551288049-b1f3a0c3f3f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-      alt="SEO analytics dashboard background"
-      className="w-full h-full object-cover opacity-30"
-      loading="lazy"
-    />
-  </div>
-
-  {/* Content */}
-  <div className="relative z-10 max-w-4xl w-full text-center px-4">
-    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight sm:leading-snug">
-      <span className="block">Trend Higher.Rank Smarter.</span>
-      
-      <span className="block">Win Google.</span>
-    </h1>
-
-    <p className="text-base sm:text-lg md:text-xl mt-4 text-white/90">
-      We turn your website into a search engine magnet. <br /> With Brick2Tech’s expert SEO,
-      traffic grows, rankings rise, and ROI follows.
-    </p>
-
-    <a
-      href="/contact"
-      className="mt-6 inline-flex items-center px-6 py-3 bg-yellow-400 text-blue-900 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-300"
-      aria-label="Get a free SEO audit from Brick2Tech"
-    >
-      Free SEO Audit
-      <ArrowRight className="ml-2 h-5 w-5" />
-    </a>
-  </div>
-</motion.section>
-
+          className="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-12 py-20 text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          custom={0}
+          aria-label="SEO Hero Section"
+        >
+          {/* Background gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-blue-300 to-white opacity-40 -z-10" />
+          {/* Content */}
+          <div className="relative z-10 max-w-4xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-blue-900">
+              <span className="block">Trend Higher. Rank Smarter.</span>
+              <span className="block text-[#0098d4]">Win Google.</span>
+            </h1>
+            <p className="mt-6 mb-8 text-lg sm:text-xl text-blue-900/90 max-w-xl mx-auto">
+              We turn your website into a search engine magnet. With Brick2Tech’s expert SEO, traffic grows, rankings rise, and ROI follows.
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transition"
+              aria-label="Get a free SEO audit from Brick2Tech"
+            >
+              Free SEO Audit <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
+        </motion.section>
 
         {/* Features Section */}
         <motion.section
-          className="py-20 px-4 sm:px-6 md:px-8 max-w-6xl mx-auto"
+          className="py-24 px-6 max-w-7xl mx-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -143,17 +125,17 @@ const SEOPage: React.FC = () => {
           custom={0}
           aria-label="SEO Features"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
+          <h2 className="text-4xl font-bold text-center mb-12 text-blue-900">
             Why Choose Brick2Tech for SEO?
           </h2>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12 text-lg">
+          <p className="text-center text-blue-800 max-w-3xl mx-auto mb-16 text-lg">
             We combine smart strategy and creative thinking to boost your visibility, attract more traffic, and drive real business results.
           </p>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, index) => (
               <motion.article
                 key={feature.title}
-                className="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition"
                 variants={fadeUp}
                 custom={index + 1}
                 aria-label={feature.title}
@@ -161,19 +143,14 @@ const SEOPage: React.FC = () => {
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-full h-40 object-cover rounded-lg mb-4"
+                  className="w-full h-44 object-cover rounded-lg mb-6"
                   loading="lazy"
                 />
-                <div className="flex items-start gap-3">
-                  <CheckCircle
-                    className="text-green-500 h-5 w-5 mt-1"
-                    aria-hidden="true"
-                  />
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="text-sky-500 w-6 h-6 mt-1 flex-shrink-0" aria-hidden="true" />
                   <div>
-                    <h3 className="font-semibold text-lg">{feature.title}</h3>
-                    <p className="text-gray-600 text-sm">
-                      {feature.description}
-                    </p>
+                    <h3 className="font-semibold text-xl text-blue-900">{feature.title}</h3>
+                    <p className="mt-2 text-blue-800">{feature.description}</p>
                   </div>
                 </div>
               </motion.article>
@@ -183,7 +160,7 @@ const SEOPage: React.FC = () => {
 
         {/* Results Section */}
         <motion.section
-          className="bg-gray-50 py-20 px-4 sm:px-6 md:px-8"
+          className="py-24 px-6 bg-sky-50"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -191,14 +168,15 @@ const SEOPage: React.FC = () => {
           custom={0}
           aria-label="SEO Results"
         >
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left">
-              <h2 className="text-3xl font-bold mb-4">Proven SEO Results</h2>
-              <p className="text-gray-600 mb-6 text-lg">
-                Our SEO strategies drive measurable outcomes, from traffic
-                growth to lead generation.
+              <h2 className="text-4xl font-extrabold text-blue-900 mb-6">
+                Proven SEO Results
+              </h2>
+              <p className="text-blue-800 text-lg mb-8 max-w-xl">
+                Our SEO strategies drive measurable outcomes, from traffic growth to lead generation.
               </p>
-              <ul className="space-y-5">
+              <ul className="space-y-6 text-blue-700">
                 {[
                   {
                     title: "+250% Traffic Growth",
@@ -214,10 +192,10 @@ const SEOPage: React.FC = () => {
                   },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 h-5 w-5 mt-1" />
+                    <CheckCircle className="mt-1 w-6 h-6 flex-shrink-0 text-sky-500" />
                     <div>
-                      <h4 className="font-bold text-lg">{item.title}</h4>
-                      <p className="text-gray-600 text-sm">{item.desc}</p>
+                      <h4 className="font-bold text-xl">{item.title}</h4>
+                      <p className="mt-1">{item.desc}</p>
                     </div>
                   </li>
                 ))}
@@ -236,7 +214,7 @@ const SEOPage: React.FC = () => {
 
         {/* CTA Section */}
         <motion.section
-          className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-20 px-4 text-center"
+          className="bg-gradient-to-br from-sky-100 to-blue-200 text-blue-900 py-24 px-6 text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -245,26 +223,24 @@ const SEOPage: React.FC = () => {
           aria-label="Call to Action"
         >
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-4xl font-bold mb-6">
               Ready to Dominate Search Results?
             </h2>
-            <p className="mb-6 text-lg">
-              Let Brick2Tech’s SEO experts help you climb Google rankings and grow your
-              business.
+            <p className="mb-8 text-lg max-w-xl mx-auto text-blue-100">
+              Let Brick2Tech’s SEO experts help you climb Google rankings and grow your business.
             </p>
             <img
               src="https://images.unsplash.com/photo-1596526131083-5f1f4e1e43c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
               alt="SEO report preview"
-              className="w-full max-w-md mx-auto h-64 object-cover rounded-xl shadow-lg mb-6"
+              className="w-full max-w-md mx-auto h-64 object-cover rounded-xl shadow-lg mb-8"
               loading="lazy"
             />
             <a
               href="/contact"
-              className="inline-flex items-center bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all"
+              className="inline-flex items-center justify-center gap-3 bg-yellow-400 text-blue-900 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition text-lg"
               aria-label="Get your free SEO consultation"
             >
-              Get a Free SEO Audit
-              <ArrowRight className="ml-2 h-5 w-5" />
+              Get a Free SEO Audit <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </motion.section>

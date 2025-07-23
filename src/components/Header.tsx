@@ -9,14 +9,14 @@ const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const services = [
-    { name: "Digital Marketing", icon: "📊", path: "/services/digital-marketing" },
-    { name: "Branding", icon: "🎨", path: "/services/branding" },
-    { name: "SEO", icon: "🔍", path: "/services/seo" },  
-    { name: "Social Media Marketing", icon: "📱", path: "/services/social-media-marketing" }, 
-    { name: "Web Development", icon: "💻", path: "/services/web-development" },
-    { name: "Mobile App Development", icon: "📱", path: "/services/mobile-app-development" },
-    { name: "Architecture Design", icon: "🏠", path: "/services/Architecture-Design" },
-    { name: "Graphic Design", icon: "📄", path: "/services/Graphic-Design" },
+    { name: "Digital Marketing",  path: "/services/digital-marketing" },
+    { name: "Branding",  path: "/services/branding" },
+    { name: "SEO",  path: "/services/seo" },  
+    { name: "Social Media Marketing",  path: "/services/social-media-marketing" }, 
+    { name: "Web Development", path: "/services/web-development" },
+    { name: "Mobile App Development", path: "/services/mobile-app-development" },
+    { name: "Architecture Design", path: "/services/Architecture-Design" },
+    { name: "Graphic Design", path: "/services/Graphic-Design" },
   ];
 
   const menuItems = [
@@ -99,7 +99,7 @@ const Header: React.FC = () => {
                               className="flex items-center px-4 py-3 mx-2 hover:bg-[#142c4c]/90 text-white transition-colors duration-200 rounded-md"
                               aria-label={service.name}
                             >
-                              <span className="text-lg mr-3">{service.icon}</span>
+                              
                               <span className="text-[#0098d4] font-semibold hover:text-[#ffffff]">
                                 {service.name}
                               </span>

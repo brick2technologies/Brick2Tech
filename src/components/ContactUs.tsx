@@ -41,7 +41,7 @@ const ContactUs = () => {
 
       {/* Hero */}
       <motion.div
-        className="w-full flex flex-col items-center justify-center py-20 md:py-24 bg-gradient-to-b from-[#0098d4] to-[#142c4c] text-white relative shadow-lg"
+        className="w-full flex flex-col items-center justify-center py-20 md:py-24 bg-gradient-to-b from-[#c8e7f3] to-[#142c4c] text-white relative shadow-lg"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -53,7 +53,7 @@ const ContactUs = () => {
           loading="lazy"
         />
         <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg tracking-tight animate-fade-in">
-          Let's <span className="text-[#00e1ff]">Connect</span>
+          Let's <span className="text-[#0098d4]">Connect</span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg text-white font-medium">
           Whether you have a project, question, partnership inquiry—or just want
