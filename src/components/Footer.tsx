@@ -27,11 +27,14 @@ const Footer = () => {
   ];
 
   const services = [
+    { name: "Branding", href: "/services/branding" },
     { name: "Digital Marketing", href: "/services/digital-marketing" },
     { name: "Web Development", href: "/services/web-development" },
     { name: "SEO Services", href: "/services/seo" },
     { name: "Social Media", href: "/services/social-media-marketing" },
-    { name: "Branding", href: "/services/branding" },
+    { name: "Mobile App Development", href: "/services/mobile-app-development" },
+    { name: "Architecture Design", href: "/services/Architecture-Design" },
+    { name: "Graphic Design", href: "/services/Graphic-Design" },    
   ];
 
   return (
@@ -54,7 +57,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-400 mb-4">
-              Empowering brands through digital innovation and strategic marketing solutions.
+              Empowering Growth Through Data-Driven Marketing Strategies.
             </p>
             <div className="flex space-x-4" aria-label="Social media links">
               {socialLinks.map((social, index) => (

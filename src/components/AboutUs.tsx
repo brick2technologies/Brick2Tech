@@ -98,7 +98,7 @@ const AboutUs = () => {
     },
     {
       name: "Karthik Chittibomma",
-      position: "Full Stack Developer & Technical Architect",
+      position: " Senior Full Stack Developer & Technical Architect",
       image:
         "https://res.cloudinary.com/diqux3y0a/image/upload/v1752813706/profile_jwfx2c.jpg",
       bio: "MERN stack expert building scalable web apps and AI-integrated solutions for business efficiency.",

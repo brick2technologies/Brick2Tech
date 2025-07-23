@@ -262,7 +262,7 @@ const Brick2TechBrandingPage: React.FC = () => {
               <ul className="space-y-4">
                 {[
                   "Logo Design & Visual Identity",
-                  "Brand Strategy & Positioning",
+                  "Data Driven Brand Strategy & Positioning",
                   "Digital Branding & Social Presence",
                   "Rebranding for Growth",
                   "Trademark & Copyright Protection",

@@ -33,7 +33,7 @@ const Hero: React.FC<HeroProps> = ({ mousePosition }) => {
         playsInline
         aria-hidden="true"
       >
-        <source src="B2T-Background.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/diqux3y0a/video/upload/v1753261522/B2T-Background_bzddbx.mp4" type="video/mp4" />
         <track kind="captions" />
         Your browser does not support the video tag.
       </video>
