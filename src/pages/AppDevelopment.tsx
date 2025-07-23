@@ -66,13 +66,6 @@ const appServices = [
     alt: "App published on App Store"
   },
   {
-    title: "Maintenance & Support",
-    description: "Ongoing updates, enhancements, and technical support for your published apps.",
-    icon: <Settings className="w-10 h-10 text-blue-500" />,
-   
-    alt: "Mobile maintenance analyst"
-  },
-  {
     title: "IoT & Wearables",
     description: "Connect mobile apps to IoT devices and wearables for the next generation of digital experiences.",
     icon: <Zap className="w-10 h-10 text-blue-500" />,
@@ -85,6 +78,13 @@ const appServices = [
     icon: <Cpu className="w-10 h-10 text-blue-500" />,
    
     alt: "Enterprise app dashboard"
+  },
+  {
+    title: "Maintenance & Support",
+    description: "Ongoing updates, enhancements, and technical support for your published apps.",
+    icon: <Settings className="w-10 h-10 text-blue-500" />,
+   
+    alt: "Mobile maintenance analyst"
   }
 ];
 

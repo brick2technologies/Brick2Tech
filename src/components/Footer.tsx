@@ -132,7 +132,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-gray-400">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5" aria-hidden="true" />
-                <p className="hover:text-white transition-colors">
+                <p className="hover:text-white transition-colors text-[.875rem]">
                   Brick 2 Technologies<br />
                   Plot no: 893/1, Sree Ram Nagar,<br />
                   Manikonda, Hyderabad-500089<br />
@@ -151,7 +151,7 @@ const Footer = () => {
                   href="mailto:brick2tech@gmail.com"
                   className="hover:text-white transition-colors"
                 >
-                  brick2tech@gmail.com
+                  brick2technologies@gmail.com
                 </a>
               </div>
             </div>
@@ -166,7 +166,7 @@ const Footer = () => {
           className="border-t border-gray-800 mt-8 pt-8 text-center"
         >
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Brick2Tech Digital Marketing. All rights reserved.
+            © {new Date().getFullYear()} Brick2Technologies. All rights reserved.
           </p>
         </motion.div>
       </div>
