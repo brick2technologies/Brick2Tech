@@ -33,8 +33,8 @@ const Footer = () => {
     { name: "SEO Services", href: "/services/seo" },
     { name: "Social Media", href: "/services/social-media-marketing" },
     { name: "Mobile App Development", href: "/services/mobile-app-development" },
-    { name: "Architecture Design", href: "/services/Architecture-Design" },
-    { name: "Graphic Design", href: "/services/Graphic-Design" },    
+    { name: "Architecture Design", href: "/services/architecture-design" },
+    { name: "Graphic Design", href: "/services/graphic-design" },    
   ];
 
   return (

@@ -15,8 +15,8 @@ const Header: React.FC = () => {
     { name: "Social Media Marketing",  path: "/services/social-media-marketing" }, 
     { name: "Web Development", path: "/services/web-development" },
     { name: "Mobile App Development", path: "/services/mobile-app-development" },
-    { name: "Architecture Design", path: "/services/Architecture-Design" },
-    { name: "Graphic Design", path: "/services/Graphic-Design" },
+    { name: "Architecture Design", path: "/services/architecture-design" },
+    { name: "Graphic Design", path: "/services/graphic-design" },
   ];
 
   const menuItems = [

@@ -71,8 +71,8 @@ function App() {
             <Route path="/services/digital-marketing" element={<DigitalMarketingPage />} />
             <Route path="/services/web-development" element={<WebDevelopmentPage />} />
             <Route path="/services/social-media-marketing" element={<SocialMediaMarketingPage />} />
-            <Route path="/services/Graphic-Design" element={<GraphicDesignPage />}/>
-            <Route path="/services/Architecture-Design" element={<ArchitectureDesignPage/>} />
+            <Route path="/services/graphic-design" element={<GraphicDesignPage />}/>
+            <Route path="/services/architecture-design" element={<ArchitectureDesignPage/>} />
             <Route path="/services/mobile-app-development" element={<AppDevelopmentPage />} />
             
             {/* Fallback route */}
