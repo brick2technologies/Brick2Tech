@@ -19,23 +19,23 @@ const clients = [
 
 const testimonials = [
   {
-    quote: "Working with B2T was a game-changer. They didn’t just build our website — they brought our entire vision to life. Their creativity, professionalism, and timely delivery truly impressed us.",
+    quote: "Working with Brick2Tech was a game-changer. They didn’t just build our website — they brought our entire vision to life. Their creativity, professionalism, and timely delivery truly impressed us.",
     author: 'Suresh Kumar, Director, Nisarga Projects',
   },
   {
-    quote: "B2T helped us define our brand and grow our digital presence from scratch. Their team understood our goals and gave us a strategy that delivered real results.",
+    quote: "Brick2Tech helped us define our brand and grow our digital presence from scratch. Their team understood our goals and gave us a strategy that delivered real results.",
     author: 'Priya Mehta, Founder, NatureRoot Organics',
   },
   {
-    quote: "From logo to launch, B2T guided us through every step. The 3D walkthroughs they created for our real estate project blew our clients away.",
+    quote: "From logo to launch, Brick2Tech guided us through every step. The 3D walkthroughs they created for our real estate project blew our clients away.",
     author: 'Rahul Verma, Marketing Head, Elite Urban Developers',
   },
   {
-    quote: "What sets B2T apart is their attention to detail and client-first approach. Their design and tech teams worked like an extension of our own.",
+    quote: "What sets Brick2Tech apart is their attention to detail and client-first approach. Their design and tech teams worked like an extension of our own.",
     author: 'Dr. Anjali Rao, Founder, WellZen Ayurveda',
   },
   {
-    quote: "B2T isn’t just a service provider — they’re a strategic partner. Their branding and marketing efforts helped us reach a much larger audience.",
+    quote: "Brick2Tech isn’t just a service provider — they’re a strategic partner. Their branding and marketing efforts helped us reach a much larger audience.",
     author: 'Vikram Desai, CEO, StartHub Accelerator',
   },
 ];
@@ -69,10 +69,10 @@ const HomeClients: React.FC = () => {
   return (
     <section className="bg-white py-20 px-6 md:px-16 lg:px-24" id="clients">
       <Helmet>
-        <title>Our Clients | B2T Digital Agency</title>
+        <title>Our Clients | Brick2Tech</title>
         <meta
           name="description"
-          content="Meet the clients who trust B2T Digital Agency. See testimonials from businesses that have grown with our web, branding, and digital marketing services."
+          content="Meet the clients who trust Brick2Tech Digital Agency. See testimonials from businesses that have grown with our web, branding, and digital marketing services."
         />
       </Helmet>
 

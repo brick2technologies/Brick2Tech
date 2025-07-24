@@ -96,7 +96,7 @@ const HomeAbout: React.FC = () => {
         {/* Paragraphs */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
           {[
-            "B2T (Business to Transformation) is a results-driven company committed to helping businesses bridge the gap between ideas and execution.",
+            "Brick2Tech is a results-driven company committed to helping businesses bridge the gap between ideas and execution.",
             "We specialize in delivering end-to-end solutions that empower organizations to scale, transform, and thrive in today’s digital landscape.",
             "At B2T, our mission is to be the catalyst for meaningful business transformation. We collaborate closely with our clients to understand their goals and challenges, crafting custom strategies that drive measurable success.",
             "From digital innovation to operational efficiency, we bring the right blend of creativity, technology, and expertise to every project.",

@@ -108,30 +108,38 @@ const AppDevelopmentPage = () => (
     <main>
       {/* Hero Section */}
       <motion.section
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="relative flex flex-col items-center justify-center min-h-[80vh] px-6 py-24 text-center bg-blue-950 bg-center"
-        aria-label="Hero section"
-      >
-        <div className="absolute inset-0 bg-[#142c4c] bg-opacity-70" />
-        <div className="relative z-10">
-          <h1 className="text-4xl sm:text-6xl font-extrabold mb-6 text-white drop-shadow-lg">
-            Empowering Innovation with Mobile Apps
-          </h1>
-          <p className="text-lg sm:text-xl max-w-2xl mx-auto text-white mb-8">
-            Transform your business and engage users everywhere with high-performing mobile solutions.
-          </p>
-          <motion.a
-            whileHover={{ scale: 1.1 }}
-            href="#services"
-            className="mt-10 inline-flex items-center gap-3 bg-white text-blue-900 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-800 transition"
-          >
-            See Our Services
-            <Layers className="w-5 h-5" />
-          </motion.a>
-        </div>
-      </motion.section>
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative flex flex-col items-center justify-center min-h-[90vh] px-6 py-24 text-center bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage:
+      "url('https://res.cloudinary.com/diqux3y0a/image/upload/v1753348479/designing-user-friendly-feature_cmef3y.webp')",
+  }}
+  aria-label="Hero section"
+>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-[#142c4c] bg-opacity-80" />
+
+  {/* Content */}
+  <div className="relative z-10">
+    <h1 className="text-4xl sm:text-6xl font-extrabold mb-6 text-white drop-shadow-lg">
+      Empowering Innovation with Mobile Apps
+    </h1>
+    <p className="text-lg sm:text-xl max-w-2xl mx-auto text-white mb-8">
+      Transform your business and engage users everywhere with high-performing mobile solutions.
+    </p>
+    <motion.a
+      whileHover={{ scale: 1.1 }}
+      href="#services"
+      className="mt-10 inline-flex items-center gap-3 bg-white text-blue-900 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-800 transition"
+    >
+      See Our Services
+      <Layers className="w-5 h-5" />
+    </motion.a>
+  </div>
+</motion.section>
+
 
       {/* Services Section */}
       <motion.section

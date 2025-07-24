@@ -18,35 +18,35 @@ const features = [
     title: "Keyword Research & Strategy",
     description: "Identify high-impact keywords to drive targeted traffic.",
     image:
-      "https://images.unsplash.com/photo-1551288049-b1f3a0c3f3f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753338592/keywords-research-on-page-seo-technical_ovo1w4.webp",
     priority: "high",
   },
   {
     title: "Technical SEO Optimization",
     description: "Optimize site structure for better crawlability and speed.",
     image:
-      "https://images.unsplash.com/photo-1516321310762-479e93c1e39e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753338487/Technical-seo-website-optimization-1_lya1xj.webp",
     priority: "high",
   },
   {
     title: "On-Page SEO",
     description: "Enhance titles, meta tags, and content for higher rankings.",
     image:
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753338402/On-Page-SEO_l8c4hy.jpg",
     priority: "high",
   },
   {
     title: "Backlink Building",
     description: "Build high-quality links to boost domain authority.",
     image:
-      "https://images.unsplash.com/photo-1611162617210-7d673f284f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753338327/Backlinks_mtmxru.jpg",
     priority: "medium",
   },
   {
     title: "Local SEO",
     description: "Optimize for local searches to attract nearby customers.",
     image:
-      "https://images.unsplash.com/photo-1596526131083-5f1f4e1e43c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753338256/Local-Seo-Tools-To-Improve-Your-Ranking_hev1js.png",
     priority: "optional",
   },
   {
@@ -54,7 +54,7 @@ const features = [
     description:
       "Uncover opportunities with detailed audits and competitor insights.",
     image:
-      "https://images.unsplash.com/photo-1551288049-b1f3a0c3f3f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753336815/image_1_cmtdos.png",
     priority: "high",
   },
 ];
@@ -86,34 +86,44 @@ const SEOPage: React.FC = () => {
       >
         {/* Hero Section */}
         <motion.section
-          className="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-12 py-20 text-center"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeUp}
-          custom={0}
-          aria-label="SEO Hero Section"
-        >
-          {/* Background gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-blue-300 to-white opacity-40 -z-10" />
-          {/* Content */}
-          <div className="relative z-10 max-w-4xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-blue-900">
-              <span className="block">Trend Higher. Rank Smarter.</span>
-              <span className="block text-[#0098d4]">Win Google.</span>
-            </h1>
-            <p className="mt-6 mb-8 text-lg sm:text-xl text-blue-900/90 max-w-xl mx-auto">
-              We turn your website into a search engine magnet. With Brick2Tech’s expert SEO, traffic grows, rankings rise, and ROI follows.
-            </p>
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transition"
-              aria-label="Get a free SEO audit from Brick2Tech"
-            >
-              Free SEO Audit <ArrowRight className="w-5 h-5" />
-            </a>
-          </div>
-        </motion.section>
+  className="relative min-h-[90vh] flex flex-col md:flex-row items-center justify-center px-6 sm:px-12 py-20 text-center md:text-left overflow-hidden"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={fadeUp}
+  custom={0}
+  aria-label="SEO Hero Section"
+>
+  {/* Image on the left */}
+  <div className="md:w-1/2 w-full flex justify-center md:justify-start mb-10 md:mb-0">
+  <img
+    src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753336272/seo_bg_vni30o.png"
+    alt="SEO Illustration"
+    className="w-[300px] sm:w-[400px] md:w-[500px] h-auto object-contain rotate-90 md:rotate-0 transition-transform duration-500"
+  />
+</div>
+
+
+  {/* Content */}
+  <div className="md:w-1/2 w-full max-w-2xl z-10">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-blue-900">
+      <span className="block">Trend Higher. <br /> Rank Smarter.</span>
+      <span className="block text-[#0098d4]">Win Google.</span>
+    </h1>
+    <p className="mt-6 mb-8 text-lg sm:text-xl text-blue-900/90 max-w-xl mx-auto md:mx-0">
+      We turn your website into a search engine magnet. With Brick2Tech’s expert SEO, traffic grows, rankings rise, and ROI follows.
+    </p>
+    <a
+      href="/contact"
+      className="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transition"
+      aria-label="Get a free SEO audit from Brick2Tech"
+    >
+      Free SEO Audit <ArrowRight className="w-5 h-5" />
+    </a>
+  </div>
+</motion.section>
+
+
 
         {/* Features Section */}
         <motion.section
@@ -203,7 +213,7 @@ const SEOPage: React.FC = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1611162617210-7d673f284f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753334810/image_vg1up9.png"
                 alt="Dashboard showing SEO metrics"
                 className="rounded-xl shadow-lg w-full h-80 object-cover"
                 loading="lazy"
@@ -230,7 +240,7 @@ const SEOPage: React.FC = () => {
               Let Brick2Tech’s SEO experts help you climb Google rankings and grow your business.
             </p>
             <img
-              src="https://images.unsplash.com/photo-1596526131083-5f1f4e1e43c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753338718/site-audit-dashboard_ogya82.jpg"
               alt="SEO report preview"
               className="w-full max-w-md mx-auto h-64 object-cover rounded-xl shadow-lg mb-8"
               loading="lazy"

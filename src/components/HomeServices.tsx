@@ -59,10 +59,10 @@ const HomeServices: React.FC = () => {
       id="services"
     >
       <Helmet>
-        <title>Our Services | B2T Digital Agency</title>
+        <title>Our Services | Brick2Tech Digital Agency</title>
         <meta
           name="description"
-          content="Discover B2T's full suite of services including branding, SEO, digital marketing, web development, and more to transform your business."
+          content="Discover Brick2Tech's full suite of services including branding, SEO, digital marketing, web development, and more to transform your business."
         />
       </Helmet>
 
@@ -77,7 +77,7 @@ const HomeServices: React.FC = () => {
           Our Services
         </h2>
         <p className="text-lg leading-relaxed hover:scale-105 transition-transform duration-300">
-          At B2T, we offer a comprehensive suite of services designed to drive
+          At Brick2Tech, we offer a comprehensive suite of services designed to drive
           growth, efficiency, and digital transformation. Whether you're a
           startup, SME, or enterprise, our solutions are tailored to meet your
           unique needs and business goals.
@@ -110,7 +110,7 @@ const HomeServices: React.FC = () => {
         variants={fadeIn("up", 0.4)}
       >
         <h3 className="text-3xl font-bold text-[#0098d4] mb-8 text-center hover:scale-105 transition-transform duration-300">
-          Why Choose <span className="text-[#0098d4]">B2T?</span>
+          Why Choose <span className="text-[#0098d4]">Brick2Tech?</span>
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -159,7 +159,7 @@ const HomeServices: React.FC = () => {
           >
             <img
               src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752139630/whychoose-B2T_e6mivd.png"
-              alt="Illustration of reasons to choose B2T"
+              alt="Illustration of reasons to choose Brick2Tech"
               className="w-full h-auto object-contain rounded-xl hover:scale-105 transition-transform duration-300"
               loading="lazy"
             />
@@ -173,7 +173,7 @@ const HomeServices: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          Let <span className="text-[#0098d4]">B2T</span> be your transformation partner. Together, we turn bold ideas into powerful results.
+          Let <span className="text-[#0098d4]">Brick2Tech</span> be your transformation partner. Together, we turn bold ideas into powerful results.
         </motion.p>
       </motion.div>
     </section>
@@ -182,4 +182,4 @@ const HomeServices: React.FC = () => {
 
 export default HomeServices;
 // ✅ This is the HomeServices component for your website.
-// It showcases the services offered by B2T with animations and SEO optimization using React Helmet.
+// It showcases the services offered by Brick2Tech with animations and SEO optimization using React Helmet.

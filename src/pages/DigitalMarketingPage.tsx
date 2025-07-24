@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
+import { ArrowPathIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import {
   TrendingUp,
@@ -13,57 +14,74 @@ import {
   Zap,
   UserCheck,
 } from "lucide-react";
+import { SparklesIcon, RocketLaunchIcon, BoltIcon } from "@heroicons/react/24/solid";
+
+const floatingIcons = [
+  { Icon: SparklesIcon, top: "10%", left: "5%" },
+  { Icon: RocketLaunchIcon, top: "30%", right: "8%" },
+  { Icon: BoltIcon, bottom: "15%", left: "10%" },
+];
 
 const services = [
   {
     icon: <Search className="h-8 w-8 text-blue-600" />,
     title: "SEO Optimization",
-    description: "Boost your organic traffic with robust on-page and off-page SEO, content, and technical audits.",
+    description:
+      "Boost your organic traffic with robust on-page and off-page SEO, content, and technical audits.",
   },
   {
     icon: <BarChart3 className="h-8 w-8 text-green-600" />,
     title: "Paid Ads (PPC)",
-    description: "Maximize ROI with Google Ads, Meta (Facebook/Instagram) Ads, and laser-focused targeting.",
+    description:
+      "Maximize ROI with Google Ads, Meta (Facebook/Instagram) Ads, and laser-focused targeting.",
   },
   {
     icon: <PieChart className="h-8 w-8 text-purple-500" />,
     title: "Analytics & Reporting",
-    description: "Advanced Google Analytics & Data Studio dashboards to measure and optimize every campaign.",
+    description:
+      "Advanced Google Analytics & Data Studio dashboards to measure and optimize every campaign.",
   },
   {
     icon: <MousePointerClick className="h-8 w-8 text-yellow-500" />,
     title: "Conversion Rate Optimization",
-    description: "A/B and multivariate testing to turn your visitors into loyal customers.",
+    description:
+      "A/B and multivariate testing to turn your visitors into loyal customers.",
   },
   {
     icon: <ShoppingCart className="h-8 w-8 text-emerald-600" />,
     title: "Ecommerce Marketing",
-    description: "Scalable digital strategies for online stores — from product feed optimization to retargeting.",
+    description:
+      "Scalable digital strategies for online stores — from product feed optimization to retargeting.",
   },
   {
     icon: <Smartphone className="h-8 w-8 text-pink-500" />,
     title: "Mobile Marketing",
-    description: "SMS, app store, and push notification campaigns that get you noticed on every device.",
+    description:
+      "SMS, app store, and push notification campaigns that get you noticed on every device.",
   },
   {
     icon: <Globe2 className="h-8 w-8 text-blue-700" />,
     title: "Web Presence Management",
-    description: "Directory listings, review management, and online reputation elevation for your brand.",
+    description:
+      "Directory listings, review management, and online reputation elevation for your brand.",
   },
   {
     icon: <Zap className="h-8 w-8 text-orange-500" />,
     title: "Growth Hacking Campaigns",
-    description: "Unconventional, creative strategies for faster digital growth and viral traction.",
+    description:
+      "Unconventional, creative strategies for faster digital growth and viral traction.",
   },
   {
     icon: <UserCheck className="h-8 w-8 text-indigo-600" />,
     title: "Lead Generation",
-    description: "Landing pages, funnels, and automation to fill your pipeline with quality prospects.",
+    description:
+      "Landing pages, funnels, and automation to fill your pipeline with quality prospects.",
   },
   {
     icon: <TrendingUp className="h-8 w-8 text-blue-500" />,
     title: "Content Marketing",
-    description: "Blogs, guides, infographics, and videos to position you as a thought leader in your niche.",
+    description:
+      "Blogs, guides, infographics, and videos to position you as a thought leader in your niche.",
   },
 ];
 
@@ -86,27 +104,66 @@ const DigitalMarketingPage = () => (
         name="keywords"
         content="Digital Marketing, SEO, PPC, Analytics, Conversion Rate, Lead Generation, Brick2Tech"
       />
-      <link rel="canonical" href="https://brick2tech.com/digital-marketing" />
+      <link rel="canonical" href="https://brick2tech.com/services/digital-marketing" />
     </Helmet>
 
     {/* Hero Section */}
     <motion.section
-      className="text-center py-24 px-6 bg-gradient-to-br from-sky-50 via-white to-purple-50"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      aria-labelledby="hero-heading"
+  className="relative w-full bg-gradient-to-br from-[#0098d4]/10 via-white to-[#142c4c]/10 overflow-hidden flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 py-12 sm:py-16 lg:py-24 text-center"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  aria-labelledby="hero-heading"
+>
+  {/* Animated Floating Icons */}
+  {floatingIcons.map(({ Icon, ...pos }, i) => (
+    <motion.div
+      key={i}
+      className="absolute text-[#0098d4] opacity-30"
+      style={{ ...pos }}
+      animate={{
+        y: [0, -10, 0],
+        rotate: [0, 10, -10, 0],
+      }}
+      transition={{
+        duration: 6 + i,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
     >
-      <h1 id="hero-heading" className="text-4xl md:text-5xl font-bold mb-4 text-blue-900">
-        Digital Marketing that Delivers. <br /> Growth Obsessed. Results Guaranteed.
-      </h1>
-      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-        Your brand deserves more than just impressions. At Brick2Tech, we build digital marketing engines — SEO, ads, analytics, and conversion copywriting that transforms visibility into measurable business growth.
-      </p>
-    </motion.section>
+      <Icon className="h-10 w-10 sm:h-12 sm:w-12" />
+    </motion.div>
+  ))}
 
+  {/* Main Content */}
+  <div className="max-w-3xl z-10">
+    <h1
+      id="hero-heading"
+      className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#142c4c] leading-tight"
+    >
+      Digital Marketing that Delivers. <br />
+      <span className="text-[#0098d4]">
+        Growth Obsessed. Results Guaranteed.
+      </span>
+    </h1>
+    <p className="text-base sm:text-lg text-gray-700 mb-8">
+      Your brand deserves more than just impressions. At Brick2Tech, we
+      build digital marketing engines — SEO, ads, analytics, and conversion
+      copywriting that transforms visibility into measurable business
+      growth.
+    </p>
+    <a
+      href="#services"
+      className="inline-flex items-center justify-center gap-2 bg-[#0098d4] hover:bg-[#007ba3] text-white font-semibold px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg shadow-lg transition duration-300"
+      aria-label="Contact Brick2Tech for Digital Marketing"
+    >
+      Explore Our Services
+      <ArrowPathIcon className="h-5 w-5" aria-hidden="true" />
+    </a>
+  </div>
+</motion.section>
     {/* Services Section */}
-    <section className="py-20 px-6 bg-white" aria-labelledby="services-heading">
+    <section className="py-20 px-6 bg-white" aria-labelledby="services-heading" id="services">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <motion.h2
           id="services-heading"
@@ -131,7 +188,9 @@ const DigitalMarketingPage = () => (
             viewport={{ once: true }}
             aria-label={service.title}
           >
-            <div className="mb-4" aria-hidden="true">{service.icon}</div>
+            <div className="mb-4" aria-hidden="true">
+              {service.icon}
+            </div>
             <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
             <p className="text-gray-600">{service.description}</p>
           </motion.article>
@@ -180,11 +239,15 @@ const DigitalMarketingPage = () => (
       viewport={{ once: true }}
       aria-labelledby="cta-heading"
     >
-      <h2 id="cta-heading" className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+      <h2
+        id="cta-heading"
+        className="text-3xl md:text-4xl font-bold text-blue-900 mb-6"
+      >
         Ready to Outrank, Outperform & Outgrow Your Competitors?
       </h2>
       <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-        Partner with Brick2Tech and experience a marketing approach engineered for growth. Let’s turn big ambitions into digital impact — together.
+        Partner with Brick2Tech and experience a marketing approach engineered
+        for growth. Let’s turn big ambitions into digital impact — together.
       </p>
       <Link to="/contact" className="inline-block mb-4">
         <button

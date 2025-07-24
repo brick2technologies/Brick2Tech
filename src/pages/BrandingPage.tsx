@@ -26,33 +26,33 @@ const services = [
     description:
       "Craft a unique visual identity that resonates with your audience.",
     image:
-      "https://images.unsplash.com/photo-1516321310762-479e93c1e39e?auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753338861/Branding-Strategy-1_wkhgfc.png",
   },
   {
     title: "Emotionally Engaging Brand Messaging",
     description:
       "Create compelling narratives that connect emotionally with customers.",
     image:
-      "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753339019/1_nEEBMLDADQmxx3tCCMzycw_pqmwkr.jpg",
   },
   {
     title: "Data-Driven Market Positioning Strategies",
     description:
       "We use real-time analytics and proven frameworks to craft strategies that put your brand ahead of the curve.",
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753339085/37193_plcdxx.png",
   },
   {
     title: "Digital Branding & Social Media Presence",
     description: "Amplify your brand online with cohesive digital strategies.",
     image:
-      "https://images.unsplash.com/photo-1611162617210-7d673f284f83?auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753339145/OIP_nmhqrs.webp",
   },
   {
     title: "Rebranding & Growth Acceleration",
     description: "Revitalize your brand to drive growth and market expansion.",
     image:
-      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753339220/rebranding-marketing-strategy-brand-change-reputation-identity-costs-impact-goal-chart-with-keywords-2JTC95Y_zgsqmj.jpg",
   },
 ];
 
@@ -256,7 +256,7 @@ const Brick2TechBrandingPage: React.FC = () => {
             </div>
             <motion.div variants={fadeUp} custom={1}>
               <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80"
+                src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753339340/Graphic-Design-Professioanl_x9cv5q.png"
                 alt="Graphic design mockup on a desk"
                 className="w-full h-80 rounded-xl object-cover shadow-md"
                 loading="lazy"
@@ -265,29 +265,59 @@ const Brick2TechBrandingPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Impact Section */}
         <section
           aria-labelledby="impact-heading"
-          className="py-20 px-6 max-w-7xl mx-auto text-center"
+          className="py-20 px-6 max-w-7xl mx-auto"
         >
-          <h2
-            id="impact-heading"
-            className="text-4xl font-bold mb-8 text-blue-900"
-          >
-            Building Brands That Last
-          </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto mb-12">
-            From startups to enterprises, our team delivers fast, affordable,
-            and results-driven branding strategies that scale and evolve.
-          </p>
-          <motion.img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80"
-            alt="Happy client team celebrating after a successful rebrand"
-            className="w-full max-w-lg mx-auto h-72 rounded-xl object-cover shadow-lg"
-            variants={fadeUp}
-            custom={1}
-            loading="lazy"
-          />
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            {/* Image on the Left */}
+            <motion.img
+              src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753339629/brand-building-768x427_hyssk1.jpg"
+              alt="Happy client team celebrating after a successful rebrand"
+              className="w-full md:w-1/2 max-w-lg h-72 rounded-xl object-cover shadow-lg"
+              variants={fadeUp}
+              custom={1}
+              loading="lazy"
+            />
+
+            {/* Text Content on the Right */}
+            <div className="w-full md:w-1/2 text-left pl-10">
+              <h2
+                id="impact-heading"
+                className="text-4xl font-bold mb-6 text-blue-900"
+              >
+                Building Brands That Last
+              </h2>
+              <p className="text-gray-700 mb-6">
+                From startups to enterprises, our team delivers fast,
+                affordable, and results-driven branding strategies that scale
+                and evolve.
+              </p>
+
+              <ul className="space-y-4">
+                {[
+                  "Deep market research and competitor analysis",
+                  "Memorable brand identity and logo systems",
+                  "Consistent brand messaging & voice",
+                  "Scalable brand guidelines for digital & print",
+                  "Launch strategies that deliver impact",
+                ].map((point, i) => (
+                  <motion.li
+                    key={i}
+                    className="flex items-start"
+                    variants={fadeUp}
+                    custom={i + 2}
+                  >
+                    <Sparkles
+                      className="mt-1 mr-3 text-[#0098d4] w-5 h-5"
+                      aria-hidden="true"
+                    />
+                    <span className="text-gray-800">{point}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* Why Brick2Tech Section */}
@@ -330,7 +360,7 @@ const Brick2TechBrandingPage: React.FC = () => {
             </div>
             <motion.div variants={fadeUp} custom={1}>
               <img
-                src="https://images.unsplash.com/photo-1516321310762-479e93c1e39e?auto=format&fit=crop&w=700&q=80"
+                src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753340181/WhatsApp_Image_2025-07-24_at_12.26.04_74cac68a_bqdflm.jpg"
                 alt="Brick2Tech creative team collaborating in a modern workspace"
                 className="w-full h-80 rounded-xl object-cover shadow-md"
                 loading="lazy"
@@ -390,40 +420,6 @@ const Brick2TechBrandingPage: React.FC = () => {
         </section>
 
         {/* Download Brochure Section */}
-        <section
-          aria-labelledby="brochure-heading"
-          className="bg-gradient-to-br from-[#1565c0] to-[#66e0ff] text-white py-16 px-6 text-center"
-        >
-          <div className="max-w-4xl mx-auto">
-            <h2 id="brochure-heading" className="text-4xl font-bold mb-8">
-              Download Our Branding Brochure
-            </h2>
-            <p className="mb-8 text-lg font-semibold max-w-xl mx-auto">
-              Discover how Brick2Tech can elevate your brand. Get our brochure
-              now.
-            </p>
-            <motion.img
-              src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=700&q=80"
-              alt="Brick2Tech branding brochure mockup"
-              className="w-full max-w-lg h-72 mx-auto rounded-xl object-cover shadow-lg mb-10"
-              loading="lazy"
-              variants={fadeUp}
-              custom={1}
-            />
-            <motion.a
-              href="/brochure.pdf"
-              download
-              variants={fadeUp}
-              custom={2}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-3 bg-yellow-400 text-blue-900 font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-2xl transition text-lg"
-            >
-              <FileDown className="w-6 h-6" aria-hidden="true" />
-              Download Brochure
-            </motion.a>
-          </div>
-        </section>
       </main>
     </>
   );

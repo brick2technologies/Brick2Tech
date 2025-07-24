@@ -141,30 +141,36 @@ const WebDevelopmentPage: React.FC = () => {
       <main>
         {/* Hero Section */}
         <motion.section
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative flex flex-col items-center justify-center min-h-[80vh] px-6 py-24 text-center bg-[#142c4c] bg-center"
-          aria-label="Hero section"
-        >
-          <div className="absolute inset-0 bg-darkblue bg-opacity-70" />
-          <div className="relative z-10">
-            <h1 className="text-4xl sm:text-6xl font-extrabold mb-6 text-white drop-shadow-lg">
-              Smart, Efficient Web Architecture
-            </h1>
-            <p className="text-lg sm:text-xl max-w-2xl mx-auto text-white mb-8">
-              Transform your digital presence with modern, scalable, and
-              user-centric web solutions.
-            </p>
-            <motion.a
-              whileHover={{ scale: 1.1 }}
-              href="#services"
-              className="mt-10 inline-flex items-center gap-3 bg-white text-[#142c4c] px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-darkblue transition"
-            >
-              Discover Our Services <ArrowRight className="w-5 h-5" />
-            </motion.a>
-          </div>
-        </motion.section>
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative flex flex-col items-center justify-center min-h-[90vh] px-6 py-24 text-center 
+             bg-[url('https://res.cloudinary.com/diqux3y0a/image/upload/v1753348029/web-design-2048x1434_yrvnsj.png')]
+             bg-cover bg-center"
+  aria-label="Hero section"
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-[#142c4c]/80" />
+
+  {/* Content */}
+  <div className="relative z-10">
+    <h1 className="text-4xl sm:text-6xl font-extrabold mb-6 text-white drop-shadow-lg">
+      Smart, Efficient Web Architecture
+    </h1>
+    <p className="text-lg sm:text-xl max-w-2xl mx-auto text-white mb-8">
+      Transform your digital presence with modern, scalable, and user-centric web solutions.
+    </p>
+    <motion.a
+      whileHover={{ scale: 1.1 }}
+      href="#services"
+      className="mt-10 inline-flex items-center gap-3 bg-white text-[#142c4c] px-8 py-4 rounded-full 
+                 font-semibold shadow-lg hover:bg-[#0f2238] hover:text-white transition"
+    >
+      Discover Our Services <ArrowRight className="w-5 h-5" />
+    </motion.a>
+  </div>
+</motion.section>
+
 
         {/* Services Section */}
         <motion.section
