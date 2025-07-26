@@ -130,10 +130,10 @@ const Footer = () => {
             aria-label="Contact information"
           >
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <div className="space-y-3 text-sm text-gray-400 text-[20px]">
+            <div className="space-y-3 text-semibold text-gray-400 ">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5" aria-hidden="true" />
-                <p className="hover:text-white transition-colors text-[20px]">
+                <p className="hover:text-white transition-colors ">
                   Brick 2 Technologies<br />
                   Plot no: 893/1, Sree Ram Nagar,<br />
                   Manikonda, Hyderabad-500089<br />

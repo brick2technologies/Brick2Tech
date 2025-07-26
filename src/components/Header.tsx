@@ -22,8 +22,8 @@ const Header: React.FC = () => {
 
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "Services", path: "/services", hasDropdown: true },
     { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services", hasDropdown: true },
     { name: "Careers", path: "/careers" },
     { name: "Contact Us", path: "/contact" },
   ];
@@ -36,13 +36,13 @@ const Header: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center"
+            className="flex items-center sm:left-0"
           >
             <img
               loading="lazy"
               src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752840311/B2T_logo_wsxdog.png"
               alt="Brick2Tech Logo"
-              className="h-[70px] w-auto"
+              className="h-[70px] w-auto left-0"
             />
           </motion.div>
 
