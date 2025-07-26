@@ -202,9 +202,9 @@ const AboutUs = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white p-6 py-10 rounded-xl shadow hover:shadow-lg transition"
             >
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#0098d4] rounded-lg flex items-center justify-center mb-4">
                 <value.icon
-                  className="h-6 w-6 text-[#0098d4]"
+                  className="h-6 w-6 text-[#ffffff]"
                   aria-hidden="true"
                 />
               </div>
@@ -244,10 +244,10 @@ const AboutUs = () => {
                 className="w-full aspect-square object-cover"
               />
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-[#142c4c]">
                   {member.name}
                 </h3>
-                <p className="text-blue-600">{member.position}</p>
+                <p className="text-[#0098d4]">{member.position}</p>
                 <p className="text-sm text-gray-600">{member.bio}</p>
                 <div className="mt-3 flex space-x-3">
                   <a
