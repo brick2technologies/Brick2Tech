@@ -159,16 +159,16 @@ const AboutUs = () => {
         </motion.div>
 
         {/* Strengths Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-30">
           {strengths.map((strength, index) => (
             <motion.div
               key={strength.title}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"
+              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition py-10"
             >
-              <div className="w-12 h-12 bg-[#0098d4] rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#0098d4]/80 rounded-lg flex items-center justify-center mb-4">
                 <strength.icon
                   className="h-6 w-6 text-white"
                   aria-hidden="true"
@@ -183,7 +183,7 @@ const AboutUs = () => {
         </div>
 
         {/* Values Section */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Choose B2T for Your Digital Success
           </h2>
@@ -200,15 +200,15 @@ const AboutUs = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"
+              className="bg-white p-6 py-10 rounded-xl shadow hover:shadow-lg transition"
             >
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                 <value.icon
-                  className="h-6 w-6 text-blue-600"
+                  className="h-6 w-6 text-[#0098d4]"
                   aria-hidden="true"
                 />
               </div>
-              <h2 className="text-lg font-semibold text-gray-900">
+              <h2 className="text-lg font-semibold text-[#142c4c]">
                 {value.title}
               </h2>
               <p className="text-gray-600">{value.description}</p>
