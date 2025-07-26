@@ -41,28 +41,23 @@ const ContactUs = () => {
 
       {/* Hero */}
       <motion.div
-        className="w-full flex flex-col items-center justify-center py-20 md:py-24 bg-gradient-to-b from-[#c8e7f3] to-[#142c4c] text-white relative shadow-lg"
+        className="w-full flex flex-col items-center justify-center py-20 md:py-24 bg-gradient-to-b from-[#142c4c] to-[#0096d4] text-white relative shadow-lg mb-10"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <img
-          src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752840311/B2T_logo_wsxdog.png"
-          alt="Brick2Tech logo"
-          className="mx-auto w-60 h-auto mb-6 "
-          loading="lazy"
-        />
+        
         <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg tracking-tight animate-fade-in">
-          Let's <span className="text-[#0098d4]">Connect</span>
+          Let's Connect
         </h1>
-        <p className="max-w-2xl mx-auto text-lg text-white font-medium">
-          Whether you have a project, question, partnership inquiry—or just want
+        <p className="max-w-2xl mx-auto text-lg text-white font-normal text-center mb-6 animate-fade-in">
+          Whether you have a project, question, partnership inquiryor just want
           to brainstorm fresh digital ideas—we'd love to hear from you.
         </p>
       </motion.div>
 
       {/* Main Layout */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 mb-16 ">
         <div className="grid md:grid-cols-2 gap-12 items-stretch">
           {/* Contact Info Card */}
           <motion.aside
@@ -117,9 +112,27 @@ const ContactUs = () => {
                 </li>
               </ul>
             </div>
+            <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="mx-auto mt-16 max-w-4xl rounded-2xl shadow-lg border-4 border-[#0098d4] overflow-hidden mt-2"
+        >
+          <iframe
+            title="Brick2Tech on Google Maps"
+            aria-label="Map showing Brick2Tech's office"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3807.0148745215106!2d78.49407811116488!3d17.4110738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1752841034254!5m2!1sen!2sin"
+            width="100%"
+            height="360"
+            allowFullScreen
+            loading="lazy"
+            className="border-0 w-[470px] h-[200px] md:h-[360px] rounded-lg "
+          ></iframe>
+        </motion.div>
             <div className="flex justify-start mt-2">
               <a
-                href="https://goo.gl/maps/Z79DurationkwY94"
+                href="https://www.google.com/maps/@17.411074,78.494078,15z?hl=en&entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
                 className="bg-[#0098d4] hover:bg-[#142c4c] transition text-white px-5 py-2 rounded-lg shadow font-semibold"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -262,27 +275,11 @@ const ContactUs = () => {
               </>
             )}
           </motion.div>
+          
         </div>
 
         {/* Map with border and drop shadow */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="mx-auto mt-16 max-w-4xl rounded-2xl shadow-lg border-4 border-[#0098d4] overflow-hidden"
-        >
-          <iframe
-            title="Brick2Tech on Google Maps"
-            aria-label="Map showing Brick2Tech's office"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3807.0148745215106!2d78.49407811116488!3d17.4110738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1752841034254!5m2!1sen!2sin"
-            width="100%"
-            height="360"
-            allowFullScreen
-            loading="lazy"
-            className="border-0 w-full h-[360px]"
-          ></iframe>
-        </motion.div>
+        
       </div>
     </section>
   );

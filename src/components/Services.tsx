@@ -156,13 +156,13 @@ const Services = () => {
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300 text-center flex flex-col justify-between"
               >
                 <div
-                  className="w-16 h-16 mx-auto bg-blue-100 rounded-lg flex items-center justify-center mb-6"
+                  className="w-16 h-16 mx-auto bg-[#142c4c] rounded-lg flex items-center justify-center mb-6"
                   aria-hidden="true"
                 >
-                  <Icon className="h-8 w-8 text-blue-600" />
+                  <Icon className="h-8 w-8 text-[#0096d4]" />
                 </div>
 
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold text-[#141c4c] mb-3">
                   {service.name}
                 </h3>
 
@@ -176,7 +176,7 @@ const Services = () => {
                       key={featureIndex}
                       className="flex items-center text-sm text-gray-500"
                     >
-                      <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 shrink-0"></span>
+                      <span className="w-1.5 h-1.5 bg-[#142c4c] rounded-full mr-2 shrink-0"></span>
                       {feature}
                     </li>
                   ))}
@@ -190,7 +190,7 @@ const Services = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300"
+                    className="w-full bg-[#142c4c] text-white py-2 px-4 rounded-lg font-medium hover:bg-[#142c4c/60] transition-colors duration-300"
                   >
                     Learn More
                   </motion.button>
@@ -205,7 +205,7 @@ const Services = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-16 bg-blue-600 rounded-2xl p-12 text-white"
+          className="text-center mt-16 bg-[#142c4c] rounded-2xl p-12 text-white"
         >
           <h3 className="text-3xl font-bold mb-4">
             Ready to Transform Your Business?
@@ -217,10 +217,10 @@ const Services = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300"
+            className="bg-white text-[#142c4c] px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300"
             aria-label="Get free consultation"
           >
-            Get Free Consultation
+            Catch Up with cup of Coffee
           </motion.button>
         </motion.div>
       </div>
