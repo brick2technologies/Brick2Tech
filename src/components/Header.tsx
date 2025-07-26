@@ -40,9 +40,9 @@ const Header: React.FC = () => {
           >
             <img
               loading="lazy"
-              src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752756464/B2T_logo_01_ojopos.svg"
+              src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752840311/B2T_logo_wsxdog.png"
               alt="Brick2Tech Logo"
-              className="h-[200px] w-auto"
+              className="h-[70px] w-auto"
             />
           </motion.div>
 
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
                               aria-label={service.name}
                             >
                               
-                              <span className="text-[#0098d4] font-semibold hover:text-[#ffffff]">
+                              <span className="text-[#0098d4] font-normal hover:text-[#ffffff]">
                                 {service.name}
                               </span>
                             </Link>
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
                           <Link
                             to="/services"
                             onClick={() => setShowServicesDropdown(false)}
-                            className="block text-center px-4 py-2 font-medium text-[#0489c2] hover:bg-[#142c4c] transition-colors duration-200"
+                            className="block text-center px-4 py-2 font-normal text-[#0489c2] hover:bg-[#142c4c] transition-colors duration-200"
                           >
                             View All Services
                           </Link>
