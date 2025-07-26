@@ -166,7 +166,7 @@ const AboutUs = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition py-10"
+              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition py-20"
             >
               <div className="w-12 h-12 bg-[#0098d4]/80 rounded-lg flex items-center justify-center mb-4">
                 <strength.icon
@@ -200,7 +200,7 @@ const AboutUs = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-6 py-10 rounded-xl shadow hover:shadow-lg transition"
+              className="bg-white p-6 py-20 rounded-xl shadow hover:shadow-lg transition"
             >
               <div className="w-12 h-12 bg-[#0098d4] rounded-lg flex items-center justify-center mb-4">
                 <value.icon
