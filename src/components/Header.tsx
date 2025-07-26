@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
+
 const Header: React.FC = () => {
   const location = useLocation();
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
@@ -28,9 +29,9 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}

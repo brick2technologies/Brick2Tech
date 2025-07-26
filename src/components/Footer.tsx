@@ -9,6 +9,7 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
+import Link from 'next/link';
 
 const Footer = () => {
   const socialLinks = [
@@ -27,14 +28,14 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: "Branding", href: "/services/branding" },
-    { name: "Digital Marketing", href: "/services/digital-marketing" },
-    { name: "Web Development", href: "/services/web-development" },
-    { name: "SEO Services", href: "/services/seo" },
-    { name: "Social Media", href: "/services/social-media-marketing" },
-    { name: "Mobile App Development", href: "/services/mobile-app-development" },
-    { name: "Architecture Design", href: "/services/architecture-design" },
-    { name: "Graphic Design", href: "/services/graphic-design" },    
+    { name: "Digital Marketing",  path: "/services/digital-marketing" },
+    { name: "Branding",  path: "/services/branding" },
+    { name: "SEO",  path: "/services/seo" },  
+    { name: "Social Media Marketing",  path: "/services/social-media-marketing" }, 
+    { name: "Web Development", path: "/services/web-development" },
+    { name: "Mobile App Development", path: "/services/mobile-app-development" },
+    { name: "Architecture Design", path: "/services/architecture-design" },
+    { name: "Graphic Design", path: "/services/graphic-design" },
   ];
 
   return (
@@ -129,10 +130,10 @@ const Footer = () => {
             aria-label="Contact information"
           >
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <div className="space-y-3 text-sm text-gray-400 text-[15px]">
+            <div className="space-y-3 text-sm text-gray-400 text-[20px]">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5" aria-hidden="true" />
-                <p className="hover:text-white transition-colors ">
+                <p className="hover:text-white transition-colors text-[20px]">
                   Brick 2 Technologies<br />
                   Plot no: 893/1, Sree Ram Nagar,<br />
                   Manikonda, Hyderabad-500089<br />
