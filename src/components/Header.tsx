@@ -54,10 +54,10 @@ const Header: React.FC = () => {
                   <Link
                     to={item.path}
                     aria-label={item.name}
-                    className={`px-3 py-2 rounded-md text-sm font-bold transition-all duration-300 ${
+                    className={`px-3 py-2 rounded-md text-[16px] font-normal transition-all duration-300 ${
                       location.pathname === item.path
                         ? "bg-[#142c4c] text-white"
-                        : " hover:bg-[#142c4c] hover:text-white hover:shadow-lg text-[#000000]"
+                        : " hover:bg-[#142c4c] hover:text-white hover:shadow-lg text-[#142c4c]"
                     }`}
                   >
                     {item.name}
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
                       onMouseLeave={() => setShowServicesDropdown(false)}
                       aria-haspopup="true"
                       aria-expanded={showServicesDropdown}
-                      className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-bold transition-all duration-300 ${
+                      className={`flex items-center space-x-1 px-3 py-2 rounded-md text-[16px] font-normal transition-all duration-300 ${
                         location.pathname === item.path
                           ? "bg-[#142c4c] text-white"
                           : " hover:bg-[#142c4c] hover:text-white hover:shadow-lg text-[#142c4c] "
@@ -97,7 +97,7 @@ const Header: React.FC = () => {
                               key={service.name}
                               to={service.path}
                               onClick={() => setShowServicesDropdown(false)}
-                              className="flex items-center px-4 py-3 mx-2 hover:bg-[#142c4c]/90 text-white transition-colors duration-200 rounded-md"
+                              className="flex items-center px-4 py-3 mx-2 hover:bg-[#142c4c] text-white transition-colors duration-200 rounded-md"
                               aria-label={service.name}
                             >
                               
