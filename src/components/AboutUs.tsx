@@ -73,7 +73,7 @@ const AboutUs = () => {
       name: "Mahesh Valsa",
       position: "CEO & Co-Founder",
       image:
-        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753703318/Valsa_1111_aeczhx.jpg",
+        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753704732/Mahesh_CEO_adbq4h.jpg",
       bio: "Visionary leader with 9+ years of global experience in business growth and product strategy.",
       linkedin: "https://www.linkedin.com/in/maheshvalsa",
       
@@ -91,16 +91,16 @@ const AboutUs = () => {
       name: "Subrahmanyam Rao",
       position: "Digital Marketing Manager",
       image:
-        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753703664/01_luqxlp.jpg",
+        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753704871/01_ry1lao.jpg",
       bio: "AI-driven digital marketer focused on analytics-led campaigns and strategic growth.",
       linkedin: "https://www.linkedin.com/in/subrahmanyamrao",
       
     },
     {
       name: "Karthik Chittibomma",
-      position: " Senior Full Stack Developer & Technical Architect",
+      position: "Senior Full Stack Developer & Technical Architect",
       image:
-        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753703693/02_jtkxx9.jpg",
+        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753704842/02_t8p32d.jpg",
       bio: "MERN stack expert building scalable web apps and AI-integrated solutions for business efficiency.",
       linkedin: "https://www.linkedin.com/in/karthikch2630",
       

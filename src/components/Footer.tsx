@@ -11,15 +11,15 @@ import { Link } from "react-router-dom";
 
 const XIcon = () => (
   <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
   </svg>
 );
 
 const socialLinks = [
-  { icon: Facebook, href: "https://facebook.com/brick2technologies", label: "Facebook" },
-  { icon: XIcon, href: "https://x.com/brick2tech", label: "X" },
   { icon: Instagram, href: "https://instagram.com/brick2technologies/", label: "Instagram" },
+  { icon: Facebook, href: "https://facebook.com/brick2technologies", label: "Facebook" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/brick-2-technologies/", label: "LinkedIn" },
+  { icon: XIcon, href: "https://x.com/brick2tech", label: "X" },
 ];
 
 const quickLinks = [
@@ -37,7 +37,6 @@ const services = [
   { name: "Social Media Marketing", path: "/services/social-media-marketing" },
   { name: "Web Development", path: "/services/web-development" },
   { name: "Mobile App Development", path: "/services/app-development" },
-  { name: "Graphic Design", path: "/services/graphic-design" },
 ];
 
 const Footer = () => {
@@ -60,7 +59,8 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-400 mb-4 text-center sm:text-justify">
-              Empowering Growth Through Data-Driven Marketing Strategies.
+              Empowering Growth Through <br />
+              Data-Driven Marketing Strategies.
             </p>
             <div className="flex space-x-4 justify-center sm:justify-start" aria-label="Social media links">
               {socialLinks.map((social, index) => (
@@ -133,8 +133,9 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5" aria-hidden="true" />
                 <p className="hover:text-white transition-colors ">
                   Brick 2 Technologies<br />
-                  Plot no: 893/1, Sree Ram Nagar,<br />
-                  Manikonda, Hyderabad-500089<br />
+                  Plot no: 38/201, MIG - 6 <br />
+                  Sunrise Residency,<br />
+                  Manikonda, Hyderabad - 500 089<br />
                   Telangana, India.
                 </p>
               </div>

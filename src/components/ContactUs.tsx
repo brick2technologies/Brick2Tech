@@ -46,7 +46,7 @@ const ContactUs = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        
+
         <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg tracking-tight animate-fade-in">
           Let's Connect
         </h1>
@@ -65,7 +65,7 @@ const ContactUs = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="shadow-2xl rounded-2xl border-l-8 border-[#0098d4] bg-white/90 backdrop-blur p-8 flex flex-col gap-8 justify-between"
+            className="shadow-2xl rounded-2xl border-l-8 border-[#0098d4] bg-white/90 backdrop-blur p-8 flex flex-col gap-4 justify-between"
           >
             <div>
               <h2 className="text-xl font-bold mb-6 text-[#142c4c]">
@@ -77,9 +77,10 @@ const ContactUs = () => {
                   <MapPin className="text-sky-500 w-7 h-7" />
                   <address className="not-italic text-gray-800 text-base">
                     Brick 2 Technologies <br />
-                    Plot 893/1, Sree Ram Nagar, <br />
+                    Plot 38/201,MIG - 6 <br />
+                    Sunrise Residency, <br />
                     Manikonda, Hyderabad, <br />
-                    Telangana 500089, India
+                    500 089, India
                   </address>
                 </li>
                 <li className="flex items-center gap-4">
@@ -113,34 +114,24 @@ const ContactUs = () => {
               </ul>
             </div>
             <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="mx-auto mt-16 max-w-4xl rounded-2xl shadow-lg border-4 border-[#0098d4] overflow-hidden mt-2"
-        >
-          <iframe
-            title="Brick2Tech on Google Maps"
-            aria-label="Map showing Brick2Tech's office"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3807.0148745215106!2d78.49407811116488!3d17.4110738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1752841034254!5m2!1sen!2sin"
-            width="100%"
-            height="360"
-            allowFullScreen
-            loading="lazy"
-            className="border-0 w-[470px] h-[200px] md:h-[360px] rounded-lg "
-          ></iframe>
-        </motion.div>
-            <div className="flex justify-start mt-2">
-              <a
-                href="https://www.google.com/maps/@17.411074,78.494078,15z?hl=en&entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
-                className="bg-[#0098d4] hover:bg-[#142c4c] transition text-white px-5 py-2 rounded-lg shadow font-semibold"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View us on Google maps"
-              >
-                View on Map
-              </a>
-            </div>
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="mx-1  max-w-4xl rounded-2xl shadow-lg border-4 border-[#0098d4]"
+            >
+              <iframe
+                title="Brick2Tech on Google Maps"
+                aria-label="Map showing Brick2Tech's office"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3807.0148745215106!2d78.49407811116488!3d17.4110738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1752841034254!5m2!1sen!2sin"
+                width="100%"
+                height="360"
+                loading="lazy"
+                allowFullScreen
+                className="w-full h-[200px] md:h-[360px] border-0 rounded-lg"
+              ></iframe>
+            </motion.div>
+
           </motion.aside>
 
           {/* Contact Form Card */}
@@ -187,9 +178,8 @@ const ContactUs = () => {
                       type="text"
                       aria-required="true"
                       aria-invalid={errors.name ? "true" : "false"}
-                      className={`w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#0098d4] transition ${
-                        errors.name && "border-red-400"
-                      }`}
+                      className={`w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#0098d4] transition ${errors.name && "border-red-400"
+                        }`}
                       placeholder="Your Name"
                     />
                     {errors.name && (
@@ -211,9 +201,8 @@ const ContactUs = () => {
                       type="tel"
                       aria-required="true"
                       aria-invalid={errors.phone ? "true" : "false"}
-                      className={`w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#0098d4] transition ${
-                        errors.phone && "border-red-400"
-                      }`}
+                      className={`w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#0098d4] transition ${errors.phone && "border-red-400"
+                        }`}
                       placeholder="Your Mobile"
                     />
                     {errors.phone && (
@@ -235,9 +224,8 @@ const ContactUs = () => {
                       type="email"
                       aria-required="true"
                       aria-invalid={errors.email ? "true" : "false"}
-                      className={`w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#0098d4] transition ${
-                        errors.email && "border-red-400"
-                      }`}
+                      className={`w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#0098d4] transition ${errors.email && "border-red-400"
+                        }`}
                       placeholder="you@email.com"
                     />
                     {errors.email && (
@@ -275,11 +263,11 @@ const ContactUs = () => {
               </>
             )}
           </motion.div>
-          
+
         </div>
 
         {/* Map with border and drop shadow */}
-        
+
       </div>
     </section>
   );

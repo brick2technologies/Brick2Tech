@@ -219,7 +219,7 @@ const AppDevelopmentPage = () => (
                     <img
                         src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753693247/why-choose-us_mkfmhr.png"
                         alt="Mobile app development team collaborating"
-                        className="w-full lg:w-1/2 rounded-2xl shadow-xl object-cover"
+                        className="w-full lg:w-1/2 rounded-2xl  object-cover"
                         loading="lazy"
                     />
                     <div className="lg:w-1/2 space-y-8">
