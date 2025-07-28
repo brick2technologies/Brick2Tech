@@ -73,16 +73,16 @@ const AboutUs = () => {
       name: "Mahesh Valsa",
       position: "CEO & Co-Founder",
       image:
-        "https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753703318/Valsa_1111_aeczhx.jpg",
       bio: "Visionary leader with 9+ years of global experience in business growth and product strategy.",
       linkedin: "https://www.linkedin.com/in/maheshvalsa",
       
     },
     {
-      name: "Ganesh Ettam",
+      name: "Gannesh Ettam",
       position: "COO & Co-Founder",
       image:
-        "https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753703594/Gannesh_2_cijnix.jpg",
       bio: "Creative expert with 12+ years in branding and visual design, shaping strategic brand identities.",
       linkedin: "https://www.linkedin.com/in/gannesh-ettam-26307267/",
       
@@ -91,7 +91,7 @@ const AboutUs = () => {
       name: "Subrahmanyam Rao",
       position: "Digital Marketing Manager",
       image:
-        "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753703664/01_luqxlp.jpg",
       bio: "AI-driven digital marketer focused on analytics-led campaigns and strategic growth.",
       linkedin: "https://www.linkedin.com/in/subrahmanyamrao",
       
@@ -100,7 +100,7 @@ const AboutUs = () => {
       name: "Karthik Chittibomma",
       position: " Senior Full Stack Developer & Technical Architect",
       image:
-        "https://res.cloudinary.com/diqux3y0a/image/upload/v1752813706/profile_jwfx2c.jpg",
+        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753703693/02_jtkxx9.jpg",
       bio: "MERN stack expert building scalable web apps and AI-integrated solutions for business efficiency.",
       linkedin: "https://www.linkedin.com/in/karthikch2630",
       
@@ -144,45 +144,46 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex flex-col gap-10 mb-16 px-4 lg:px-16 justify-center items-center"
-        >
-          {/* First part of the text */}
-          <div className="w-full lg:w-3/4 text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Who We Are
-            </h1>
-            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
-              Brick 2 Technologies is a dynamic startup focused on delivering cutting-edge digital marketing and design solutions. Our mission is to help businesses grow by crafting impactful, data-driven strategies that boost brand visibility, drive measurable results, and deliver engaging digital experiences.
-              <br /><br />
-              The digital landscape moves fast—algorithm changes, new platforms, evolving trends. It’s easy to feel overwhelmed and outpaced. But that’s exactly where we come in.
-            </p>
-          </div>
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="flex flex-col gap-10 mb-16 px-4 lg:px-0 justify-center items-center"
+>
+  {/* First part of the text */}
+  <div className="w-full max-w-6xl text-center">
+    <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+      Who We Are
+    </h1>
+    <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+      Brick 2 Technologies is a dynamic startup focused on delivering cutting-edge digital marketing and design solutions. Our mission is to help businesses grow by crafting impactful, data-driven strategies that boost brand visibility, drive measurable results, and deliver engaging digital experiences.
+      <br /><br />
+      The digital landscape moves fast—algorithm changes, new platforms, evolving trends. It’s easy to feel overwhelmed and outpaced. But that’s exactly where we come in.
+    </p>
+  </div>
 
-          {/* Image */}
-          <div className="w-full lg:w-3/4">
-            <img
-              src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753695670/Who-we-are_mf2cny.png"
-              alt="Brick2Tech About"
-              className="rounded-xl  w-full h-auto object-contain mx-auto max-h-96"
-            />
-          </div>
+  {/* Image */}
+  <div className="w-full max-w-6xl">
+    <img
+      src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753695670/Who-we-are_mf2cny.png"
+      alt="Brick2Tech About"
+      className="rounded-xl w-full h-auto object-contain mx-auto max-h-96"
+    />
+  </div>
 
-          {/* Second part of the text */}
-          <div className="w-full lg:w-3/4 text-center">
-            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
-              At Brick 2 Technologies, we’ve helped businesses just like yours—from startups to established brands—cut through the noise and thrive online. Our clients have seen up to <span className="font-semibold text-black">60% higher ROI</span> after partnering with us, thanks to our data-driven, performance-focused digital strategies.
-              <br /><br />
-              Whether it’s SEO, social media marketing, or paid ads, we don’t just run campaigns—we build growth engines.
-              <br /><br />
-              We don’t want to be just another agency. We want to be your <span className="font-semibold text-black">growth partner</span>—an extension of your team. While you focus on running your business, we’ll focus on putting your brand exactly where it belongs: in front of the right people, at the right time.
-              <br /><br />
-              So, if you’re ready to be seen, grow stronger, and build a better digital future—let’s build it together <span className="font-semibold text-black">Brick by Brick.</span>
-            </p>
-          </div>
-        </motion.div>
+  {/* Second part of the text */}
+  <div className="w-full max-w-6xl text-center">
+    <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+      At Brick 2 Technologies, we’ve helped businesses just like yours—from startups to established brands—cut through the noise and thrive online. Our clients have seen up to <span className="font-semibold text-black">60% higher ROI</span> after partnering with us, thanks to our data-driven, performance-focused digital strategies.
+      <br /><br />
+      Whether it’s SEO, social media marketing, or paid ads, we don’t just run campaigns—we build growth engines.
+      <br /><br />
+      We don’t want to be just another agency. We want to be your <span className="font-semibold text-black">growth partner</span>—an extension of your team. While you focus on running your business, we’ll focus on putting your brand exactly where it belongs: in front of the right people, at the right time.
+      <br /><br />
+      So, if you’re ready to be seen, grow stronger, and build a better digital future—let’s build it together <span className="font-semibold text-black">Brick by Brick.</span>
+    </p>
+  </div>
+</motion.div>
+
 
 
 
