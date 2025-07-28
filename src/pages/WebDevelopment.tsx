@@ -101,7 +101,7 @@ const stats = [
     { title: "18%", description: "Avg Increase in Conversions" },
 ];
 
-const WebDevelopmentPagek: React.FC = () => {
+const WebDevelopmentPage: React.FC = () => {
     return (
         <div className="bg-white text-darkblue font-sans">
             <Helmet>
@@ -266,4 +266,4 @@ const WebDevelopmentPagek: React.FC = () => {
     );
 };
 
-export default WebDevelopmentPagek;
+export default WebDevelopmentPage;

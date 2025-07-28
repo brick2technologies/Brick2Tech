@@ -18,14 +18,14 @@ import ContactUs from "./components/ContactUs";
 import BrandingPage from "./pages/BrandingPage";
 import SEOPage from "./pages/SEOPage";
 import DigitalMarketingPage from "./pages/DigitalMarketingPage";
-import WebDevelopmentPage from "./pages/WebDevelopmentPage";
+
 import SocialMediaMarketingPage from "./pages/SocialMediaPage";
 import GraphicDesignPage from "./pages/GraphicDesignPage";
 import ArchitectureDesignPage from "./pages/ArchitectureDesign";
 import { Helmet } from "react-helmet-async";
-import AppDevelopmentPage from "./pages/AppDevelopment";
-import WebDevelopmentPagek from "./pages/web-my";
-import AppDevelopmentPagek from "./pages/app-my";
+
+import WebDevelopmentPage from "./pages/WebDevelopment";
+import AppDevelopmentPage from "./pages/AppDevelopmet";
 
 
 function App() {
@@ -50,17 +50,17 @@ function App() {
       <main className="relative">
         <AnimatePresence mode="wait">
           <Routes>
-            
+
             <Route
               path="/"
               element={
                 <>
-                  
+
                   <Hero mousePosition={mousePosition} />
                   <HomeAbout />
                   <HomeServices />
                   <HomeClients />
-                  
+
                 </>
               }
             />
@@ -71,14 +71,14 @@ function App() {
             <Route path="/services/branding" element={<BrandingPage />} />
             <Route path="/services/seo" element={<SEOPage />} />
             <Route path="/services/digital-marketing" element={<DigitalMarketingPage />} />
-            <Route path="/services/web-development" element={<WebDevelopmentPage />} />
+
             <Route path="/services/social-media-marketing" element={<SocialMediaMarketingPage />} />
-            <Route path="/services/graphic-design" element={<GraphicDesignPage />}/>
-            <Route path="/services/architecture-design" element={<ArchitectureDesignPage/>} />
-            <Route path="/services/mobile-app-development" element={<AppDevelopmentPage />} />
-            <Route path="/services/web" element={<WebDevelopmentPagek />} />
-            <Route path="/services/app" element={<AppDevelopmentPagek />} />
-            
+            <Route path="/services/graphic-design" element={<GraphicDesignPage />} />
+            <Route path="/services/architecture-design" element={<ArchitectureDesignPage />} />
+
+            <Route path="/services/web-development" element={<WebDevelopmentPage />} />
+            <Route path="/services/app-development" element={<AppDevelopmentPage />} />
+
             {/* Fallback route */}
             <Route
               path="*"
@@ -91,8 +91,8 @@ function App() {
                   <h1 className="text-4xl font-bold text-gray-800">404 - Page Not Found</h1>
                 </div>
               }
-            />  
-            
+            />
+
 
 
           </Routes>
