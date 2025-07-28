@@ -26,6 +26,8 @@ import { Helmet } from "react-helmet-async";
 
 import WebDevelopmentPage from "./pages/WebDevelopment";
 import AppDevelopmentPage from "./pages/AppDevelopmet";
+// Ensure you have your global styles imported
+import ChatBot from "./components/ChatBot";
 
 
 function App() {
@@ -79,6 +81,7 @@ function App() {
             <Route path="/services/web-development" element={<WebDevelopmentPage />} />
             <Route path="/services/app-development" element={<AppDevelopmentPage />} />
 
+
             {/* Fallback route */}
             <Route
               path="*"
@@ -98,7 +101,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </main>
-
+      <ChatBot />
       <Footer />
     </div>
   );
