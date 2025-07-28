@@ -25,6 +25,7 @@ import ArchitectureDesignPage from "./pages/ArchitectureDesign";
 import { Helmet } from "react-helmet-async";
 import AppDevelopmentPage from "./pages/AppDevelopment";
 import WebDevelopmentPagek from "./pages/web-my";
+import AppDevelopmentPagek from "./pages/app-my";
 
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
             <Route path="/services/architecture-design" element={<ArchitectureDesignPage/>} />
             <Route path="/services/mobile-app-development" element={<AppDevelopmentPage />} />
             <Route path="/services/web" element={<WebDevelopmentPagek />} />
+            <Route path="/services/app" element={<AppDevelopmentPagek />} />
             
             {/* Fallback route */}
             <Route
