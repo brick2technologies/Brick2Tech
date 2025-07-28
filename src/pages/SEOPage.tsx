@@ -86,42 +86,42 @@ const SEOPage: React.FC = () => {
       >
         {/* Hero Section */}
         <motion.section
-  className="relative min-h-[90vh] flex flex-col md:flex-row items-center justify-center px-6 sm:px-12 py-20 text-center md:text-left overflow-hidden"
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true }}
-  variants={fadeUp}
-  custom={0}
-  aria-label="SEO Hero Section"
->
-  {/* Image on the left */}
-  <div className="md:w-1/2 w-full flex justify-center md:justify-start mb-10 md:mb-0">
-  <img
-    src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753336272/seo_bg_vni30o.png"
-    alt="SEO Illustration"
-    className="w-[300px] sm:w-[400px] md:w-[500px] h-auto object-contain rotate-90 md:rotate-0 transition-transform duration-500"
-  />
-</div>
+          className="relative min-h-[90vh] flex flex-col md:flex-row items-center justify-center px-6 sm:px-12 py-20 text-center md:text-left overflow-hidden"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          custom={0}
+          aria-label="SEO Hero Section"
+        >
+          {/* Image on the left */}
+          <div className="md:w-1/2 w-full flex justify-center md:justify-start mb-10 md:mb-0">
+            <img
+              src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753336272/seo_bg_vni30o.png"
+              alt="SEO Illustration"
+              className="w-[300px] sm:w-[400px] md:w-[500px] h-auto object-contain rotate-90 md:rotate-0 transition-transform duration-500"
+            />
+          </div>
 
 
-  {/* Content */}
-  <div className="md:w-1/2 w-full max-w-2xl z-10">
-    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-blue-900">
-      <span className="block">Trend Higher. <br /> Rank Smarter.</span>
-      <span className="block text-[#0098d4]">Win Google.</span>
-    </h1>
-    <p className="mt-6 mb-8 text-lg sm:text-xl text-blue-900/90 max-w-xl mx-auto md:mx-0">
-      We turn your website into a search engine magnet. With Brick2Tech’s expert SEO, traffic grows, rankings rise, and ROI follows.
-    </p>
-    <a
-      href="/contact"
-      className="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transition"
-      aria-label="Get a free SEO audit from Brick2Tech"
-    >
-      Free SEO Audit <ArrowRight className="w-5 h-5" />
-    </a>
-  </div>
-</motion.section>
+          {/* Content */}
+          <div className="md:w-1/2 w-full max-w-2xl z-10">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-blue-900">
+              <span className="block">Trend Higher. <br /> Rank Smarter.</span>
+              <span className="block text-[#0098d4]">Win Google.</span>
+            </h1>
+            <p className="mt-6 mb-8 text-lg sm:text-xl text-blue-900/90 max-w-xl mx-auto md:mx-0">
+              We turn your website into a search engine magnet. With Brick2Tech’s expert SEO, traffic grows, rankings rise, and ROI follows.
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-[#0096d4] hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transition"
+              aria-label="Get a free SEO audit from Brick2Tech"
+            >
+              Free SEO Audit <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
+        </motion.section>
 
 
 
@@ -247,7 +247,7 @@ const SEOPage: React.FC = () => {
             />
             <a
               href="/contact"
-              className="inline-flex items-center justify-center gap-3 bg-yellow-400 text-blue-900 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition text-lg"
+              className="inline-flex items-center justify-center gap-3 bg-[#0096d4] text-blue-900 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition text-lg"
               aria-label="Get your free SEO consultation"
             >
               Get a Free SEO Audit <ArrowRight className="w-5 h-5" />

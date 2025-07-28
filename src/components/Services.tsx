@@ -41,7 +41,7 @@ const services = [
   {
     name: "Digital Marketing",
     icon: BarChart3,
-    description: "Comprehensive digital marketing campaigns...",
+    description: "Holistic marketing Approaches...",
     features: [
       "PPC Advertising",
       "Email Marketing",
@@ -63,14 +63,14 @@ const services = [
     link: "/services/social-media-marketing",
   },
   {
-    name: "3D Walkthrough",
+    name: "Virtual Walkthrough",
     icon: Camera,
-    description: "Immersive 3D experiences...",
+    description: "Immersive VR & 3D experiences ...",
     features: [
-      "Virtual Tours",
-      "3D Modeling",
+      "Virtual Reality(VR) Tours",
+      "3D Visualization",
       "Interactive Presentations",
-      "VR Integration",
+      "Interactive Experiences",
     ],
     link: "/services/Architecture-Design",
   },
@@ -132,7 +132,7 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0096d4] mb-6">
             Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -159,10 +159,10 @@ const Services = () => {
                   className="w-16 h-16 mx-auto bg-[#142c4c] rounded-lg flex items-center justify-center mb-6"
                   aria-hidden="true"
                 >
-                  <Icon className="h-8 w-8 text-[#0096d4]" />
+                  <Icon className="h-8 w-8 text-white" />
                 </div>
 
-                <h3 className="text-xl font-semibold text-[#141c4c] mb-3">
+                <h3 className="text-xl font-semibold text-[#0096d4] mb-3">
                   {service.name}
                 </h3>
 
@@ -176,7 +176,7 @@ const Services = () => {
                       key={featureIndex}
                       className="flex items-center text-sm text-gray-500"
                     >
-                      <span className="w-1.5 h-1.5 bg-[#142c4c] rounded-full mr-2 shrink-0"></span>
+                      <span className="w-1.5 h-1.5 bg-[#0096d4] rounded-full mr-2 shrink-0"></span>
                       {feature}
                     </li>
                   ))}
@@ -207,7 +207,7 @@ const Services = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-center mt-16 bg-[#142c4c] rounded-2xl p-12 text-white"
         >
-          <h3 className="text-3xl font-bold mb-4">
+          <h3 className="text-3xl font-bold mb-4 text-[#0098d4]">
             Ready to Transform Your Business?
           </h3>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
@@ -220,7 +220,7 @@ const Services = () => {
             className="bg-white text-[#142c4c] px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300"
             aria-label="Get free consultation"
           >
-            Catch Up with cup of Coffee
+            Let’s catch up over coffee
           </motion.button>
         </motion.div>
       </div>

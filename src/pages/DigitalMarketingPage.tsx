@@ -13,13 +13,47 @@ import {
   Globe2,
   Zap,
   UserCheck,
+  MailIcon,
+  BarChart4Icon,
+  DollarSignIcon,
+  InstagramIcon,
+  FacebookIcon,
+  YoutubeIcon,
+  Mail,
+  SearchIcon,
+  UserCheck as UserCheckIcon,
+  
 } from "lucide-react";
 import { SparklesIcon, RocketLaunchIcon, BoltIcon } from "@heroicons/react/24/solid";
 
 const floatingIcons = [
-  { Icon: SparklesIcon, top: "10%", left: "5%" },
-  { Icon: RocketLaunchIcon, top: "30%", right: "8%" },
-  { Icon: BoltIcon, bottom: "15%", left: "10%" },
+  { Icon: SparklesIcon, top: "10%", left: "5%" },        // Creativity
+  { Icon: RocketLaunchIcon, top: "30%", right: "8%" },   // Campaign launch
+  { Icon: BoltIcon, bottom: "15%", left: "10%" },        // Performance
+  { Icon: MailIcon, top: "15%", right: "12%" },          // Email marketing
+  { Icon: SearchIcon, bottom: "25%", right: "6%" },      // SEO
+  { Icon: BarChart4Icon, top: "45%", left: "6%" },       // Analytics
+  { Icon: DollarSignIcon, bottom: "20%", left: "15%" },  // ROI / Paid Ads
+  { Icon: InstagramIcon, top: "5%", right: "25%" },      // Social Media
+  { Icon: FacebookIcon, bottom: "10%", right: "20%" },   // Facebook Ads
+  { Icon: YoutubeIcon, top: "40%", right: "30%" },       // Video Marketing
+  { Icon: UserCheckIcon, bottom: "30%", left: "20%" },    // Lead Generation
+  { Icon: SearchIcon, top: "20%", left: "30%" },          // Keyword Research
+  { Icon: Mail, top: "50%", right: "20%" },               // Email Campaigns
+  { Icon: UserCheck, bottom: "5%", left: "25%" },        // User Engagement
+  { Icon: BarChart3, top: "60%", right: "10%" },        // Data Insights
+  { Icon: TrendingUp, bottom: "15%", left: "5%" },
+  // Growth Tracking  
+  { Icon: Smartphone, top: "70%", right: "15%" },         // Mobile Marketing
+  { Icon: Globe2, bottom: "25%", left: "30%" },           // Global Reach
+  { Icon: Zap, top: "80%", right: "20%" },                // Innovation
+  { Icon: BoltIcon, bottom: "40%", left: "10%" },         // Speed & Efficiency
+  { Icon: RocketLaunchIcon, top: "10%", right: "20%" },   // Launch Success
+  { Icon: SparklesIcon, bottom: "30%", right: "15%" },    // Creative Solutions
+  { Icon: MailIcon, top: "50%", left: "20%" },            // Email Engagement
+  { Icon: SearchIcon, bottom: "20%", right: "25%" },      // Search Visibility
+  { Icon: UserCheckIcon, top: "30%", left: "15%" },       // Customer Trust
+  { Icon: BarChart4Icon, bottom: "10%", right: "5%" },    // Performance Metrics
 ];
 
 const services = [

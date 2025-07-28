@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {
-  Users,
-  Target,
-  Lightbulb,
-  TrendingUp,
-  Linkedin,
-  Github,
+  GithubIcon,
   Heart,
+  Lightbulb,
+  Linkedin,
   Shield,
+  Target,
+  TrendingUp,
+  Users,
   Users as UsersIcon,
 } from "lucide-react";
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
@@ -153,7 +153,7 @@ const AboutUs = () => {
             Who We Are
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            At B2T, we help businesses thrive in the digital landscape through
+            At Brick2Tech, we help businesses thrive in the digital landscape through
             creative, technological, and strategic excellence.
           </p>
         </motion.div>
@@ -185,7 +185,7 @@ const AboutUs = () => {
         {/* Values Section */}
         <div className="text-center mb-12 mt-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Choose B2T for Your Digital Success
+            Choose Brick2Tech for Your Digital Success
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Our client-centric, ethical, and innovative values make us your
@@ -268,7 +268,7 @@ const AboutUs = () => {
                     className="text-gray-400 hover:text-black"
                     onClick={(e) => e.stopPropagation()}
                   >
-                    <Github className="w-5 h-5" />
+                    <GithubIcon className="w-5 h-5" />
                   </a>
                 </div>
               </div>

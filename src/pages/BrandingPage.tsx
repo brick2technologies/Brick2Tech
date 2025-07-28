@@ -1,13 +1,12 @@
-import React from "react";
-import Head from "next/head";
 import { motion } from "framer-motion";
 import {
-  FileDown,
-  Sparkles,
+  ArrowRight,
   CheckCircle,
   ChevronDown,
-  ArrowRight,
+  Sparkles
 } from "lucide-react";
+import Head from "next/head";
+import React from "react";
 
 /* ----------  Animation Variant ---------- */
 const fadeUp = {
@@ -29,11 +28,12 @@ const services = [
       "https://res.cloudinary.com/diqux3y0a/image/upload/v1753338861/Branding-Strategy-1_wkhgfc.png",
   },
   {
-    title: "Emotionally Engaging Brand Messaging",
-    description:
-      "Create compelling narratives that connect emotionally with customers.",
-    image:
-      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753339019/1_nEEBMLDADQmxx3tCCMzycw_pqmwkr.jpg",
+    title: "Powerful Brand Storytelling",
+description:
+  "Craft meaningful stories that reflect your brand’s identity and emotionally engage your audience.",
+image:
+  "https://res.cloudinary.com/diqux3y0a/image/upload/v1753339019/1_nEEBMLDADQmxx3tCCMzycw_pqmwkr.jpg",
+
   },
   {
     title: "Data-Driven Market Positioning Strategies",
@@ -120,7 +120,7 @@ const Brick2TechBrandingPage: React.FC = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index,follow" />
-        <link rel="canonical" href="https://brick2tech.com" />
+        <link rel="canonical" href="https://brick2tech.com/services/branding" />
         <meta
           property="og:title"
           content="Build an Unstoppable Brand with Hyderabad’s Best – Brick2Tech Branding"
@@ -133,7 +133,7 @@ const Brick2TechBrandingPage: React.FC = () => {
           property="og:image"
           content="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80"
         />
-        <meta property="og:url" content="https://brick2tech.com/branding" />
+        <meta property="og:url" content="https://brick2tech.com/services/branding" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <script
@@ -205,7 +205,7 @@ const Brick2TechBrandingPage: React.FC = () => {
                     aria-hidden="true"
                   />
                   <div>
-                    <h3 className="font-semibold text-xl text-blue-900">
+                    <h3 className="font-semibold text-xl text-[#142c4c]">
                       {service.title}
                     </h3>
                     <p className="text-gray-700 mt-1">{service.description}</p>

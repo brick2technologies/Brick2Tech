@@ -1,15 +1,13 @@
-import React from "react";
 import { motion } from "framer-motion";
 import {
-  Mail,
-  Phone,
-  MapPin,
   Facebook,
-  Twitter,
   Instagram,
   Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
 } from "lucide-react";
-import Link from 'next/link';
 
 const Footer = () => {
   const socialLinks = [
@@ -28,10 +26,10 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: "Digital Marketing",  path: "/services/digital-marketing" },
-    { name: "Branding",  path: "/services/branding" },
-    { name: "SEO",  path: "/services/seo" },  
-    { name: "Social Media Marketing",  path: "/services/social-media-marketing" }, 
+    { name: "Digital Marketing", path: "/services/digital-marketing" },
+    { name: "Branding", path: "/services/branding" },
+    { name: "SEO", path: "/services/seo" },
+    { name: "Social Media Marketing", path: "/services/social-media-marketing" },
     { name: "Web Development", path: "/services/web-development" },
     { name: "Mobile App Development", path: "/services/mobile-app-development" },
     { name: "Architecture Design", path: "/services/architecture-design" },
@@ -53,11 +51,12 @@ const Footer = () => {
               <img
                 src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752839930/B2T_logo_white_zo4oxt.png"
                 alt="Brick2Tech Digital Agency logo"
-                className="h-auto w-auto mr-2 sm:w-20 md:w-32"
+                className="h-auto w-30 sm:w-32 md:w-40 lg:w-48 xl:w-56 mr-2"
                 loading="lazy"
               />
             </div>
-            <p className="text-gray-400 mb-4">
+
+            <p className="text-gray-400 mb-4 text-center sm:text-justify">
               Empowering Growth Through Data-Driven Marketing Strategies.
             </p>
             <div className="flex space-x-4" aria-label="Social media links">
@@ -85,18 +84,18 @@ const Footer = () => {
             aria-label="Quick links"
           >
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <ul className="space-y-2">
+            {quickLinks.map((link, index) => (
+              <li key={index}>
+                <a
+                  href={link.href}
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
           </motion.nav>
 
           {/* Services */}
@@ -106,19 +105,21 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             aria-label="Services offered"
           >
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              {services.map((service, index) => (
-                <li key={index}>
-                  <a
-                    href={service.href}
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
-                  >
-                    {service.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          
+          <h3 className="text-lg font-semibold mb-4">Services</h3>
+          <ul className="space-y-2">
+            {services.map((service, index) => (
+              <li key={index}>
+                <a
+                  href={service.path}
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
+                  {service.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        
           </motion.nav>
 
           {/* Contact Info */}
