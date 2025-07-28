@@ -75,17 +75,17 @@ const AboutUs = () => {
       image:
         "https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=400",
       bio: "Visionary leader with 9+ years of global experience in business growth and product strategy.",
-      linkedin: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/maheshvalsa",
+      
     },
     {
       name: "Ganesh Ettam",
-      position: "Co-Founder & Business Advisor",
+      position: "COO & Co-Founder",
       image:
         "https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=400",
       bio: "Creative expert with 12+ years in branding and visual design, shaping strategic brand identities.",
-      linkedin: "https://www.linkedin.com/in/ganesh-ettam",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/gannesh-ettam-26307267/",
+      
     },
     {
       name: "Subrahmanyam Rao",
@@ -94,7 +94,7 @@ const AboutUs = () => {
         "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400",
       bio: "AI-driven digital marketer focused on analytics-led campaigns and strategic growth.",
       linkedin: "https://www.linkedin.com/in/subrahmanyamrao",
-      github: "#",
+      
     },
     {
       name: "Karthik Chittibomma",
@@ -102,8 +102,8 @@ const AboutUs = () => {
       image:
         "https://res.cloudinary.com/diqux3y0a/image/upload/v1752813706/profile_jwfx2c.jpg",
       bio: "MERN stack expert building scalable web apps and AI-integrated solutions for business efficiency.",
-      linkedin: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/karthikch2630",
+      
     },
   ];
 
@@ -113,7 +113,7 @@ const AboutUs = () => {
     image: string;
     bio: string;
     linkedin: string;
-    github: string;
+    
   };
 
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
@@ -141,22 +141,51 @@ const AboutUs = () => {
         />
       </Helmet>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="flex flex-col gap-10 mb-16 px-4 lg:px-16 justify-center items-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Who We Are
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            At Brick2Tech, we help businesses thrive in the digital landscape through
-            creative, technological, and strategic excellence.
-          </p>
+          {/* First part of the text */}
+          <div className="w-full lg:w-3/4 text-center">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Who We Are
+            </h1>
+            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+              Brick 2 Technologies is a dynamic startup focused on delivering cutting-edge digital marketing and design solutions. Our mission is to help businesses grow by crafting impactful, data-driven strategies that boost brand visibility, drive measurable results, and deliver engaging digital experiences.
+              <br /><br />
+              The digital landscape moves fast—algorithm changes, new platforms, evolving trends. It’s easy to feel overwhelmed and outpaced. But that’s exactly where we come in.
+            </p>
+          </div>
+
+          {/* Image */}
+          <div className="w-full lg:w-3/4">
+            <img
+              src="https://res.cloudinary.com/diqux3y0a/image/upload/v1753695670/Who-we-are_mf2cny.png"
+              alt="Brick2Tech About"
+              className="rounded-xl  w-full h-auto object-contain mx-auto max-h-96"
+            />
+          </div>
+
+          {/* Second part of the text */}
+          <div className="w-full lg:w-3/4 text-center">
+            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+              At Brick 2 Technologies, we’ve helped businesses just like yours—from startups to established brands—cut through the noise and thrive online. Our clients have seen up to <span className="font-semibold text-black">60% higher ROI</span> after partnering with us, thanks to our data-driven, performance-focused digital strategies.
+              <br /><br />
+              Whether it’s SEO, social media marketing, or paid ads, we don’t just run campaigns—we build growth engines.
+              <br /><br />
+              We don’t want to be just another agency. We want to be your <span className="font-semibold text-black">growth partner</span>—an extension of your team. While you focus on running your business, we’ll focus on putting your brand exactly where it belongs: in front of the right people, at the right time.
+              <br /><br />
+              So, if you’re ready to be seen, grow stronger, and build a better digital future—let’s build it together <span className="font-semibold text-black">Brick by Brick.</span>
+            </p>
+          </div>
         </motion.div>
+
+
+
 
         {/* Strengths Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-30">
@@ -226,55 +255,47 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
-            <motion.button
-              key={member.name}
-              onClick={() => setSelectedMember(member)}
-              className="text-left bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              aria-label={`View bio of ${member.name}`}
-            >
-              <img
-                src={member.image}
-                alt={member.name}
-                loading="lazy"
-                className="w-full aspect-square object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-[#142c4c]">
-                  {member.name}
-                </h3>
-                <p className="text-[#0098d4]">{member.position}</p>
-                <p className="text-sm text-gray-600">{member.bio}</p>
-                <div className="mt-3 flex space-x-3">
-                  <a
-                    href={member.linkedin}
-                    aria-label={`${member.name}'s LinkedIn`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-blue-600"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={member.github}
-                    aria-label={`${member.name}'s GitHub`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-black"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <GithubIcon className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
-            </motion.button>
-          ))}
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+  {teamMembers.map((member, index) => (
+    <motion.button
+      key={member.name}
+      onClick={() => setSelectedMember(member)}
+      className="w-full max-w-xs mx-auto text-left bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.1 }}
+      aria-label={`View bio of ${member.name}`}
+    >
+      <img
+        src={member.image}
+        alt={member.name}
+        loading="lazy"
+        className="w-full aspect-square object-cover"
+      />
+      <div className="p-4 sm:p-6">
+        <h3 className="text-base sm:text-lg font-semibold text-[#142c4c]">
+          {member.name}
+        </h3>
+        <p className="text-sm sm:text-base text-[#0098d4]">{member.position}</p>
+        <p className="text-xs sm:text-sm text-gray-600">{member.bio}</p>
+        <div className="mt-3 flex space-x-3">
+          <a
+            href={member.linkedin}
+            aria-label={`${member.name}'s LinkedIn`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-blue-600"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Linkedin className="w-5 h-5" />
+          </a>
+          
         </div>
+      </div>
+    </motion.button>
+  ))}
+</div>
+
       </div>
 
       {/* Modal */}

@@ -1,47 +1,51 @@
 import { motion } from "framer-motion";
 import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
   MapPin,
   Phone,
-  Twitter,
+  Mail,
+  Linkedin,
+  Facebook,
+  Instagram,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+const XIcon = () => (
+  <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+  </svg>
+);
+
+const socialLinks = [
+  { icon: Facebook, href: "https://facebook.com/brick2technologies", label: "Facebook" },
+  { icon: XIcon, href: "https://x.com/brick2tech", label: "X" },
+  { icon: Instagram, href: "https://instagram.com/brick2technologies/", label: "Instagram" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/brick-2-technologies/", label: "LinkedIn" },
+];
+
+const quickLinks = [
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Careers", href: "/careers" },
+  { name: "Contact", href: "/contact" },
+];
+
+const services = [
+  { name: "Digital Marketing", path: "/services/digital-marketing" },
+  { name: "Branding", path: "/services/branding" },
+  { name: "SEO", path: "/services/seo" },
+  { name: "Social Media Marketing", path: "/services/social-media-marketing" },
+  { name: "Web Development", path: "/services/web-development" },
+  { name: "Mobile App Development", path: "/services/mobile-app-development" },
+  { name: "Architecture Design", path: "/services/architecture-design" },
+  { name: "Graphic Design", path: "/services/graphic-design" },
+];
+
 const Footer = () => {
-  const socialLinks = [
-    { icon: Facebook, href: "https://facebook.com/brick2technologies", label: "Facebook" },
-    { icon: Twitter, href: "https://x.com/brick2tech", label: "Twitter" },
-    { icon: Instagram, href: "https://instagram.com/brick2technologies/", label: "Instagram" },
-    { icon: Linkedin, href: "https://www.linkedin.com/company/brick-2-technologies/", label: "LinkedIn" },
-  ];
-
-  const quickLinks = [
-    { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Careers", href: "/careers" },
-    { name: "Contact", href: "/contact" },
-  ];
-
-  const services = [
-    { name: "Digital Marketing", path: "/services/digital-marketing" },
-    { name: "Branding", path: "/services/branding" },
-    { name: "SEO", path: "/services/seo" },
-    { name: "Social Media Marketing", path: "/services/social-media-marketing" },
-    { name: "Web Development", path: "/services/web-development" },
-    { name: "Mobile App Development", path: "/services/mobile-app-development" },
-    { name: "Architecture Design", path: "/services/architecture-design" },
-    { name: "Graphic Design", path: "/services/graphic-design" },
-  ];
-
   return (
     <footer className="bg-gray-900 text-white" aria-label="Site footer">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -56,28 +60,25 @@ const Footer = () => {
                 loading="lazy"
               />
             </div>
-
             <p className="text-gray-400 mb-4 text-center sm:text-justify">
               Empowering Growth Through Data-Driven Marketing Strategies.
             </p>
-            <div className="flex space-x-4" aria-label="Social media links">
-              {socialLinks.map((social) => (
-                <motion.a
-                  key={social.label}
+            <div className="flex space-x-4 justify-center sm:justify-start" aria-label="Social media links">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Visit our ${social.label}`}
-                  whileHover={{ scale: 1.2 }}
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                  className="text-gray-600 hover:text-blue-500 transition-colors duration-200"
+                  aria-label={social.label}
                 >
-                  <social.icon className="h-5 w-5" aria-hidden="true" />
-                </motion.a>
+                  <social.icon className="h-5 w-5" />
+                </a>
               ))}
             </div>
           </motion.section>
 
-          {/* Quick Links */}
           <motion.nav
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -85,45 +86,41 @@ const Footer = () => {
             aria-label="Quick links"
           >
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2">
-            {quickLinks.map((link) => (
-              <li key={link.name}>
-                <Link
-                  to={link.href}
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+            <ul className="space-y-2">
+              {quickLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </motion.nav>
 
-          {/* Services */}
           <motion.nav
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             aria-label="Services offered"
           >
-          
-          <h3 className="text-lg font-semibold mb-4">Services</h3>
-          <ul className="space-y-2">
-            {services.map((service) => (
-              <li key={service.name}>
-                <Link
-                  to={service.path}
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                >
-                  {service.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <ul className="space-y-2">
+              {services.map((service) => (
+                <li key={service.name}>
+                  <Link
+                    to={service.path}
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </motion.nav>
 
-          {/* Contact Info */}
           <motion.address
             className="not-italic"
             initial={{ opacity: 0, y: 20 }}
@@ -161,12 +158,11 @@ const Footer = () => {
           </motion.address>
         </div>
 
-        {/* Bottom Bar */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="border-t border-gray-800 mt-8 pt-8 text-center"
+          className="border-t border-gray-800 mt-8 pt-4 text-center"
         >
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} Brick2Technologies. All rights reserved.
