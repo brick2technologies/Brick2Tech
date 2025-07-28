@@ -8,6 +8,7 @@ import {
   Phone,
   Twitter,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const socialLinks = [
@@ -60,9 +61,9 @@ const Footer = () => {
               Empowering Growth Through Data-Driven Marketing Strategies.
             </p>
             <div className="flex space-x-4" aria-label="Social media links">
-              {socialLinks.map((social, index) => (
+              {socialLinks.map((social) => (
                 <motion.a
-                  key={index}
+                  key={social.label}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -85,14 +86,14 @@ const Footer = () => {
           >
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            {quickLinks.map((link, index) => (
-              <li key={index}>
-                <a
-                  href={link.href}
+            {quickLinks.map((link) => (
+              <li key={link.name}>
+                <Link
+                  to={link.href}
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -108,14 +109,14 @@ const Footer = () => {
           
           <h3 className="text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2">
-            {services.map((service, index) => (
-              <li key={index}>
-                <a
-                  href={service.path}
+            {services.map((service) => (
+              <li key={service.name}>
+                <Link
+                  to={service.path}
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   {service.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

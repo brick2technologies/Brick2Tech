@@ -186,12 +186,13 @@ const Brick2TechBrandingPage: React.FC = () => {
             Our Branding Capabilities
           </h2>
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, idx) => (
+            {services.map((service) => (
               <motion.article
-                key={idx}
+                key={service.title}
                 className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition"
                 variants={fadeUp}
-                custom={idx + 1}
+                custom={1}
+                whileHover={{ scale: 1.02 }}
               >
                 <img
                   src={service.image}
@@ -238,12 +239,13 @@ const Brick2TechBrandingPage: React.FC = () => {
                   "Digital Branding & Social Presence",
                   "Rebranding for Growth",
                   "Trademark & Copyright Protection",
-                ].map((item, i) => (
+                ].map((item) => (
                   <motion.li
-                    key={i}
+                    key={item}
                     className="flex items-center"
                     variants={fadeUp}
-                    custom={i + 1}
+                    custom={1}
+
                   >
                     <Sparkles
                       className="mr-3 text-[#0098d4] w-5 h-5"
@@ -301,12 +303,12 @@ const Brick2TechBrandingPage: React.FC = () => {
                   "Consistent brand messaging & voice",
                   "Scalable brand guidelines for digital & print",
                   "Launch strategies that deliver impact",
-                ].map((point, i) => (
+                ].map((point) => (
                   <motion.li
-                    key={i}
+                    key={point}
                     className="flex items-start"
                     variants={fadeUp}
-                    custom={i + 2}
+                    custom={2}
                   >
                     <Sparkles
                       className="mt-1 mr-3 text-[#0098d4] w-5 h-5"
