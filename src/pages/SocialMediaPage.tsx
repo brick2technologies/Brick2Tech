@@ -50,13 +50,11 @@ const services = [
     title: "Brand Storytelling",
     description: "Creating compelling narratives that emotionally connect with your audience across platforms.",
   },
-  
   {
     icon: <Mic className="h-8 w-8 text-red-500" />,
     title: "Reels & Shorts Production",
     description: "Producing scroll-stopping short-form videos optimized for Instagram Reels, YouTube Shorts and meta stories.",
   },
-  
 ];
 
 const stats = [
@@ -76,7 +74,25 @@ const SocialMediaMarketingPage = () => {
           name="description"
           content="Boost your brand visibility with Brick2Tech's expert social media marketing services. We specialize in viral content, paid ads, and analytics-driven campaigns."
         />
-        <meta name="keywords" content="Social Media Marketing, Content Strategy, Instagram Ads, Meta Ads, Community Management, Brick2Tech" />
+        <meta name="keywords" content="Social Media Marketing, Content Strategy, Instagram Ads, Meta Ads, Community Management, Brick2Tech, Social Media Hyderabad, Influencer marketing, short-form video production, LinkedIn strategy, engagement campaigns" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Brick2Tech" />
+        <meta property="og:title" content="Social Media Marketing Experts in Hyderabad | Brick2Tech" />
+        <meta
+          property="og:description"
+          content="Ready to elevate your social presence? Brick2Tech crafts content and campaigns that build engagement, awareness, and ROI. Get started today!"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://brick2tech.com/social-media-marketing" />
+        <meta property="og:image" content="https://brick2tech.com/assets/social-banner.png" />
+        <meta property="og:site_name" content="Brick2Tech" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Hyderabad’s Best Social Media Marketing Agency - Brick2Tech" />
+        <meta
+          name="twitter:description"
+          content="Strategic content, ad campaigns & influencer marketing that deliver results. Work with Brick2Tech, Hyderabad’s trusted social media experts."
+        />
+        <meta name="twitter:image" content="https://brick2tech.com/assets/social-banner.png" />
         <link rel="canonical" href="https://brick2tech.com/social-media-marketing" />
       </Helmet>
 
@@ -173,7 +189,6 @@ const SocialMediaMarketingPage = () => {
       >
         <h2 id="cta-heading" className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
           Don’t Just Compete—Turn Scrolls Into Sales and Dominate the Feed.
-
         </h2>
         <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
           Our social media strategies make your brand trend, engage, and convert—building loyalty that lasts.

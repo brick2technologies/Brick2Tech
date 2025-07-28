@@ -32,12 +32,51 @@ const ContactUs = () => {
   return (
     <section className="pt-0 pb-0 min-h-screen bg-gradient-to-tr from-blue-50 via-white to-blue-100">
       <Helmet>
-        <title>Contact Us | Brick2Tech</title>
+        {/* Title Tag */}
+        <title>Contact Us | Brick2Tech Digital Agency in Hyderabad</title>
+
+        {/* Meta Description */}
         <meta
           name="description"
-          content="Contact Brick2Tech for expert digital solutions. We're based in Hyderabad and help brands worldwide. Get in touch!"
+          content="Looking to elevate your digital presence? Contact Brick2Tech — Hyderabad's top digital agency — for branding, marketing, design & tech solutions. Let's build together!"
         />
+
+        {/* Meta Keywords (optional but helps for some engines) */}
+        <meta
+          name="keywords"
+          content="Contact Brick2Tech, Digital Agency Hyderabad, Branding Agency, Marketing Experts, Web Development Company, UI UX Design, Hyderabad Tech Company"
+        />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://brick2tech.com/contact" />
+
+        {/* Open Graph Tags for Facebook, LinkedIn, etc. */}
+        <meta property="og:title" content="Contact Brick2Tech | Digital Experts in Hyderabad" />
+        <meta
+          property="og:description"
+          content="Get in touch with Brick2Tech for top-notch branding, digital marketing, and development services. Let's connect and grow your brand!"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://brick2tech.com/contact" />
+        <meta property="og:image" content="https://brick2tech.com/seo/brick2tech-preview.jpg" />
+        <meta property="og:site_name" content="Brick2Tech" />
+
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Brick2Tech | Digital Experts in Hyderabad" />
+        <meta
+          name="twitter:description"
+          content="Reach out to Brick2Tech for expert digital services in branding, SEO, development, and design."
+        />
+        <meta name="twitter:image" content="https://brick2tech.com/seo/brick2tech-preview.jpg" />
+        <meta name="twitter:site" content="@brick2tech" />
+        <meta name="twitter:creator" content="@brick2tech" />
+
+        {/* Author and Robots */}
+        <meta name="author" content="Brick2Tech Digital Agency" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
+
 
       {/* Hero */}
       <motion.div

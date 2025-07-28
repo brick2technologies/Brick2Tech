@@ -20,70 +20,60 @@ const appServices = [
         title: "Mobile App Development",
         description: "Native and cross-platform apps for iOS and Android built for performance and scalability.",
         icon: <Smartphone className="w-10 h-10 text-blue-500" />,
-
         alt: "Mobile app development with code and devices"
     },
     {
         title: "UI/UX App Design",
         description: "Custom, engaging mobile interfaces and flows designed for conversion and retention.",
         icon: <LayoutDashboard className="w-10 h-10 text-blue-500" />,
-
         alt: "App designers creating user flows"
     },
     {
         title: "API Integration",
         description: "Robust integration with third-party APIs, cloud services, authentication, and more.",
         icon: <Link className="w-10 h-10 text-blue-500" />,
-
         alt: "API connections and network integrations"
     },
     {
         title: "Cloud Backend & Databases",
         description: "Serverless, scalable, and secure backend with Firebase, AWS, or custom cloud solutions.",
         icon: <Cloud className="w-10 h-10 text-blue-500" />,
-
         alt: "Cloud architecture and backend dashboard"
     },
     {
         title: "App Performance Optimization",
         description: "Speed, battery, and data-use optimizations to delight your end-users.",
         icon: <TrendingUp className="w-10 h-10 text-blue-500" />,
-
         alt: "Performance chart and mobile speed"
     },
     {
         title: "Security & Compliance",
         description: "From secure logins to GDPR, we ensure your apps are protected and compliant.",
         icon: <ShieldCheck className="w-10 h-10 text-blue-500" />,
-
         alt: "App security shield and compliance symbols"
     },
     {
         title: "App Store Deployment",
         description: "End-to-end support for launch, submit, and update processes on Google Play & App Store.",
         icon: <UserCheck className="w-10 h-10 text-blue-500" />,
-
         alt: "App published on App Store"
     },
     {
         title: "IoT & Wearables",
         description: "Connect mobile apps to IoT devices and wearables for the next generation of digital experiences.",
         icon: <Zap className="w-10 h-10 text-blue-500" />,
-
         alt: "IoT and wearable integration"
     },
     {
         title: "Enterprise App Solutions",
         description: "Custom applications for business process automation and internal operations.",
         icon: <Cpu className="w-10 h-10 text-blue-500" />,
-
         alt: "Enterprise app dashboard"
     },
     {
         title: "Maintenance & Support",
         description: "Ongoing updates, enhancements, and technical support for your published apps.",
         icon: <Settings className="w-10 h-10 text-blue-500" />,
-
         alt: "Mobile maintenance analyst"
     }
 ];
@@ -103,6 +93,16 @@ const AppDevelopmentPage = () => (
                 content="Discover our mobile app development services: iOS, Android, UI/UX, API integrations, and enterprise digital solutions. Launch fast and scale with confidence."
             />
             <meta name="robots" content="index, follow" />
+            <meta name="author" content="Brick2Tech" />
+            <meta property="og:title" content="Mobile App Development Services | Brick2Tech" />
+            <meta property="og:description" content="iOS & Android app development, UI/UX design, and enterprise mobility solutions. Get a scalable and beautiful mobile app today." />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://brick2tech.com/services/app-development" />
+            <meta property="og:image" content="https://res.cloudinary.com/diqux3y0a/image/upload/v1753692495/Lovepik_com-450098993-Flat_app_development_illustration_hy1q73.png" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content="Brick2Tech App Development Services" />
+            <meta name="twitter:description" content="Build fast, secure, and scalable mobile apps with Brick2Tech. Explore our app services and get started today." />
+            <meta name="twitter:image" content="https://res.cloudinary.com/diqux3y0a/image/upload/v1753692495/Lovepik_com-450098993-Flat_app_development_illustration_hy1q73.png" />
             <link rel="canonical" href="https://brick2tech.com/services/app-development" />
         </Helmet>
         <main>
@@ -126,7 +126,7 @@ const AppDevelopmentPage = () => (
                     </motion.div>
 
                     <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
-                         Next-Gen Mobile Apps. Built to Blow Up.
+                        Next-Gen Mobile Apps. Built to Blow Up.
                     </h1>
 
                     <p className="text-lg sm:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0">

@@ -160,13 +160,13 @@ const Careers = () => {
   return (
     <>
       <Helmet>
-        <title>Careers | Join Our Team at B2T</title>
+        <title>Careers | Join Our Team at Brick2Tech</title>
         <meta
           name="description"
-          content="Explore exciting career opportunities at B2T. Apply today and be part of a passionate team building digital solutions."
+          content="Explore exciting career opportunities at Brick2Tech. Apply today and be part of a passionate team building digital solutions."
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Careers at B2T" />
+        <meta property="og:title" content="Careers at Brick2Tech" />
         <meta
           property="og:description"
           content="We're hiring! Check out job openings and join our innovative team."

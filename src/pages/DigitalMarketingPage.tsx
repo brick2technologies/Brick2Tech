@@ -22,7 +22,7 @@ import {
   Mail,
   SearchIcon,
   UserCheck as UserCheckIcon,
-  
+
 } from "lucide-react";
 import { SparklesIcon, RocketLaunchIcon, BoltIcon } from "@heroicons/react/24/solid";
 
@@ -138,64 +138,111 @@ const DigitalMarketingPage = () => (
         name="keywords"
         content="Digital Marketing, SEO, PPC, Analytics, Conversion Rate, Lead Generation, Brick2Tech"
       />
+      <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://brick2tech.com/services/digital-marketing" />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://brick2tech.com/services/digital-marketing" />
+      <meta property="og:title" content="Digital Marketing Services | Brick2Tech" />
+      <meta
+        property="og:description"
+        content="Crush your digital goals with Brick2Tech. SEO, Ads, CRO, Analytics — full-funnel marketing services that scale."
+      />
+      <meta property="og:image" content="https://brick2tech.com/images/og-digital-marketing.jpg" />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content="https://brick2tech.com/services/digital-marketing" />
+      <meta name="twitter:title" content="Digital Marketing Services | Brick2Tech" />
+      <meta
+        name="twitter:description"
+        content="Full-stack digital marketing for scale: SEO, ads, CRO, analytics and more with Brick2Tech."
+      />
+      <meta name="twitter:image" content="https://brick2tech.com/images/og-digital-marketing.jpg" />
+
+      {/* Structured Data - Organization + Social Links */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Brick2Tech",
+          "url": "https://brick2tech.com",
+          "logo": "https://brick2tech.com/logo.png",
+          "sameAs": [
+            "https://www.facebook.com/brick2technologies",
+            "https://www.instagram.com/brick2technologies/",
+            "https://www.youtube.com/@brick2technologies",
+            "https://x.com/brick2tech",
+            "https://in.pinterest.com/brick2technologies/",
+            "https://www.linkedin.com/company/brick-2-technologies/"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "info@brick2tech.com",
+            "url": "https://brick2tech.com/contact"
+          }
+        })}
+      </script>
     </Helmet>
+
 
     {/* Hero Section */}
     <motion.section
-  className="relative w-full bg-gradient-to-br from-[#0098d4]/10 via-white to-[#142c4c]/10 overflow-hidden flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 py-12 sm:py-16 lg:py-24 text-center"
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8 }}
-  aria-labelledby="hero-heading"
->
-  {/* Animated Floating Icons */}
-  {floatingIcons.map(({ Icon, ...pos }, i) => (
-    <motion.div
-      key={i}
-      className="absolute text-[#0098d4] opacity-30"
-      style={{ ...pos }}
-      animate={{
-        y: [0, -10, 0],
-        rotate: [0, 10, -10, 0],
-      }}
-      transition={{
-        duration: 6 + i,
-        repeat: Infinity,
-        ease: "easeInOut",
-      }}
+      className="relative w-full bg-gradient-to-br from-[#0098d4]/10 via-white to-[#142c4c]/10 overflow-hidden flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 py-12 sm:py-16 lg:py-24 text-center"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      aria-labelledby="hero-heading"
     >
-      <Icon className="h-10 w-10 sm:h-12 sm:w-12" />
-    </motion.div>
-  ))}
+      {/* Animated Floating Icons */}
+      {floatingIcons.map(({ Icon, ...pos }, i) => (
+        <motion.div
+          key={i}
+          className="absolute text-[#0098d4] opacity-30"
+          style={{ ...pos }}
+          animate={{
+            y: [0, -10, 0],
+            rotate: [0, 10, -10, 0],
+          }}
+          transition={{
+            duration: 6 + i,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <Icon className="h-10 w-10 sm:h-12 sm:w-12" />
+        </motion.div>
+      ))}
 
-  {/* Main Content */}
-  <div className="max-w-3xl z-10">
-    <h1
-      id="hero-heading"
-      className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#142c4c] leading-tight"
-    >
-      Digital Marketing that Delivers. <br />
-      <span className="text-[#0098d4]">
-        Growth Obsessed. Results Guaranteed.
-      </span>
-    </h1>
-    <p className="text-base sm:text-lg text-gray-700 mb-8">
-      Your brand deserves more than just impressions. At Brick2Tech, we
-      build digital marketing engines — SEO, ads, analytics, and conversion
-      copywriting that transforms visibility into measurable business
-      growth.
-    </p>
-    <a
-      href="#services"
-      className="inline-flex items-center justify-center gap-2 bg-[#0098d4] hover:bg-[#007ba3] text-white font-semibold px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg shadow-lg transition duration-300"
-      aria-label="Contact Brick2Tech for Digital Marketing"
-    >
-      Explore Our Services
-      <ArrowPathIcon className="h-5 w-5" aria-hidden="true" />
-    </a>
-  </div>
-</motion.section>
+      {/* Main Content */}
+      <div className="max-w-3xl z-10">
+        <h1
+          id="hero-heading"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#142c4c] leading-tight"
+        >
+          Digital Marketing that Delivers. <br />
+          <span className="text-[#0098d4]">
+            Growth Obsessed. Results Guaranteed.
+          </span>
+        </h1>
+        <p className="text-base sm:text-lg text-gray-700 mb-8">
+          Your brand deserves more than just impressions. At Brick2Tech, we
+          build digital marketing engines — SEO, ads, analytics, and conversion
+          copywriting that transforms visibility into measurable business
+          growth.
+        </p>
+        <a
+          href="#services"
+          className="inline-flex items-center justify-center gap-2 bg-[#0098d4] hover:bg-[#007ba3] text-white font-semibold px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg shadow-lg transition duration-300"
+          aria-label="Contact Brick2Tech for Digital Marketing"
+        >
+          Explore Our Services
+          <ArrowPathIcon className="h-5 w-5" aria-hidden="true" />
+        </a>
+      </div>
+    </motion.section>
     {/* Services Section */}
     <section className="py-20 px-6 bg-white" aria-labelledby="services-heading" id="services">
       <div className="max-w-6xl mx-auto text-center mb-12">

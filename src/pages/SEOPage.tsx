@@ -63,22 +63,35 @@ const SEOPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>SEO Services in Hyderabad | Brick2Tech Digital</title>
-        <meta
-          name="description"
-          content="Boost your rankings, traffic, and revenue with expert SEO services from Brick2Tech — Hyderabad’s top SEO agency. Get a free SEO audit today."
-        />
-        <meta
-          name="keywords"
-          content="SEO Hyderabad, SEO services, technical SEO, local SEO, keyword strategy, backlink building"
-        />
-        <meta property="og:title" content="Top SEO Services in Hyderabad | Brick2Tech" />
-        <meta
-          property="og:description"
-          content="Rank higher on Google with proven SEO strategies tailored for Hyderabad businesses."
-        />
-        <meta property="og:type" content="website" />
-      </Helmet>
+  <title>SEO Services in Hyderabad | #1 SEO Company - Brick2Tech</title>
+  <meta
+    name="description"
+    content="Looking for top SEO services in Hyderabad? Brick2Tech boosts your Google rankings, organic traffic & leads with technical SEO, content, backlinks, and local SEO expertise."
+  />
+  <meta
+    name="keywords"
+    content="SEO services Hyderabad, best SEO agency, technical SEO, on-page SEO, off-page SEO, keyword optimization, link building, local SEO Hyderabad, SEO audit"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Brick2Tech Technologies" />
+  <meta property="og:title" content="Best SEO Services in Hyderabad | Brick2Tech" />
+  <meta
+    property="og:description"
+    content="Grow your Hyderabad business online with Brick2Tech’s results-driven SEO strategies. Get a free audit now!"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brick2tech.com/seo-services" />
+  <meta property="og:image" content="https://brick2tech.com/assets/seo-banner.png" />
+  <meta property="og:site_name" content="Brick2Tech" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hyderabad’s Leading SEO Agency - Brick2Tech" />
+  <meta
+    name="twitter:description"
+    content="Rank higher, get more traffic & grow your business with Brick2Tech’s expert SEO services."
+  />
+  <meta name="twitter:image" content="https://brick2tech.com/assets/seo-banner.png" />
+</Helmet>
+
 
       <main
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"

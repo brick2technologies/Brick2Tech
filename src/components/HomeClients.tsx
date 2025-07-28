@@ -69,11 +69,42 @@ const HomeClients: React.FC = () => {
   return (
     <section className="bg-white py-20 px-6 md:px-16 lg:px-24" id="clients">
       <Helmet>
-        <title>Home | Brick2Tech</title>
-        <meta
-          name="description"
-          content="Meet the clients who trust Brick2Tech Digital Agency. See testimonials from businesses that have grown with our web, branding, and digital marketing services."
-        />
+        <title>Digital Agency | Brick2Tech</title>
+        <meta name="description" content="Meet the clients who trust Brick2Tech Digital Agency. See testimonials from businesses that have grown with our web, branding, and digital marketing services." />
+        <meta property="og:title" content="Our Clients | Brick2Tech" />
+        <meta property="og:description" content="See trusted client partnerships and read testimonials about Brick2Tech's web, branding, and marketing services." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://brick2tech.com#clients" />
+        <meta property="og:image" content="https://brick2tech.com/images/clients/og-cover.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Clients | Brick2Tech" />
+        <meta name="twitter:description" content="See trusted client partnerships and read testimonials about Brick2Tech's digital services." />
+        <meta name="twitter:image" content="https://brick2tech.com/images/clients/og-cover.jpg" />
+        <link rel="canonical" href="https://brick2tech.com#clients" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Brick2Tech",
+            "url": "https://brick2tech.com",
+            "sameAs": [
+              "https://www.linkedin.com/company/brick2technologies",
+              "https://www.instagram.com/brick2technologies",
+              "https://www.facebook.com/brick2technologies"
+            ],
+            "logo": "https://brick2tech.com/logo.png",
+            "review": testimonials.map((t, i) => ({
+              "@type": "Review",
+              "author": { "@type": "Person", "name": t.author },
+              "reviewBody": t.quote,
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              }
+            }))
+          })}
+        </script>
       </Helmet>
 
       <motion.div
@@ -108,7 +139,7 @@ const HomeClients: React.FC = () => {
             >
               <img
                 src={client.logo}
-                alt={`${client.name} logo`}
+                alt={`${client.name} Logo - Brick2Tech Client`}
                 loading="lazy"
                 className="h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 ease-in-out"
               />
@@ -141,9 +172,13 @@ const HomeClients: React.FC = () => {
               <div className="text-yellow-500 text-xl mb-2" aria-hidden="true">
                 ⭐⭐⭐⭐⭐
               </div>
-              <p className="text-lg text-gray-700 italic mb-4">
+              <p
+                className="text-lg text-gray-700 italic mb-4"
+                aria-label={`Testimonial quote from ${testimonials[testimonialIndex].author}`}
+              >
                 “{testimonials[testimonialIndex].quote}”
               </p>
+
               <p className="text-gray-800 font-semibold">
                 — {testimonials[testimonialIndex].author}
               </p>

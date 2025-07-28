@@ -16,12 +16,75 @@ const Hero: React.FC<HeroProps> = ({ mousePosition }) => {
     >
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Empower Your Brand with Digital Innovation | B2T</title>
+        <title>Empower Your Brand with Digital Innovation | Brick2Tech</title>
         <meta
           name="description"
           content="Transform your business with cutting-edge digital marketing, stunning web design, and strategic branding that drives real impact with B2T."
         />
+        <meta
+          name="keywords"
+          content="digital marketing, web design, branding, SEO, B2T, Brick2Tech, business growth, online strategy"
+        />
+        <meta name="author" content="Brick2Tech Technologies" />
         <link rel="canonical" href="https://brick2tech.com" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Empower Your Brand with Digital Innovation | B2T" />
+        <meta
+          property="og:description"
+          content="Transform your business with B2T's digital marketing, design, and branding strategies that create real impact."
+        />
+        <meta property="og:image" content="https://brick2tech.com/og-image.jpg" />
+        <meta property="og:url" content="https://brick2tech.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Brick2Tech Technologies" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Empower Your Brand with Digital Innovation | Brick2Tech" />
+        <meta
+          name="twitter:description"
+          content="Explore how B2T drives brand success through digital innovation, marketing, and design."
+        />
+        <meta name="twitter:image" content="https://brick2tech.com/og-image.jpg" />
+        <meta name="twitter:site" content="@brick2tech" />
+        <meta name="twitter:creator" content="@brick2tech" />
+
+        {/* JSON-LD Schema for SEO */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Brick2Tech Technologies",
+              "url": "https://brick2tech.com",
+              "logo": "https://brick2tech.com/logo.png",
+              "sameAs": [
+                "https://www.facebook.com/brick2technologies",
+                "https://www.instagram.com/brick2technologies/",
+                "https://www.youtube.com/@brick2technologies",
+                "https://x.com/brick2tech",
+                "https://in.pinterest.com/brick2technologies/",
+                "https://www.linkedin.com/company/brick-2-technologies/"
+              ]
+            }
+          `}
+        </script>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Brick2Tech Technologies",
+              "url": "https://brick2tech.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://brick2tech.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }
+          `}
+        </script>
       </Helmet>
 
       {/* Background Video */}
@@ -33,7 +96,10 @@ const Hero: React.FC<HeroProps> = ({ mousePosition }) => {
         playsInline
         aria-hidden="true"
       >
-        <source src="https://res.cloudinary.com/diqux3y0a/video/upload/v1753261522/B2T-Background_bzddbx.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/diqux3y0a/video/upload/v1753261522/B2T-Background_bzddbx.mp4"
+          type="video/mp4"
+        />
         <track kind="captions" />
         Your browser does not support the video tag.
       </video>
@@ -89,8 +155,3 @@ const Hero: React.FC<HeroProps> = ({ mousePosition }) => {
 };
 
 export default Hero;
-// ✅ This is the Hero component for your website.
-// It includes a background video, a radial light effect on mouse hover, and a call-to-action button.
-// Make sure to replace the video source with your own video file.
-// The component uses Framer Motion for animations and React Helmet for SEO management.
-// Adjust the styles and content as needed to fit your design requirements.

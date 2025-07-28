@@ -105,13 +105,31 @@ const WebDevelopmentPage: React.FC = () => {
     return (
         <div className="bg-white text-darkblue font-sans">
             <Helmet>
-                <title>Web Development Services | Modern, Scalable Solutions</title>
+                <title>Web Development Services in India | Brick2Tech Digital</title>
                 <meta
                     name="description"
-                    content="Explore our custom web development services including UI/UX design, responsive layouts, and full stack solutions. Drive conversions with cutting-edge websites."
+                    content="Custom web development services by Brick2Tech. Get responsive, SEO-optimized websites powered by full stack technologies."
+                />
+                <meta
+                    name="keywords"
+                    content="web development India, custom websites, full stack web apps, UI/UX, MongoDB, Node.js, React, Express"
                 />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://yourdomain.com/web-development" />
+                <meta name="author" content="Brick2Tech" />
+                <link rel="canonical" href="https://brick2tech.com/services/web-development" />
+                <meta property="og:title" content="Top Web Development Services | Brick2Tech India" />
+                <meta
+                    property="og:description"
+                    content="Modern, scalable web solutions crafted by Brick2Tech. Improve UX, performance, and SEO rankings."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://brick2tech.com/services/web-development" />
+                <meta property="og:image" content="https://brick2tech.com/assets/web-dev-banner.png" />
+                <meta property="og:site_name" content="Brick2Tech" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Custom Web Development by Brick2Tech" />
+                <meta name="twitter:description" content="Scalable, responsive, SEO-ready websites built for growth." />
+                <meta name="twitter:image" content="https://brick2tech.com/assets/web-dev-banner.png" />
             </Helmet>
 
             <main className="space-y-24">

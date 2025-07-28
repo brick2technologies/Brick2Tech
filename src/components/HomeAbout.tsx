@@ -52,9 +52,40 @@ const HomeAbout: React.FC = () => {
         <title>About Brick 2 Technologies | Business Transformation Experts</title>
         <meta
           name="description"
-          content="Discover how B2T empowers businesses through tailored strategies, digital innovation, and scalable transformation services. Partner with us for real results."
+          content="Discover how Brick 2 Technologies empowers businesses through tailored strategies, digital innovation, and scalable transformation services."
         />
         <link rel="canonical" href="https://brick2tech.com/about" />
+        <meta property="og:title" content="About Brick 2 Technologies" />
+        <meta
+          property="og:description"
+          content="Partner with Brick 2 Technologies to bridge the gap between ideas and execution. We drive innovation, strategy, and business growth."
+        />
+        <meta property="og:image" content="https://res.cloudinary.com/diqux3y0a/image/upload/v1752147269/aboutUs_yllmow.webp" />
+        <meta property="og:url" content="https://brick2tech.com/about" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Brick 2 Technologies",
+            url: "https://brick2tech.com",
+            logo: "https://brick2tech.com/logo.png",
+            sameAs: [
+              "https://www.facebook.com/brick2technologies",
+              "https://www.instagram.com/brick2technologies/",
+              "https://www.youtube.com/@brick2technologies",
+              "https://x.com/brick2tech",
+              "https://in.pinterest.com/brick2technologies/",
+              "https://www.linkedin.com/company/brick-2-technologies/"
+            ],
+            contactPoint: {
+              "@type": "ContactPoint",
+              contactType: "Customer Support",
+              email: "hello@brick2tech.com",
+              url: "https://brick2tech.com/contact"
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Heading */}
@@ -87,7 +118,7 @@ const HomeAbout: React.FC = () => {
         >
           <img
             src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752147269/aboutUs_yllmow.webp"
-            alt="Team discussing strategy at B2T"
+            alt="Team of professionals planning business transformation at Brick2Tech"
             loading="lazy"
             className="rounded-xl w-full h-auto max-h-[400px] object-cover hover:scale-105 transition-transform duration-300"
           />
@@ -98,7 +129,7 @@ const HomeAbout: React.FC = () => {
           {[
             "Brick2Tech is a results-driven company committed to helping businesses bridge the gap between ideas and execution.",
             "We specialize in delivering end-to-end solutions that empower organizations to scale, transform, and thrive in today’s digital landscape.",
-            "At B2T, our mission is to be the catalyst for meaningful business transformation. We collaborate closely with our clients to understand their goals and challenges, crafting custom strategies that drive measurable success.",
+            "At Brick2Tech, our mission is to be the catalyst for meaningful business transformation. We collaborate closely with our clients to understand their goals and challenges, crafting custom strategies that drive measurable success.",
             "From digital innovation to operational efficiency, we bring the right blend of creativity, technology, and expertise to every project.",
           ].map((text) => (
             <p
@@ -149,7 +180,7 @@ const HomeAbout: React.FC = () => {
         viewport={{ once: true }}
         variants={fadeIn("up", 0.6)}
       >
-        <span className="text-[#142c4c]">At B2T,</span> we don't just consult —
+        At <span className="text-[#142c4c]"> Brick2Tech,</span> we don't just consult —
         we partner with you to transform your vision into value.
       </motion.p>
     </section>

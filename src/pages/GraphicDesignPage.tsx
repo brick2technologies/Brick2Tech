@@ -35,20 +35,28 @@ const GraphicDesignPage = () => {
   return (
     <>
       <Helmet>
-        <title>Graphic Design Services | B2T Agency</title>
+        <title>Graphic Design Services | Brick2Tech Agency</title>
         <meta
           name="description"
-          content="From logos to motion graphics, B2T delivers visually stunning branding that captivates, communicates, and converts. Explore our graphic design services."
+          content="From logos to motion graphics, Brick2Tech delivers visually stunning branding that captivates, communicates, and converts. Explore our graphic design services."
         />
         <meta
           name="keywords"
-          content="graphic design, branding, logo design, animation, motion graphics, packaging, B2T"
+          content="graphic design, branding, logo design, animation, motion graphics, packaging, Brick2Tech"
         />
-        <meta property="og:title" content="Graphic Design Services | B2T" />
+        <meta property="og:title" content="Graphic Design Services | Brick2Tech" />
         <meta
           property="og:description"
           content="Craft visuals that inspire trust and drive growth. Check out our expert graphic design services."
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://brick2tech.com/graphic-design" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Graphic Design Services | Brick2Tech" />
+        <meta name="twitter:description" content="Expert graphic design that inspires, engages, and drives brand growth." />
+        <meta name="author" content="Brick2Tech" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://brick2tech.com/graphic-design" />
       </Helmet>
 
       <section
@@ -88,8 +96,9 @@ const GraphicDesignPage = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
+              aria-label={service.title}
             >
-              <div className="mb-6">{service.icon}</div>
+              <div className="mb-6 text-[#142c4c]" aria-hidden="true">{service.icon}</div>
               <h2 className="text-xl font-bold text-[#142c4c] mb-3">
                 {service.title}
               </h2>
@@ -146,7 +155,7 @@ const GraphicDesignPage = () => {
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-2">
                   <SparklesIcon
-                    className="h-5 w-5 text-purple-500"
+                    className="h-5 w-5 text-[#0098d4]"
                     aria-hidden="true"
                   />
                   <span>{item}</span>
@@ -155,8 +164,6 @@ const GraphicDesignPage = () => {
             </ul>
           </motion.div>
         </section>
-
-        {/* Tools Section */}
 
         {/* Testimonials Section */}
         <motion.section
@@ -170,7 +177,7 @@ const GraphicDesignPage = () => {
             What Our Clients Say
           </h2>
           <blockquote className="text-lg text-gray-700 italic max-w-2xl mx-auto">
-            “B2T Studio transformed our online presence. From logo to
+            “Brick2Tech Studio transformed our online presence. From logo to
             animations, every element tells our story with clarity and
             creativity.”
             <span className="block mt-4 font-semibold text-[#0098d4]">
@@ -197,7 +204,7 @@ const GraphicDesignPage = () => {
           <a
             href="/contact"
             className="inline-block bg-white text-[#0098d4] font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300"
-            aria-label="Contact B2T Design Team"
+            aria-label="Contact Brick2Tech Design Team"
           >
             Get Started
           </a>

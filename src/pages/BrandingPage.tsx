@@ -29,11 +29,10 @@ const services = [
   },
   {
     title: "Powerful Brand Storytelling",
-description:
-  "Craft meaningful stories that reflect your brand’s identity and emotionally engage your audience.",
-image:
-  "https://res.cloudinary.com/diqux3y0a/image/upload/v1753339019/1_nEEBMLDADQmxx3tCCMzycw_pqmwkr.jpg",
-
+    description:
+      "Craft meaningful stories that reflect your brand’s identity and emotionally engage your audience.",
+    image:
+      "https://res.cloudinary.com/diqux3y0a/image/upload/v1753339019/1_nEEBMLDADQmxx3tCCMzycw_pqmwkr.jpg",
   },
   {
     title: "Data-Driven Market Positioning Strategies",
@@ -91,13 +90,13 @@ const Brick2TechBrandingPage: React.FC = () => {
     description:
       "Hyderabad’s leading branding agency helping businesses build high-impact, unforgettable brands.",
     url: "https://brick2tech.com",
-    telephone: "+91-9876543210",
+    telephone: "+91-90000 35647",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Road No 36, Jubilee Hills",
+      streetAddress: "plot No 38/201, MIG - 6, Sunrise residency",
       addressLocality: "Hyderabad",
       addressRegion: "Telangana",
-      postalCode: "500033",
+      postalCode: "500089",
       addressCountry: "IN",
     },
     serviceType: [
@@ -112,7 +111,7 @@ const Brick2TechBrandingPage: React.FC = () => {
     <>
       <Head>
         <title>
-          Build an Unstoppable Brand with Hyderabad’s Best – Brick2Tech Branding
+          Build a Brand with Hyderabad’s Best – Brick2Tech Branding
         </title>
         <meta
           name="description"
