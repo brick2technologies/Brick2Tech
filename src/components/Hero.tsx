@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ mousePosition }) => {
         <meta property="og:title" content="Empower Your Brand with Digital Innovation | B2T" />
         <meta
           property="og:description"
-          content="Transform your business with B2T's digital marketing, design, and branding strategies that create real impact."
+          content="Transform your business with Brick2Tech's digital marketing, design, and branding strategies that create real impact."
         />
         <meta property="og:image" content="https://brick2tech.com/og-image.jpg" />
         <meta property="og:url" content="https://brick2tech.com" />

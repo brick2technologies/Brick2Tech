@@ -121,7 +121,7 @@ const Services = () => {
           name="description"
           content="Explore a wide range of professional services from branding, digital marketing, SEO, to e-commerce solutions and 3D walkthroughs. Boost your business with Brick2Tech."
         />
-        <meta name="keywords" content="branding, SEO, digital marketing, e-commerce websites, virtual walkthroughs, web development, UI UX, Hyderabad digital agency, Brick2Tech services" />
+        <meta name="keywords" content="branding, SEO, digital marketing, e-commerce websites, virtual walkthroughs, web development, UI UX, Hyderabad digital marketing company, Brick2Tech services" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://brick2tech.com/services" />
         <meta property="og:title" content="Our Services | Brick2Tech" />

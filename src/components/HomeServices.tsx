@@ -119,7 +119,7 @@ const HomeServices: React.FC = () => {
   return (
     <section className="bg-[#142c4c]/95 py-20 px-6 md:px-16 lg:px-24 text-white" id="services">
       <Helmet>
-        <title>Our Services | Brick2Tech Digital Agency</title>
+        <title>Our Services | Brick2Tech Digital Marketing Company</title>
         <meta name="description" content="Explore Brick2Tech's professional services including branding, SEO, development, and marketing. We empower businesses to grow digitally." />
         <meta property="og:title" content="Our Services | Brick2Tech" />
         <meta property="og:description" content="We provide a full range of digital solutions — branding, SEO, web, marketing, and more." />

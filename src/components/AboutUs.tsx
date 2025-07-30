@@ -128,12 +128,12 @@ const AboutUs = () => {
   return (
     <section className="pt-20 pb-12 bg-gray-50" aria-label="About Us Section">
       <Helmet>
-        <title>About Us | Brick2Tech Digital Agency</title>
+        <title>About Us | Brick2Tech Digital Marketing Company</title>
         <meta
           name="description"
           content="Meet the team behind Brick2Tech – experts in branding, development, and marketing strategies that drive your digital success."
         />
-        <meta property="og:title" content="About Us | Brick2Tech Digital Agency" />
+        <meta property="og:title" content="About Us | Brick2Tech Digital Marketing Company" />
         <meta
           property="og:description"
           content="Meet the experts at Brick2Tech who are redefining digital growth through innovation, strategy, and creativity."

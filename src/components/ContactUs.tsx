@@ -33,18 +33,18 @@ const ContactUs = () => {
     <section className="pt-0 pb-0 min-h-screen bg-gradient-to-tr from-blue-50 via-white to-blue-100">
       <Helmet>
         {/* Title Tag */}
-        <title>Contact Us | Brick2Tech Digital Agency in Hyderabad</title>
+        <title>Contact Us | Brick2Tech Digital Marketing Company in Hyderabad</title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Looking to elevate your digital presence? Contact Brick2Tech — Hyderabad's top digital agency — for branding, marketing, design & tech solutions. Let's build together!"
+          content="Looking to elevate your digital presence? Contact Brick2Tech — Digital Marketing Company — for branding, marketing, design & tech solutions. Let's build together!"
         />
 
         {/* Meta Keywords (optional but helps for some engines) */}
         <meta
           name="keywords"
-          content="Contact Brick2Tech, Digital Agency Hyderabad, Branding Agency, Marketing Experts, Web Development Company, UI UX Design, Hyderabad Tech Company"
+          content="Contact Brick2Tech, Digital Marketing Company Hyderabad, Branding Agency, Marketing Experts, Web Development Company, UI UX Design, Hyderabad Tech Company"
         />
 
         {/* Canonical URL */}
@@ -73,7 +73,7 @@ const ContactUs = () => {
         <meta name="twitter:creator" content="@brick2tech" />
 
         {/* Author and Robots */}
-        <meta name="author" content="Brick2Tech Digital Agency" />
+        <meta name="author" content="Brick2Tech Digital Marketing Company" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 
