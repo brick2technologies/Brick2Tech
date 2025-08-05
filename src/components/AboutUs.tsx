@@ -85,10 +85,10 @@ const AboutUs = () => {
       linkedin: "https://www.linkedin.com/in/gannesh-ettam-26307267/",
     },
     {
-      name: "Subrahmanyam Rao",
+      name: "Bairy Shivaram",
       position: "Digital Marketing Manager",
       image:
-        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753704871/01_ry1lao.jpg",
+        "https://res.cloudinary.com/diqux3y0a/image/upload/v1754387937/20240914_211611_poimll.jpg",
       bio: "AI-driven digital marketer focused on analytics-led campaigns and strategic growth.",
       linkedin: "https://www.linkedin.com/in/subrahmanyamrao",
     },
