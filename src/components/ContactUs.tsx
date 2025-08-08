@@ -33,7 +33,7 @@ const ContactUs = () => {
     <section className="pt-0 pb-0 min-h-screen bg-gradient-to-tr from-blue-50 via-white to-blue-100">
       <Helmet>
         {/* Title Tag */}
-        <title>Best Digital Marketing Services in Hyderabad | Contact Brick2Tech</title>
+        <title>Best Digital Marketing Services in Hyderabad | Brick2Tech</title>
         <meta name="description" content="Drive results with the best digital marketing services in Hyderabad. Contact Brick2Tech for strategy, content & tech-driven growth." />
         <meta name="keywords" content="best digital marketing services in hyderabad, seo company hyderabad, social media agency hyderabad" />
 
@@ -76,10 +76,10 @@ const ContactUs = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg tracking-tight animate-fade-in">
+        <h1 className="sr-only">best digital marketing services in hyderabad</h1>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg tracking-tight animate-fade-in">
           Let's Connect
-        </h1>
+        </h2>
         <p className="max-w-2xl mx-auto text-lg text-white font-normal text-center mb-6 animate-fade-in">
           Whether you have a project, question, partnership inquiryor just want
           to brainstorm fresh digital ideas—we'd love to hear from you.

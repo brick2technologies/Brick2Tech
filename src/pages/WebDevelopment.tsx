@@ -106,7 +106,7 @@ const WebDevelopmentPage: React.FC = () => {
         <div className="bg-white text-darkblue font-sans">
             <Helmet>
                 <title>Website Design & Development Company in Hyderabad | Brick2Tech</title>
-                <meta name="description" content="Get stunning, responsive websites from Brick2Tech – the top web design & development company in Hyderabad. Built for speed, SEO & scale." />
+                <meta name="description" content="Get stunning, responsive websites from Brick2Tech – the top web design & development company in Hyderabad. Built for speed, SEO, and scale." />
                     <meta name="keywords" content="website design and development company in hyderabad, web design services in hyderabad, website design company hyderabad" />
 
                 <meta name="robots" content="index, follow" />
@@ -128,6 +128,7 @@ const WebDevelopmentPage: React.FC = () => {
             </Helmet>
 
             <main className="space-y-24">
+               
                 {/* Hero */}
                 <motion.section
                     initial={{ opacity: 0, y: 50 }}
@@ -136,6 +137,7 @@ const WebDevelopmentPage: React.FC = () => {
                     className="flex flex-col-reverse lg:flex-row items-center justify-between min-h-[90vh] px-6 py-24 gap-12"
 
                 >
+                     <h1 className="sr-only">website design and development company in hyderabad</h1>
                     <div className="lg:w-1/2 text-center lg:text-left space-y-6 sm:pl-28">
                         <motion.div
                             animate={{ rotate: [0, 5, -5, 5, 0], y: [0, 10, -10, 10, 0] }}
@@ -144,9 +146,9 @@ const WebDevelopmentPage: React.FC = () => {
                         >
                             <Lightbulb className="w-16 h-16 text-skyblue drop-shadow-md" />
                         </motion.div>
-                        <h1 className="text-4xl sm:text-5xl font-extrabold">
+                        <h2 className="text-4xl sm:text-5xl font-extrabold">
                             Smart, Efficient Web Architecture
-                        </h1>
+                        </h2>
                         <p className="text-lg sm:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0">
                             Transform your digital presence with modern, scalable, and user-centric web solutions.
                         </p>

@@ -63,8 +63,8 @@ const SEOPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Best SEO Services in Hyderabad | Brick2Tech</title>
-        <meta name="description" content="Rank higher on Google with Brick2Tech – the best SEO agency in Hyderabad. Custom SEO plans for traffic, leads & long-term success." />
+        <title>best seo services in hyderabad | best seo agency in hyderabad</title>
+        <meta name="description" content="Rank higher on Google with Brick2Tech – the best SEO agency in Hyderabad. Custom SEO plans for traffic, leads & long-term search dominance." />
         <meta name="keywords" content="best seo services in hyderabad, seo agency in hyderabad, search engine optimization companies in hyderabad" />
 
         <meta name="robots" content="index, follow" />
@@ -92,6 +92,7 @@ const SEOPage: React.FC = () => {
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="SEO Service Page"
       >
+        <h1 className="sr-only">best seo services in hyderabad</h1>
         {/* Hero Section */}
         <motion.section
           className="relative min-h-[90vh] flex flex-col md:flex-row items-center justify-center px-6 sm:px-12 py-20 text-center md:text-left overflow-hidden"

@@ -130,7 +130,7 @@ const DigitalMarketingPage = () => (
   <div className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
     <Helmet>
       <title>Top Digital Marketing Agency in Hyderabad | Brick2Tech</title>
-      <meta name="description" content="Brick2Tech delivers powerful digital marketing strategies in SEO, social media, PPC, and performance-driven growth for Hyderabad businesses." />
+      <meta name="description" content="Brick2Tech is your top digital marketing agency in Hyderabad for powerful strategies in SEO, social media, PPC, and performance-driven growth." />
       <meta name="keywords" content="top digital marketing agency in hyderabad, advertising agency in hyderabad, online marketing companies in hyderabad" />
 
       <meta name="robots" content="index, follow" />
@@ -182,7 +182,7 @@ const DigitalMarketingPage = () => (
       </script>
     </Helmet>
 
-
+        <h1 className="sr-only">top digital marketing agency in hyderabad</h1>
     {/* Hero Section */}
     <motion.section
       className="relative w-full bg-gradient-to-br from-[#0098d4]/10 via-white to-[#142c4c]/10 overflow-hidden flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 py-12 sm:py-16 lg:py-24 text-center"

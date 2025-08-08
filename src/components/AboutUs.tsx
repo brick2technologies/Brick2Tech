@@ -128,9 +128,9 @@ const AboutUs = () => {
   return (
     <section className="pt-20 pb-12 bg-gray-50" aria-label="About Us Section">
       <Helmet>
-        <title>Top Digital Marketing Company in Hyderabad | About Brick2Tech</title>
-        <meta name="description" content="Learn about Brick2Tech – one of Hyderabad’s top digital marketing companies, offering SEO, SMM, paid ads & web design to grow your business." />
-          <meta name="keywords" content="best digital marketing companies in hyderabad, digital marketing companies in manikonda, top digital marketing agency in hyderabad" />
+        <title>best digital marketing companies in hyderabad - Brick2Tech</title>
+        <meta name="description" content="Looking for the top digital marketing companies in Hyderabad? Brick2Tech offers expert SEO, SMM, paid ads & web design to boost your business online." />
+          <meta name="keywords" content="best digital marketing companies in hyderabad, digital marketing companies in manikoda, top digital marketing agency in hyderabad" />
 
         <meta property="og:title" content="About Us | Brick2Tech Digital Marketing Company" />
         <meta
@@ -174,6 +174,10 @@ const AboutUs = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col gap-10 mb-16 px-4 lg:px-0 justify-center items-center"
         >
+          <h1 className="sr-only">
+            best digital marketing companies in hyderabad
+          </h1>
+
           {/* First part of the text */}
           <div className="w-full max-w-6xl text-center">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">

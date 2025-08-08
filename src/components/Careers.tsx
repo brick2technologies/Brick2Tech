@@ -161,7 +161,7 @@ const Careers = () => {
     <>
       <Helmet>
         <title>Careers | Join Our Team at Brick2Tech</title>
-        <meta name="description" content="Build your future at Brick2Tech! Explore career opportunities with one of Hyderabad’s fastest-growing digital & branding agencies." />
+        <meta name="description" content="Build your future at Brick2Tech! Explore career opportunities with one of Hyderabad’s fastest-growing digital and branding agencies." />
         <meta name="keywords" content="careers at brick2tech, jobs in digital marketing hyderabad, branding agency careers hyderabad" />
 
         <meta name="robots" content="index, follow" />
@@ -182,6 +182,7 @@ const Careers = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
+            <h1 className="sr-only">Careers | Join Our Team at Brick2Tech</h1>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Join Our Team
             </h2>

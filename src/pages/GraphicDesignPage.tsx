@@ -36,7 +36,7 @@ const GraphicDesignPage = () => {
     <>
       <Helmet>
         <title>Best Graphic Design Company in Hyderabad | Brick2Tech</title>
-        <meta name="description" content="From logos to full brand kits, Brick2Tech ranks among the best graphic design companies in Hyderabad. Creative visuals that connect." />
+        <meta name="description" content="From logos to complete brand kits, Brick2Tech ranks among the best graphic design companies in Hyderabad. Creative visuals that connect." />
         <meta name="keywords" content="best graphic design companies in hyderabad, company logo design hyderabad, graphic design companies in hyderabad" />
 
         <meta property="og:title" content="Graphic Design Services | Brick2Tech" />
@@ -65,9 +65,10 @@ const GraphicDesignPage = () => {
           transition={{ duration: 0.8 }}
           className="text-center space-y-6 max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#142c4c] leading-tight">
+          <h1 className="sr-only">best graphic design companies in hyderabad</h1>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#142c4c] leading-tight">
             Elevate Your Brand with Powerful Visual Storytelling
-          </h1>
+          </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
             From logos to motion graphics, we craft stunning visuals that
             inspire trust, increase impact, and grow your business.

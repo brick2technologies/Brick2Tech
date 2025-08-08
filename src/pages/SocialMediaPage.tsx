@@ -70,7 +70,7 @@ const SocialMediaMarketingPage = () => {
       {/* Helmet for SEO */}
       <Helmet>
         <title>Social Media Marketing Agency in Hyderabad | Brick2Tech</title>
-        <meta name="description" content="Engage your audience with Brick2Tech – a leading social media marketing agency in Hyderabad offering full-service SMM solutions." />
+        <meta name="description" content="Engage your audience with a leading social media marketing agency in Hyderabad. Brick2Tech offers full-service SMM to build your brand online." />
           <meta name="keywords" content="social media marketing agency in hyderabad, social media marketing services in hyderabad, smm services in hyderabad" />
 
         <meta name="robots" content="index, follow" />
@@ -102,9 +102,10 @@ const SocialMediaMarketingPage = () => {
         transition={{ duration: 0.8 }}
         aria-labelledby="hero-heading"
       >
-        <h1 id="hero-heading" className="text-4xl md:text-5xl font-bold mb-4 text-blue-900">
+        <h1 className="sr-only">social media marketing agency in hyderabad</h1>
+        <h2 id="hero-heading" className="text-4xl md:text-5xl font-bold mb-4 text-blue-900">
           Smarter Social Media — Amplify Your Voice. Engage Your Audience. Grow Your Brand.
-        </h1>
+        </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
           We don’t just create content — at Brick2Tech, we build movements that connect, engage, and grow your digital tribe. From viral campaigns to targeted ads, our social media marketing services are designed to elevate your brand's presence and drive real results.
         </p>

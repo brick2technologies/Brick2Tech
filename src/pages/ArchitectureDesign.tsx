@@ -34,7 +34,7 @@ const ArchitectureDesignPage = () => {
     <>
       <Helmet>
         <title>3D Architecture Services in Hyderabad | Brick2Tech</title>
-        <meta name="description" content="Experience advanced 3D walkthroughs & visualizations with Brick2Tech – leading 3D architecture service provider in Hyderabad." />
+        <meta name="description" content="Explore advanced 3D walkthroughs & visualizations with Brick2Tech. Leading provider of 3D architecture services in Hyderabad for real estate & infra." />
           <meta name="keywords" content="3darchitecture services hyderabad, 3d walkthrough services hyderabad, architectural visualization hyderabad" />
 
 
@@ -61,9 +61,10 @@ const ArchitectureDesignPage = () => {
               transition={{ duration: 0.8 }}
               className="text-center space-y-6 max-w-5xl mx-auto"
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#142c4c] leading-tight">
+              <h1 className="sr-only">3darchitecture services hyderabad</h1>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#142c4c] leading-tight">
                 3DArchitecture Meets Innovation
-              </h1>
+              </h2>
               <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
                 Bring your vision to life with cutting-edge 3D walkthroughs, intelligent plot planning, and iconic architectural design.
               </p>

@@ -69,8 +69,9 @@ const HomeClients: React.FC = () => {
   return (
     <section className="bg-white py-20 px-6 md:px-16 lg:px-24" id="clients">
       <Helmet>
-        <title>Digital Company | Brick2Tech</title>
-        <meta name="description" content="Meet the clients who trust Brick2Tech Digital Marketing Company. See testimonials from businesses that have grown with our web, branding, and digital marketing services." />
+        <title>best digital marketing agency in hyderabad - Brick2Tech</title>
+        <meta name="description" content="Brick2Tech – Best Digital Marketing Agency in Hyderabad offering 360 digital marketing services to boost your online presence, branding, generating leads, and drive ROI." />
+        <meta name="keywords" content='best digital marketing agency in hyderabad, digital marketing companies in hyderabad, digital advertising company in hyderabad' />
         <meta property="og:title" content="Our Clients | Brick2Tech" />
         <meta property="og:description" content="See trusted client partnerships and read testimonials about Brick2Tech's web, branding, and marketing services." />
         <meta property="og:type" content="website" />

@@ -110,8 +110,8 @@ const Brick2TechBrandingPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Best Branding Agency in Hyderabad | Brick2Tech</title>
-        <meta name="description" content="Stand out with Brick2Tech – the best branding agency in Hyderabad. We craft visual identity & manage your social media to engage and convert." />
+        <title>Best Branding agency hyderabad | social media agency hyderabad</title>
+        <meta name="description" content="Stand out with the best branding agency in Hyderabad. Brick2Tech crafts visual identity & manages your social media to engage and convert." />
           <meta name="keywords" content="best branding agency hyderabad, branding agency hyderabad, top advertising agency in hyderabad" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -139,6 +139,7 @@ const Brick2TechBrandingPage: React.FC = () => {
       </Head>
 
       <main className="min-h-screen bg-gradient-to-br from-white via-sky-100 to-sky-300 text-gray-800 py-16 px-6 overflow-x-hidden">
+        <h1 className="sr-only">best branding agency hyderabad</h1>
         {/* Hero Section */}
         <motion.section
           className="text-center py-24 px-6 max-w-7xl mx-auto"
