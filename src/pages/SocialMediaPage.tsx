@@ -69,12 +69,10 @@ const SocialMediaMarketingPage = () => {
     <div className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Social Media Marketing Services | Brick2Tech</title>
-        <meta
-          name="description"
-          content="Boost your brand visibility with Brick2Tech's expert social media marketing services. We specialize in viral content, paid ads, and analytics-driven campaigns."
-        />
-        <meta name="keywords" content="Social Media Marketing, Content Strategy, Instagram Ads, Meta Ads, Community Management, Brick2Tech, Social Media Hyderabad, Influencer marketing, short-form video production, LinkedIn strategy, engagement campaigns" />
+        <title>Social Media Marketing Agency in Hyderabad | Brick2Tech</title>
+        <meta name="description" content="Engage your audience with Brick2Tech – a leading social media marketing agency in Hyderabad offering full-service SMM solutions." />
+          <meta name="keywords" content="social media marketing agency in hyderabad, social media marketing services in hyderabad, smm services in hyderabad" />
+
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech" />
         <meta property="og:title" content="Social Media Marketing Experts in Hyderabad | Brick2Tech" />

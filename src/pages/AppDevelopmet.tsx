@@ -87,11 +87,10 @@ const appStats = [
 const AppDevelopmentPage = () => (
     <div className="bg-white text-blue-900 font-sans">
         <Helmet>
-            <title>App Development Services | Brick 2 Technologies </title>
-            <meta
-                name="description"
-                content="Discover our mobile app development services: iOS, Android, UI/UX, API integrations, and enterprise digital solutions. Launch fast and scale with confidence."
-            />
+            <title>Mobile App Development Company in Hyderabad | Brick2Tech</title>
+            <meta name="description" content="Launch high-performing mobile apps with Brick2Tech – one of Hyderabad’s top app development companies for Android & iOS platforms." />
+                <meta name="keywords" content="mobile app development companies in hyderabad, mobile application development companies in hyderabad, app development companies in hyderabad" />
+
             <meta name="robots" content="index, follow" />
             <meta name="author" content="Brick2Tech" />
             <meta property="og:title" content="Mobile App Development Services | Brick2Tech" />

@@ -88,7 +88,7 @@ const AboutUs = () => {
       name: "Bairy Shivaram",
       position: "Digital Marketing Manager",
       image:
-        "https://res.cloudinary.com/diqux3y0a/image/upload/v1754387937/20240914_211611_poimll.jpg",
+        "https://res.cloudinary.com/diqux3y0a/image/upload/v1754389641/20240914_211611_emve1c.jpg",
       bio: "AI-driven digital marketer focused on analytics-led campaigns and strategic growth.",
       linkedin: "https://www.linkedin.com/in/subrahmanyamrao",
     },
@@ -128,11 +128,10 @@ const AboutUs = () => {
   return (
     <section className="pt-20 pb-12 bg-gray-50" aria-label="About Us Section">
       <Helmet>
-        <title>About Us | Brick2Tech Digital Marketing Company</title>
-        <meta
-          name="description"
-          content="Meet the team behind Brick2Tech – experts in branding, development, and marketing strategies that drive your digital success."
-        />
+        <title>Top Digital Marketing Company in Hyderabad | About Brick2Tech</title>
+        <meta name="description" content="Learn about Brick2Tech – one of Hyderabad’s top digital marketing companies, offering SEO, SMM, paid ads & web design to grow your business." />
+          <meta name="keywords" content="best digital marketing companies in hyderabad, digital marketing companies in manikonda, top digital marketing agency in hyderabad" />
+
         <meta property="og:title" content="About Us | Brick2Tech Digital Marketing Company" />
         <meta
           property="og:description"

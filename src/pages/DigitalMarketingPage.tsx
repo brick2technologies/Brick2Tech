@@ -129,15 +129,10 @@ const stats = [
 const DigitalMarketingPage = () => (
   <div className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
     <Helmet>
-      <title>Digital Marketing Services | Brick2Tech</title>
-      <meta
-        name="description"
-        content="Take your growth digital with Brick2Tech! We deliver cutting-edge SEO, PPC, analytics, ecommerce, mobile, and results-driven strategy."
-      />
-      <meta
-        name="keywords"
-        content="Digital Marketing, SEO, PPC, Analytics, Conversion Rate, Lead Generation, Brick2Tech"
-      />
+      <title>Top Digital Marketing Agency in Hyderabad | Brick2Tech</title>
+      <meta name="description" content="Brick2Tech delivers powerful digital marketing strategies in SEO, social media, PPC, and performance-driven growth for Hyderabad businesses." />
+      <meta name="keywords" content="top digital marketing agency in hyderabad, advertising agency in hyderabad, online marketing companies in hyderabad" />
+
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://brick2tech.com/services/digital-marketing" />
 

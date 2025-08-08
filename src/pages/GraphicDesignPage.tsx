@@ -35,15 +35,10 @@ const GraphicDesignPage = () => {
   return (
     <>
       <Helmet>
-        <title>Graphic Design Services | Brick2Tech Agency</title>
-        <meta
-          name="description"
-          content="From logos to motion graphics, Brick2Tech delivers visually stunning branding that captivates, communicates, and converts. Explore our graphic design services."
-        />
-        <meta
-          name="keywords"
-          content="graphic design, branding, logo design, animation, motion graphics, packaging, Brick2Tech"
-        />
+        <title>Best Graphic Design Company in Hyderabad | Brick2Tech</title>
+        <meta name="description" content="From logos to full brand kits, Brick2Tech ranks among the best graphic design companies in Hyderabad. Creative visuals that connect." />
+        <meta name="keywords" content="best graphic design companies in hyderabad, company logo design hyderabad, graphic design companies in hyderabad" />
+
         <meta property="og:title" content="Graphic Design Services | Brick2Tech" />
         <meta
           property="og:description"

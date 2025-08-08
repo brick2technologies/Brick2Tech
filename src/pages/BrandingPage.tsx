@@ -110,13 +110,10 @@ const Brick2TechBrandingPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>
-          Build a Brand with Hyderabad’s Best – Brick2Tech Branding
-        </title>
-        <meta
-          name="description"
-          content="Brick2Tech Branding crafts high-impact, data-driven brand strategies for startups & enterprises in Hyderabad. Get noticed, grow faster."
-        />
+        <title>Best Branding Agency in Hyderabad | Brick2Tech</title>
+        <meta name="description" content="Stand out with Brick2Tech – the best branding agency in Hyderabad. We craft visual identity & manage your social media to engage and convert." />
+          <meta name="keywords" content="best branding agency hyderabad, branding agency hyderabad, top advertising agency in hyderabad" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://brick2tech.com/services/branding" />

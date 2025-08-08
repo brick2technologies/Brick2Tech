@@ -105,15 +105,10 @@ const WebDevelopmentPage: React.FC = () => {
     return (
         <div className="bg-white text-darkblue font-sans">
             <Helmet>
-                <title>Web Development Services in India | Brick2Tech Digital</title>
-                <meta
-                    name="description"
-                    content="Custom web development services by Brick2Tech. Get responsive, SEO-optimized websites powered by full stack technologies."
-                />
-                <meta
-                    name="keywords"
-                    content="web development India, custom websites, full stack web apps, UI/UX, MongoDB, Node.js, React, Express"
-                />
+                <title>Website Design & Development Company in Hyderabad | Brick2Tech</title>
+                <meta name="description" content="Get stunning, responsive websites from Brick2Tech – the top web design & development company in Hyderabad. Built for speed, SEO & scale." />
+                    <meta name="keywords" content="website design and development company in hyderabad, web design services in hyderabad, website design company hyderabad" />
+
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="Brick2Tech" />
                 <link rel="canonical" href="https://brick2tech.com/services/web-development" />
