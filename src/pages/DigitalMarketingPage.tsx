@@ -145,6 +145,9 @@ const DigitalMarketingPage = () => (
         content="Crush your digital goals with Brick2Tech. SEO, Ads, CRO, Analytics — full-funnel marketing services that scale."
       />
       <meta property="og:image" content="https://brick2tech.com/images/og-digital-marketing.jpg" />
+      <meta name="canonical" content="https://brick2tech.com/services/digital-marketing" />
+      <meta property="og:site_name" content="Brick2Tech" />
+      <meta property="og:locale" content="en_US" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -182,7 +185,7 @@ const DigitalMarketingPage = () => (
       </script>
     </Helmet>
 
-        <h1 className="sr-only">top digital marketing agency in hyderabad</h1>
+        <h1 className="sr-only">Top Digital Marketing agency in hyderabad  </h1>
     {/* Hero Section */}
     <motion.section
       className="relative w-full bg-gradient-to-br from-[#0098d4]/10 via-white to-[#142c4c]/10 overflow-hidden flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 py-12 sm:py-16 lg:py-24 text-center"
@@ -213,7 +216,7 @@ const DigitalMarketingPage = () => (
 
       {/* Main Content */}
       <div className="max-w-3xl z-10">
-        <h1
+        <h2
           id="hero-heading"
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#142c4c] leading-tight"
         >
@@ -221,7 +224,7 @@ const DigitalMarketingPage = () => (
           <span className="text-[#0098d4]">
             Growth Obsessed. Results Guaranteed.
           </span>
-        </h1>
+        </h2>
         <p className="text-base sm:text-lg text-gray-700 mb-8">
           Your brand deserves more than just impressions. At Brick2Tech, we
           build digital marketing engines — SEO, ads, analytics, and conversion

@@ -81,7 +81,7 @@ const SocialMediaMarketingPage = () => {
           content="Ready to elevate your social presence? Brick2Tech crafts content and campaigns that build engagement, awareness, and ROI. Get started today!"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://brick2tech.com/social-media-marketing" />
+        <meta property="og:url" content="https://brick2tech.com/services/social-media-marketing" />
         <meta property="og:image" content="https://brick2tech.com/assets/social-banner.png" />
         <meta property="og:site_name" content="Brick2Tech" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -91,7 +91,7 @@ const SocialMediaMarketingPage = () => {
           content="Strategic content, ad campaigns & influencer marketing that deliver results. Work with Brick2Tech, Hyderabad’s trusted social media experts."
         />
         <meta name="twitter:image" content="https://brick2tech.com/assets/social-banner.png" />
-        <link rel="canonical" href="https://brick2tech.com/social-media-marketing" />
+        <link rel="canonical" href="https://brick2tech.com/services/social-media-marketing" />
       </Helmet>
 
       {/* Hero Section */}
@@ -102,7 +102,7 @@ const SocialMediaMarketingPage = () => {
         transition={{ duration: 0.8 }}
         aria-labelledby="hero-heading"
       >
-        <h1 className="sr-only">social media marketing agency in hyderabad</h1>
+        <h1 className="sr-only">Social Media Marketing Agency in Hyderabad </h1>
         <h2 id="hero-heading" className="text-4xl md:text-5xl font-bold mb-4 text-blue-900">
           Smarter Social Media — Amplify Your Voice. Engage Your Audience. Grow Your Brand.
         </h2>

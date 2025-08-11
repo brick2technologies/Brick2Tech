@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import {
     Smartphone,
@@ -125,9 +125,9 @@ const AppDevelopmentPage = () => (
                         <Smartphone className="w-16 h-16 text-indigo-600 drop-shadow-lg" />
                     </motion.div>
 
-                    <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
+                    <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
                         Next-Gen Mobile Apps. Built to Blow Up.
-                    </h1>
+                    </h2>
 
                     <p className="text-lg sm:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0">
                         From concept to launch, we craft fast, intuitive, and beautiful apps tailored to your users.
@@ -280,7 +280,7 @@ const AppDevelopmentPage = () => (
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
                 className="bg-cover bg-center text-blue-900 text-center px-6 py-24 relative"
-                role="region"
+                role="presentation"
                 aria-label="Call to action"
             >
                 <div className="absolute inset-0 bg-white bg-opacity-10" />
@@ -290,7 +290,7 @@ const AppDevelopmentPage = () => (
                     </h2>
                     <a
                         href="/contact"
-                        className="inline-block bg-blue-500 text-blue-900 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-blue-800 text-white transition"
+                        className="inline-block bg-blue-500 text-blue-900 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-blue-800  transition"
                     >
                         Get Started Today
                     </a>

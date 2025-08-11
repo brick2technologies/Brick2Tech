@@ -128,7 +128,7 @@ const AboutUs = () => {
   return (
     <section className="pt-20 pb-12 bg-gray-50" aria-label="About Us Section">
       <Helmet>
-        <title>best digital marketing companies in hyderabad - Brick2Tech</title>
+        <title>Best Digital Marketing Companies in Hyderabad | Brick2Tech</title>
         <meta name="description" content="Looking for the top digital marketing companies in Hyderabad? Brick2Tech offers expert SEO, SMM, paid ads & web design to boost your business online." />
           <meta name="keywords" content="best digital marketing companies in hyderabad, digital marketing companies in manikoda, top digital marketing agency in hyderabad" />
 

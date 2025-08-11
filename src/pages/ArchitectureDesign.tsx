@@ -44,13 +44,13 @@ const ArchitectureDesignPage = () => {
               content="Craft visuals that inspire trust and drive growth. Check out our expert graphic design services."
             />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://brick2tech.com/graphic-design" />
+            <meta property="og:url" content="https://brick2tech.com/services/architecture-design" />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Graphic Design Services | Brick2Tech" />
             <meta name="twitter:description" content="Expert graphic design that inspires, engages, and drives brand growth." />
             <meta name="author" content="Brick2Tech" />
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://brick2tech.com/graphic-design" />
+            <link rel="canonical" href="https://brick2tech.com/services/architecture-design" />
           </Helmet>
 
           <main className="pt-24 pb-16 px-6 sm:px-12 lg:px-24 bg-white text-gray-900 min-h-screen">
@@ -61,7 +61,7 @@ const ArchitectureDesignPage = () => {
               transition={{ duration: 0.8 }}
               className="text-center space-y-6 max-w-5xl mx-auto"
             >
-              <h1 className="sr-only">3darchitecture services hyderabad</h1>
+              <h1 className="sr-only">3D Architecture Services Hyderabad  </h1>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#142c4c] leading-tight">
                 3DArchitecture Meets Innovation
               </h2>

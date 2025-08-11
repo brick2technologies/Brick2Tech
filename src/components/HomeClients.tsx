@@ -69,7 +69,7 @@ const HomeClients: React.FC = () => {
   return (
     <section className="bg-white py-20 px-6 md:px-16 lg:px-24" id="clients">
       <Helmet>
-        <title>best digital marketing agency in hyderabad - Brick2Tech</title>
+        <title>Best Digital Marketing Agency in Hyderabad | Brick2Tech</title>
         <meta name="description" content="Brick2Tech – Best Digital Marketing Agency in Hyderabad offering 360 digital marketing services to boost your online presence, branding, generating leads, and drive ROI." />
         <meta name="keywords" content='best digital marketing agency in hyderabad, digital marketing companies in hyderabad, digital advertising company in hyderabad' />
         <meta property="og:title" content="Our Clients | Brick2Tech" />
@@ -115,6 +115,7 @@ const HomeClients: React.FC = () => {
         transition={{ duration: 0.6, ease: 'easeInOut' }}
         viewport={{ once: true }}
       >
+        <h1 className='sr-only'>Best Digital Marketing Agency in Hyderabad  </h1>
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 hover:scale-105 transition-transform duration-300">
           Our <span className="text-blue-600">Clients</span>
         </h2>

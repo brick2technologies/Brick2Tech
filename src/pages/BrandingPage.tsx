@@ -110,7 +110,7 @@ const Brick2TechBrandingPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Best Branding agency hyderabad | social media agency hyderabad</title>
+        <title>Best Branding Agency Hyderabad | Social Media Agency Hyderabad</title>
         <meta name="description" content="Stand out with the best branding agency in Hyderabad. Brick2Tech crafts visual identity & manages your social media to engage and convert." />
           <meta name="keywords" content="best branding agency hyderabad, branding agency hyderabad, top advertising agency in hyderabad" />
 
@@ -139,7 +139,7 @@ const Brick2TechBrandingPage: React.FC = () => {
       </Head>
 
       <main className="min-h-screen bg-gradient-to-br from-white via-sky-100 to-sky-300 text-gray-800 py-16 px-6 overflow-x-hidden">
-        <h1 className="sr-only">best branding agency hyderabad</h1>
+        <h1 className="sr-only">Best Branding Agency Hyderabad  </h1>
         {/* Hero Section */}
         <motion.section
           className="text-center py-24 px-6 max-w-7xl mx-auto"
@@ -148,13 +148,13 @@ const Brick2TechBrandingPage: React.FC = () => {
           transition={{ duration: 0.8 }}
           aria-labelledby="hero-heading"
         >
-          <h1
+          <h2
             id="hero-heading"
             className="text-4xl md:text-5xl font-bold mb-6 text-blue-900"
           >
             Is Your Brand Ready to Make Some Noise? <br />
             <span className="text-[#0098d4]">Let’s Build It Together.</span>
-          </h1>
+          </h2>
           <p className="text-lg max-w-3xl mx-auto text-gray-700">
             Your brand is more than a logo—it’s your voice, your value, and your
             vision. At <strong>Brick2Tech</strong>, we empower it with strategic

@@ -63,9 +63,10 @@ const SEOPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>best seo services in hyderabad | best seo agency in hyderabad</title>
+        <title>Best SEO Services in Hyderabad | Best SEO Agency in Hyderabad</title>
         <meta name="description" content="Rank higher on Google with Brick2Tech – the best SEO agency in Hyderabad. Custom SEO plans for traffic, leads & long-term search dominance." />
         <meta name="keywords" content="best seo services in hyderabad, seo agency in hyderabad, search engine optimization companies in hyderabad" />
+        <meta name="canonical" content="https://brick2tech.com/services/seo" />
 
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
@@ -75,7 +76,7 @@ const SEOPage: React.FC = () => {
           content="Grow your Hyderabad business online with Brick2Tech’s results-driven SEO strategies. Get a free audit now!"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://brick2tech.com/seo-services" />
+        <meta property="og:url" content="https://brick2tech.com/services/seo" />
         <meta property="og:image" content="https://brick2tech.com/assets/seo-banner.png" />
         <meta property="og:site_name" content="Brick2Tech" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -92,7 +93,7 @@ const SEOPage: React.FC = () => {
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="SEO Service Page"
       >
-        <h1 className="sr-only">best seo services in hyderabad</h1>
+        <h1 className="sr-only">Best SEO Services in Hyderabad  </h1>
         {/* Hero Section */}
         <motion.section
           className="relative min-h-[90vh] flex flex-col md:flex-row items-center justify-center px-6 sm:px-12 py-20 text-center md:text-left overflow-hidden"
@@ -115,10 +116,10 @@ const SEOPage: React.FC = () => {
 
           {/* Content */}
           <div className="md:w-1/2 w-full max-w-2xl z-10">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-blue-900">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-blue-900">
               <span className="block">Trend Higher. <br /> Rank Smarter.</span>
               <span className="block text-[#0098d4]">Win Google.</span>
-            </h1>
+            </h2>
             <p className="mt-6 mb-8 text-lg sm:text-xl text-blue-900/90 max-w-xl mx-auto md:mx-0">
               We turn your website into a search engine magnet. With Brick2Tech’s expert SEO, traffic grows, rankings rise, and ROI follows.
             </p>

@@ -172,6 +172,7 @@ const Careers = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://brick2tech/careers" />
+        <link rel="canonical" href="https://brick2tech/careers" />
       </Helmet>
       <section className="pt-20 pb-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

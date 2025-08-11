@@ -105,7 +105,7 @@ const WebDevelopmentPage: React.FC = () => {
     return (
         <div className="bg-white text-darkblue font-sans">
             <Helmet>
-                <title>Website Design & Development Company in Hyderabad | Brick2Tech</title>
+                <title>Website Design and Development Company in Hyderabad | Brick2Tech</title>
                 <meta name="description" content="Get stunning, responsive websites from Brick2Tech – the top web design & development company in Hyderabad. Built for speed, SEO, and scale." />
                     <meta name="keywords" content="website design and development company in hyderabad, web design services in hyderabad, website design company hyderabad" />
 
@@ -137,7 +137,7 @@ const WebDevelopmentPage: React.FC = () => {
                     className="flex flex-col-reverse lg:flex-row items-center justify-between min-h-[90vh] px-6 py-24 gap-12"
 
                 >
-                     <h1 className="sr-only">website design and development company in hyderabad</h1>
+                     <h1 className="sr-only">Website Design and Development Company in Hyderabad </h1>
                     <div className="lg:w-1/2 text-center lg:text-left space-y-6 sm:pl-28">
                         <motion.div
                             animate={{ rotate: [0, 5, -5, 5, 0], y: [0, 10, -10, 10, 0] }}
