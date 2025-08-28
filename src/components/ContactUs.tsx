@@ -33,10 +33,15 @@ const ContactUs = () => {
     <section className="pt-0 pb-0 min-h-screen bg-gradient-to-tr from-blue-50 via-white to-blue-100">
       <Helmet>
         {/* Title Tag */}
-        <title>Best Digital Marketing Services in Hyderabad | Brick2Tech</title>
-        <meta name="description" content="Drive results with the best digital marketing services in Hyderabad. Contact Brick2Tech for strategy, content & tech-driven growth." />
-        <meta name="keywords" content="best digital marketing services in hyderabad, seo company hyderabad, social media agency hyderabad" />
-
+        <title>Contact Brick2Tech | Digital Marketing Experts in Hyderabad</title>
+        <meta
+          name="description"
+          content="Get in touch with Brick2Tech for branding, SEO, web development, and digital marketing services in Hyderabad. Let’s grow your business together."
+        />
+        <meta
+          name="keywords"
+          content="contact digital marketing company hyderabad, brick2tech contact, seo company hyderabad contact, social media agency hyderabad"
+        />
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://brick2tech.com/contact" />
@@ -67,6 +72,7 @@ const ContactUs = () => {
         <meta name="author" content="Brick2Tech Digital Marketing Company" />
         <meta name="robots" content="index, follow" />
       </Helmet>
+
 
 
       {/* Hero */}

@@ -121,18 +121,33 @@ const Services = () => {
           name="description"
           content="Explore a wide range of professional services from branding, digital marketing, SEO, to e-commerce solutions and 3D walkthroughs. Boost your business with Brick2Tech."
         />
-        <meta name="keywords" content="branding, SEO, digital marketing, e-commerce websites, virtual walkthroughs, web development, UI UX, Hyderabad digital marketing company, Brick2Tech services" />
+        <meta
+          name="keywords"
+          content="branding, SEO, digital marketing, e-commerce websites, virtual walkthroughs, web development, UI UX, Hyderabad digital marketing company, Brick2Tech services"
+        />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://brick2tech.com/services" />
         <meta property="og:title" content="Our Services | Brick2Tech" />
-        <meta property="og:description" content="Discover our full suite of digital services—branding, marketing, SEO, web development, and more—to grow your business online." />
+        <meta
+          property="og:description"
+          content="Discover our full suite of digital services—branding, marketing, SEO, web development, and more—to grow your business online."
+        />
         <meta property="og:url" content="https://brick2tech.com/services" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://brick2tech.com/seo/services-preview.jpg" />
+        <meta
+          property="og:image"
+          content="https://brick2tech.com/seo/services-preview.jpg"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Our Services | Brick2Tech" />
-        <meta name="twitter:description" content="Explore Brick2Tech's expert branding, development, SEO, and marketing services designed to accelerate your growth." />
-        <meta name="twitter:image" content="https://brick2tech.com/seo/services-preview.jpg" />
+        <meta
+          name="twitter:description"
+          content="Explore Brick2Tech's expert branding, development, SEO, and marketing services designed to accelerate your growth."
+        />
+        <meta
+          name="twitter:image"
+          content="https://brick2tech.com/seo/services-preview.jpg"
+        />
         <meta name="author" content="Brick2Tech" />
       </Helmet>
 
