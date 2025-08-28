@@ -129,20 +129,24 @@ export default function HomePage() {
         {/* ✅ Organization Schema */}
         <script type="application/ld+json">
           {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Brick2Tech",
-              "url": "https://www.brick2tech.com",
-              "logo": "https://www.brick2tech.com/logo.png",
-              "sameAs": [
-                "https://www.facebook.com/brick2tech",
-                "https://www.instagram.com/brick2tech",
-                "https://www.linkedin.com/company/brick2tech"
-              ]
-            }
-          `}
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Brick2Tech",
+  "url": "https://brick2tech.com",
+  "logo": "https://brick2tech.com/logo.png",
+  "sameAs": [
+    "https://www.facebook.com/brick2technologies",
+    "https://www.instagram.com/brick2technologies/",
+    "https://www.youtube.com/@brick2technologies",
+    "https://x.com/brick2tech",
+    "https://in.pinterest.com/brick2technologies/",
+    "https://www.linkedin.com/company/brick-2-technologies/"
+  ]
+}
+`}
         </script>
+
 
         {/* ✅ Breadcrumb Schema */}
         <script type="application/ld+json">
@@ -183,4 +187,3 @@ export default function HomePage() {
     </>
   );
 }
-        
