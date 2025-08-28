@@ -56,6 +56,7 @@ const ContactUs = () => {
         <meta property="og:url" content="https://brick2tech.com/contact" />
         <meta property="og:image" content="https://brick2tech.com/seo/brick2tech-preview.jpg" />
         <meta property="og:site_name" content="Brick2Tech" />
+        
 
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
