@@ -32,6 +32,10 @@ export default function HomePage() {
           name="description"
           content="Brick2Tech helps businesses grow with expert digital marketing, branding, web development, and creative services. Based in Hyderabad, serving clients worldwide."
         />
+        <link rel="icon" href="https://brick2tech.com/logo.png" />
+        <meta property="og:image" content="https://brick2tech.com/logo.png" />
+        <meta name="twitter:image" content="https://brick2tech.com/logo.png" />
+
         <meta
           name="keywords"
           content="Digital Marketing Hyderabad, Branding Agency Hyderabad, Web Development Hyderabad, SEO, Social Media Marketing, Brick2Tech"
