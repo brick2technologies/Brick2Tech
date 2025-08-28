@@ -35,7 +35,8 @@ const GraphicDesignPage = () => {
   return (
     <>
       <Helmet>
-        <title>Best Graphic Design Company in Hyderabad | Brick2Tech</title>
+        <title> Graphic Design Services | Brick2Tech</title>
+
         <meta name="description" content="From logos to complete brand kits, Brick2Tech ranks among the best graphic design companies in Hyderabad. Creative visuals that connect." />
         <meta name="keywords" content="best graphic design companies in hyderabad, company logo design hyderabad, graphic design companies in hyderabad" />
 

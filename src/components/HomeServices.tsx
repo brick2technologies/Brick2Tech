@@ -100,7 +100,7 @@ const HomeServices: React.FC = () => {
       icon: <BarChart2 className="text-[#0098d4] w-8 h-8" />,
       title: "Performance Marketing",
       description: "Driving measurable results with targeted campaigns.",
-      path: "/services/performance-marketing",
+      path: "/services",
     },
     {
       icon: <Eye className="text-[#0098d4] w-8 h-8" />,

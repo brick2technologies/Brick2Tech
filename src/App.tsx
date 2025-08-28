@@ -10,6 +10,7 @@ import ChatBot from "./components/ChatBot";
 
 // ✅ Optimized HomePage with SEO, AEO, GEO, Schemas
 import HomePage from "./components/Homepage";
+import SearchPage from "./components/Searchpage";   
 
 // Other Pages
 import AboutUs from "./components/AboutUs";
@@ -37,6 +38,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
 
             {/* ✅ Static Pages */}
+            <Route path="/search" element={<SearchPage />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/services" element={<Services />} />
             <Route path="/careers" element={<Careers />} />
