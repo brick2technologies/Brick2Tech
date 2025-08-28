@@ -35,7 +35,6 @@ export default function HomePage() {
         <link rel="icon" href="https://brick2tech.com/logo.png" />
         <meta property="og:image" content="https://brick2tech.com/logo.png" />
         <meta name="twitter:image" content="https://brick2tech.com/logo.png" />
-
         <meta
           name="keywords"
           content="Digital Marketing Hyderabad, Branding Agency Hyderabad, Web Development Hyderabad, SEO, Social Media Marketing, Brick2Tech"
@@ -46,142 +45,147 @@ export default function HomePage() {
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <html lang="en-IN" />
 
-        {/* ✅ Open Graph (OG) Tags */}
-        <meta property="og:title" content="Brick2Tech | Digital Marketing & Branding Agency" />
-        <meta
-          property="og:description"
-          content="Grow your business with Brick2Tech – expert digital marketing, branding, and web development agency in Hyderabad."
-        />
-        <meta property="og:image" content="https://www.brick2tech.com/og-image.jpg" />
-        <meta property="og:url" content="https://www.brick2tech.com/" />
-        <meta property="og:type" content="website" />
-
-        {/* ✅ Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Brick2Tech | Digital Marketing & Branding Agency" />
-        <meta
-          name="twitter:description"
-          content="Boost your brand with Brick2Tech – digital marketing & branding experts in Hyderabad."
-        />
-        <meta name="twitter:image" content="https://www.brick2tech.com/og-image.jpg" />
-
         {/* ✅ FAQ Schema (AEO) */}
         <script type="application/ld+json">
           {`
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What services does Brick2Tech offer?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Brick2Tech offers digital marketing, branding, web development, SEO, and creative design services tailored to grow your business."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Where is Brick2Tech located?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Brick2Tech is located in Hyderabad, India, and serves clients across the globe."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Why choose Brick2Tech?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Brick2Tech combines creativity, strategy, and technology to help businesses build their brand, attract more customers, and grow sustainably."
-                  }
-                }
-              ]
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What services does Brick2Tech offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Brick2Tech offers digital marketing, branding, web development, SEO, and creative design services tailored to grow your business."
             }
-          `}
+          },
+          {
+            "@type": "Question",
+            "name": "Where is Brick2Tech located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Brick2Tech is located in Hyderabad, India, and serves clients across the globe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why choose Brick2Tech?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Brick2Tech combines creativity, strategy, and technology to help businesses build their brand, attract more customers, and grow sustainably."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which is the best digital marketing agency in Hyderabad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Brick2Tech is one of the best digital marketing agencies in Hyderabad, offering SEO, branding, social media, and web development solutions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Brick2Tech provide SEO services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Brick2Tech specializes in SEO strategies that help businesses rank higher on Google and drive organic traffic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I contact Brick2Tech?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can call us at +91-900-003-5647 or visit our website at brick2tech.com to get in touch."
+            }
+          }
+        ]
+      }
+    `}
         </script>
 
-        {/* ✅ LocalBusiness Schema (GEO) */}
+        {/* ✅ LocalBusiness Schema */}
         <script type="application/ld+json">
           {`
-            {
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Brick2Tech",
-              "image": "https://www.brick2tech.com/logo.png",
-              "url": "https://www.brick2tech.com",
-              "telephone": "+91 90000 35647",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Madhapur",
-                "addressLocality": "Hyderabad",
-                "addressRegion": "Telangana",
-                "postalCode": "500081",
-                "addressCountry": "IN"
-              },
-              "openingHours": "Mo-Fr 09:00-19:00",
-              "priceRange": "$$",
-              "sameAs": [
-                "https://www.facebook.com/brick2tech",
-                "https://www.instagram.com/brick2tech",
-                "https://www.linkedin.com/company/brick2tech"
-              ]
-            }
-          `}
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Brick2Tech",
+        "image": "https://www.brick2tech.com/logo.png",
+        "url": "https://www.brick2tech.com",
+        "telephone": "+91 90000 35647",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Madhapur",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "postalCode": "500081",
+          "addressCountry": "IN"
+        },
+        "openingHours": "Mo-Fr 09:00-19:00",
+        "priceRange": "$$",
+        "sameAs": [
+          "https://www.facebook.com/brick2tech",
+          "https://www.instagram.com/brick2tech",
+          "https://www.linkedin.com/company/brick2tech"
+        ]
+      }
+    `}
         </script>
 
         {/* ✅ Organization Schema */}
         <script type="application/ld+json">
           {`
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Brick2Tech",
-  "url": "https://brick2tech.com",
-  "logo": "https://brick2tech.com/logo.png",
-  "sameAs": [
-    "https://www.facebook.com/brick2technologies",
-    "https://www.instagram.com/brick2technologies/",
-    "https://www.youtube.com/@brick2technologies",
-    "https://x.com/brick2tech",
-    "https://in.pinterest.com/brick2technologies/",
-    "https://www.linkedin.com/company/brick-2-technologies/"
-  ]
-}
-`}
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Brick2Tech",
+        "url": "https://brick2tech.com",
+        "logo": "https://brick2tech.com/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/brick2technologies",
+          "https://www.instagram.com/brick2technologies/",
+          "https://www.youtube.com/@brick2technologies",
+          "https://x.com/brick2tech",
+          "https://in.pinterest.com/brick2technologies/",
+          "https://www.linkedin.com/company/brick-2-technologies/"
+        ]
+      }
+    `}
         </script>
-
 
         {/* ✅ Breadcrumb Schema */}
         <script type="application/ld+json">
           {`
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://www.brick2tech.com/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Services",
-                  "item": "https://www.brick2tech.com/services"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "name": "Contact",
-                  "item": "https://www.brick2tech.com/contact"
-                }
-              ]
-            }
-          `}
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.brick2tech.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.brick2tech.com/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Contact",
+            "item": "https://www.brick2tech.com/contact"
+          }
+        ]
+      }
+    `}
         </script>
       </Helmet>
+
 
       {/* ✅ Page Components */}
       <Hero mousePosition={mousePosition} />
