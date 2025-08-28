@@ -145,7 +145,7 @@ const DigitalMarketingPage = () => (
         content="Crush your digital goals with Brick2Tech. SEO, Ads, CRO, Analytics — full-funnel marketing services that scale."
       />
       <meta property="og:image" content="https://brick2tech.com/images/og-digital-marketing.jpg" />
-      <meta name="canonical" content="https://brick2tech.com/services/digital-marketing" />
+      
       <meta property="og:site_name" content="Brick2Tech" />
       <meta property="og:locale" content="en_US" />
 

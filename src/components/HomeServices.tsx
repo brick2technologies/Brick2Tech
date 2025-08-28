@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+
 import { motion, easeInOut } from "framer-motion";
 import {
   Brush,
@@ -118,33 +118,6 @@ const HomeServices: React.FC = () => {
 
   return (
     <section className="bg-[#142c4c]/95 py-20 px-6 md:px-16 lg:px-24 text-white" id="services">
-      <Helmet>
-        <title>Our Services | Brick2Tech Digital Marketing Company</title>
-        <meta name="description" content="Explore Brick2Tech's professional services including branding, SEO, development, and marketing. We empower businesses to grow digitally." />
-        <meta property="og:title" content="Our Services | Brick2Tech" />
-        <meta property="og:description" content="We provide a full range of digital solutions — branding, SEO, web, marketing, and more." />
-        <meta property="og:url" content="https://brick2tech.com/services" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "Digital Services by Brick2Tech",
-            provider: {
-              "@type": "Organization",
-              name: "Brick2Tech",
-              url: "https://brick2tech.com"
-            },
-            serviceType: "Branding, SEO, Web Development, Marketing",
-            areaServed: {
-              "@type": "Country",
-              name: "India"
-            }
-          })}
-        </script>
-      </Helmet>
-
       <motion.div className="max-w-5xl mx-auto text-center" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn("up")}>
         <h2 className="text-4xl md:text-5xl font-bold mb-6 hover:scale-105 transition-transform duration-300 text-[#0098d4]">Our Services</h2>
         <p className="text-lg leading-relaxed hover:scale-105 transition-transform duration-300">

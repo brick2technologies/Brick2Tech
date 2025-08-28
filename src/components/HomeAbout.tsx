@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, easeInOut } from "framer-motion";
 import { Lightbulb, Rocket, Settings, TrendingUp } from "lucide-react";
-import { Helmet } from "react-helmet-async";
+
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -48,45 +48,7 @@ const HomeAbout: React.FC = () => {
       aria-labelledby="about-heading"
     >
       {/* Helmet for SEO */}
-      <Helmet>
-        <title>About Brick 2 Technologies | Business Transformation Experts</title>
-        <meta
-          name="description"
-          content="Discover how Brick 2 Technologies empowers businesses through tailored strategies, digital innovation, and scalable transformation services."
-        />
-        <link rel="canonical" href="https://brick2tech.com/about" />
-        <meta property="og:title" content="About Brick 2 Technologies" />
-        <meta
-          property="og:description"
-          content="Partner with Brick 2 Technologies to bridge the gap between ideas and execution. We drive innovation, strategy, and business growth."
-        />
-        <meta property="og:image" content="https://res.cloudinary.com/diqux3y0a/image/upload/v1752147269/aboutUs_yllmow.webp" />
-        <meta property="og:url" content="https://brick2tech.com/about" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            name: "Brick 2 Technologies",
-            url: "https://brick2tech.com",
-            logo: "https://brick2tech.com/logo.png",
-            sameAs: [
-              "https://www.facebook.com/brick2technologies",
-              "https://www.instagram.com/brick2technologies/",
-              "https://www.youtube.com/@brick2technologies",
-              "https://x.com/brick2tech",
-              "https://in.pinterest.com/brick2technologies/",
-              "https://www.linkedin.com/company/brick-2-technologies/"
-            ],
-            contactPoint: {
-              "@type": "ContactPoint",
-              contactType: "Customer Support",
-              email: "hello@brick2tech.com",
-              url: "https://brick2tech.com/contact"
-            }
-          })}
-        </script>
-      </Helmet>
+     
 
       {/* Heading */}
       <motion.h2

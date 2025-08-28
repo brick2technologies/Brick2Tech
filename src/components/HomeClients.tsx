@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
+
 
 const clients = [
   { name: 'Client A', logo: '/images/clients/client-a.png' },
@@ -68,45 +68,7 @@ const HomeClients: React.FC = () => {
 
   return (
     <section className="bg-white py-20 px-6 md:px-16 lg:px-24" id="clients">
-      <Helmet>
-        <title>Best Digital Marketing Agency in Hyderabad | Brick2Tech</title>
-        <meta name="description" content="Brick2Tech – Best Digital Marketing Agency in Hyderabad offering 360 digital marketing services to boost your online presence, branding, generating leads, and drive ROI." />
-        <meta name="keywords" content='best digital marketing agency in hyderabad, digital marketing companies in hyderabad, digital advertising company in hyderabad' />
-        <meta property="og:title" content="Our Clients | Brick2Tech" />
-        <meta property="og:description" content="See trusted client partnerships and read testimonials about Brick2Tech's web, branding, and marketing services." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://brick2tech.com#clients" />
-        <meta property="og:image" content="https://brick2tech.com/images/clients/og-cover.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Our Clients | Brick2Tech" />
-        <meta name="twitter:description" content="See trusted client partnerships and read testimonials about Brick2Tech's digital services." />
-        <meta name="twitter:image" content="https://brick2tech.com/images/clients/og-cover.jpg" />
-        <link rel="canonical" href="https://brick2tech.com#clients" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Brick2Tech",
-            "url": "https://brick2tech.com",
-            "sameAs": [
-              "https://www.linkedin.com/company/brick2technologies",
-              "https://www.instagram.com/brick2technologies",
-              "https://www.facebook.com/brick2technologies"
-            ],
-            "logo": "https://brick2tech.com/logo.png",
-            "review": testimonials.map((t, i) => ({
-              "@type": "Review",
-              "author": { "@type": "Person", "name": t.author },
-              "reviewBody": t.quote,
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              }
-            }))
-          })}
-        </script>
-      </Helmet>
+      
 
       <motion.div
         className="text-center max-w-4xl mx-auto"

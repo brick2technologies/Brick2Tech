@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 
 interface HeroProps {
   mousePosition: { x: number; y: number };
@@ -14,78 +14,7 @@ const Hero: React.FC<HeroProps> = ({ mousePosition }) => {
       className="relative w-full h-screen flex flex-col items-center justify-center text-white overflow-hidden bg-black"
       aria-label="Hero Section"
     >
-      {/* Helmet for SEO */}
-      <Helmet>
-        <title>Empower Your Brand with Digital Innovation | Brick2Tech</title>
-        <meta
-          name="description"
-          content="Transform your business with cutting-edge digital marketing, stunning web design, and strategic branding that drives real impact with B2T."
-        />
-        <meta
-          name="keywords"
-          content="digital marketing, web design, branding, SEO, B2T, Brick2Tech, business growth, online strategy"
-        />
-        <meta name="author" content="Brick2Tech Technologies" />
-        <link rel="canonical" href="https://brick2tech.com" />
-
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Empower Your Brand with Digital Innovation | B2T" />
-        <meta
-          property="og:description"
-          content="Transform your business with Brick2Tech's digital marketing, design, and branding strategies that create real impact."
-        />
-        <meta property="og:image" content="https://brick2tech.com/og-image.jpg" />
-        <meta property="og:url" content="https://brick2tech.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Brick2Tech Technologies" />
-
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Empower Your Brand with Digital Innovation | Brick2Tech" />
-        <meta
-          name="twitter:description"
-          content="Explore how B2T drives brand success through digital innovation, marketing, and design."
-        />
-        <meta name="twitter:image" content="https://brick2tech.com/og-image.jpg" />
-        <meta name="twitter:site" content="@brick2tech" />
-        <meta name="twitter:creator" content="@brick2tech" />
-
-        {/* JSON-LD Schema for SEO */}
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Brick2Tech Technologies",
-              "url": "https://brick2tech.com",
-              "logo": "https://brick2tech.com/logo.png",
-              "sameAs": [
-                "https://www.facebook.com/brick2technologies",
-                "https://www.instagram.com/brick2technologies/",
-                "https://www.youtube.com/@brick2technologies",
-                "https://x.com/brick2tech",
-                "https://in.pinterest.com/brick2technologies/",
-                "https://www.linkedin.com/company/brick-2-technologies/"
-              ]
-            }
-          `}
-        </script>
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "Brick2Tech Technologies",
-              "url": "https://brick2tech.com",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://brick2tech.com/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              }
-            }
-          `}
-        </script>
-      </Helmet>
+      
 
       {/* Background Video */}
       <video
@@ -94,7 +23,8 @@ const Hero: React.FC<HeroProps> = ({ mousePosition }) => {
         muted
         loop
         playsInline
-        aria-hidden="true"
+        tabIndex={-1} // ensures it’s not focusable
+        aria-hidden="true" // safe now
       >
         <source
           src="https://res.cloudinary.com/diqux3y0a/video/upload/v1753261522/B2T-Background_bzddbx.mp4"
