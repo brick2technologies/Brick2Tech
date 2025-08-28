@@ -1,0 +1,12 @@
+# robots.txt for https://brick2tech.com
+
+User-agent: *
+Allow: /
+
+# Block sensitive folders
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Sitemap for better crawling
+Sitemap: https://brick2tech.com/sitemap.xml
