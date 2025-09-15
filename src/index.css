@@ -3,16 +3,25 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
+/* Load your custom font */
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./assets/fonts/Monda.otf') format('woff2'),
+       url('./assets/fonts/Monda.otf') format('woff'),
+       url('./assets/fonts/Monda.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply global styles */
 body {
-    @apply bg-gray-50 text-gray-900 font-sans antialiased;
-    font-family: 'Roboto', sans-serif;
+  @apply bg-gray-50 text-gray-900 font-sans  antialiased;
 }
-/*#0098d4 -- skyblue
-#142c4c -- darkblue*/
 
+/* Accessibility helper */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -23,3 +32,8 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* 
+#0098d4 -- skyblue
+#142c4c -- darkblue
+*/
