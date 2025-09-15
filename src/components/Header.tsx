@@ -66,17 +66,17 @@ const Header: React.FC = () => {
       {
         icon: <Code className="text-[#0098d4] w-5 h-5" />,
         title: "Web Development",
-        path: "/services/web-development",
+        path: "/services/development/web-development",
       },
       {
         icon: <Server className="text-[#0098d4] w-5 h-5" />,
         title: "Web Hosting",
-        path: "/services/web-hoisting",
+        path: "/services/development/web-hoisting",
       },
       {
         icon: <Smartphone className="text-[#0098d4] w-5 h-5" />,
         title: "App Development",
-        path: "/services/app-development",
+        path: "/services/development/app-development",
       },
     ],
     designing: [
@@ -105,6 +105,11 @@ const Header: React.FC = () => {
         title: "UI/UX Design",
         path: "/services/designing/uiux-design",
       },
+      {
+        icon: <Megaphone className="text-[#0098d4] w-5 h-5" />,
+        title: "Branding",
+        path: "/services/designing/branding",
+      }
     ],
   };
 

@@ -17,14 +17,14 @@ import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
 import Careers from "./components/Careers";
 import ContactUs from "./components/ContactUs";
-import BrandingPage from "./pages/BrandingPage";
-import SEOPage from "./pages/SEOPage";
+import BrandingPage from "./pages/marketing/BrandingPage.tsx";
+import SEOPage from "./pages/marketing/SEOPage.tsx";
 import DigitalMarketingPage from "./pages/marketing/DigitalMarketingPage";
 import SocialMediaMarketingPage from "./pages/marketing/SocialMediaPage";
-import GraphicDesignPage from "./pages/GraphicDesignPage";
+
 import ArchitectureDesignPage from "./pages/designing/ArchitectureDesign";
 
-import AppDevelopmentPage from "./pages/AppDevelopmet";
+
 
 {/* Marketing imports*/ }
 import PPCPage from "./pages/marketing/PPCPage";
@@ -42,7 +42,7 @@ import AppDevelopment from "./pages/development/AppDevelopment";
 {/* Designing imports*/ }
 import BrochureDesign from "./pages/designing/BrochureDesign";
 import GraphicDesign from "./pages/designing/GraphicDesign";
-import LogoDesign from "./pages/designing/Logodesign";
+import LogoDesign from "./pages/designing/LogoDesign1.tsx"
 
 
 
@@ -65,24 +65,16 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
 
             {/* ✅ Services Pages */}
-            <Route path="/services/branding" element={<BrandingPage />} />
-            <Route path="/services/seo" element={<SEOPage />} />
-
-            <Route
-              path="/services/graphic-design1"
-              element={<GraphicDesignPage />}
-            />
             
-            <Route
-              path="/services/web-development"
-              element={<WebDevelopmentPage />}
-            />
-            <Route
-              path="/services/app-development1"
-              element={<AppDevelopmentPage />}
-            />
+
+           
+            
+           
+           
 
             {/* Marketing pages */}
+            <Route path="/services/marketing/branding" element={<BrandingPage />} />
+            <Route path="/services/marketing/seo" element={<SEOPage />} />
             <Route
               path="/services/marketing/digital-marketing"
               element={<DigitalMarketingPage />}
@@ -119,7 +111,7 @@ function App() {
               element={<EcommerceWebsite />}
             />
             <Route
-              path="/services/web-development"
+              path="/services/development/web-development"
               element={<WebDevelopmentPage />}
             />
             <Route
@@ -128,7 +120,7 @@ function App() {
             />
 
             <Route
-              path="/services/app-development"
+              path="/services/development/app-development"
               element={<AppDevelopment />}
             />
 
