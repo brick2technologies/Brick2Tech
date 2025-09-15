@@ -66,17 +66,17 @@ const Header: React.FC = () => {
       {
         icon: <Code className="text-[#0098d4] w-5 h-5" />,
         title: "Web Development",
-        path: "/services/development/web-development",
+        path: "/services/web-development",
       },
       {
         icon: <Server className="text-[#0098d4] w-5 h-5" />,
         title: "Web Hosting",
-        path: "/services/development/web-hoisting",
+        path: "/services/web-hoisting",
       },
       {
         icon: <Smartphone className="text-[#0098d4] w-5 h-5" />,
         title: "App Development",
-        path: "/services/development/app-development",
+        path: "/services/app-development",
       },
     ],
     designing: [
@@ -105,11 +105,6 @@ const Header: React.FC = () => {
         title: "UI/UX Design",
         path: "/services/designing/uiux-design",
       },
-      {
-        icon: <Megaphone className="text-[#0098d4] w-5 h-5" />,
-        title: "Branding",
-        path: "/services/designing/branding",
-      }
     ],
   };
 
@@ -195,80 +190,71 @@ const Header: React.FC = () => {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
                           transition={{ duration: 0.2 }}
-                          className="absolute top-full right-0 -translate-x-1/2 mt-2 w-[90vw] min-w-[450px] max-w-full bg-white rounded-lg shadow-xl border border-[#142c4c] py-6 z-50"
+                          className="absolute top-full right-0 translate-x-0 mt-2 w-[90vw] min-w-[320px] max-w-[740px]  bg-white rounded-lg shadow-xl border border-[#142c4c] py-6 z-50"
                           onMouseEnter={() => setShowServicesDropdown(true)}
                           onMouseLeave={() => setShowServicesDropdown(false)}
                         >
-                          <div className="grid grid-cols-3 gap-6 px-6">
-                            {/* Marketing Column */}
-                            <div>
+                          <div className="flex flex-row flex-wrap gap-6 px-8">
+                            {/* Marketing Section */}
+                            <div className="flex flex-col min-w-[200px]">
                               <h3 className="text-[#142c4c] font-semibold mb-3 text-lg">Marketing</h3>
-                              <ul className="space-y-1">
-                                {services.marketing.map((service) => (
-                                  <li key={service.title}>
-                                    <Link
-                                      to={service.path}
-                                      onClick={() => setShowServicesDropdown(false)}
-                                      className="flex items-center space-x-3 px-3 py-2 hover:bg-[#142c4c] hover:text-white rounded-md transition-colors duration-200 group"
-                                      aria-label={service.title}
-                                    >
-                                      {service.icon}
-                                      <span className="text-[#0098d4] font-medium group-hover:text-white text-sm">
-                                        {service.title}
-                                      </span>
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
+                              {services.marketing.map((service) => (
+                                <Link
+                                  key={service.title}
+                                  to={service.path}
+                                  onClick={() => setShowServicesDropdown(false)}
+                                  className="flex items-center space-x-3 px-3 py-2 hover:bg-[#142c4c] hover:text-white rounded-md transition-colors duration-200 group min-w-[200px]"
+                                  aria-label={service.title}
+                                >
+                                  {service.icon}
+                                  <span className="text-[#0098d4] font-medium group-hover:text-white text-sm">
+                                    {service.title}
+                                  </span>
+                                </Link>
+                              ))}
                             </div>
 
-                            {/* Development Column */}
-                            <div>
+                            {/* Development Section */}
+                            <div className="flex flex-col min-w-[200px]">
                               <h3 className="text-[#142c4c] font-semibold mb-3 text-lg">Development</h3>
-                              <ul className="space-y-1">
-                                {services.development.map((service) => (
-                                  <li key={service.title}>
-                                    <Link
-                                      to={service.path}
-                                      onClick={() => setShowServicesDropdown(false)}
-                                      className="flex items-center space-x-3 px-3 py-2 hover:bg-[#142c4c] hover:text-white rounded-md transition-colors duration-200 group"
-                                      aria-label={service.title}
-                                    >
-                                      {service.icon}
-                                      <span className="text-[#0098d4] font-medium group-hover:text-white text-sm">
-                                        {service.title}
-                                      </span>
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
+                              {services.development.map((service) => (
+                                <Link
+                                  key={service.title}
+                                  to={service.path}
+                                  onClick={() => setShowServicesDropdown(false)}
+                                  className="flex items-center space-x-3 px-3 py-2 hover:bg-[#142c4c] hover:text-white rounded-md transition-colors duration-200 group min-w-[200px]"
+                                  aria-label={service.title}
+                                >
+                                  {service.icon}
+                                  <span className="text-[#0098d4] font-medium group-hover:text-white text-sm">
+                                    {service.title}
+                                  </span>
+                                </Link>
+                              ))}
                             </div>
 
-                            {/* Designing Column */}
-                            <div>
+                            {/* Designing Section */}
+                            <div className="flex flex-col min-w-[200px]">
                               <h3 className="text-[#142c4c] font-semibold mb-3 text-lg">Designing</h3>
-                              <ul className="space-y-1">
-                                {services.designing.map((service) => (
-                                  <li key={service.title}>
-                                    <Link
-                                      to={service.path}
-                                      onClick={() => setShowServicesDropdown(false)}
-                                      className="flex items-center space-x-3 px-3 py-2 hover:bg-[#142c4c] hover:text-white rounded-md transition-colors duration-200 group"
-                                      aria-label={service.title}
-                                    >
-                                      {service.icon}
-                                      <span className="text-[#0098d4] font-medium group-hover:text-white text-sm">
-                                        {service.title}
-                                      </span>
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
+                              {services.designing.map((service) => (
+                                <Link
+                                  key={service.title}
+                                  to={service.path}
+                                  onClick={() => setShowServicesDropdown(false)}
+                                  className="flex items-center space-x-3 px-3 py-2 hover:bg-[#142c4c] hover:text-white rounded-md transition-colors duration-200 group min-w-[200px]"
+                                  aria-label={service.title}
+                                >
+                                  {service.icon}
+                                  <span className="text-[#0098d4] font-medium group-hover:text-white text-sm">
+                                    {service.title}
+                                  </span>
+                                </Link>
+                              ))}
                             </div>
                           </div>
 
                           {/* View All Services Button */}
-                          <div className="border-t border-gray-200 mt-4 pt-4 px-6">
+                          <div className="border-t border-gray-200 mt-4 pt-4 px-8">
                             <button
                               onClick={() => {
                                 setShowServicesDropdown(false);
