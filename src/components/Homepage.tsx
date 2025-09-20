@@ -64,8 +64,6 @@ const faqs = [
   },
 ];
 
-
-
 const clients = [
   { name: 'Client A', logo: '/images/clients/client-a.png' },
   { name: 'Client B', logo: '/images/clients/client-b.png' },
@@ -76,9 +74,6 @@ const clients = [
   { name: 'Client G', logo: '/images/clients/client-a.png' },
   { name: 'Client H', logo: '/images/clients/client-b.png' },
   { name: 'Client I', logo: '/images/clients/client-c.png' },
-  { name: 'Client J', logo: '/images/clients/client-d.png' },
-  { name: 'Client K', logo: '/images/clients/client-e.png' },
-  { name: 'Client L', logo: '/images/clients/client-f.png' },
 ];
 
 const testimonials = [
@@ -147,9 +142,11 @@ export default function HomePage() {
     <motion.div
       whileHover={{ scale: 1.05 }}
       className="bg-white shadow-md rounded-2xl p-6 transition-all duration-300 hover:shadow-lg"
+      role="article"
+      aria-labelledby={`${title}-title`}
     >
-      <div className="flex items-center justify-center mb-4">{icon}</div>
-      <h3 className="text-xl text-center font-semibold text-gray-800 mb-2">
+      <div className="flex items-center justify-center mb-4" aria-hidden="true">{icon}</div>
+      <h3 id={`${title}-title`} className="text-xl text-center font-semibold text-gray-800 mb-2">
         {title}
       </h3>
       <p className="text-center text-gray-600">{description}</p>
@@ -157,15 +154,17 @@ export default function HomePage() {
   );
 
   const ServiceCard: React.FC<ServiceProps> = ({ icon, title, description, path }) => (
-    <Link to={path} className="group" aria-label={`Navigate to ${title}`}>
+    <Link to={path} className="group" aria-label={`Navigate to ${title} services page`}>
       <motion.div
         whileHover={{ scale: 1.05 }}
         className="bg-white shadow-md rounded-2xl p-6 transition-all duration-300 hover:shadow-lg h-full flex flex-col"
+        role="article"
+        aria-labelledby={`${title}-service-title`}
       >
         <div className="flex items-center justify-center mb-4" aria-hidden="true">
           {icon}
         </div>
-        <h3 className="text-xl text-center font-semibold text-gray-800 mb-2 group-hover:text-[#0098d4] transition-colors duration-200">
+        <h3 id={`${title}-service-title`} className="text-xl text-center font-semibold text-gray-800 mb-2 group-hover:text-[#0098d4] transition-colors duration-200">
           {title}
         </h3>
         <p className="text-center text-gray-600">{description}</p>
@@ -221,7 +220,14 @@ export default function HomePage() {
           content="Brick2Tech, the best digital marketing company in Hyderabad, offers SEO, social media marketing, web development, and branding to drive business growth."
         />
         <link rel="icon" href="https://brick2tech.com/logo.png" />
+        <meta property="og:title" content="Brick2Tech | Best Digital Marketing Agency in Hyderabad" />
+        <meta property="og:description" content="Brick2Tech, the best digital marketing company in Hyderabad, offers SEO, social media marketing, web development, and branding to drive business growth." />
         <meta property="og:image" content="https://brick2tech.com/logo.png" />
+        <meta property="og:url" content="https://www.brick2tech.com/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Brick2Tech | Best Digital Marketing Agency in Hyderabad" />
+        <meta name="twitter:description" content="Brick2Tech, the best digital marketing company in Hyderabad, offers SEO, social media marketing, web development, and branding to drive business growth." />
         <meta name="twitter:image" content="https://brick2tech.com/logo.png" />
         <meta
           name="keywords"
@@ -230,15 +236,21 @@ export default function HomePage() {
         <link rel="canonical" href="https://www.brick2tech.com/" />
         <meta name="author" content="Brick2Tech Technologies" />
         <meta name="publisher" content="Brick2Tech Technologies" />
-        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <html lang="en-IN" />
-        {/* Added for geo-targeting SEO */}
+        {/* Geo-targeting SEO */}
         <meta name="geo.region" content="IN-TG" />
         <meta name="geo.placename" content="Hyderabad" />
         <meta name="geo.position" content="17.385044;78.486671" />
         <meta name="ICBM" content="17.385044, 78.486671" />
-        {/* Added for cross-browser compatibility */}
+        {/* Cross-browser compatibility */}
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        {/* Preload critical assets for faster loading */}
+        <link rel="preload" href="https://res.cloudinary.com/diqux3y0a/image/upload/v1752147269/aboutUs_yllmow.webp" as="image" />
+        <link rel="preload" href="/images/whatwedo.svg" as="image" />
+        <link rel="preload" href="/images/Industries-We-Serve.svg" as="image" />
+        <link rel="preload" href="/images/Our-process.png" as="image" />
+        {/* AEO/Structured Data Optimizations */}
         <script type="application/ld+json">
           {`
       {
@@ -304,6 +316,7 @@ export default function HomePage() {
         "@type": "LocalBusiness",
         "name": "Brick2Tech",
         "image": "https://www.brick2tech.com/logo.png",
+        "@id": "https://www.brick2tech.com/#localbusiness",
         "url": "https://www.brick2tech.com",
         "telephone": "+91 90000 35647",
         "address": {
@@ -337,6 +350,7 @@ export default function HomePage() {
         "name": "Brick2Tech",
         "url": "https://brick2tech.com",
         "logo": "https://brick2tech.com/logo.png",
+        "@id": "https://brick2tech.com/#organization",
         "sameAs": [
           "https://www.facebook.com/brick2technologies",
           "https://www.instagram.com/brick2technologies/",
@@ -376,6 +390,53 @@ export default function HomePage() {
       }
     `}
         </script>
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://www.brick2tech.com/#webpage",
+        "url": "https://www.brick2tech.com/",
+        "name": "Brick2Tech | Best Digital Marketing Agency in Hyderabad",
+        "description": "Brick2Tech, the best digital marketing company in Hyderabad, offers SEO, social media marketing, web development, and branding to drive business growth.",
+        "publisher": {
+          "@id": "https://brick2tech.com/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://www.brick2tech.com/#breadcrumb"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": "https://www.brick2tech.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        ]
+      }
+    `}
+        </script>
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://brick2tech.com/#website",
+        "url": "https://brick2tech.com",
+        "name": "Brick2Tech",
+        "description": "Best Digital Marketing Agency in Hyderabad",
+        "publisher": {
+          "@id": "https://brick2tech.com/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": "https://brick2tech.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        ]
+      }
+    `}
+        </script>
       </Helmet>
       <Hero mousePosition={mousePosition} />
       <section
@@ -410,6 +471,8 @@ export default function HomePage() {
               src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752147269/aboutUs_yllmow.webp"
               alt="Team of professionals planning business transformation at Brick2Tech"
               loading="lazy"
+              decoding="async"
+              fetchPriority="low"
               className="rounded-xl w-full h-auto max-h-[400px] object-cover hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
@@ -419,9 +482,9 @@ export default function HomePage() {
               "Brick2Tech is recognized as one of the Best Digital Marketing Companies in Hyderabad, delivering ROI-focused digital solutions tailored to your brand’s vision.",
               "We combine creativity, strategy, and technology to help businesses build strong digital footprints, attract the right audience, and achieve measurable success.",
               "Whether you’re a startup aiming for visibility, an SME looking to scale, or an enterprise focusing on sustained growth, our customized digital marketing strategies ensure your brand stands out in a competitive online world.",
-            ].map((text) => (
+            ].map((text, index) => (
               <p
-                key={text}
+                key={index}
                 className="text-md md:text-lg text-gray-700 hover:text-[#142c4c] hover:scale-105 transition-transform duration-300"
               >
                 {text}
@@ -471,6 +534,7 @@ export default function HomePage() {
       <section
         className="bg-[#142c4c]/95 py-20 px-6 md:px-16 lg:px-24 text-white"
         id="services"
+        aria-labelledby="services-heading"
       >
         <motion.div
           className="max-w-5xl mx-auto text-center"
@@ -479,7 +543,7 @@ export default function HomePage() {
           viewport={{ once: true }}
           variants={fadeIn("up")}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 hover:scale-105 transition-transform duration-300 text-[#0098d4]">
+          <h2 id="services-heading" className="text-4xl md:text-5xl font-bold mb-6 hover:scale-105 transition-transform duration-300 text-[#0098d4]">
             What We Do
           </h2>
           <p className="text-lg leading-relaxed hover:scale-105 transition-transform duration-300">
@@ -506,52 +570,50 @@ export default function HomePage() {
           viewport={{ once: true }}
           variants={fadeIn("up", 0.4)}
         >
-          <motion.div
-            className="mt-20 max-w-6xl mx-auto"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn("up", 0.4)}
-          >
-            <h3 className="text-3xl font-bold text-[#0098d4] mb-8 text-center hover:scale-105 transition-transform duration-300">
-              Why Choose <span className="text-[#0098d4]">Brick2Tech?</span>
-            </h3>
+          <h3 className="text-3xl font-bold text-[#0098d4] mb-8 text-center hover:scale-105 transition-transform duration-300">
+            Why Choose <span className="text-[#0098d4]">Brick2Tech?</span>
+          </h3>
 
-            {/* Row wrapper for both images */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-              {/* First Image */}
-              <motion.div
-                className="w-full md:w-1/2 flex justify-center"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                <img
-                  src="/images/whatwedo.svg"
-                  alt="Why choose Brick2Tech"
-                  className="w-3/4 max-w-md h-auto object-contain rounded-xl hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </motion.div>
+          {/* Row wrapper for both images */}
+          <div className="grid grid-cols-1 gap-10 justify-items-center">
+  {/* First Image */}
+  <motion.div
+    className="w-full flex justify-center"
+    initial={{ opacity: 0, x: -20 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8, delay: 0.2 }}
+    viewport={{ once: true }}
+  >
+    <img
+      src="/images/whatwedo.svg"
+      alt="Why choose Brick2Tech: Key benefits including ROI-focused strategies, expert team, and innovative solutions"
+      className="w-11/12 max-w-2xl h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-300"
+      loading="lazy"
+      decoding="async"
+      fetchPriority="low"
+    />
+  </motion.div>
 
-              {/* Second Image */}
-              <motion.div
-                className="w-full md:w-1/2 flex justify-center"
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-              >
-                <img
-                  src="/images/Industries-We-Serve.svg"
-                  alt="Industries We Serve"
-                  className="w-3/4 max-w-md h-auto object-contain rounded-xl hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </motion.div>
-            </div>
-          </motion.div>
+  {/* Second Image */}
+  <motion.div
+    className="w-full flex justify-center"
+    initial={{ opacity: 0, x: 20 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8, delay: 0.4 }}
+    viewport={{ once: true }}
+  >
+    <img
+      src="/images/Industries-We-Serve.svg"
+      alt="Industries We Serve at Brick2Tech: E-commerce, real estate, healthcare, education, travel, and food & beverage"
+      className="w-11/12 max-w-2xl h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-300"
+      loading="lazy"
+      decoding="async"
+      fetchPriority="low"
+    />
+  </motion.div>
+</div>
+
+        </motion.div>
 
           <motion.div
             className="mt-10"
@@ -568,8 +630,11 @@ export default function HomePage() {
             <div className="flex justify-center">
               <img
                 src="/images/Our-process.png" // <-- replace with your SVG file path
-                alt="Our Process"
+                alt="Our Process at Brick2Tech: Discovery, Strategy, Execution, Optimization, and Results"
                 className="w-full max-w-3xl"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
               />
             </div>
           </motion.div>
@@ -585,9 +650,8 @@ export default function HomePage() {
             transformation partner. Together, we turn bold ideas into powerful
             results.
           </motion.p>
-        </motion.div>
       </section>
-      <section className="bg-white py-20 px-6 md:px-16 lg:px-24" id="clients">
+      <section className="bg-white py-20 px-6 md:px-16 lg:px-24" id="clients" aria-labelledby="clients-heading">
         <motion.div
           className="text-center max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
@@ -598,7 +662,7 @@ export default function HomePage() {
           <h1 className="sr-only">
             Best Digital Marketing Agency in Hyderabad
           </h1>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 hover:scale-105 transition-transform duration-300">
+          <h2 id="clients-heading" className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 hover:scale-105 transition-transform duration-300">
             Our <span className="text-blue-600">Clients</span>
           </h2>
           <p className="text-lg text-gray-600 mb-12 hover:scale-105 transition-transform duration-300">
@@ -609,6 +673,7 @@ export default function HomePage() {
         <div
           className="relative overflow-hidden"
           aria-label="Client logos carousel"
+          role="region"
         >
           <div
             ref={scrollRef}
@@ -625,6 +690,8 @@ export default function HomePage() {
                   src={client.logo}
                   alt={`${client.name} Logo - Brick2Tech Client`}
                   loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
                   className="h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 ease-in-out"
                 />
               </motion.div>
@@ -672,9 +739,9 @@ export default function HomePage() {
           </AnimatePresence>
         </motion.div>
       </section>
-      <div className="bg-white px-4 py-16">
+      <div className="bg-white px-4 py-16" id="faqs" aria-labelledby="faqs-heading">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
+          <h2 id="faqs-heading" className="text-3xl font-bold text-center text-gray-900 mb-8">
             Frequently Asked Questions (FAQs)
           </h2>
 
@@ -692,6 +759,9 @@ export default function HomePage() {
                 <button
                   className="w-full flex justify-between items-center p-4 text-left text-lg font-semibold text-[#142c4c]"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  aria-expanded={openIndex === index}
+                  aria-controls={`faq-answer-${index}`}
+                  id={`faq-question-${index}`}
                 >
                   {faq.question}
                   <span className="text-blue-600">
@@ -703,12 +773,15 @@ export default function HomePage() {
                 <AnimatePresence>
                   {openIndex === index && (
                     <motion.div
+                      id={`faq-answer-${index}`}
                       key="content"
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.4 }}
                       className="px-4 pb-4 text-gray-600 text-base leading-relaxed"
+                      role="region"
+                      aria-labelledby={`faq-question-${index}`}
                     >
                       {faq.answer}
                     </motion.div>
