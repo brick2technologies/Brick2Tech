@@ -201,19 +201,7 @@ const AboutUs = () => {
 
           {/* Cards: Motto, Vision, Mission */}
           <div className="grid gap-8 md:grid-cols-3 w-full">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center"
-            >
-              <Lightbulb className="text-purple-600 w-8 h-8 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Our Motto</h3>
-              <p className="text-gray-600 leading-relaxed">
-                “Strategize. Execute. Grow.” We believe in smart planning, flawless execution, and sustainable growth.
-              </p>
-            </motion.div>
-
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -239,6 +227,19 @@ const AboutUs = () => {
                 To empower brands with tailored digital marketing solutions that enhance visibility, boost conversions, and deliver measurable results.
               </p>
             </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center"
+            >
+              <Lightbulb className="text-purple-600 w-8 h-8 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Our Motto</h3>
+              <p className="text-gray-600 leading-relaxed">
+                “Strategize. Execute. Grow.” We believe in smart planning, flawless execution, and sustainable growth.
+              </p>
+            </motion.div>
+
           </div>
 
           {/* Proudly Hyderabad */}
