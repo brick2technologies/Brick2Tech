@@ -52,10 +52,10 @@ const SocialMediaManagementPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Social Media Agency Hyderabad | Brick2Tech</title>
+        <title>Best Social Media Management Services in Hyderabad | Brick2Tech</title>
         <meta
           name="description"
-          content="Brick2Tech is a leading social media agency in Hyderabad specializing in result-driven strategies to grow your brand. Engage audiences, increase followers, and boost conversions with our expert SMM services."
+          content="Brick2Tech is a leading social media Media mangement services in Hyderabad specializing in result-driven strategies to grow your brand. Engage audiences, increase followers, and boost conversions with our expert SMM services."
         />
         <meta
           name="keywords"
@@ -117,7 +117,7 @@ const SocialMediaManagementPage: React.FC = () => {
 
         {/* SMM Overview Section */}
         <motion.section
-          className="relative py-20 px-6 sm:px-12 bg-white text-center"
+          className="relative py-10 px-6 sm:px-12 bg-white text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -126,6 +126,9 @@ const SocialMediaManagementPage: React.FC = () => {
           aria-label="Social Media Management Overview Section"
         >
           <div className="max-w-4xl mx-auto space-y-6">
+            <h1 className="text-3xl font-bold text-gray-900">
+              Best Social Media Management Services in Hyderabad
+            </h1>
             <p className="text-lg text-gray-700 leading-relaxed">
               In today’s digital-first world, social media is more than just a communication platform—it’s a powerful tool for businesses to connect with their audience, build trust, and drive measurable growth. At Brick2Tech, we provide top-rated Social Media Management Services in Hyderabad, customized to suit your business needs.
             </p>

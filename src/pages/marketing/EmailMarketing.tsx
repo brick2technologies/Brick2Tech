@@ -81,7 +81,7 @@ const EmailMarketingPage: React.FC = () => {
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="Email Marketing Service Page"
       >
-        <h1 className="sr-only">Best Email Marketing Services in Hyderabad</h1>
+        
         {/* Hero Section (Identical to SEO Page) */}
         <motion.section
           className="relative min-h-[50vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
@@ -120,9 +120,9 @@ const EmailMarketingPage: React.FC = () => {
           aria-label="Email Marketing Overview Section"
         >
           <div className="max-w-3xl mx-auto bg-sky-50 rounded-xl p-8 shadow-lg">
-            <h2 className="text-3xl font-bold text-blue-900 mb-6">
-              Why Email Marketing Matters
-            </h2>
+            <h1 className="text-3xl font-bold text-blue-900 mb-6">
+              Best Email Marketing Services in Hyderabad
+            </h1>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               In today’s digital landscape, email remains one of the most effective channels to nurture leads, engage customers, and drive conversions. At Brick2Tech, we deliver the best Email Marketing services in Hyderabad, designed to help businesses grow, retain customers, and generate measurable results.
             </p>

@@ -133,6 +133,7 @@ export default function BrochureDesignPage() {
         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
           About Our Brochure Design
         </h2>
+        <h1 className='text-start font-semibold text-2xl'>Top Brochure design companies in Hyderabd</h1>
         <p className="text-lg text-gray-700">
          A well-crafted brochure is more than just printed material—it’s an opportunity to showcase your brand’s personality, products, and services in a visually appealing and engaging way. At <strong>Brick2Tech</strong>, we specialize in providing professional brochure design Hyderabad solutions that communicate your message effectively while leaving a lasting impression. Our creative approach and strategic designs ensure your brochures stand out, capture attention, and drive customer interest.
         </p>

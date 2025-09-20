@@ -473,6 +473,7 @@ export default function HomePage() {
             />
           </motion.div>
           <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
+          <h1 className="text-start font-bold text-2xl md:text-2xl">Best Digital Marketing Agency in Hyderabad</h1>
             {[
               "Looking to grow your business online? You’ve come to the right place.",
               "Brick2Tech is recognized as one of the Best Digital Marketing Agency in Hyderabad, delivering ROI-focused digital solutions tailored to your brand’s vision.",

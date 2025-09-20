@@ -28,31 +28,31 @@ const EcommerceLanding = () => {
 
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-      <title>Best E-Commerce Website Company in Hyderabad | Brick2Tech</title>
+      <title>Best E-Commerce Web development Company in Hyderabad | Brick2Tech</title>
       <meta
         name="description"  
-        content="Build your online store with the best e-commerce website company in Hyderabad. Brick2Tech delivers stunning, user-friendly, and high-converting websites."
+        content="Build your online store with the best e-commerce web development company in Hyderabad. Brick2Tech delivers stunning, user-friendly, and high-converting web developments."
       />
       <meta
         name="keywords"
-        content="best e-commerce website company in Hyderabad, e-commerce website company in Hyderabad, best e-commerce website services in Hyderabad, e-commerce website development Hyderabad, online store development Hyderabad, Brick2Tech e-commerce website"
+        content="best e-commerce web development company in Hyderabad, e-commerce web development company in Hyderabad, best e-commerce web development services in Hyderabad, e-commerce web development development Hyderabad, online store development Hyderabad, Brick2Tech e-commerce web development"
       />
-      <link rel="canonical" href="https://brick2tech.com/services/ecommerce-website-development" />
+      <link rel="canonical" href="https://brick2tech.com/services/ecommerce-web development-development" />
       <meta name="robots" content="index, follow" />
 
-      <meta property="og:title" content="Best E-commerce Website Development Company in Hyderabad | Brick2Tech" />
+      <meta property="og:title" content="Best E-commerce web development Development Company in Hyderabad | Brick2Tech" />
       <meta
         property="og:description"
-        content="Brick2Tech is the best e-commerce website development company in Hyderabad, offering custom online store solutions that drive sales and enhance customer experience."
+        content="Brick2Tech is the best e-commerce web development development company in Hyderabad, offering custom online store solutions that drive sales and enhance customer experience."
       />
-      <meta property="og:url" content="https://brick2tech.com/services/ecommerce-website-development" />
-      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://brick2tech.com/services/ecommerce-web development-development" />
+      <meta property="og:type" content="web development" />
       <meta property="og:image" content="https://brick2tech.com/images/ecom-og-image.png" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Best E-commerce Website Development Company in Hyderabad | Brick2Tech" />
+      <meta name="twitter:title" content="Best E-commerce web development Development Company in Hyderabad | Brick2Tech" />
       <meta
         name="twitter:description"
-        content="Brick2Tech is the best e-commerce website development company in Hyderabad, offering custom online store solutions that drive sales and enhance customer experience."
+        content="Brick2Tech is the best e-commerce web development development company in Hyderabad, offering custom online store solutions that drive sales and enhance customer experience."
       />
       <meta name="twitter:image" content="https://brick2tech.com/images/ecom-og-image.png" />
         
@@ -63,7 +63,7 @@ const EcommerceLanding = () => {
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-5xl font-bold text-gray-800 leading-tight">
-              <span className="text-purple-600">E-commerce Website</span>
+              <span className="text-purple-600">E-commerce web development</span>
               <br />
               Development by Brick2Tech
             </h1>
@@ -80,7 +80,7 @@ const EcommerceLanding = () => {
           <div className="relative flex justify-center">
             <img
               src="/images/ecom-hero.png"
-              alt="E-commerce website illustration"
+              alt="E-commerce web development illustration"
               className="w-full max-w-2xl rounded-2xl shadow-2xl transform hover:scale-105 transition duration-500"
               loading="lazy"
             />
@@ -93,9 +93,9 @@ const EcommerceLanding = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">
-              Web Development & Technology Services
-            </h2>
+            <h1 className="text-3xl font-bold text-gray-800 mb-6">
+              Best E-commerce Web development Company in Hyderabad
+            </h1>
             <p className="text-gray-600 leading-relaxed mb-4">
               In today’s digital-first world, having an effective and scalable
               online store is essential for business growth. At Brick2Tech, we
@@ -109,7 +109,7 @@ const EcommerceLanding = () => {
             </p>
             <p className="text-gray-600 leading-relaxed">
               Our expert team focuses on creating intuitive, fast, and secure
-              e-commerce websites that engage customers, boost conversions, and
+              e-commerce web developments that engage customers, boost conversions, and
               support your long-term growth strategy.
             </p>
           </div>
@@ -137,7 +137,7 @@ const EcommerceLanding = () => {
             <ServiceCard
               icon={<Code className="w-12 h-12 text-blue-600" />}
               title="Custom E-commerce Development"
-              description="We create fully customized e-commerce websites that reflect your brand’s identity while providing easy navigation, advanced features, and high-performance functionality."
+              description="We create fully customized e-commerce web developments that reflect your brand’s identity while providing easy navigation, advanced features, and high-performance functionality."
             />
             <ServiceCard
               icon={<RefreshCw className="w-12 h-12 text-green-600" />}
@@ -182,7 +182,7 @@ const EcommerceLanding = () => {
             <FeatureCard
               icon={<Users className="w-8 h-8 text-blue-600" />}
               title="Tailored Solutions for Every Business"
-              description="We understand that each business is unique. Our team works closely with you to build an e-commerce website that meets your specific requirements, target audience, and industry trends."
+              description="We understand that each business is unique. Our team works closely with you to build an e-commerce web development that meets your specific requirements, target audience, and industry trends."
             />
             <FeatureCard
               icon={<Zap className="w-8 h-8 text-purple-600" />}

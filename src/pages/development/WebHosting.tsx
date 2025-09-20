@@ -65,9 +65,9 @@ const WebHosting = () => {
 
                 <div className="relative z-10 text-center max-w-4xl mx-auto">
                     <div {...staggerChildren(0)}>
-                        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-600 bg-clip-text text-transparent">
+                        <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-600 bg-clip-text text-transparent">
                             Brick2Tech
-                        </h1>
+                        </h2>
                     </div>
 
                     <div {...staggerChildren(0.2)}>
@@ -89,7 +89,7 @@ const WebHosting = () => {
                 <div className="max-w-6xl mx-auto">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div {...staggerChildren(0)}>
-                            <h2 className="text-4xl font-bold mb-6 text-blue-400">Who We Are</h2>
+                            <h1 className="text-4xl font-bold mb-6 text-blue-400">Best Web Hosting Company in Hyderabad</h1>
                             <p className="text-gray-300 mb-6 leading-relaxed">
                                 At Brick2Tech, we are recognized as one of the best web hosting companies in Hyderabad, offering premium hosting services at affordable prices. With our user-friendly control panel, managing your hosting-related tasks becomes simple and effective.
 

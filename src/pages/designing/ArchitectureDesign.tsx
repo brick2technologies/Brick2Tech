@@ -107,7 +107,6 @@ const ArchitectureDesignPage = () => {
           transition={{ duration: 0.8 }}
           className="text-center space-y-6 max-w-5xl mx-auto"
         >
-          <h1 className="sr-only">3D Architecture Services Hyderabad</h1>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#142c4c] leading-tight">
             Bringing Your Designs to Life with Stunning Visualizations
           </h2>
@@ -118,14 +117,14 @@ const ArchitectureDesignPage = () => {
 
         <section className="py-16 bg-gray-50 px-6">
           <div className="max-w-5xl mx-auto text-center">
-            <motion.h2
+            <motion.h1
               className="text-3xl font-bold mb-6 text-gray-900"
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               animate="show"
             >
-              Why Choose 3D Architecture Services in Hyderabad?
-            </motion.h2>
+              3D Architecture Services in Hyderabad
+            </motion.h1>
             <motion.p
               className="text-lg text-gray-700 leading-relaxed mb-6"
               variants={fadeIn("up", 0.3)}

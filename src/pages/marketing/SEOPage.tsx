@@ -91,7 +91,7 @@ const SEOPage: React.FC = () => {
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="SEO Service Page"
       >
-        <h1 className="sr-only">Best SEO Company in Hyderabad</h1>
+        
         {/* Hero Section */}
         <motion.section
           className="relative min-h-[50vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
@@ -123,7 +123,7 @@ const SEOPage: React.FC = () => {
 
         {/* SEO Content Section */}
         <motion.section
-          className="relative py-20 px-6 sm:px-12 bg-white text-center"
+          className="relative py-10 px-6 sm:px-12 bg-white text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -132,6 +132,7 @@ const SEOPage: React.FC = () => {
           aria-label="SEO Content Section"
         >
           <div className="max-w-4xl mx-auto space-y-6">
+            <h1 className="text-center font-bold text-2xl">Best SEO Company in Hyderabad</h1>
             <p className="text-lg text-gray-700 leading-relaxed">
               At Brick2Tech, we specialize in delivering advanced SEO services that drive
               measurable growth and long-term success. As the best SEO company in Hyderabad,

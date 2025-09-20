@@ -12,7 +12,7 @@ const WebDevelopment: React.FC = () => {
           content="Best web development companies in Hyderabad. Brick2Tech delivers custom, responsive, and high-performance websites to grow your business online."   />
         <meta
           name="keywords"
-          content="best web development company in Hyderabad, web development company in Hyderabad, best web development services in Hyderabad, web development services Hyderabad, website development Hyderabad, Brick2Tech web development, web development experts in Hyderabad"
+          content="best web development companies in Hyderabad, web development companies in Hyderabad, best web development services in Hyderabad, web development services Hyderabad, website development Hyderabad, Brick2Tech web development, web development experts in Hyderabad"
 
         />
         <link rel="canonical" href="https://brick2tech.com/services/web-development" />
@@ -24,9 +24,9 @@ const WebDevelopment: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Innovative Web Solutions for Your Business
-              </h1>
+              </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 In today's digital age, your website is the face of your business. At Brick2Tech, we
                 create stunning, functional websites that drive growth and enhance your online
@@ -60,8 +60,8 @@ const WebDevelopment: React.FC = () => {
 
           {/* Left Content */}
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
-              Web Development Company in Hyderabad
+            <h2 className="text-2xl lg:text-2xl font-bold text-gray-900 leading-snug">
+              Best Web Development Companies in Hyderabad
             </h2>
             <p className="text-lg text-gray-700">
               A robust and scalable website is more than just an online presence—it’s a powerful business tool.
@@ -69,7 +69,7 @@ const WebDevelopment: React.FC = () => {
               security, and performance.
             </p>
             <p className="text-lg text-gray-700">
-              For businesses in Hyderabad, partnering with a professional <strong>Web Development Company</strong>
+              For businesses in Hyderabad, partnering with a professional <strong>Web Development companies</strong>
               is essential to create websites that drive growth and success.
             </p>
             <p className="text-lg text-gray-700">
@@ -99,7 +99,7 @@ const WebDevelopment: React.FC = () => {
   <div className="max-w-6xl mx-auto">
     <div className="text-center mb-16">
       <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-        Why Choose Brick2Tech as Your Web Development Company in Hyderabad?
+        Why Choose Brick2Tech as Your Web Development companies in Hyderabad?
       </h2>
       <p className="text-lg text-gray-600 max-w-2xl mx-auto">
         We combine technical expertise with creative design to deliver web solutions that

@@ -68,7 +68,7 @@ const GraphicDesign = () => {
                             transition={{ duration: 0.8 }}
                             className="lg:pr-8 text-left"
                         >
-                            <motion.h1
+                            <motion.h2
                                 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight"
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ const GraphicDesign = () => {
                                 <span className="text-white">Transforming</span>{" "}
                                 <span className="text-sky-400">Ideas</span>{" "}
                                 <span className="text-white">into Visual Excellence</span>
-                            </motion.h1>
+                            </motion.h2>
 
                             <motion.p
                                 className="text-lg mb-8 text-white/90 leading-relaxed"
@@ -120,7 +120,7 @@ const GraphicDesign = () => {
 
 
             {/* About Section */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-10 bg-gray-50">
                 <div className="container mx-auto px-6">
                     <motion.div
                         className="text-center max-w-4xl mx-auto"
@@ -129,7 +129,7 @@ const GraphicDesign = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className="text-3xl font-bold text-gray-800 mb-8">About Brick2Tech</h2>
+                        <h1 className="text-3xl font-bold text-gray-800 mb-8">Best Graphic Design Companies in Hyderabad</h1>
                         <p className="text-base text-gray-600 leading-relaxed">
                             In today’s visually-driven world, impactful design plays a vital role in creating a memorable brand experience. At Brick2Tech, we are recognized among the best graphic design companies in Hyderabad, offering creative solutions that bring your brand’s story to life.
                         </p>

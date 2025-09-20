@@ -99,7 +99,7 @@ const AppDevelopment = () => {
           className="max-w-4xl mx-auto text-center"
           style={{ transform: `translateY(${scrollY * 0.1}px)` }}
         >
-          <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
+          <h2 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
             <span className="bg-gradient-to-r from-white via-pink-200 to-purple-200 bg-clip-text text-transparent animate-pulse">
               Innovative Mobile
             </span>
@@ -107,7 +107,7 @@ const AppDevelopment = () => {
             <span className="bg-gradient-to-r from-purple-200 via-pink-200 to-white bg-clip-text text-transparent">
               App Solutions
             </span>
-          </h1>
+          </h2>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
             Brick2Tech specializes in crafting cutting-edge mobile apps that drive business growth, combining creativity with technical excellence
           </p>
@@ -117,9 +117,9 @@ const AppDevelopment = () => {
   <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
     {/* Left Content */}
     <div className="space-y-6">
-      <h2 className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white via-pink-200 to-purple-200 bg-clip-text text-transparent animate-pulse leading-snug">
+      <h1 className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white via-pink-200 to-purple-200 bg-clip-text text-transparent animate-pulse leading-snug">
         Mobile App Development Company in Hyderabad
-      </h2>
+      </h1>
       <p className="text-lg text-gray-300 leading-relaxed">
         In a world driven by mobile technology, having a user-friendly, 
         high-performance app is crucial for business growth and customer 

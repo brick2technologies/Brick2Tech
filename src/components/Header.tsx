@@ -71,7 +71,7 @@ const Header: React.FC = () => {
     {
       icon: <Server className="text-[#0098d4] w-5 h-5" />,
       title: "Web Hosting",
-      path: "/web-hoisting-services",
+      path: "/web-hosting-services",
     },
     {
       icon: <Smartphone className="text-[#0098d4] w-5 h-5" />,

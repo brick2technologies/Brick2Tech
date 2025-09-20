@@ -69,13 +69,13 @@ const SocialMediaMarketingPage = () => {
         />
         <meta
           name="canonical"
-          content="https://brick2tech.com/services/social-media-marketing"
+          content="https://brick2tech.com/social-media-marketing"
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
         <meta
           property="og:title"
-          content="Best Social Media Marketing Company in Hyderabad | Brick2Tech"
+          content="Best Social Media Marketing Agency in Hyderabad | Brick2Tech"
         />
         <meta
           property="og:description"
@@ -84,7 +84,7 @@ const SocialMediaMarketingPage = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://brick2tech.com/services/social-media-marketing"
+          content="https://brick2tech.com/social-media-marketing"
         />
         <meta
           property="og:image"
@@ -124,7 +124,7 @@ const SocialMediaMarketingPage = () => {
 
         {/* Content */}
         <div className="relative z-10">
-          <h1 className="sr-only">Best SMM Company in Hyderabad</h1>
+          
           <h2
             id="hero-heading"
             className="text-4xl md:text-6xl font-extrabold tracking-tight text-blue-900 drop-shadow-sm"
@@ -143,11 +143,14 @@ const SocialMediaMarketingPage = () => {
         viewport={{ once: true }}
       >
         <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-3xl font-bold text-gray-900 mb-6">
+            Best Social Media Marketing Agency in Hyderabad
+          </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             At Brick2Tech, we help brands build a powerful presence on social media
             platforms like Instagram, Facebook, LinkedIn, and Twitter with strategies
             that drive engagement, visibility, and conversions. As the Best Social Media
-            Marketing Company in Hyderabad, our goal is not just to grow followers but
+            Marketing Agency in Hyderabad, our goal is not just to grow followers but
             to create meaningful interactions that build long-term brand loyalty.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
@@ -373,7 +376,7 @@ const SocialMediaMarketingPage = () => {
           Ready to Build a Powerful Social Media Presence?
         </h2>
         <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-          Let Brick2Tech, Hyderabad’s best SMM company, help you connect, engage, and grow with tailored social media strategies.
+          Let Brick2Tech, Hyderabad’s best SMM Agency, help you connect, engage, and grow with tailored social media strategies.
         </p>
         <Link to="/contact" className="inline-block mb-4">
           <button

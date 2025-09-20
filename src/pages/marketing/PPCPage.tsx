@@ -148,12 +148,12 @@ const PPCPage = () => {
         aria-labelledby="services-heading"
       >
         <div className="max-w-6xl mx-auto text-center mb-12">
-          <h2
+          <h1
             id="services-heading"
             className="text-3xl md:text-4xl font-bold text-blue-900"
           >
-            Our PPC Services
-          </h2>
+            Best PPC Services in Hyderabad
+          </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
             Our PPC specialists combine data-driven insights, competitive research, and creative ad design to target the right audience at the right time.
           </p>

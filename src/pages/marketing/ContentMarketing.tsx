@@ -54,12 +54,12 @@ const ContentMarketingPage: React.FC = () => {
         />
         <meta
           name="keywords"
-          content="content marketing services in hyderabad, best content marketing services in hyderabad, content marketing agency in hyderabad, content marketing company in hyderabad, digital marketing services in hyderabad, seo content marketing hyderabad, brick2tech content marketing"
+          content="content marketing services in hyderabad, best content marketing services in hyderabad, content marketing agency in hyderabad, content marketing Services in hyderabad, digital marketing services in hyderabad, seo content marketing hyderabad, brick2tech content marketing"
         />
         <meta name="canonical" content="https://brick2tech.com/services/content-marketing" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
-        <meta property="og:title" content="Best Content Marketing Company in Hyderabad | Brick2Tech" />
+        <meta property="og:title" content="Best Content Marketing Services in Hyderabad | Brick2Tech" />
         <meta
           property="og:description"
           content="Elevate your brand with Brick2Tech’s strategic content marketing services in Hyderabad. Drive leads and authority with SEO-friendly, engaging content."
@@ -81,7 +81,7 @@ const ContentMarketingPage: React.FC = () => {
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="Content Marketing Service Page"
       >
-        <h1 className="sr-only">Best Content Marketing Company in Hyderabad</h1>
+        
         {/* Hero Section */}
         <motion.section
           className="relative min-h-[50vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
@@ -112,7 +112,7 @@ const ContentMarketingPage: React.FC = () => {
 
         {/* Content Marketing Overview Section */}
         <motion.section
-          className="relative py-20 px-6 sm:px-12 bg-white text-center"
+          className="relative py-10 px-6 sm:px-12 bg-white text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -121,8 +121,11 @@ const ContentMarketingPage: React.FC = () => {
           aria-label="Content Marketing Overview Section"
         >
           <div className="max-w-4xl mx-auto space-y-6">
+            <h1 className="text-4xl font-bold text-gray-900">
+              Best Content Marketing Services in Hyderabad
+            </h1>
             <p className="text-lg text-gray-700 leading-relaxed">
-              In today’s digital-first world, content isn’t optional—it’s essential. At Brick2Tech, we believe content is more than just words; it’s a strategic asset that builds authority, drives leads, and fuels measurable business growth. As the Best Content Marketing Company in Hyderabad, we help businesses tell their story in a way that resonates with audiences and inspires action.
+              In today’s digital-first world, content isn’t optional—it’s essential. At Brick2Tech, we believe content is more than just words; it’s a strategic asset that builds authority, drives leads, and fuels measurable business growth. As the Best Content Marketing Services in Hyderabad, we help businesses tell their story in a way that resonates with audiences and inspires action.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               Our content marketing experts combine creativity, data, and industry insights to craft content that informs, engages, and converts. From SEO-friendly blogs to engaging social media posts, our tailored content strategies boost visibility, generate leads, and strengthen brand credibility. From strategy to execution to promotion, we manage the entire content lifecycle—ensuring your brand stands out in the crowded digital landscape.
@@ -167,7 +170,7 @@ const ContentMarketingPage: React.FC = () => {
             ))}
           </div>
           <p className="text-center mt-12 text-lg font-medium text-blue-900">
-            RATED #1 Best Content Marketing Company in Hyderabad – Driving Measurable Impact
+            RATED #1 Best Content Marketing Services in Hyderabad – Driving Measurable Impact
           </p>
         </motion.section>
 
@@ -187,7 +190,7 @@ const ContentMarketingPage: React.FC = () => {
               Our Content Marketing Process at Brick2Tech
             </h2>
             <p className="text-center text-blue-800 max-w-3xl mx-auto mb-16 text-lg">
-              Recognized as the best content marketing company in Hyderabad, Brick2Tech follows a strategic, data-driven approach to deliver measurable content success.
+              Recognized as the best content marketing Services in Hyderabad, Brick2Tech follows a strategic, data-driven approach to deliver measurable content success.
             </p>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {[
@@ -308,7 +311,7 @@ const ContentMarketingPage: React.FC = () => {
               At Brick2Tech, we turn content into a brand builder, lead generator, and growth catalyst. Ready to elevate your digital strategy with content that delivers measurable impact?
             </p>
             <p className="text-lg font-medium text-blue-900">
-              Partner with Brick2Tech—the Best Content Marketing Company in Hyderabad today.
+              Partner with Brick2Tech—the Best Content Marketing Services in Hyderabad today.
             </p>
           </div>
         </motion.section>

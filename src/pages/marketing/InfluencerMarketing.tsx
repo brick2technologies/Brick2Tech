@@ -102,7 +102,7 @@ const InfluencerMarketingPage: React.FC = () => {
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="Influencer Marketing Service Page"
       >
-        <h1 className="sr-only">Best Influencer Marketing Agency in Hyderabad</h1>
+        
         {/* Interactive Hero Section */}
         <motion.section
           ref={ref}
@@ -190,7 +190,7 @@ const InfluencerMarketingPage: React.FC = () => {
               role="region"
               aria-label="Influencer Marketing Overview"
             >
-              <h2 className="text-3xl font-bold text-blue-900 mb-6">Why Influencer Marketing Matters</h2>
+              <h1 className="text-3xl font-bold text-blue-900 mb-6">Best Influencer Marketing Agency in Hyderabad</h1>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 In today’s digital ecosystem, authentic connections matter more than ever. Influencer marketing has become a powerful way for brands to reach targeted audiences, build trust, and drive conversions.
               </p>

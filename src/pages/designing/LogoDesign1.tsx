@@ -181,9 +181,9 @@ const LogoDesign = () => {
                 <div className="absolute inset-0 bg-black/40"></div>
 
                 <div className="relative z-10 max-w-4xl mx-auto px-4 text-center transition-all duration-1000">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+                    <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
                         Logo Design Services by <span className="text-blue-500">Brick2Tech</span>
-                    </h1>
+                    </h2>
                     <p className="text-lg md:text-xl text-gray-200 font-light mb-6">
                         Crafting Unique Identities That Define Your Brand
                     </p>
@@ -213,9 +213,9 @@ const LogoDesign = () => {
                         className={`transition-all duration-1000 delay-200 ${isVisible.intro ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                             }`}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-                            Introduction
-                        </h2>
+                        <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+                            Best Logo Design Company in Hyderabad
+                        </h1>
                         <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
                             A logo is more than just a graphic—it’s the face of your brand, representing its values, vision, and personality. At Brick2Tech, we are recognized as the best logo design company in Hyderabad, offering creative and customized logo solutions that help businesses establish a strong and memorable brand identity. </p>
                         <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">

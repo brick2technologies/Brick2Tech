@@ -36,7 +36,7 @@ import InfluencerMarketing from "./pages/marketing/InfluencerMarketing";
 {/* Web Development imports*/ }
 import EcommerceWebsite from "./pages/development/EcommerceWebsite";
 import WebDevelopmentPage from "./pages/development/WebDevelopment";
-import WebHoisting from "./pages/development/WebHoisting";
+import WebHosting from "./pages/development/WebHosting";
 import AppDevelopment from "./pages/development/AppDevelopment";
 
 {/* Designing imports*/ }
@@ -124,8 +124,8 @@ function App() {
               element={<WebDevelopmentPage />}
             />
             <Route
-              path="/web-hoisting-services/"
-              element={<WebHoisting />}
+              path="/web-hosting-services/"
+              element={<WebHosting />}
             />
 
             <Route
