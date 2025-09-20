@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code, RefreshCw, CreditCard, Smartphone, Search, Wrench, Users, Zap, Heart, Shield,BarChart2, CheckCircle, TrendingUp, Lock } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -18,9 +19,44 @@ interface BenefitCardProps {
   icon?: React.ReactNode;
 }
 
+
+
+
 const EcommerceLanding = () => {
   return (
+    
+
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+      <title>Best E-Commerce Website Company in Hyderabad | Brick2Tech</title>
+      <meta
+        name="description"  
+        content="Build your online store with the best e-commerce website company in Hyderabad. Brick2Tech delivers stunning, user-friendly, and high-converting websites."
+      />
+      <meta
+        name="keywords"
+        content="best e-commerce website company in Hyderabad, e-commerce website company in Hyderabad, best e-commerce website services in Hyderabad, e-commerce website development Hyderabad, online store development Hyderabad, Brick2Tech e-commerce website"
+      />
+      <link rel="canonical" href="https://brick2tech.com/services/ecommerce-website-development" />
+      <meta name="robots" content="index, follow" />
+
+      <meta property="og:title" content="Best E-commerce Website Development Company in Hyderabad | Brick2Tech" />
+      <meta
+        property="og:description"
+        content="Brick2Tech is the best e-commerce website development company in Hyderabad, offering custom online store solutions that drive sales and enhance customer experience."
+      />
+      <meta property="og:url" content="https://brick2tech.com/services/ecommerce-website-development" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://brick2tech.com/images/ecom-og-image.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Best E-commerce Website Development Company in Hyderabad | Brick2Tech" />
+      <meta
+        name="twitter:description"
+        content="Brick2Tech is the best e-commerce website development company in Hyderabad, offering custom online store solutions that drive sales and enhance customer experience."
+      />
+      <meta name="twitter:image" content="https://brick2tech.com/images/ecom-og-image.png" />
+        
+    </Helmet>
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 pb-20 py-32 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">

@@ -52,14 +52,14 @@ const SocialMediaManagementPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Best SMM Services in Hyderabad | Brick2Tech</title>
+        <title>Social Media Agency Hyderabad | Brick2Tech</title>
         <meta
           name="description"
-          content="Brick2Tech offers top-rated Social Media Management Services in Hyderabad, delivering strategic campaigns to boost engagement, visibility, and growth."
+          content="Brick2Tech is a leading social media agency in Hyderabad specializing in result-driven strategies to grow your brand. Engage audiences, increase followers, and boost conversions with our expert SMM services."
         />
         <meta
           name="keywords"
-          content="best SMM services in Hyderabad, social media management Hyderabad, social media marketing, Brick2Tech SMM, social media campaigns"
+          content="social media companies in hyderabad, social media management agency in hyderabad, social media management company in hyderabad, social media agency hyderabad, social media marketing company in hyderabad, social media marketing agency in hyderabad, best social media agency in hyderabad, top social media companies in hyderabad"
         />
         <meta name="canonical" content="https://brick2tech.com/services/smm" />
         <meta name="robots" content="index, follow" />

@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight, Users, Clock, DollarSign,Briefcase, FileText, Printer, Zap, Eye, Target, Calendar, Layers } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
+
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -54,6 +56,19 @@ const BenefitItem: React.FC<BenefitItemProps> = ({ title, description, color }) 
 export default function BrochureDesignPage() {
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Top Brochure Design Companies in Hyderabad | Brick2Tech</title>
+        <meta
+          name="description"
+          content="Brick2Tech is one of the top brochure design companies in Hyderabad, creating stunning, professional brochures that capture attention and boost your brand."
+        />
+        <meta
+          name="keywords"
+          content="top brochure design companies in Hyderabad, best brochure design companies in hyderabad, brochure design companies in Hyderabad, brochure design Hyderabad, brochure designing services in Hyderabad, Brick2Tech brochure design"
+        />
+        <link rel="canonical" href="https://brick2tech.com/services/brochure-designing" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Hero Section */}
 <section className="relative overflow-hidden bg-gradient-to-br from-blue-500 via-blue-600 to-purple-700 text-white pt-16">
   <div className="absolute inset-0 bg-black/10"></div>

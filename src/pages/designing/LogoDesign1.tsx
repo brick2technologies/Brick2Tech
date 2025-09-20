@@ -12,6 +12,7 @@ import {
     CheckCircle,
     Send
 } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 interface VisibilityState {
     hero: boolean;
@@ -162,6 +163,19 @@ const LogoDesign = () => {
 
     return (
         <div className="min-h-screen bg-gray-50 overflow-x-hidden">
+            <Helmet>
+                <title>Best Logo Design Company in Hyderabad | Brick2Tech</title>
+                <meta
+                    name="description"
+                    content="Create a powerful brand identity with Brick2Tech, the best logo design company in Hyderabad. We craft creative, unique, and memorable logo designs."
+                />
+                <meta
+                    name="keywords"
+                    content="best logo design company in Hyderabad, logo design services in Hyderabad, custom logo design Hyderabad, brand identity design Hyderabad, professional logo designers Hyderabad, Brick2Tech logo design,best logo design company in hyderabad, logo makers in hyderabad, logo design services in hyderabad"
+                />
+                <link rel="canonical" href="https://brick2tech.com/logo-design" />
+                <meta name="robots" content="index, follow" />
+            </Helmet>
             {/* Hero Section */}
             <section className="relative bg-cover bg-center py-24" style={{ backgroundImage: "url('/images/logo-bg.png')" }}>
                 <div className="absolute inset-0 bg-black/40"></div>

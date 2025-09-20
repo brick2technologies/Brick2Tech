@@ -7,6 +7,7 @@ import {
   CheckCircleIcon,
 } from "@heroicons/react/24/outline";
 
+
 const benefits = [
   {
     title: "Enhanced Project Communication",
@@ -86,7 +87,7 @@ const ArchitectureDesignPage = () => {
           content="Elevate your architectural projects with Brick2Tech’s 3D visualization, walkthroughs, and innovative design solutions in Hyderabad."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://brick2tech.com/services/architecture-design" />
+        <meta property="og:url" content="https://brick2tech.com/architecture-design" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="3D Architecture Services | Brick2Tech" />
         <meta
@@ -95,7 +96,7 @@ const ArchitectureDesignPage = () => {
         />
         <meta name="author" content="Brick2Tech" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://brick2tech.com/services/architecture-design" />
+        <link rel="canonical" href="https://brick2tech.com/architecture-design" />
       </Helmet>
 
       <main className="pt-24 pb-16 px-6 sm:px-12 lg:px-24 bg-white text-gray-900 min-h-screen">

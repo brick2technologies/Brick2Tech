@@ -68,14 +68,14 @@ const InfluencerMarketingPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Best Influencer Marketing Agency in Hyderabad | Brick2Tech</title>
+        <title>Best Influencer Marketing Agency in Hyderabad | Brick2Tech </title>
         <meta
           name="description"
-          content="Brick2Tech, the best influencer marketing agency in Hyderabad, delivers strategic campaigns to boost brand awareness, engagement, and conversions."
+          content="Partner with the best influencer marketing agency in Hyderabad. Brick2Tech drives brand growth with top social media influencers and campaigns."
         />
         <meta
           name="keywords"
-          content="best influencer marketing agency in Hyderabad, influencer marketing Hyderabad, influencer campaigns, Brick2Tech influencer marketing, brand partnerships"
+          content="best influencer marketing agency in hyderabad, influencer marketing agency in Hyderabad, best influencer marketing company in Hyderabad"
         />
         <link rel="canonical" href="https://brick2tech.com/services/influencer-marketing" />
         <meta name="robots" content="index, follow" />

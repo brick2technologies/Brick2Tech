@@ -1,5 +1,6 @@
 import  { useState, useEffect } from 'react';
 import { Smartphone, Palette, Settings, Globe, CheckCircle, Users, TrendingUp, Eye, ArrowRight, } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 const AppDevelopment = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -35,6 +36,19 @@ const AppDevelopment = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-pink-800 to-indigo-900 text-white overflow-x-hidden">
+      <Helmet>
+        <title>Mobile App Development Company in Hyderabad | Brick2Tech</title>
+        <meta 
+          name="description"
+          content="Grow your business with Brick2Tech, a leading mobile app development company in Hyderabad. We build secure, user-friendly, and high-performing apps."
+        />
+        <meta 
+          name="keywords"
+          content="mobile app development company in hyderabad, mobile app development agency in hyderabad, mobile app development services in hyderabad, best mobile app development company in hyderabad, brick2tech mobile app development"
+        />
+        <link rel="canonical" href="https://brick2tech.com/services/app-development" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Animated background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div 

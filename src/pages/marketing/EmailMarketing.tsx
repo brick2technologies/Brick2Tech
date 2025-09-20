@@ -47,14 +47,14 @@ const EmailMarketingPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Best Email Marketing Services in Hyderabad | Brick2Tech</title>
+        <title>Best EMail Marketing Services in Hyderabad | Brick2Tech</title>
         <meta
           name="description"
-          content="Brick2Tech offers the best Email Marketing services in Hyderabad, delivering personalized campaigns to nurture leads, engage customers, and drive conversions."
+          content="Drive engagement and conversions with Brick2Tech, offering the best email marketing services in Hyderabad. We craft targeted campaigns that nurture leads, build relationships, and grow your business effectively."
         />
         <meta
           name="keywords"
-          content="best email marketing services in Hyderabad, email marketing Hyderabad, email campaigns, Brick2Tech email marketing, lead nurturing"
+          content="best email marketing services in Hyderabad, email marketing agency in Hyderabad, email marketing company in Hyderabad, email marketing services Hyderabad, email marketing Hyderabad, email marketing experts in Hyderabad, Brick2Tech email marketing"
         />
         <meta name="canonical" content="https://brick2tech.com/services/email-marketing" />
         <meta name="robots" content="index, follow" />

@@ -10,6 +10,7 @@ import {
     Cloud,
     ArrowRight,
 } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 const WebHosting = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -28,6 +29,19 @@ const WebHosting = () => {
 
     return (
         <div className="min-h-screen bg-slate-900 text-white overflow-x-hidden">
+            <Helmet>
+                <title>Best Web Hosting Company in Hyderabad | Brick2Tech</title>
+                <meta
+                    name="description"
+                    content="Get reliable web hosting services from the best web hosting company in Hyderabad. Brick2Tech ensures fast, secure, and scalable hosting for your website."
+                />
+                <meta
+                    name="keywords"
+                    content="web hosting services in hyderabad, best web hosting company in hyderabad, best web hosting agency in hyderabad Brick2Tech web hosting"
+                />
+                <link rel="canonical" href="https://brick2tech.com/services/web-hosting" />
+                <meta name="robots" content="index, follow" />
+            </Helmet>
             {/* Hero Section */}
             <section className="relative min-h-screen flex items-center justify-center px-4">
                 {/* Animated Background Pattern */}

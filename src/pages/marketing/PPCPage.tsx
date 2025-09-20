@@ -46,14 +46,14 @@ const PPCPage = () => {
     <div className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Best PPC Company in Hyderabad | Brick2Tech</title>
+        <title>Best PPC Services in Hyderabad | Brick2Tech</title>
         <meta
           name="description"
-          content="Brick2Tech, the best PPC company in Hyderabad, offers data-driven PPC services to boost traffic, generate leads, and maximize ROI."
+          content="Boost your ROI with Brick2Tech, the provider of the best PPC services in Hyderabad. We create data-driven Google Ads & paid campaigns that drive quality traffic, leads, and conversions for your business."
         />
         <meta
           name="keywords"
-          content="best PPC company in Hyderabad, PPC services Hyderabad, search engine marketing, Brick2Tech PPC, pay per click advertising"
+          content="ppc services in hyderabad, best ppc agency in hyderabad, google ads agency in hyderabad, ppc management company in hyderabad, ppc marketing services in hyderabad, brick2tech ppc services, ppc advertising hyderabad"
         />
         <meta
           name="canonical"

@@ -1,9 +1,24 @@
 import React from 'react';
 import { Code, ShoppingCart, FileText, Smartphone, Search, Zap, Users, Target, DollarSign,Monitor, TrendingUp, Lightbulb, Shield } from 'lucide-react';
-
+import { Helmet } from 'react-helmet';
 const WebDevelopment: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
+
+      <Helmet>
+        <title>Best Web Bevelopment Companies in Hyderabad | Brick2Tech</title>
+        <meta
+          name="description"
+          content="Best web development companies in Hyderabad. Brick2Tech delivers custom, responsive, and high-performance websites to grow your business online."   />
+        <meta
+          name="keywords"
+          content="best web development company in Hyderabad, web development company in Hyderabad, best web development services in Hyderabad, web development services Hyderabad, website development Hyderabad, Brick2Tech web development, web development experts in Hyderabad"
+
+        />
+        <link rel="canonical" href="https://brick2tech.com/services/web-development" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-indigo-100 pt-28 pb-20 px-4">
         <div className="max-w-6xl mx-auto">

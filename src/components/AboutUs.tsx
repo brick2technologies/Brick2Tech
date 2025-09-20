@@ -135,14 +135,17 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-4 lg:px-8 space-y-12">
           {/* Top Header Centered */}
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-900">
-            Top Digital Marketing Company in Hyderabad
+              About Us 
           </h2>
 
           {/* Two Column Content */}
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left Side Content */}
             <div className="lg:w-1/2 space-y-6">
-              <h1 className="sr-only">best digital marketing companies in hyderabad</h1>
+            <h2 className="text-1xl lg:text-2xl font-bold text-start text-gray-900">
+              Top Digital Marketing Agency in Hyderabad
+          </h2>
+              <h1 className="sr-only">Best Digital Marketing Companies in Hyderabad</h1>
 
               <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
                 At Brick2Tech, we blend creativity, technology, and strategy to help

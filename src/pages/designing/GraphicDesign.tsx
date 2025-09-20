@@ -14,6 +14,7 @@ import {
     UserCheck,
     Zap
 } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 const fadeInUp = {
     initial: { opacity: 0, y: 60 },
@@ -37,6 +38,20 @@ const scaleOnHover = {
 const GraphicDesign = () => {
     return (
         <div className="min-h-screen bg-white">
+
+            <Helmet>
+                <title>Best Graphic Design Companies in Hyderabad | Brick2Tech</title>
+                <meta
+                    name="description"
+                    content="Brick2Tech stands among the best graphic design companies in Hyderabad, delivering creative, impactful, and brand-focused designs to elevate your business."
+                />
+                <meta
+                    name="keywords"
+                    content="best graphic design companies in Hyderabad, graphic design companies in hyderabad, graphic designing agency in hyderabad, graphic design services in hyderabad, Brick2Tech graphic design"
+                />
+                <link rel="canonical" href="https://brick2tech.com/graphic-design" />
+                <meta name="robots" content="index, follow" />
+            </Helmet>
             {/* Hero Section */}
             <section
                 className="relative bg-cover bg-center min-h-[90vh] flex items-center bg-blue-900"

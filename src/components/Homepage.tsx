@@ -5,6 +5,7 @@ import { Lightbulb, Rocket, Settings, TrendingUp, Brush, Megaphone, Globe, Monit
 import { Link } from "react-router-dom";
 import Hero from "./Hero";
 
+
 const fadeIn = (direction: "up" | "left" = "up", delay = 0) => ({
   hidden: {
     opacity: 0,
@@ -65,15 +66,10 @@ const faqs = [
 ];
 
 const clients = [
-  { name: 'Client A', logo: '/images/clients/client-a.png' },
-  { name: 'Client B', logo: '/images/clients/client-b.png' },
-  { name: 'Client C', logo: '/images/clients/client-c.png' },
-  { name: 'Client D', logo: '/images/clients/client-d.png' },
-  { name: 'Client E', logo: '/images/clients/client-e.png' },
-  { name: 'Client F', logo: '/images/clients/client-f.png' },
-  { name: 'Client G', logo: '/images/clients/client-a.png' },
-  { name: 'Client H', logo: '/images/clients/client-b.png' },
-  { name: 'Client I', logo: '/images/clients/client-c.png' },
+  { name: 'Tact Advertising', logo: '/images/clients/Tact-logo.svg' },
+  { name: 'Shubha', logo: '/images/clients/Shubha-logo.svg' },
+  { name: 'HK Gatro ', logo: '/images/clients/HKGastro-logo.svg' },
+  
 ];
 
 const testimonials = [
@@ -214,10 +210,10 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Brick2Tech | Best Digital Marketing Agency in Hyderabad</title>
+        <title>Best Digital Marketing Agency in Hyderabad | Brick2Tech</title>
         <meta
           name="description"
-          content="Brick2Tech, the best digital marketing company in Hyderabad, offers SEO, social media marketing, web development, and branding to drive business growth."
+          content="Brick2Tech – Best Digital Marketing Agency in Hyderabad offering 360° digital marketing services to boost your online presence, branding, generating leads, and drive ROI."
         />
         <link rel="icon" href="https://brick2tech.com/logo.png" />
         <meta property="og:title" content="Brick2Tech | Best Digital Marketing Agency in Hyderabad" />
@@ -231,7 +227,7 @@ export default function HomePage() {
         <meta name="twitter:image" content="https://brick2tech.com/logo.png" />
         <meta
           name="keywords"
-          content="Best Digital Marketing Hyderabad, Branding Agency Hyderabad, Web Development Hyderabad, SEO, Social Media Marketing, Brick2Tech"
+          content="best digital marketing agency in hyderabad, digital marketing companies in hyderabad, digital advertising company in hyderabad, top digital marketing agencies in hyderabad, seo company in hyderabad, social media marketing agency in hyderabad, branding agency in hyderabad, content marketing services in hyderabad, ppc services in hyderabad, web development company in hyderabad"
         />
         <link rel="canonical" href="https://www.brick2tech.com/" />
         <meta name="author" content="Brick2Tech Technologies" />
@@ -479,7 +475,7 @@ export default function HomePage() {
           <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
             {[
               "Looking to grow your business online? You’ve come to the right place.",
-              "Brick2Tech is recognized as one of the Best Digital Marketing Companies in Hyderabad, delivering ROI-focused digital solutions tailored to your brand’s vision.",
+              "Brick2Tech is recognized as one of the Best Digital Marketing Agency in Hyderabad, delivering ROI-focused digital solutions tailored to your brand’s vision.",
               "We combine creativity, strategy, and technology to help businesses build strong digital footprints, attract the right audience, and achieve measurable success.",
               "Whether you’re a startup aiming for visibility, an SME looking to scale, or an enterprise focusing on sustained growth, our customized digital marketing strategies ensure your brand stands out in a competitive online world.",
             ].map((text, index) => (
@@ -671,33 +667,26 @@ export default function HomePage() {
           </p>
         </motion.div>
         <div
-          className="relative overflow-hidden"
-          aria-label="Client logos carousel"
-          role="region"
-        >
-          <div
-            ref={scrollRef}
-            className="flex whitespace-nowrap w-full overflow-hidden"
+        ref={scrollRef}
+        className="flex overflow-x-auto gap-8 py-4 hide-scrollbar"
+        aria-label="Client logos carousel"
+      >
+        {[...clients, ...clients].map((client, index) => (
+          <motion.div
+            key={client.name + index}
+            className="flex items-center justify-center flex-shrink-0"
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-            {[...clients, ...clients].map((client, index) => (
-              <motion.div
-                key={client.name + index}
-                className="inline-flex items-center justify-center px-6"
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              >
-                <img
-                  src={client.logo}
-                  alt= "Best Digital Marketing Agency in Hyderabad"
-                  loading="lazy"
-                  decoding="async"
-                  fetchPriority="low"
-                  className="h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 ease-in-out"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
+            <img
+              src={client.logo}
+              alt={client.name}
+              className="h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
+              loading="lazy"
+            />
+          </motion.div>
+        ))}
+      </div>
         <motion.div
           className="mt-20 text-center max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
@@ -739,6 +728,8 @@ export default function HomePage() {
           </AnimatePresence>
         </motion.div>
       </section>
+
+      {/* FAQ Section */}
       <div className="bg-white px-4 py-16" id="faqs" aria-labelledby="faqs-heading">
         <div className="max-w-4xl mx-auto">
           <h2 id="faqs-heading" className="text-3xl font-bold text-center text-gray-900 mb-8">

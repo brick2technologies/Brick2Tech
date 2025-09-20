@@ -43,6 +43,7 @@ import AppDevelopment from "./pages/development/AppDevelopment";
 import BrochureDesign from "./pages/designing/BrochureDesign";
 import GraphicDesign from "./pages/designing/GraphicDesign";
 import LogoDesign from "./pages/designing/LogoDesign1.tsx";
+import SocialMediaBar from "./components/SocialMediaBar.tsx";
 
 {/* Speed Insights Vercel*/ }
 import { SpeedInsights } from "@vercel/speed-insights/react";
@@ -56,6 +57,7 @@ function App() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Header />
       <ScrollToTop />
+      <SocialMediaBar />
       <main className="relative">
         <SpeedInsights />
         <Analytics />

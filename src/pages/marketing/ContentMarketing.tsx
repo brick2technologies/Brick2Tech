@@ -47,14 +47,14 @@ const ContentMarketingPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Best Content Marketing Company in Hyderabad | Brick2Tech</title>
+        <title>Best Content Marketing Services in Hyderabad | Brick2Tech</title>
         <meta
           name="description"
-          content="Brick2Tech, the best content marketing company in Hyderabad, delivers strategic content that boosts visibility, engages audiences, and drives measurable growth."
+          content="Boost your brand visibility with Brick2Tech, offering the best content marketing services in Hyderabad. Drive traffic, engage audiences, and grow your business with strategic, result-driven content solutions."
         />
         <meta
           name="keywords"
-          content="best content marketing company in Hyderabad, content marketing services Hyderabad, content strategy, Brick2Tech content marketing, SEO content Hyderabad"
+          content="content marketing services in hyderabad, best content marketing services in hyderabad, content marketing agency in hyderabad, content marketing company in hyderabad, digital marketing services in hyderabad, seo content marketing hyderabad, brick2tech content marketing"
         />
         <meta name="canonical" content="https://brick2tech.com/services/content-marketing" />
         <meta name="robots" content="index, follow" />
