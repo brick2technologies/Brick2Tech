@@ -42,7 +42,10 @@ import AppDevelopment from "./pages/development/AppDevelopment";
 {/* Designing imports*/ }
 import BrochureDesign from "./pages/designing/BrochureDesign";
 import GraphicDesign from "./pages/designing/GraphicDesign";
-import LogoDesign from "./pages/designing/LogoDesign1.tsx"
+import LogoDesign from "./pages/designing/LogoDesign1.tsx";
+
+{/* Speed Insights Vercel*/ }
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 
 
@@ -52,6 +55,7 @@ function App() {
       <Header />
       <ScrollToTop />
       <main className="relative">
+        <SpeedInsights />
         <AnimatePresence mode="wait">
           <Routes>
             {/* ✅ Use optimized HomePage */}
@@ -65,12 +69,12 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
 
             {/* ✅ Services Pages */}
-            
 
-           
-            
-           
-           
+
+
+
+
+
 
             {/* Marketing pages */}
             <Route path="/services/marketing/branding" element={<BrandingPage />} />
@@ -135,10 +139,10 @@ function App() {
               element={<GraphicDesign />}
             />
 
-            <Route 
+            <Route
               path="/services/designing/logo-design"
               element={<LogoDesign />}
-            />  
+            />
 
             <Route
               path="/services/designing/architecture-design"
