@@ -469,7 +469,7 @@ export default function HomePage() {
           >
             <img
               src="https://res.cloudinary.com/diqux3y0a/image/upload/v1752147269/aboutUs_yllmow.webp"
-              alt="Team of professionals planning business transformation at Brick2Tech"
+              alt="Best Digital Marketing Agency in Hyderabad"
               loading="lazy"
               decoding="async"
               fetchPriority="low"
@@ -586,7 +586,7 @@ export default function HomePage() {
   >
     <img
       src="/images/whatwedo.svg"
-      alt="Why choose Brick2Tech: Key benefits including ROI-focused strategies, expert team, and innovative solutions"
+      alt="Best Digital Marketing Agency in Hyderabad"
       className="w-11/12 max-w-2xl h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-300"
       loading="lazy"
       decoding="async"
@@ -604,7 +604,7 @@ export default function HomePage() {
   >
     <img
       src="/images/Industries-We-Serve.svg"
-      alt="Industries We Serve at Brick2Tech: E-commerce, real estate, healthcare, education, travel, and food & beverage"
+      alt="Best Digital Marketing Agency in Hyderabad"
       className="w-11/12 max-w-2xl h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-300"
       loading="lazy"
       decoding="async"
@@ -630,7 +630,7 @@ export default function HomePage() {
             <div className="flex justify-center">
               <img
                 src="/images/Our-process.png" // <-- replace with your SVG file path
-                alt="Our Process at Brick2Tech: Discovery, Strategy, Execution, Optimization, and Results"
+                alt="Best Digital Marketing Agency in Hyderabad"
                 className="w-full max-w-3xl"
                 loading="lazy"
                 decoding="async"
@@ -688,7 +688,7 @@ export default function HomePage() {
               >
                 <img
                   src={client.logo}
-                  alt={`${client.name} Logo - Brick2Tech Client`}
+                  alt= "Best Digital Marketing Agency in Hyderabad"
                   loading="lazy"
                   decoding="async"
                   fetchPriority="low"
