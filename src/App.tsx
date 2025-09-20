@@ -47,6 +47,8 @@ import LogoDesign from "./pages/designing/LogoDesign1.tsx";
 {/* Speed Insights Vercel*/ }
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
+{/* web analytics vercel */ }
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
@@ -56,6 +58,7 @@ function App() {
       <ScrollToTop />
       <main className="relative">
         <SpeedInsights />
+        <Analytics />
         <AnimatePresence mode="wait">
           <Routes>
             {/* ✅ Use optimized HomePage */}
