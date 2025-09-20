@@ -15,98 +15,99 @@ const Header: React.FC = () => {
   }, [location.pathname]);
 
   const services = {
-    marketing: [
-      {
-        icon: <Monitor className="text-[#0098d4] w-5 h-5" />,
-        title: "Digital Marketing",
-        path: "/services/marketing/digital-marketing",
-      },
-      {
-        icon: <Search className="text-[#0098d4] w-5 h-5" />,
-        title: "SEO",
-        path: "/services/marketing/seo",
-      },
-      {
-        icon: <BarChart2 className="text-[#0098d4] w-5 h-5" />,
-        title: "Content Marketing",
-        path: "/services/marketing/content-marketing",
-      },
-      {
-        icon: <Users className="text-[#0098d4] w-5 h-5" />,
-        title: "Social Media Management",
-        path: "/services/marketing/social-media-management",
-      },
-      {
-        icon: <Smartphone className="text-[#0098d4] w-5 h-5" />,
-        title: "Social Media Marketing",
-        path: "/services/marketing/social-media-marketing",
-      },
-      {
-        icon: <Megaphone className="text-[#0098d4] w-5 h-5" />,
-        title: "Search Engine Marketing",
-        path: "/services/marketing/social-engine-marketing",
-      },
-      {
-        icon: <Mail className="text-[#0098d4] w-5 h-5" />,
-        title: "Email Marketing",
-        path: "/services/marketing/email-marketing",
-      },
-      {
-        icon: <Globe className="text-[#0098d4] w-5 h-5" />,
-        title: "Influencer Marketing",
-        path: "/services/marketing/influencer-marketing",
-      },
-    ],
-    development: [
-      {
-        icon: <ShoppingCart className="text-[#0098d4] w-5 h-5" />,
-        title: "Ecommerce Website",
-        path: "/services/development/ecommerce-website",
-      },
-      {
-        icon: <Code className="text-[#0098d4] w-5 h-5" />,
-        title: "Web Development",
-        path: "/services/web-development",
-      },
-      {
-        icon: <Server className="text-[#0098d4] w-5 h-5" />,
-        title: "Web Hosting",
-        path: "/services/web-hoisting",
-      },
-      {
-        icon: <Smartphone className="text-[#0098d4] w-5 h-5" />,
-        title: "App Development",
-        path: "/services/app-development",
-      },
-    ],
-    designing: [
-      {
-        icon: <FileText className="text-[#0098d4] w-5 h-5" />,
-        title: "Brochure Design",
-        path: "/services/designing/brochure-design",
-      },
-      {
-        icon: <Palette className="text-[#0098d4] w-5 h-5" />,
-        title: "Graphic Design",
-        path: "/services/designing/graphic-design",
-      },
-      {
-        icon: <Brush className="text-[#0098d4] w-5 h-5" />,
-        title: "Logo Design",
-        path: "/services/designing/logo-design",
-      },
-      {
-        icon: <Building className="text-[#0098d4] w-5 h-5" />,
-        title: "Architecture Design",
-        path: "/services/designing/architecture-design",
-      },
-      {
-        icon: <PenTool className="text-[#0098d4] w-5 h-5" />,
-        title: "UI/UX Design",
-        path: "/services/designing/uiux-design",
-      },
-    ],
-  };
+  marketing: [
+    {
+      icon: <Monitor className="text-[#0098d4] w-5 h-5" />,
+      title: "Digital Marketing",
+      path: "/digital-marketing-agency",
+    },
+    {
+      icon: <Search className="text-[#0098d4] w-5 h-5" />,
+      title: "SEO",
+      path: "/seo-services-hyderabad",
+    },
+    {
+      icon: <BarChart2 className="text-[#0098d4] w-5 h-5" />,
+      title: "Content Marketing",
+      path: "/content-marketing",
+    },
+    {
+      icon: <Users className="text-[#0098d4] w-5 h-5" />,
+      title: "Social Media Management",
+      path: "/social-media-management",
+    },
+    {
+      icon: <Smartphone className="text-[#0098d4] w-5 h-5" />,
+      title: "Social Media Marketing",
+      path: "/social-media-marketing-services",
+    },
+    {
+      icon: <Megaphone className="text-[#0098d4] w-5 h-5" />,
+      title: "Search Engine Marketing",
+      path: "/search-engine-marketing",
+    },
+    {
+      icon: <Mail className="text-[#0098d4] w-5 h-5" />,
+      title: "Email Marketing",
+      path: "/email-marketing",
+    },
+    {
+      icon: <Globe className="text-[#0098d4] w-5 h-5" />,
+      title: "Influencer Marketing",
+      path: "/influencer-marketing",
+    },
+  ],
+  development: [
+    {
+      icon: <ShoppingCart className="text-[#0098d4] w-5 h-5" />,
+      title: "Ecommerce Website",
+      path: "/ecommerce-website-services",
+    },
+    {
+      icon: <Code className="text-[#0098d4] w-5 h-5" />,
+      title: "Web Development",
+      path: "/web-development-services",
+    },
+    {
+      icon: <Server className="text-[#0098d4] w-5 h-5" />,
+      title: "Web Hosting",
+      path: "/web-hoisting-services",
+    },
+    {
+      icon: <Smartphone className="text-[#0098d4] w-5 h-5" />,
+      title: "App Development",
+      path: "/app-development-services",
+    },
+  ],
+  designing: [
+    {
+      icon: <FileText className="text-[#0098d4] w-5 h-5" />,
+      title: "Brochure Design",
+      path: "/brochure-design-services",
+    },
+    {
+      icon: <Palette className="text-[#0098d4] w-5 h-5" />,
+      title: "Graphic Design",
+      path: "/graphic-design",
+    },
+    {
+      icon: <Brush className="text-[#0098d4] w-5 h-5" />,
+      title: "Logo Design",
+      path: "/logo-design",
+    },
+    {
+      icon: <Building className="text-[#0098d4] w-5 h-5" />,
+      title: "Architecture Design",
+      path: "/architecture-design",
+    },
+    {
+      icon: <PenTool className="text-[#0098d4] w-5 h-5" />,
+      title: "UI/UX Design",
+      path: "/uiux-design", // keep if you have a page
+    },
+  ],
+};
+
 
   const menuItems = [
     { name: "Home", path: "/" },

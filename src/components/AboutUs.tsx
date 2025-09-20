@@ -140,51 +140,69 @@ const AboutUs = () => {
       </div>
 
       {/* Intro Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="flex flex-col gap-10 py-16 px-4 text-center"
-      >
+      <motion.section
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="py-16 bg-white"
+>
+  <div className="max-w-7xl mx-auto px-4 lg:px-8 space-y-12">
+    {/* Top Header Centered */}
+    <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-900">
+      Top Digital Marketing Company in Hyderabad
+    </h2>
+
+    {/* Two Column Content */}
+    <div className="flex flex-col lg:flex-row items-center gap-12">
+      {/* Left Side Content */}
+      <div className="lg:w-1/2 space-y-6">
         <h1 className="sr-only">best digital marketing companies in hyderabad</h1>
-        <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-6xl mx-auto">
-          Brick 2 Technologies is a dynamic startup focused on delivering
-          cutting-edge digital marketing and design solutions. Our mission is to
-          help businesses grow by crafting impactful, data-driven strategies
-          that boost brand visibility, drive measurable results, and deliver
-          engaging digital experiences.
-          <br />
-          <br />
-          The digital landscape moves fast—algorithm changes, new platforms,
-          evolving trends. It’s easy to feel overwhelmed and outpaced. But
-          that’s exactly where we come in.
+
+        <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+          At Brick2Tech, we blend creativity, technology, and strategy to help
+          businesses thrive in the digital world. Recognized as a <strong> Top Digital
+          Marketing Company in Hyderabad</strong>, we specialize in delivering
+          full-scale digital solutions aligned with your brand goals and
+          designed to achieve measurable growth.
         </p>
 
-        <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-6xl mx-auto">
-          At Brick 2 Technologies, we’ve helped businesses just like yours—from
-          startups to established brands—cut through the noise and thrive
-          online. Our clients have seen up to{" "}
-          <span className="font-semibold text-black">60% higher ROI</span> after
-          partnering with us, thanks to our data-driven, performance-focused
-          digital strategies.
-          <br />
-          <br />
-          Whether it’s SEO, social media marketing, or paid ads, we don’t just
-          run campaigns—we build growth engines.
-          <br />
-          <br />
-          We don’t want to be just another agency. We want to be your{" "}
-          <span className="font-semibold text-black">growth partner</span>—an
-          extension of your team. While you focus on running your business,
-          we’ll focus on putting your brand exactly where it belongs: in front
-          of the right people, at the right time.
-          <br />
-          <br />
-          So, if you’re ready to be seen, grow stronger, and build a better
-          digital future—let’s build it together{" "}
-          <span className="font-semibold text-black">Brick by Brick.</span>
+        <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+          Brick 2 Technologies is a dynamic startup focused on delivering
+          cutting-edge digital marketing and design solutions. Our mission is
+          to help businesses grow by crafting impactful, data-driven strategies
+          that boost brand visibility, drive measurable results, and deliver
+          engaging digital experiences.
         </p>
+
+        <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+          Our clients have seen up to <span className="font-semibold text-black">60% higher ROI</span>
+          {" "}after partnering with us, thanks to our data-driven, performance-focused digital strategies.
+        </p>
+
+        <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+          Whether it’s SEO, social media marketing, or paid ads, we don’t just run campaigns—we build growth engines.
+          We want to be your <span className="font-semibold text-black">growth partner</span>—an extension of your team.
+          Let’s build a better digital future <span className="font-semibold text-black">Brick by Brick.</span>
+        </p>
+      </div>
+
+      {/* Right Side Image */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className="lg:w-1/2 flex justify-center"
+      >
+        <img
+          src="/path-to-your-image.jpg"
+          alt="Digital Marketing Illustration"
+          className="rounded-lg shadow-lg max-w-full h-auto"
+        />
       </motion.div>
+    </div>
+  </div>
+</motion.section>
+
 
       {/* Strengths Section */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 py-16">

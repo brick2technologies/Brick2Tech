@@ -83,72 +83,72 @@ function App() {
             <Route path="/services/marketing/branding" element={<BrandingPage />} />
             <Route path="/services/marketing/seo" element={<SEOPage />} />
             <Route
-              path="/services/marketing/digital-marketing"
+              path="/digital-marketing-agency"
               element={<DigitalMarketingPage />}
             />
-            <Route path="/services/marketing/seo" element={<SEOPage />} />
+            <Route path="/seo-services-hyderabad" element={<SEOPage />} />
             <Route
-              path="/services/marketing/content-marketing"
+              path="/content-marketing"
               element={<ContentMarketingPage />}
             />
             <Route
-              path="/services/marketing/social-media-management"
+              path="/social-media-management"
               element={<SocialMediaManagement />}
             />
             <Route
-              path="/services/marketing/social-media-marketing"
+              path="/social-media-marketing-services"
               element={<SocialMediaMarketingPage />}
             />
             <Route
-              path="/services/marketing/social-engine-marketing"
+              path="/search-engine-marketing"
               element={<PPCPage />}
             />
             <Route
-              path="/services/marketing/email-marketing"
+              path="/email-marketing"
               element={<EmailMarketing />}
             />
             <Route
-              path="/services/marketing/influencer-marketing"
+              path="/influencer-marketing"
               element={<InfluencerMarketing />}
             />
 
             {/* Web Development Pages */}
             <Route
-              path="/services/development/ecommerce-website"
+              path="/ecommerce-website-services"
               element={<EcommerceWebsite />}
             />
             <Route
-              path="/services/development/web-development"
+              path="/web-development-services"
               element={<WebDevelopmentPage />}
             />
             <Route
-              path="/services/web-hoisting"
+              path="/web-hoisting-services/"
               element={<WebHoisting />}
             />
 
             <Route
-              path="/services/development/app-development"
+              path="/app-development-services"
               element={<AppDevelopment />}
             />
 
             {/* Designing Pages */}
             <Route
-              path="/services/designing/brochure-design"
+              path="/brochure-design-services"
               element={<BrochureDesign />}
             />
 
             <Route
-              path="/services/designing/graphic-design"
+              path="/graphic-design"
               element={<GraphicDesign />}
             />
 
             <Route
-              path="/services/designing/logo-design"
+              path="/logo-design"
               element={<LogoDesign />}
             />
 
             <Route
-              path="/services/designing/architecture-design"
+              path="/architecture-design"
               element={<ArchitectureDesignPage />}
             />
 
