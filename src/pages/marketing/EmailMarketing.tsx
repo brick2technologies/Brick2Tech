@@ -56,7 +56,7 @@ const EmailMarketingPage: React.FC = () => {
           name="keywords"
           content="best email marketing services in Hyderabad, email marketing agency in Hyderabad, email marketing company in Hyderabad, email marketing services Hyderabad, email marketing Hyderabad, email marketing experts in Hyderabad, Brick2Tech email marketing"
         />
-        <meta name="canonical" content="https://brick2tech.com/services/email-marketing" />
+        <meta name="canonical" content="https://brick2tech.com/email-marketing" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
         <meta property="og:title" content="Best Email Marketing Services in Hyderabad | Brick2Tech" />
@@ -65,7 +65,7 @@ const EmailMarketingPage: React.FC = () => {
           content="Grow your business with Brick2Tech’s strategic email marketing services in Hyderabad. Boost engagement, retention, and ROI with personalized campaigns."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://brick2tech.com/services/email-marketing" />
+        <meta property="og:url" content="https://brick2tech.com/email-marketing" />
         <meta property="og:image" content="https://brick2tech.com/assets/email-banner.png" />
         <meta property="og:site_name" content="Brick2Tech" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -84,7 +84,7 @@ const EmailMarketingPage: React.FC = () => {
         
         {/* Hero Section (Identical to SEO Page) */}
         <motion.section
-          className="relative min-h-[50vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
+          className="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -94,17 +94,18 @@ const EmailMarketingPage: React.FC = () => {
         >
           {/* Background Image */}
           <div
-            className="absolute inset-0 bg-no-repeat bg-cover bg-center"
+            className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-90"
             style={{ backgroundImage: `url(${EmailBG})` }}
             aria-hidden="true"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-white/80"></div>
           {/* Email Marketing Services Content */}
           <div className="relative z-10 max-w-4xl flex flex-col items-center justify-center h-full">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Our Email Marketing Services
+            <h2 className="text-4xl sm:text-5xl font-bold text-blue-950 mb-6">
+              Your inbox is powerful—crafted messages can turn readers into loyal customers.
             </h2>
-            <p className="text-lg text-white">
-              At Brick2Tech, we provide strategic email marketing services to nurture leads, engage customers, and drive measurable results.
+            <p className="text-lg text-blue-950 max-w-3xl">
+              Drive conversions and build stronger customer relationships with Brick2Tech’s email marketing solutions. We craft targeted campaigns, engaging newsletters, and automated workflows that keep your audience informed, connected, and ready to take action.
             </p>
           </div>
         </motion.section>

@@ -247,8 +247,8 @@ export default function HomePage() {
         <link rel="preload" href="/images/Industries-We-Serve.svg" as="image" />
         <link rel="preload" href="/images/Our-process.png" as="image" />
         {/* Structured Data / SEO Optimizations */}
-<script type="application/ld+json">
-{`
+        <script type="application/ld+json">
+          {`
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -304,10 +304,10 @@ export default function HomePage() {
   ]
 }
 `}
-</script>
+        </script>
 
-<script type="application/ld+json">
-{`
+        <script type="application/ld+json">
+          {`
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -341,10 +341,10 @@ export default function HomePage() {
   }
 }
 `}
-</script>
+        </script>
 
-<script type="application/ld+json">
-{`
+        <script type="application/ld+json">
+          {`
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -362,10 +362,10 @@ export default function HomePage() {
   ]
 }
 `}
-</script>
+        </script>
 
-<script type="application/ld+json">
-{`
+        <script type="application/ld+json">
+          {`
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -392,10 +392,10 @@ export default function HomePage() {
   ]
 }
 `}
-</script>
+        </script>
 
-<script type="application/ld+json">
-{`
+        <script type="application/ld+json">
+          {`
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -418,10 +418,10 @@ export default function HomePage() {
   ]
 }
 `}
-</script>
+        </script>
 
-<script type="application/ld+json">
-{`
+        <script type="application/ld+json">
+          {`
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -441,7 +441,7 @@ export default function HomePage() {
   ]
 }
 `}
-</script>
+        </script>
 
       </Helmet>
       <Hero mousePosition={mousePosition} />

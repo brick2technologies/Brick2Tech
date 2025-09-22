@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, easeInOut } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { ArrowPathIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
@@ -48,23 +48,11 @@ const sectionVariants = {
     scale: 1,
     transition: {
       duration: 0.6,
-      ease: 'easeOut',
+      ease: easeInOut, // ✅ correct
     },
   },
 };
 
-const buttonVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      delay: 0.3,
-      ease: 'easeOut',
-    },
-  },
-};
 
 const services = [
   {
@@ -144,30 +132,30 @@ const DigitalMarketingPage = () => (
       <meta name="keywords" content="top digital marketing agency in hyderabad, advertising agency in hyderabad, online marketing companies in hyderabad" />
 
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://brick2tech.com/services/digital-marketing" />
+      <link rel="canonical" href="https://brick2tech.com/digital-marketing-agency" />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://brick2tech.com/services/digital-marketing" />
+      <meta property="og:url" content="https://brick2tech.com/digital-marketing-agency" />
       <meta property="og:title" content="Digital Marketing Services | Brick2Tech" />
       <meta
         property="og:description"
         content="Crush your digital goals with Brick2Tech. SEO, Ads, CRO, Analytics — full-funnel marketing services that scale."
       />
-      <meta property="og:image" content="https://brick2tech.com/images/og-digital-marketing.jpg" />
+      <meta property="og:image" content="https://brick2tech.com/digital-marketing.jpg" />
       
       <meta property="og:site_name" content="Brick2Tech" />
       <meta property="og:locale" content="en_US" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content="https://brick2tech.com/services/digital-marketing" />
+      <meta name="twitter:url" content="https://brick2tech.com/digital-marketing-agency" />
       <meta name="twitter:title" content="Digital Marketing Services | Brick2Tech" />
       <meta
         name="twitter:description"
         content="Full-stack digital marketing for scale: SEO, ads, CRO, analytics and more with Brick2Tech."
       />
-      <meta name="twitter:image" content="https://brick2tech.com/images/og-digital-marketing.jpg" />
+      <meta name="twitter:image" content="https://brick2tech.com/images/digital-marketing.jpg" />
 
       {/* Structured Data - Organization + Social Links */}
       <script type="application/ld+json">
@@ -254,59 +242,65 @@ const DigitalMarketingPage = () => (
     </motion.section>
 
     {/* Intro Section - Refined styles for better flow and visual hierarchy */}
+    <motion.section
+  className="relative z-10 px-4 sm:px-8 lg:px-16 py-16 bg-gradient-to-br from-sky-50 to-indigo-50"
+  variants={sectionVariants}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.2 }}
+>
+  {/* Main Heading */}
+  <motion.h1
+    variants={sectionVariants}
+    className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center mb-12"
+  >
+    Digital Marketing Agency in Hyderabad
+  </motion.h1>
+
+  {/* Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+    {/* Left Content */}
     <motion.div
-      className="relative z-10 mx-4 sm:mx-8 lg:mx-16 -mt-12 sm:-mt-16 lg:-mt-20 top-10"
       variants={sectionVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-      style={{
-        padding: '40px 20px',
-        maxWidth: '1200px',
-        margin: '0 auto 40px',
-        textAlign: 'center',
-        background: 'linear-gradient(135deg, #eff6ff, #dbeafe)',
-        borderRadius: '20px',
-        boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)',
-      }}
+      className="text-center lg:text-left"
     >
-      <motion.h1
-        variants={sectionVariants}
-        className="text-3xl sm:text-4xl font-bold text-indigo-900 mb-4"
-      >
-        Digital Marketing Solutions by Brick2Tech
-      </motion.h1>
       <motion.h2
         variants={sectionVariants}
         className="text-2xl sm:text-3xl font-semibold text-blue-700 mb-6"
       >
         Grow Your Brand with Expert Strategies and Proven Results
       </motion.h2>
-      <motion.h3
-        className="text-xl sm:text-2xl font-medium text-blue-600 mb-8 sr-only"
-      >
-        Digital Marketing Agency in Hyderabad
-      </motion.h3>
+
       <motion.p
         variants={sectionVariants}
-        className="text-base sm:text-lg text-gray-700 line-height-7 mb-6 max-w-3xl mx-auto"
+        className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6"
       >
         In an increasingly competitive online landscape, having a strong digital presence is essential to drive growth and connect with your audience. At Brick2Tech, we are proud to be recognized as a leading digital marketing agency in Hyderabad, helping businesses of all sizes achieve their goals through customized, data-driven strategies.
       </motion.p>
+
       <motion.p
         variants={sectionVariants}
-        className="text-base sm:text-lg text-gray-700 line-height-7 max-w-3xl mx-auto mb-8"
+        className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8"
       >
         Our team combines creativity, technology, and analytical insights to deliver campaigns that increase visibility, generate leads, and maximize ROI. Whether you’re a startup building your brand or an enterprise scaling your digital efforts, we offer comprehensive marketing solutions designed to make your brand stand out and thrive in today’s fast-paced digital world.
       </motion.p>
-      <motion.a
-        href="#contact"
-        variants={buttonVariants}
-        className="inline-block px-8 py-4 bg-blue-600 text-white rounded-full font-semibold text-lg shadow-lg transition duration-300 hover:bg-blue-700 hover:scale-105"
-      >
-        Get Started with Brick2Tech
-      </motion.a>
     </motion.div>
+
+    {/* Right Image */}
+    <motion.div
+      variants={sectionVariants}
+      className="flex justify-center lg:justify-end"
+    >
+      <img
+        src="/images/digital-marketing.jpg"
+        alt="Top Digital Marketing Agency In Hyderabd - Brick2Tech"
+        className="w-full  rounded-2xl shadow-lg object-cover"
+        loading="lazy"
+      />
+    </motion.div>
+  </div>
+</motion.section>
+
 
     {/* Services Section - Improved grid spacing and card designs */}
     <section className="py-20 px-6 bg-white" aria-labelledby="services-heading" id="services">

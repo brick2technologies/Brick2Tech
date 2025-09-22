@@ -61,7 +61,7 @@ const SocialMediaManagementPage: React.FC = () => {
           name="keywords"
           content="social media companies in hyderabad, social media management agency in hyderabad, social media management company in hyderabad, social media agency hyderabad, social media marketing company in hyderabad, social media marketing agency in hyderabad, best social media agency in hyderabad, top social media companies in hyderabad"
         />
-        <meta name="canonical" content="https://brick2tech.com/services/smm" />
+        <meta name="canonical" content="https://brick2tech.com/social-media-management" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
         <meta property="og:title" content="Best SMM Services in Hyderabad | Brick2Tech" />
@@ -70,7 +70,7 @@ const SocialMediaManagementPage: React.FC = () => {
           content="Elevate your brand with Brick2Tech’s expert social media management services in Hyderabad. Drive engagement, leads, and loyalty with tailored campaigns."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://brick2tech.com/services/smm" />
+        <meta property="og:url" content="https://brick2tech.com/social-media-management" />
         <meta property="og:image" content="https://brick2tech.com/assets/smm-banner.png" />
         <meta property="og:site_name" content="Brick2Tech" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -86,10 +86,10 @@ const SocialMediaManagementPage: React.FC = () => {
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="Social Media Management Service Page"
       >
-        <h1 className="sr-only">Best SMM Services in Hyderabad</h1>
+
         {/* Hero Section */}
         <motion.section
-          className="relative min-h-[50vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
+          className="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -107,17 +107,18 @@ const SocialMediaManagementPage: React.FC = () => {
           {/* SMM Services Content */}
           <div className="relative z-10 max-w-4xl flex flex-col items-center justify-center h-full">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Our Social Media Management Services
+              Elevate Your Social Media Presence
             </h2>
             <p className="text-lg text-white">
-              At Brick2Tech, we deliver strategic social media campaigns to connect with your audience, build trust, and drive measurable growth.
+              Brick2Tech crafts impactful social media strategies that engage your audience, strengthen your brand, and drive measurable business results.
             </p>
           </div>
+
         </motion.section>
 
         {/* SMM Overview Section */}
         <motion.section
-          className="relative py-10 px-6 sm:px-12 bg-white text-center"
+          className="relative bg-white py-16 sm:py-20 md:py-24 lg:py-28 px-6 sm:px-12 md:px-16 lg:px-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -125,18 +126,41 @@ const SocialMediaManagementPage: React.FC = () => {
           role="region"
           aria-label="Social Media Management Overview Section"
         >
-          <div className="max-w-4xl mx-auto space-y-6">
-            <h1 className="text-3xl font-bold text-gray-900">
-              Best Social Media Management Services in Hyderabad
-            </h1>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              In today’s digital-first world, social media is more than just a communication platform—it’s a powerful tool for businesses to connect with their audience, build trust, and drive measurable growth. At Brick2Tech, we provide top-rated Social Media Management Services in Hyderabad, customized to suit your business needs.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Our dedicated team blends creativity, data-driven strategies, and industry expertise to deliver impactful social media campaigns. From content creation and scheduling to engagement tracking and analytics, we manage your complete social media presence with precision and innovation. Social media marketing enhances brand visibility, fosters stronger customer engagement, drives website traffic, and provides a competitive advantage—all in a cost-effective way.
-            </p>
+          {/* Heading Above Grid */}
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
+            Best Social Media Management Services in Hyderabad
+          </h1>
+
+          {/* Content + Image Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="flex flex-col justify-center items-start text-left space-y-6">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                In today’s digital-first world, social media is more than just a communication platform—it’s a powerful tool for businesses to connect with their audience, build trust, and drive measurable growth. At Brick2Tech, we provide top-rated Social Media Management Services in Hyderabad, customized to suit your business needs.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Our dedicated team blends creativity, data-driven strategies, and industry expertise to deliver impactful social media campaigns. From content creation and scheduling to engagement tracking and analytics, we manage your complete social media presence with precision and innovation. Social media marketing enhances brand visibility, fosters stronger customer engagement, drives website traffic, and provides a competitive advantage—all in a cost-effective way.
+              </p>
+              <a
+                href="/contact"
+                className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 mt-4"
+              >
+                Get Started Today
+              </a>
+            </div>
+
+            {/* Right Image */}
+            <div className="flex justify-center items-center">
+              <img
+                src="/images/social-media-management.png"
+                alt="Social Media Management"
+                className="w-full  h-auto object-contain"
+              />
+            </div>
           </div>
         </motion.section>
+
+
 
         {/* Core SMM Services Section */}
         <motion.section
@@ -181,77 +205,51 @@ const SocialMediaManagementPage: React.FC = () => {
 
         {/* SMM Process Section */}
         <motion.section
-          className="py-24 px-6 bg-sky-50"
-          initial="hidden"
-          whileInView="visible"
+          className="relative bg-sky-50 py-6 sm:py-20 md:py-24 lg:py-18 px-6 sm:px-6 md:px-16 lg:px-20"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          variants={fadeUp}
-          custom={0}
           role="region"
           aria-label="Social Media Management Process"
         >
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-blue-900">
-              Our Social Media Management Process at Brick2Tech
-            </h2>
-            <p className="text-center text-blue-800 max-w-3xl mx-auto mb-16 text-lg">
-              Recognized as the best SMM agency in Hyderabad, Brick2Tech follows a strategic, results-oriented approach to deliver impactful social media success.
-            </p>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  title: "Enhanced Brand Awareness",
-                  desc: "We amplify your brand presence by highlighting your unique strengths, ensuring visibility and differentiation from competitors.",
-                },
-                {
-                  title: "Targeted Audience Engagement",
-                  desc: "Leveraging advanced targeting to reach specific audiences based on demographics, interests, and behaviors for stronger connections.",
-                },
-                {
-                  title: "Improved Customer Service",
-                  desc: "Timely, professional interactions via social media to enhance customer satisfaction and build loyalty.",
-                },
-                {
-                  title: "Increased Website Traffic",
-                  desc: "Engaging content and optimized campaigns drive traffic to your website, boosting conversions and sales opportunities.",
-                },
-                {
-                  title: "Insightful Analytics & Reporting",
-                  desc: "Transparent reports on reach, engagement, and ROI to track campaign success and identify improvement opportunities.",
-                },
-                {
-                  title: "Building Customer Loyalty",
-                  desc: "Fostering long-term loyalty through consistent engagement, personalized communication, and meaningful interactions.",
-                },
-              ].map((step, index) => (
-                <motion.article
-                  key={step.title}
-                  className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition"
-                  variants={fadeUp}
-                  custom={index + 1}
-                  aria-label={step.title}
-                >
-                  <div className="flex items-start gap-4">
-                    <CheckCircle className="text-sky-500 w-6 h-6 mt-1 flex-shrink-0" aria-hidden="true" />
-                    <div>
-                      <h3 className="font-semibold text-xl text-blue-900">{step.title}</h3>
-                      <p className="mt-2 text-blue-800">{step.desc}</p>
-                    </div>
-                  </div>
-                </motion.article>
-              ))}
+          <div className="max-w-6xl mx-auto space-y-12">
+            {/* Section Heading */}
+            <div className="text-center">
+              <h2 className="text-4xl sm:text-5xl font-bold text-blue-900 mb-4">
+                Our Process
+              </h2>
+              <p className="text-lg sm:text-xl text-blue-800 max-w-3xl mx-auto">
+                In a crowded digital space, effective social media management can be the game-changer for businesses. For companies in Hyderabad, investing in professional SMM services is essential to stand out and grow. Here’s what our process delivers:
+              </p>
             </div>
+
+            {/* Process Steps */}
+            <motion.div
+              className="relative  px-6 sm:px-12 flex justify-center items-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              role="region"
+              aria-label="Social Media Management Process Section"
+            >
+              <img
+                src="/images/smm-process-overview.png" // replace with your single process image
+                alt="Social Media Management Process Overview"
+                className="w-full max-w-4xl h-auto object-contain "
+              />
+            </motion.div>
           </div>
         </motion.section>
 
+
         {/* Why Choose Brick2Tech Section */}
         <motion.section
-          className="py-24 px-6 bg-white"
-          initial="hidden"
-          whileInView="visible"
+          className="py-24 px-6 sm:px-12 bg-sky-50"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          variants={fadeUp}
-          custom={0}
           role="region"
           aria-label="Why Choose Brick2Tech"
         >
@@ -288,9 +286,11 @@ const SocialMediaManagementPage: React.FC = () => {
               ].map((reason, index) => (
                 <motion.article
                   key={reason.title}
-                  className="bg-sky-50 rounded-xl p-6 shadow-md hover:shadow-xl transition"
-                  variants={fadeUp}
-                  custom={index + 1}
+                  className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  viewport={{ once: true }}
                   aria-label={reason.title}
                 >
                   <div className="flex items-start gap-4">
@@ -306,6 +306,7 @@ const SocialMediaManagementPage: React.FC = () => {
           </div>
         </motion.section>
 
+
         {/* Case Studies Section */}
         <motion.section
           className="py-24 px-6 bg-sky-100"
@@ -317,10 +318,13 @@ const SocialMediaManagementPage: React.FC = () => {
           role="region"
           aria-label="Case Studies"
         >
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-blue-900">
+          <div className="max-w-6xl mx-auto text-center">
+            {/* Heading */}
+            <h2 className="text-4xl font-bold mb-12 text-blue-900">
               Our Social Media Success Stories
             </h2>
+
+            {/* Grid Content */}
             <div className="grid gap-8 md:grid-cols-2">
               {[
                 {
@@ -334,14 +338,14 @@ const SocialMediaManagementPage: React.FC = () => {
               ].map((caseStudy, index) => (
                 <motion.article
                   key={caseStudy.title}
-                  className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition"
+                  className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition hover:scale-105 duration-300"
                   variants={fadeUp}
                   custom={index + 1}
                   aria-label={caseStudy.title}
                 >
-                  <div className="flex items-start gap-4">
+                  <div className="flex flex-col md:flex-row items-start gap-4">
                     <CheckCircle className="text-sky-500 w-6 h-6 mt-1 flex-shrink-0" aria-hidden="true" />
-                    <div>
+                    <div className="text-left">
                       <h3 className="font-semibold text-xl text-blue-900">{caseStudy.title}</h3>
                       <p className="mt-2 text-blue-800">{caseStudy.desc}</p>
                     </div>
@@ -351,6 +355,7 @@ const SocialMediaManagementPage: React.FC = () => {
             </div>
           </div>
         </motion.section>
+
 
         {/* Call to Action Section */}
         <motion.section

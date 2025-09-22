@@ -56,7 +56,7 @@ const ContentMarketingPage: React.FC = () => {
           name="keywords"
           content="content marketing services in hyderabad, best content marketing services in hyderabad, content marketing agency in hyderabad, content marketing Services in hyderabad, digital marketing services in hyderabad, seo content marketing hyderabad, brick2tech content marketing"
         />
-        <meta name="canonical" content="https://brick2tech.com/services/content-marketing" />
+        <meta name="canonical" content="https://brick2tech.com/content-marketing" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
         <meta property="og:title" content="Best Content Marketing Services in Hyderabad | Brick2Tech" />
@@ -65,7 +65,7 @@ const ContentMarketingPage: React.FC = () => {
           content="Elevate your brand with Brick2Tech’s strategic content marketing services in Hyderabad. Drive leads and authority with SEO-friendly, engaging content."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://brick2tech.com/services/content-marketing" />
+        <meta property="og:url" content="https://brick2tech.com/content-marketing" />
         <meta property="og:image" content="https://brick2tech.com/assets/content-banner.png" />
         <meta property="og:site_name" content="Brick2Tech" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -81,10 +81,10 @@ const ContentMarketingPage: React.FC = () => {
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="Content Marketing Service Page"
       >
-        
+
         {/* Hero Section */}
         <motion.section
-          className="relative min-h-[50vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
+          className="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -102,17 +102,18 @@ const ContentMarketingPage: React.FC = () => {
           {/* Content Marketing Services Content */}
           <div className="relative z-10 max-w-4xl flex flex-col items-center justify-center h-full">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Our Content Marketing Services
+              Elevate Your Brand with Powerful Content Marketing
             </h2>
             <p className="text-lg text-white">
-              At Brick2Tech, we craft strategic content that builds authority, drives leads, and fuels measurable business growth.
+              From engaging blogs to impactful social media campaigns, Brick2Tech delivers content strategies that boost visibility, connect with your audience, and drive real business results.
             </p>
           </div>
+
         </motion.section>
 
         {/* Content Marketing Overview Section */}
         <motion.section
-          className="relative py-10 px-6 sm:px-12 bg-white text-center"
+          className="relative py-10 px-6 sm:px-12 bg-white"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -120,18 +121,32 @@ const ContentMarketingPage: React.FC = () => {
           role="region"
           aria-label="Content Marketing Overview Section"
         >
-          <div className="max-w-4xl mx-auto space-y-6">
-            <h1 className="text-4xl font-bold text-gray-900">
-              Best Content Marketing Services in Hyderabad
-            </h1>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              In today’s digital-first world, content isn’t optional—it’s essential. At Brick2Tech, we believe content is more than just words; it’s a strategic asset that builds authority, drives leads, and fuels measurable business growth. As the Best Content Marketing Services in Hyderabad, we help businesses tell their story in a way that resonates with audiences and inspires action.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Our content marketing experts combine creativity, data, and industry insights to craft content that informs, engages, and converts. From SEO-friendly blogs to engaging social media posts, our tailored content strategies boost visibility, generate leads, and strengthen brand credibility. From strategy to execution to promotion, we manage the entire content lifecycle—ensuring your brand stands out in the crowded digital landscape.
-            </p>
+          <h1 className="text-4xl font-bold text-gray-900 text-center mb-12">
+            Best Content Marketing Services in Hyderabad
+          </h1>
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            {/* Left Image */}
+            <div className="flex justify-center">
+              <img
+                src="/images/content-marketing-about.png" // replace with your actual image path
+                alt="Content Marketing"
+                className="w-full  h-auto object-cover rounded-xl shadow-md"
+              />
+            </div>
+
+            {/* Right Content */}
+            <div className="space-y-6 text-center md:text-left">
+
+              <p className="text-lg text-gray-700 leading-relaxed">
+                In today’s digital-first world, content isn’t optional—it’s essential. At Brick2Tech, we believe content is more than just words; it’s a strategic asset that builds authority, drives leads, and fuels measurable business growth. As the <strong>Best Content Marketing Services in Hyderabad</strong>, we help businesses tell their story in a way that resonates with audiences and inspires action.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Our content marketing experts combine creativity, data, and industry insights to craft content that informs, engages, and converts. From SEO-friendly blogs to engaging social media posts, our tailored content strategies boost visibility, generate leads, and strengthen brand credibility. From strategy to execution to promotion, we manage the entire content lifecycle—ensuring your brand stands out in the crowded digital landscape.
+              </p>
+            </div>
           </div>
         </motion.section>
+
 
         {/* Core Content Marketing Services Section */}
         <motion.section
@@ -192,46 +207,24 @@ const ContentMarketingPage: React.FC = () => {
             <p className="text-center text-blue-800 max-w-3xl mx-auto mb-16 text-lg">
               Recognized as the best content marketing Services in Hyderabad, Brick2Tech follows a strategic, data-driven approach to deliver measurable content success.
             </p>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  title: "Audience-Driven Content",
-                  desc: "Crafted to address pain points and connect with your ideal customers, ensuring maximum engagement and relevance.",
-                },
-                {
-                  title: "Search Engine Visibility",
-                  desc: "Optimized with keywords, clusters, and on-page SEO to achieve long-term rankings and drive organic traffic.",
-                },
-                {
-                  title: "Authority Building",
-                  desc: "Thought-leadership content to position your brand as an industry expert, building trust and credibility.",
-                },
-                {
-                  title: "Lead Generation Support",
-                  desc: "Funnels, guides, and landing pages designed to turn readers into qualified leads and customers.",
-                },
-                {
-                  title: "Insight-Backed Optimization",
-                  desc: "Regular tracking and refinements using analytics to ensure continuous improvement and measurable results.",
-                },
-              ].map((step, index) => (
-                <motion.article
-                  key={step.title}
-                  className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition"
-                  variants={fadeUp}
-                  custom={index + 1}
-                  aria-label={step.title}
-                >
-                  <div className="flex items-start gap-4">
-                    <CheckCircle className="text-sky-500 w-6 h-6 mt-1 flex-shrink-0" aria-hidden="true" />
-                    <div>
-                      <h3 className="font-semibold text-xl text-blue-900">{step.title}</h3>
-                      <p className="mt-2 text-blue-800">{step.desc}</p>
-                    </div>
-                  </div>
-                </motion.article>
-              ))}
-            </div>
+            <motion.section
+              className="py-2 px-6"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              role="region"
+              aria-label="Content Marketing Features"
+            >
+              <div className="max-w-6xl mx-auto flex justify-center">
+                <img
+                  src="/images/Content-Marketing-approach.png"
+                  alt="Content marketing process illustration"
+                  className="w-full max-w-4xl "
+                />
+              </div>
+            </motion.section>
+
           </div>
         </motion.section>
 
@@ -295,7 +288,7 @@ const ContentMarketingPage: React.FC = () => {
 
         {/* Call to Action Section */}
         <motion.section
-          className="py-24 px-6 bg-sky-100 text-center"
+          className="py-10 px-6 bg-sky-100 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -303,17 +296,27 @@ const ContentMarketingPage: React.FC = () => {
           role="region"
           aria-label="Call to Action"
         >
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto text-center md:text-center">
             <h2 className="text-4xl font-bold text-blue-900 mb-6">
               Let Your Content Work for You
             </h2>
             <p className="text-lg text-blue-800 mb-8">
-              At Brick2Tech, we turn content into a brand builder, lead generator, and growth catalyst. Ready to elevate your digital strategy with content that delivers measurable impact?
+              At Brick2Tech, we turn content into a brand builder, lead generator, and growth catalyst.
+              Ready to elevate your digital strategy with content that delivers measurable impact?
             </p>
-            <p className="text-lg font-medium text-blue-900">
+            <p className="text-lg font-medium text-blue-900 mb-8">
               Partner with Brick2Tech—the Best Content Marketing Services in Hyderabad today.
             </p>
+            <a
+              href="/contact"
+              className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md 
+               hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 
+               focus:ring-offset-2 transition duration-300"
+            >
+              Contact Us
+            </a>
           </div>
+
         </motion.section>
       </main>
     </>

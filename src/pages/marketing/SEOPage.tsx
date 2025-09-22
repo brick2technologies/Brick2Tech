@@ -2,8 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { CheckCircle, Search, PenTool, Settings, Link, MapPin, BarChart } from "lucide-react";
-
-import SeoBG from "/images/SeoBG.jpg"; // Ensure this path is correct
+// Ensure this path is correct
 
 // Animation variants
 const fadeUp = {
@@ -66,7 +65,7 @@ const SEOPage: React.FC = () => {
           name="keywords"
           content="best seo services in hyderabad, seo agency in hyderabad, search engine optimization companies in hyderabad, seo company in hyderabad, top seo companies in hyderabad, affordable seo services in hyderabad, local seo services in hyderabad, professional seo services in hyderabad"
         />
-        <meta name="canonical" content="https://brick2tech.com/services/seo" />
+        <meta name="canonical" content="https://brick2tech.com/seo-services-hyderabad" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
         <meta property="og:title" content="Best SEO Company in Hyderabad | Brick2Tech" />
@@ -75,8 +74,8 @@ const SEOPage: React.FC = () => {
           content="Grow your business with Brick2Tech’s ethical, data-driven SEO strategies. Rated #1 SEO company in Hyderabad with 98.99% results guaranteed."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://brick2tech.com/services/seo" />
-        <meta property="og:image" content="https://brick2tech.com/assets/seo-banner.png" />
+        <meta property="og:url" content="https://brick2tech.com/seo-services-hyderabad" />
+        <meta property="og:image" content="https://brick2tech.com/images/seo-hero.webp" />
         <meta property="og:site_name" content="Brick2Tech" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Hyderabad’s #1 SEO Agency - Brick2Tech" />
@@ -84,42 +83,56 @@ const SEOPage: React.FC = () => {
           name="twitter:description"
           content="Boost rankings, traffic, and conversions with Brick2Tech’s expert SEO services in Hyderabad."
         />
-        <meta name="twitter:image" content="https://brick2tech.com/assets/seo-banner.png" />
+        <meta name="twitter:image" content="https://brick2tech.com/images/seo-hero.webp" />
       </Helmet>
 
       <main
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="SEO Service Page"
       >
-        
+
         {/* Hero Section */}
         <motion.section
-          className="relative min-h-[50vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
+          className="relative min-h-[90vh] flex flex-col md:flex-row items-center justify-center overflow-hidden 
+             pt-24 sm:pt-12 md:pt-16 lg:pt-20 
+             px-4 sm:px-8 md:px-12 lg:px-20 pb-12"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp}
           custom={0}
           role="region"
-          aria-label="SEO Services Section"
+          aria-label="SEO Hero Section"
         >
-          {/* Background Image */}
-          <div
-            className="absolute inset-0 bg-no-repeat bg-cover bg-center"
-            style={{ backgroundImage: `url(${SeoBG})` }}
-            aria-hidden="true"
-          />
-          {/* SEO Services Content */}
-          <div className="relative z-10 max-w-4xl flex flex-col items-center justify-center h-full">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Our SEO Services
+          {/* Left Content */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-left space-y-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900">
+              Boost Your Visibility & Grow Your Business
             </h2>
-            <p className="text-lg text-white">
-              At Brick2Tech, we provide end-to-end SEO services to help your business
-              rank higher, attract the right audience, and grow sustainably.
+            <p className="text-base sm:text-lg text-gray-700 max-w-xl">
+              Drive more traffic, generate quality leads, and dominate search results with Brick2Tech’s expert SEO strategies.
+              We combine data-driven insights with creative solutions to help your business reach the right audience at the right time.
             </p>
+            <a
+              href="/contact"
+              className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
+            >
+              Get Your Free SEO Audit
+            </a>
+          </div>
+
+          {/* Right Image */}
+          <div className="w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
+            <img
+              src="/images/seo-hero.webp"
+              alt="SEO Hero"
+              className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-auto object-contain"
+            />
           </div>
         </motion.section>
+
+
+
 
         {/* SEO Content Section */}
         <motion.section

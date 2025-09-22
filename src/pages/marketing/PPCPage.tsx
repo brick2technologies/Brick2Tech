@@ -57,7 +57,7 @@ const PPCPage = () => {
         />
         <meta
           name="canonical"
-          content="https://brick2tech.com/services/social-engine-marketing"
+          content="https://brick2tech.com/social-engine-marketing"
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
@@ -127,7 +127,7 @@ const PPCPage = () => {
     </p>
     <Link
       to="/contact"
-      className="inline-flex items-center justify-center gap-2 bg-blue-400 hover:bg-yellow-500 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transition"
+      className="inline-flex items-center justify-center gap-2 bg-blue-400 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transition"
       aria-label="Get a free PPC consultation from Brick2Tech"
     >
       Free PPC Consultation <Zap className="w-5 h-5" />

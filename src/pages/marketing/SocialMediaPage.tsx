@@ -69,7 +69,7 @@ const SocialMediaMarketingPage = () => {
         />
         <meta
           name="canonical"
-          content="https://brick2tech.com/social-media-marketing"
+          content="https://brick2tech.com/social-media-marketing-services"
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
@@ -84,7 +84,7 @@ const SocialMediaMarketingPage = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://brick2tech.com/social-media-marketing"
+          content="https://brick2tech.com/social-media-marketing-services"
         />
         <meta
           property="og:image"
@@ -108,60 +108,75 @@ const SocialMediaMarketingPage = () => {
 
       {/* Hero Section */}
       <motion.section
-        className="relative text-center py-44 px-6 bg-gradient-to-br from-blue-50 via-white to-pink-50 overflow-hidden"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        aria-labelledby="hero-heading"
-      >
-        {/* Background Image with overlay */}
-        <div
-          className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-20"
-          style={{ backgroundImage: `url(${socialMediaBg})` }}
-          aria-hidden="true"
-        ></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-white/70"></div>
+  className="relative flex flex-col justify-center items-center text-center py-44 min-h-[90vh] px-6 bg-gradient-to-br from-blue-50 via-white to-pink-50 overflow-hidden"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  aria-labelledby="hero-heading"
+>
+  {/* Background Image with overlay */}
+  <div
+    className="absolute inset-0 bg-no-repeat bg-cover bg-center"
+    style={{ backgroundImage: `url(${socialMediaBg})` }}
+    aria-hidden="true"
+  ></div>
 
-        {/* Content */}
-        <div className="relative z-10">
-          
-          <h2
-            id="hero-heading"
-            className="text-4xl md:text-6xl font-extrabold tracking-tight text-blue-900 drop-shadow-sm"
-          >
-            Connect. Engage. Grow.
-          </h2>
-        </div>
-      </motion.section>
+  {/* Content */}
+  <h2
+    id="hero-heading"
+    className="relative z-10 text-4xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-sm"
+  >
+    Connect. Engage. Grow.
+  </h2>
+</motion.section>
+
 
       {/* Paragraph Section (below hero) */}
       <motion.section
-        className="relative py-20 px-6 bg-white"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">
-            Best Social Media Marketing Agency in Hyderabad
-          </h1>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            At Brick2Tech, we help brands build a powerful presence on social media
-            platforms like Instagram, Facebook, LinkedIn, and Twitter with strategies
-            that drive engagement, visibility, and conversions. As the Best Social Media
-            Marketing Agency in Hyderabad, our goal is not just to grow followers but
-            to create meaningful interactions that build long-term brand loyalty.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Social media is more than posting—it’s about storytelling, consistency, and
-            data-driven campaigns. Our expert team combines creative design, engaging
-            content, and precise audience targeting to ensure your brand stands out in
-            the crowded digital space. Whether you’re launching a product, scaling your
-            online footprint, or running seasonal campaigns, we’ve got you covered.
-          </p>
-        </div>
-      </motion.section>
+  className="relative min-h-[80vh] flex flex-col items-center justify-center py-20 px-6 bg-white"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  role="region"
+  aria-label="Social Media Marketing Overview Section"
+>
+  {/* Heading: Top & Center */}
+  <h1 className="absolute top-10 left-1/2 transform -translate-x-1/2 text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center">
+    Best Social Media Marketing Agency in Hyderabad
+  </h1>
+
+  {/* Grid: Left Image, Right Content */}
+  <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mt-24 md:mt-32 gap-12">
+    {/* Left Image */}
+    <div className="w-full md:w-1/2 flex justify-center">
+      <img
+        src="/images/social-media-marketing-about.jpg"
+        alt="Social Media Marketing"
+        className="w-full max-w-md h-auto object-contain"
+      />
+    </div>
+
+    {/* Right Content */}
+    <div className="w-full md:w-1/2 flex flex-col justify-center text-left space-y-6">
+      <p className="text-lg text-gray-700 leading-relaxed">
+        At Brick2Tech, we help brands build a powerful presence on social media
+        platforms like Instagram, Facebook, LinkedIn, and Twitter with strategies
+        that drive engagement, visibility, and conversions. Our goal is not just to
+        grow followers but to create meaningful interactions that build long-term
+        brand loyalty.
+      </p>
+      <p className="text-lg text-gray-700 leading-relaxed">
+        Social media is more than posting—it’s about storytelling, consistency, and
+        data-driven campaigns. Our expert team combines creative design, engaging
+        content, and precise audience targeting to ensure your brand stands out in
+        the crowded digital space. Whether you’re launching a product, scaling your
+        online footprint, or running seasonal campaigns, we’ve got you covered.
+      </p>  
+    </div>
+  </div>
+</motion.section>
+
 
 
       {/* Services Section */}
