@@ -69,7 +69,7 @@ const clients = [
   { name: 'Tact Advertising', logo: '/images/clients/Tact-logo.svg' },
   { name: 'Shubha', logo: '/images/clients/Shubha-logo.svg' },
   { name: 'HK Gatro ', logo: '/images/clients/HKGastro-logo.svg' },
-  
+
 ];
 
 const testimonials = [
@@ -246,193 +246,203 @@ export default function HomePage() {
         <link rel="preload" href="/images/whatwedo.svg" as="image" />
         <link rel="preload" href="/images/Industries-We-Serve.svg" as="image" />
         <link rel="preload" href="/images/Our-process.png" as="image" />
-        {/* AEO/Structured Data Optimizations */}
-        <script type="application/ld+json">
-          {`
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What services does Brick2Tech offer?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Brick2Tech offers SEO, social media marketing, Google Ads, web development, branding, and content marketing services tailored to grow your business."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Where is Brick2Tech located?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Brick2Tech is located in Hyderabad, India, and serves clients across the globe."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why choose Brick2Tech?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Brick2Tech combines creativity, strategy, and technology to deliver ROI-focused solutions that drive measurable growth."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Which is the best digital marketing agency in Hyderabad?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Brick2Tech is recognized as one of the best digital marketing agencies in Hyderabad, offering SEO, branding, social media, and web development solutions."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does Brick2Tech provide SEO services?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, Brick2Tech specializes in SEO strategies that help businesses rank higher on Google and drive organic traffic."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How can I contact Brick2Tech?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can call us at +91-900-003-5647 or visit our website at brick2tech.com to get in touch."
-            }
-          }
-        ]
+        {/* Structured Data / SEO Optimizations */}
+<script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services does Brick2Tech offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brick2Tech offers SEO, social media marketing, Google Ads, web development, branding, and content marketing services tailored to grow your business."
       }
-    `}
-        </script>
-        <script type="application/ld+json">
-          {`
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Brick2Tech",
-        "image": "https://www.brick2tech.com/logo.png",
-        "@id": "https://www.brick2tech.com/#localbusiness",
-        "url": "https://www.brick2tech.com",
-        "telephone": "+91 90000 35647",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Madhapur",
-          "addressLocality": "Hyderabad",
-          "addressRegion": "Telangana",
-          "postalCode": "500081",
-          "addressCountry": "IN"
-        },
-        "openingHours": "Mo-Fr 09:00-19:00",
-        "priceRange": "$$",
-        "sameAs": [
-          "https://www.facebook.com/brick2tech",
-          "https://www.instagram.com/brick2tech",
-          "https://www.linkedin.com/company/brick2tech"
-        ],
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 17.385044,
-          "longitude": 78.486671
-        }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Brick2Tech located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brick2Tech is located in Hyderabad, India, and serves clients across the globe."
       }
-    `}
-        </script>
-        <script type="application/ld+json">
-          {`
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Brick2Tech",
-        "url": "https://brick2tech.com",
-        "logo": "https://brick2tech.com/logo.png",
-        "@id": "https://brick2tech.com/#organization",
-        "sameAs": [
-          "https://www.facebook.com/brick2technologies",
-          "https://www.instagram.com/brick2technologies/",
-          "https://www.youtube.com/@brick2technologies",
-          "https://x.com/brick2tech",
-          "https://in.pinterest.com/brick2technologies/",
-          "https://www.linkedin.com/company/brick-2-technologies/"
-        ]
+    },
+    {
+      "@type": "Question",
+      "name": "Why choose Brick2Tech?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brick2Tech combines creativity, strategy, and technology to deliver ROI-focused solutions that drive measurable growth."
       }
-    `}
-        </script>
-        <script type="application/ld+json">
-          {`
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.brick2tech.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Services",
-            "item": "https://www.brick2tech.com/services"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Contact",
-            "item": "https://www.brick2tech.com/contact"
-          }
-        ]
+    },
+    {
+      "@type": "Question",
+      "name": "Which is the best digital marketing agency in Hyderabad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brick2Tech is recognized as one of the best digital marketing agencies in Hyderabad, offering SEO, branding, social media, and web development solutions."
       }
-    `}
-        </script>
-        <script type="application/ld+json">
-          {`
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "https://www.brick2tech.com/#webpage",
-        "url": "https://www.brick2tech.com/",
-        "name": "Brick2Tech | Best Digital Marketing Agency in Hyderabad",
-        "description": "Brick2Tech, the best digital marketing company in Hyderabad, offers SEO, social media marketing, web development, and branding to drive business growth.",
-        "publisher": {
-          "@id": "https://brick2tech.com/#organization"
-        },
-        "breadcrumb": {
-          "@id": "https://www.brick2tech.com/#breadcrumb"
-        },
-        "potentialAction": [
-          {
-            "@type": "SearchAction",
-            "target": "https://www.brick2tech.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        ]
+    },
+    {
+      "@type": "Question",
+      "name": "Does Brick2Tech provide SEO services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Brick2Tech specializes in SEO strategies that help businesses rank higher on Google and drive organic traffic."
       }
-    `}
-        </script>
-        <script type="application/ld+json">
-          {`
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://brick2tech.com/#website",
-        "url": "https://brick2tech.com",
-        "name": "Brick2Tech",
-        "description": "Best Digital Marketing Agency in Hyderabad",
-        "publisher": {
-          "@id": "https://brick2tech.com/#organization"
-        },
-        "potentialAction": [
-          {
-            "@type": "SearchAction",
-            "target": "https://brick2tech.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        ]
+    },
+    {
+      "@type": "Question",
+      "name": "How can I contact Brick2Tech?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can call us at +91-9000035647 or visit our website at https://www.brick2tech.com to get in touch."
       }
-    `}
-        </script>
+    }
+  ]
+}
+`}
+</script>
+
+<script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Brick2Tech",
+  "image": "https://www.brick2tech.com/logo.png",
+  "@id": "https://www.brick2tech.com/#localbusiness",
+  "url": "https://www.brick2tech.com",
+  "telephone": "+91-9000035647",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Madhapur",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500081",
+    "addressCountry": "IN"
+  },
+  "openingHours": ["Mo-Fr 09:00-19:00"],
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.facebook.com/brick2technologies",
+    "https://www.instagram.com/brick2technologies",
+    "https://www.linkedin.com/company/brick-2-technologies",
+    "https://www.youtube.com/@brick2technologies",
+    "https://x.com/brick2tech",
+    "https://in.pinterest.com/brick2technologies/"
+  ],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 17.385044,
+    "longitude": 78.486671
+  }
+}
+`}
+</script>
+
+<script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Brick2Tech",
+  "url": "https://www.brick2tech.com",
+  "logo": "https://www.brick2tech.com/logo.png",
+  "@id": "https://www.brick2tech.com/#organization",
+  "sameAs": [
+    "https://www.facebook.com/brick2technologies",
+    "https://www.instagram.com/brick2technologies",
+    "https://www.youtube.com/@brick2technologies",
+    "https://x.com/brick2tech",
+    "https://in.pinterest.com/brick2technologies/",
+    "https://www.linkedin.com/company/brick-2-technologies/"
+  ]
+}
+`}
+</script>
+
+<script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://www.brick2tech.com/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.brick2tech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://www.brick2tech.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Digital Marketing",
+      "item": "https://www.brick2tech.com/digital-marketing-agency/"
+    }
+  ]
+}
+`}
+</script>
+
+<script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.brick2tech.com/#webpage",
+  "url": "https://www.brick2tech.com/",
+  "name": "Brick2Tech | Best Digital Marketing Agency in Hyderabad",
+  "description": "Brick2Tech, the best digital marketing company in Hyderabad, offers SEO, social media marketing, web development, and branding to drive business growth.",
+  "publisher": {
+    "@id": "https://www.brick2tech.com/#organization"
+  },
+  "breadcrumb": {
+    "@id": "https://www.brick2tech.com/#breadcrumb"
+  },
+  "potentialAction": [
+    {
+      "@type": "SearchAction",
+      "target": "https://www.brick2tech.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  ]
+}
+`}
+</script>
+
+<script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.brick2tech.com/#website",
+  "url": "https://www.brick2tech.com",
+  "name": "Brick2Tech",
+  "description": "Best Digital Marketing Agency in Hyderabad",
+  "publisher": {
+    "@id": "https://www.brick2tech.com/#organization"
+  },
+  "potentialAction": [
+    {
+      "@type": "SearchAction",
+      "target": "https://www.brick2tech.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  ]
+}
+`}
+</script>
+
       </Helmet>
       <Hero mousePosition={mousePosition} />
       <section
@@ -473,7 +483,7 @@ export default function HomePage() {
             />
           </motion.div>
           <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
-          <h1 className="text-start font-bold text-2xl md:text-2xl">Best Digital Marketing Agency in Hyderabad</h1>
+            <h1 className="text-start font-bold text-2xl md:text-2xl">Best Digital Marketing Agency in Hyderabad</h1>
             {[
               "Looking to grow your business online? You’ve come to the right place.",
               "Brick2Tech is recognized as one of the Best Digital Marketing Agency in Hyderabad, delivering ROI-focused digital solutions tailored to your brand’s vision.",
@@ -573,80 +583,80 @@ export default function HomePage() {
 
           {/* Row wrapper for both images */}
           <div className="grid grid-cols-1 gap-10 justify-items-center">
-  {/* First Image */}
-  <motion.div
-    className="w-full flex justify-center"
-    initial={{ opacity: 0, x: -20 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8, delay: 0.2 }}
-    viewport={{ once: true }}
-  >
-    <img
-      src="/images/whatwedo.svg"
-      alt="Best Digital Marketing Agency in Hyderabad"
-      className="w-11/12 max-w-2xl h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-300"
-      loading="lazy"
-      decoding="async"
-      fetchPriority="low"
-    />
-  </motion.div>
-
-  {/* Second Image */}
-  <motion.div
-    className="w-full flex justify-center"
-    initial={{ opacity: 0, x: 20 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8, delay: 0.4 }}
-    viewport={{ once: true }}
-  >
-    <img
-      src="/images/Industries-We-Serve.svg"
-      alt="Best Digital Marketing Agency in Hyderabad"
-      className="w-11/12 max-w-2xl h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-300"
-      loading="lazy"
-      decoding="async"
-      fetchPriority="low"
-    />
-  </motion.div>
-</div>
-
-        </motion.div>
-
-          <motion.div
-            className="mt-10"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <h4 className="text-2xl font-bold text-[#0098d4] mb-4 text-center">
-              Our Process – Turning Digital Potential into Performance
-            </h4>
-
-            {/* Single SVG Image Instead of Mapping Steps */}
-            <div className="flex justify-center">
+            {/* First Image */}
+            <motion.div
+              className="w-full flex justify-center"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
               <img
-                src="/images/Our-process.png" // <-- replace with your SVG file path
-                alt="Best Digital Marketing Agency in Hyderabad"
-                className="w-full max-w-3xl"
+                src="/images/whatwedo.svg"
+                alt="Best Digital Marketing Agency in Hyderabad"
+                className="w-11/12 max-w-2xl h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-300"
                 loading="lazy"
                 decoding="async"
                 fetchPriority="low"
               />
-            </div>
-          </motion.div>
+            </motion.div>
 
-          <motion.p
-            className="mt-10 text-center text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 hover:scale-105 transition-transform duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            Let <span className="text-[#0098d4]">Brick2Tech</span> be your
-            transformation partner. Together, we turn bold ideas into powerful
-            results.
-          </motion.p>
+            {/* Second Image */}
+            <motion.div
+              className="w-full flex justify-center"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <img
+                src="/images/Industries-We-Serve.svg"
+                alt="Best Digital Marketing Agency in Hyderabad"
+                className="w-11/12 max-w-2xl h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+              />
+            </motion.div>
+          </div>
+
+        </motion.div>
+
+        <motion.div
+          className="mt-10"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h4 className="text-2xl font-bold text-[#0098d4] mb-4 text-center">
+            Our Process – Turning Digital Potential into Performance
+          </h4>
+
+          {/* Single SVG Image Instead of Mapping Steps */}
+          <div className="flex justify-center">
+            <img
+              src="/images/Our-process.png" // <-- replace with your SVG file path
+              alt="Best Digital Marketing Agency in Hyderabad"
+              className="w-full max-w-3xl"
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+            />
+          </div>
+        </motion.div>
+
+        <motion.p
+          className="mt-10 text-center text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 hover:scale-105 transition-transform duration-300"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
+          Let <span className="text-[#0098d4]">Brick2Tech</span> be your
+          transformation partner. Together, we turn bold ideas into powerful
+          results.
+        </motion.p>
       </section>
       <section className="bg-white py-20 px-6 md:px-16 lg:px-24" id="clients" aria-labelledby="clients-heading">
         <motion.div
@@ -668,26 +678,26 @@ export default function HomePage() {
           </p>
         </motion.div>
         <div
-        ref={scrollRef}
-        className="flex overflow-x-auto gap-8 py-4 hide-scrollbar"
-        aria-label="Client logos carousel"
-      >
-        {[...clients, ...clients].map((client, index) => (
-          <motion.div
-            key={client.name + index}
-            className="flex items-center justify-center flex-shrink-0"
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          >
-            <img
-              src={client.logo}
-              alt={client.name}
-              className="h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
-              loading="lazy"
-            />
-          </motion.div>
-        ))}
-      </div>
+          ref={scrollRef}
+          className="flex overflow-x-auto gap-8 py-4 hide-scrollbar"
+          aria-label="Client logos carousel"
+        >
+          {[...clients, ...clients].map((client, index) => (
+            <motion.div
+              key={client.name + index}
+              className="flex items-center justify-center flex-shrink-0"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <img
+                src={client.logo}
+                alt={client.name}
+                className="h-32 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
+                loading="lazy"
+              />
+            </motion.div>
+          ))}
+        </div>
         <motion.div
           className="mt-20 text-center max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
