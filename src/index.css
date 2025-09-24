@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 /* Load your custom font */
