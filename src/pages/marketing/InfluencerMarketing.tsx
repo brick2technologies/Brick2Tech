@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
-import { motion, useMotionValue, useTransform, Easing } from "framer-motion";
+import { motion, useMotionValue, useTransform, Easing,  } from "framer-motion";
 import { CheckCircle, Users, Clipboard, PenTool, BarChart, Globe, Megaphone, ArrowRight, Star, TrendingUp, Target, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // Animation variants
 const fadeUp = {
@@ -170,6 +171,8 @@ const InfluencerMarketingPage: React.FC = () => {
               variants={fadeUp}
               custom={0.2}
             >
+              {/* Get Started Today - goes to Contact Page */}
+              <Link to="/contact">
               <motion.button
                 className="group bg-gradient-to-r from-sky-600 to-darkblue-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-sky-500/25 transition-all duration-300 flex items-center gap-3"
                 whileHover={{ scale: 1.05 }}
@@ -178,6 +181,7 @@ const InfluencerMarketingPage: React.FC = () => {
                 Get Started Today
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
+              </Link>
 
               <motion.button
                 className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300"
@@ -553,23 +557,29 @@ const InfluencerMarketingPage: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
-              <motion.button
-                className="group bg-white text-sky-600 px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-white/25 transition-all duration-300 flex items-center gap-3"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Contact Us Today
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </motion.button>
+      {/* Contact Us - goes to Contact Page */}
+      <Link to="/contact">
+        <motion.button
+          className="group bg-white text-sky-600 px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-white/25 transition-all duration-300 flex items-center gap-3"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Contact Us Today
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+        </motion.button>
+      </Link>
 
-              <motion.button
-                className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Schedule a Call
-              </motion.button>
-            </div>
+      {/* Schedule a Call - triggers phone call */}
+      <a href="tel:9000035647">
+        <motion.button
+          className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Schedule a Call
+        </motion.button>
+      </a>
+    </div>
           </motion.div>
         </div>
       </motion.section>

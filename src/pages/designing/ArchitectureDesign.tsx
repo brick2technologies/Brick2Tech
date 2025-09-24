@@ -1,5 +1,6 @@
 import  { useState, useEffect } from 'react';
 import { motion, easeInOut, Variants,Transition } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const ArchitectureDesignPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -184,6 +185,7 @@ const ArchitectureDesignPage = () => {
               transition={{ duration: 0.8, delay: 1.3 }}
               className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             >
+              <Link to="/contact">
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(6, 182, 212, 0.4)" }}
                 whileTap={{ scale: 0.95 }}
@@ -198,6 +200,7 @@ const ArchitectureDesignPage = () => {
                   →
                 </motion.span>
               </motion.button>
+              </Link>
 
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -465,6 +468,7 @@ const ArchitectureDesignPage = () => {
                 viewport={{ once: true }}
                 className="flex flex-col sm:flex-row gap-6 justify-center items-center relative z-10"
               >
+                <Link to="/contact">
                 <motion.button
                   whileHover={{ 
                     scale: 1.05, 
@@ -482,6 +486,7 @@ const ArchitectureDesignPage = () => {
                     🚀
                   </motion.span>
                 </motion.button>
+                </Link>
 
                 <motion.button
                   whileHover={{ scale: 1.05 }}

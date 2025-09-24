@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const AppDevelopment = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -331,10 +332,12 @@ const AppDevelopment = () => {
           <h2 className="text-6xl font-bold mb-8 bg-gradient-to-r from-sky-400 via-blue-400 to-blue-600 bg-clip-text text-transparent">
             Get Started Today
           </h2>
+          <Link to="/contact">
           <button className="group bg-gradient-to-r from-sky-500 to-blue-600 px-12 py-4 rounded-full text-xl font-semibold hover:from-sky-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-sky-500/25 transform hover:scale-105 flex items-center gap-3 mx-auto">
             Contact Us
             <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
           </button>
+          </Link>
         </motion.div>
       </section>
     </div>

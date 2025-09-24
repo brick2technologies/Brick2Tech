@@ -14,6 +14,7 @@ import {
     CheckCircle,
     Lock
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const WebHosting = () => {
 
@@ -59,10 +60,12 @@ const WebHosting = () => {
                             </p>
                             
                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                <Link to="/contact">
                                 <button className="group bg-gradient-to-r from-sky-500 to-blue-700 hover:from-sky-600 hover:to-blue-800 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center">
                                     Get Started Today
                                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </button>
+                                </Link>
                                 
                                 <button className="group bg-white border-2 border-sky-200 hover:border-sky-300 text-slate-700 hover:text-slate-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center">
                                     <Play className="mr-2 w-5 h-5" />
@@ -341,14 +344,18 @@ const WebHosting = () => {
                     </p>
                     
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link to="/contact">
                         <button className="group bg-white text-sky-600 hover:bg-sky-50 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center">
                             Start Your Journey
                             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>
+                        </Link>
                         
+                        <a href="tel:+919000035647" aria-label="Call us at +91 9000035647">
                         <button className="group bg-transparent border-2 border-white text-white hover:bg-white hover:text-sky-600 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center">
                             Contact Support
                         </button>
+                        </a>
                     </div>
                     
                     <p className="text-sm opacity-75 mt-8">

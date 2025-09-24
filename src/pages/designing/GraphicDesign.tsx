@@ -20,6 +20,7 @@ import {
     Star,
     Play
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const GraphicDesign = () => {
     const { scrollY } = useScroll();
@@ -133,6 +134,7 @@ const GraphicDesign = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.8, duration: 0.8 }}
                             >
+                                <Link to="/contact">
                                 <motion.button
                                     className="group bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-8 py-4 rounded-full text-lg font-bold text-white transition-all duration-300 shadow-2xl hover:shadow-purple-500/25 flex items-center justify-center space-x-2"
                                     whileHover={{ scale: 1.05, y: -2 }}
@@ -141,6 +143,7 @@ const GraphicDesign = () => {
                                     <span>Start Your Project</span>
                                     <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
                                 </motion.button>
+                                </Link>
 
                                 <motion.button
                                     className="group border-2 border-white/20 hover:border-white/40 px-8 py-4 rounded-full text-lg font-semibold text-white backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 flex items-center justify-center space-x-2"
@@ -575,9 +578,8 @@ const GraphicDesign = () => {
                             transition={{ delay: 0.3 }}
                             viewport={{ once: true }}
                         >
+                            <Link to="/contact">
                             <motion.button
-
-
                                 className="group bg-white text-purple-600 hover:bg-gray-100 px-12 py-5 rounded-full text-lg font-bold transition-all duration-300 shadow-2xl hover:shadow-purple-500/25 flex items-center justify-center space-x-2"
                                 whileHover={{ scale: 1.05, y: -2 }}
                                 whileTap={{ scale: 0.95 }}
@@ -585,6 +587,7 @@ const GraphicDesign = () => {
                                 <span>Get Started Now</span>
                                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
                             </motion.button>
+                            </Link>
 
                             <motion.button
                                 className="group border-2 border-white/20 hover:border-white/40 px-12 py-5 rounded-full text-lg font-semibold text-white backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 flex items-center justify-center space-x-2"

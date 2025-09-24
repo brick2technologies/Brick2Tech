@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Users, Clock, DollarSign, Briefcase, FileText, Printer, Zap, Eye, Target, Calendar, Layers } from 'lucide-react';
 import { motion, Transition } from 'framer-motion';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -178,6 +179,7 @@ export default function BrochureDesignPage() {
               >
                 Creative Brochures That Tell Your Brand’s Story
               </motion.p>
+              <Link to="/contact">
               <motion.button
                 className="group bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 px-8 py-4 rounded-full text-lg font-bold text-white transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 flex items-center justify-center space-x-2"
                 whileHover={{ scale: 1.05, y: -2 }}
@@ -186,6 +188,7 @@ export default function BrochureDesignPage() {
                 <span>Get Started</span>
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </motion.button>
+              </Link>
             </motion.div>
 
             {/* Right Side Image */}
@@ -498,6 +501,7 @@ export default function BrochureDesignPage() {
             >
               Contact us today to discuss your brochure design needs and how we can help elevate your brand's visual communication.
             </motion.p>
+            <Link to="/contact">
             <motion.button
               className="group bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 flex items-center justify-center space-x-2 mx-auto"
               whileHover={{ scale: 1.05, y: -2 }}
@@ -506,6 +510,7 @@ export default function BrochureDesignPage() {
               <span>Get In Touch</span>
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </motion.button>
+            </Link>
           </motion.div>
         </div>
       </section>

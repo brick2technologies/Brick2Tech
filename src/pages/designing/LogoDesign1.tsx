@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { motion, Transition } from 'framer-motion';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 interface VisibilityState {
     hero: boolean;
@@ -78,16 +79,16 @@ const LogoDesign = () => {
     };
 
     const floatingAnimation = {
-  animate: {
-    y: [-20, 20, -20],
-    transition: {
-      duration: 6,
-      repeat: Infinity,
-      ease: [0.42, 0, 0.58, 1], // or use a cubic bezier array
-      repeatType: "loop",
-    } as Transition,
-  },
-};
+        animate: {
+            y: [-20, 20, -20],
+            transition: {
+                duration: 6,
+                repeat: Infinity,
+                ease: [0.42, 0, 0.58, 1], // or use a cubic bezier array
+                repeatType: "loop",
+            } as Transition,
+        },
+    };
 
     const services = [
         {
@@ -418,8 +419,8 @@ const LogoDesign = () => {
                 <div className="container mx-auto px-4 relative z-10">
                     <motion.div
                         className={`text-center mb-16 transition-all duration-1000 ${isVisible.process
-                                ? "opacity-100 translate-y-0"
-                                : "opacity-0 translate-y-10"
+                            ? "opacity-100 translate-y-0"
+                            : "opacity-0 translate-y-10"
                             }`}
                     >
                         <motion.h2
@@ -574,6 +575,7 @@ const LogoDesign = () => {
                         >
                             Ready to transform your brand with exceptional design? Let's create something extraordinary together.
                         </motion.p>
+                        <Link to="/contact">
                         <motion.button
                             className="group bg-white text-blue-600 hover:bg-gray-100 px-12 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 flex items-center justify-center space-x-2 mx-auto"
                             whileHover={{ scale: 1.05, y: -2 }}
@@ -582,6 +584,7 @@ const LogoDesign = () => {
                             <span>Call to Action</span>
                             <Send className="group-hover:translate-x-1 transition-transform" size={20} />
                         </motion.button>
+                        </Link>
                     </motion.div>
                 </div>
             </section>
