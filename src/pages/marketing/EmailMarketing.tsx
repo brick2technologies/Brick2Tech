@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { CheckCircle, Target, PenTool, Clock, Users, BarChart } from "lucide-react";
 
-import EmailBG from "/images/EmailBG.jpg"; // Ensure this path is correct
-
 // Animation variants
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -75,16 +73,28 @@ const EmailMarketingPage: React.FC = () => {
           content="Drive engagement, leads, and conversions with Brick2Tech’s expert email marketing services in Hyderabad."
         />
         <meta name="twitter:image" content="https://brick2tech.com/assets/email-banner.png" />
+        {/* Add global CSS reset to prevent default margin/padding issues */}
+        <style>
+          {`
+            * {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+            }
+            html, body {
+              overflow-x: hidden;
+            }
+          `}
+        </style>
       </Helmet>
 
       <main
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="Email Marketing Service Page"
       >
-
-        {/* Hero Section (Identical to SEO Page) */}
+        {/* Hero Section */}
         <motion.section
-          className="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-12 overflow-hidden text-center"
+          className="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-12 text-center w-full h-screen bg-[radial-gradient(circle_349px_at_0.3%_48.6%,_rgba(0,0,0,1)_0%,_rgba(87,124,253,0.89)_100.7%)]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -92,14 +102,7 @@ const EmailMarketingPage: React.FC = () => {
           custom={0}
           aria-label="Email Marketing Services Section"
         >
-          {/* Background Image */}
-          <div
-            className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-90"
-            style={{ backgroundImage: `url(${EmailBG})` }}
-            aria-hidden="true"
-          />
           <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-white/80"></div>
-          {/* Email Marketing Services Content */}
           <div className="relative z-10 max-w-4xl flex flex-col items-center justify-center h-full">
             <h2 className="text-4xl sm:text-5xl font-bold text-blue-950 mb-6">
               Your inbox is powerful—crafted messages can turn readers into loyal customers.
@@ -120,7 +123,7 @@ const EmailMarketingPage: React.FC = () => {
           role="region"
           aria-label="Email Marketing Overview Section"
         >
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-4 md:px-8">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-4 md:px-8 overflow-x-hidden">
             {/* Left Content */}
             <div className="p-6 md:p-8">
               <h1 className="text-3xl font-bold text-blue-900 mb-6">
@@ -147,13 +150,12 @@ const EmailMarketingPage: React.FC = () => {
               <img
                 src="/images/Email-Marketing-about.jpg"
                 alt="Email Marketing Strategy"
-                className="rounded-xl shadow-lg w-full max-w-md object-cover"
+                className="rounded-xl shadow-lg w-full max-w-md object-cover "
+                style={{ maxWidth: "100%" }} // Ensure image doesn't overflow
               />
             </div>
           </div>
         </motion.section>
-
-
 
         {/* Core Email Marketing Services Section */}
         <motion.section
@@ -165,7 +167,7 @@ const EmailMarketingPage: React.FC = () => {
           role="region"
           aria-label="Email Marketing Services and Process"
         >
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start overflow-x-hidden">
             {/* Left - Core Services */}
             <div>
               <h2 className="text-3xl font-bold text-center md:text-left text-blue-900 mb-8">
@@ -200,7 +202,6 @@ const EmailMarketingPage: React.FC = () => {
 
             {/* Right - Process */}
             <div>
-              {/* Heading & Description OUTSIDE the card */}
               <h2 className="text-3xl font-bold text-center md:text-left text-blue-900 mb-6">
                 Our Email Marketing Process
               </h2>
@@ -209,7 +210,6 @@ const EmailMarketingPage: React.FC = () => {
                 emails deliver maximum impact.
               </p>
 
-              {/* Process Box */}
               <div className="bg-white rounded-xl p-8 shadow-lg">
                 {[
                   {
@@ -257,14 +257,13 @@ const EmailMarketingPage: React.FC = () => {
           </div>
         </motion.section>
 
-
         {/* Why Choose Brick2Tech Section */}
         <motion.section
-          className="py-20 px-6 bg-sky-100"
+          className=" px-6 bg-sky-100 overflow-x-hidden"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fadeUp}   // ✅ Add this back
+          variants={fadeUp}
           custom={0}
           role="region"
           aria-label="Why Choose Brick2Tech"
@@ -273,18 +272,18 @@ const EmailMarketingPage: React.FC = () => {
             <motion.img
               src="/images/email-why-choose.png"
               alt="Email-marketing illustration showing growth and engagement"
-              className="w-full max-w-3xl  object-cover"
+              className="w-full  object-cover max-w-full"
               loading="lazy"
               variants={fadeUp}
               custom={1}
+              style={{ maxWidth: "100%" }} // Ensure image doesn't overflow
             />
           </div>
         </motion.section>
 
-
         {/* Call to Action Section */}
         <motion.section
-          className="relative py-24 px-6 bg-gradient-to-r from-sky-50 via-white to-sky-100 text-center overflow-hidden"
+          className="relative py-24 px-6 bg-gradient-to-r from-sky-50 via-white to-sky-100 text-center overflow-x-hidden"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -292,13 +291,12 @@ const EmailMarketingPage: React.FC = () => {
           role="region"
           aria-label="Call to Action"
         >
-          {/* Decorative glowing orbs */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-10 left-10 w-40 h-40 bg-sky-200 rounded-full blur-3xl opacity-40"></div>
-            <div className="absolute bottom-10 right-10 w-52 h-52 bg-blue-200 rounded-full blur-3xl opacity-40"></div>
+          {/* Decorative glowing orbs constrained to prevent overflow */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            <div className="absolute top-10 left-10 w-40 h-40 bg-sky-200 rounded-full blur-3xl opacity-40 max-w-[40vw]"></div>
+            <div className="absolute bottom-10 right-10 w-52 h-52 bg-blue-200 rounded-full blur-3xl opacity-40 max-w-[40vw]"></div>
           </div>
 
-          {/* Content */}
           <div className="relative max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6 leading-tight">
               Let Your Emails Drive Results 🚀
@@ -314,7 +312,6 @@ const EmailMarketingPage: React.FC = () => {
               services provider in Hyderabad, today!
             </p>
 
-            {/* CTA Button */}
             <motion.a
               href="/contact"
               whileHover={{ scale: 1.05 }}
@@ -325,8 +322,6 @@ const EmailMarketingPage: React.FC = () => {
             </motion.a>
           </div>
         </motion.section>
-
-
       </main>
     </>
   );

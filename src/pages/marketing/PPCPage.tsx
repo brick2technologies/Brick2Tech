@@ -105,13 +105,13 @@ const PPCPage = () => {
 >
   {/* Background Image */}
   <div
-    className="absolute inset-0 bg-no-repeat bg-cover bg-center"
-    style={{ backgroundImage: "url('https://res.cloudinary.com/diqux3y0a/image/upload/v1753336272/ppc_illustration.png')" }}
-    aria-hidden="true"
-  ></div>
+  className="absolute inset-0 bg-no-repeat bg-cover bg-center"
+  style={{ backgroundImage: "url('/images/ppc-banner.png')" }}
+  aria-hidden="true"
+/>
 
   {/* Overlay for readability */}
-  <div className="absolute inset-0 bg-gradient-to-b from-blue-900/50 via-blue-900/30 to-blue-900/50"></div>
+  
 
   {/* Centered Content */}
   <div className="relative z-10 max-w-3xl flex flex-col items-center justify-center text-white">
@@ -120,14 +120,14 @@ const PPCPage = () => {
       className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6"
     >
       <span className="block">Drive Traffic. Boost Conversions.</span>
-      <span className="block text-blue-400">Maximize ROI.</span>
+      <span className="block text-indigo-900">Maximize ROI.</span>
     </h1>
     <p className="text-lg sm:text-xl mb-8">
       As the best PPC company in Hyderabad, Brick2Tech delivers customized PPC strategies that drive targeted traffic, generate high-quality leads, and accelerate business growth.
     </p>
     <Link
       to="/contact"
-      className="inline-flex items-center justify-center gap-2 bg-blue-400 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transition"
+      className="inline-flex items-center justify-center gap-2 bg-blue-900 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transition"
       aria-label="Get a free PPC consultation from Brick2Tech"
     >
       Free PPC Consultation <Zap className="w-5 h-5" />

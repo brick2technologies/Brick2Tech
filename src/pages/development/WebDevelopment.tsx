@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, ShoppingCart, FileText, Smartphone, Search, Zap, Users, Target, DollarSign, Monitor, TrendingUp, Lightbulb, Shield, Star, ArrowRight, Play, CheckCircle, Award, Clock, Globe } from 'lucide-react';
+import { Code, ShoppingCart, FileText, Smartphone, Search, Zap, Users, Target, DollarSign, Monitor, TrendingUp, Lightbulb, Shield, Star, ArrowRight, CheckCircle, Award, Clock, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const WebDevelopment: React.FC = () => {
@@ -24,7 +24,7 @@ const WebDevelopment: React.FC = () => {
               
               <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
                 Innovative 
-                <span className="bg-gradient-to-r from-sky-600 to-blue-800 bg-clip-text text-transparent"> Web Solutions</span>
+                <span className="bg-gradient-to-r from-sky-600 to-blue-800 bg-clip-text text-transparent"> Web Solutions </span>
                 for Your Business
               </h1>
               
@@ -40,10 +40,7 @@ const WebDevelopment: React.FC = () => {
                 </button>
                 </Link>
                 
-                <button className="group bg-white border-2 border-sky-200 hover:border-sky-300 text-slate-700 hover:text-slate-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center">
-                  <Play className="mr-2 w-5 h-5" />
-                  View Portfolio
-                </button>
+                
               </div>
               
               <div className="flex items-center space-x-8 pt-8">
@@ -180,7 +177,7 @@ const WebDevelopment: React.FC = () => {
             <div className="inline-flex items-center px-4 py-2 bg-sky-100 rounded-full text-sm font-medium text-sky-800 mb-6">
               Our Services
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#142c4c] mb-6">
               Comprehensive Web Development Solutions
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -227,7 +224,7 @@ const WebDevelopment: React.FC = () => {
       <section className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-sky-100 rounded-full text-sm font-medium text-sky-800 mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-sky-100 rounded-full text-sm font-medium text-[#142c4c] mb-6">
               Why Choose Us
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
@@ -289,7 +286,7 @@ const WebDevelopment: React.FC = () => {
       </section>
 
       {/* What Makes Us Stand Out */}
-      <section className="py-24 px-6 bg-slate-900">
+      <section className="py-24 px-6 bg-[#142c4c]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 bg-sky-900/50 rounded-full text-sm font-medium text-sky-300 mb-6">

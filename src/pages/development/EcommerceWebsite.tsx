@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, RefreshCw, CreditCard, Smartphone, Search, Wrench, Users, Zap, Heart, Shield, BarChart2, CheckCircle, TrendingUp, Star, ArrowRight, Play } from 'lucide-react';
+import { Code, RefreshCw, CreditCard, Smartphone, Search, Wrench, Users, Zap, Heart, Shield, BarChart2, CheckCircle, TrendingUp, Star, ArrowRight, } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
@@ -71,7 +71,7 @@ const EcommerceLanding = () => {
               </div>
               
               <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
-                Transform Your Business with 
+                Transform Your Business with <br />
                 <span className="bg-gradient-to-r from-sky-600 to-blue-800 bg-clip-text text-transparent"> E-commerce Excellence</span>
               </h1>
               
@@ -87,10 +87,7 @@ const EcommerceLanding = () => {
                 </button>
                 </Link>
                 
-                <button className="group bg-white border-2 border-sky-200 hover:border-sky-300 text-slate-700 hover:text-slate-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center">
-                  <Play className="mr-2 w-5 h-5" />
-                  Watch Demo
-                </button>
+                
               </div>
               
               <div className="flex items-center space-x-8 pt-8">
@@ -168,7 +165,7 @@ const EcommerceLanding = () => {
                 <div className="inline-flex items-center px-4 py-2 bg-sky-100 rounded-full text-sm font-medium text-sky-800 mb-6">
                   About Brick2Tech
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+                <h2 className="text-4xl lg:text-5xl font-bold text-[#142c4c] mb-6">
                   Best E-commerce Web Development Company in 
                   <span className="text-sky-600"> Hyderabad</span>
                 </h2>
@@ -212,7 +209,7 @@ const EcommerceLanding = () => {
             <div className="inline-flex items-center px-4 py-2 bg-sky-100 rounded-full text-sm font-medium text-sky-800 mb-6">
               Our Services
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#142c4c] mb-6">
               Comprehensive E-commerce Solutions
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -259,7 +256,7 @@ const EcommerceLanding = () => {
       <div className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-sky-100 rounded-full text-sm font-medium text-sky-800 mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-sky-100 rounded-full text-sm font-medium text-[#142c4c] mb-6">
               Why Choose Us
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">

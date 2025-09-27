@@ -51,7 +51,7 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ icon, title, description }) =
     viewport={{ once: true }}
     whileHover={{ x: 10 }}
   >
-    <div className="bg-gradient-to-br from-green-400 to-blue-500 p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+    <div className="bg-gradient-to-br from-purple-400 to-blue-500 p-3 rounded-full flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
       {icon}
     </div>
     <div>
@@ -181,7 +181,7 @@ export default function BrochureDesignPage() {
               </motion.p>
               <Link to="/contact">
               <motion.button
-                className="group bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 px-8 py-4 rounded-full text-lg font-bold text-white transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 flex items-center justify-center space-x-2"
+                className="group bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-blue-500/50 flex items-center justify-center space-x-2"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >

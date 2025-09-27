@@ -1,11 +1,11 @@
-import  { useState, useEffect } from 'react';
-import { motion, easeInOut, Variants,Transition } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, easeInOut, Variants, Transition } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const ArchitectureDesignPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isLoaded, setIsLoaded] = useState(false);
-  
+
   useEffect(() => {
     setIsLoaded(true);
     const handleMouseMove = (e: MouseEvent) => {
@@ -81,17 +81,17 @@ const ArchitectureDesignPage = () => {
   };
 
   const itemVariants: Variants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      damping: 12,
-      stiffness: 200,
-    } satisfies Transition, // ✅ enforces correct type
-  },
-};
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 200,
+      } satisfies Transition, // ✅ enforces correct type
+    },
+  };
 
   const floatingAnimation = {
     y: [-10, 10, -10],
@@ -150,9 +150,9 @@ const ArchitectureDesignPage = () => {
               transition={{ duration: 1, delay: 0.5 }}
               className="mb-8"
             >
-              <motion.h1 
+              <motion.h1
                 className="text-5xl sm:text-6xl lg:text-8xl font-black mb-6 bg-gradient-to-r from-white via-cyan-200 to-blue-400 bg-clip-text text-transparent leading-tight"
-                animate={{ 
+                animate={{
                   backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
                 }}
                 transition={{ duration: 5, repeat: Infinity }}
@@ -160,7 +160,7 @@ const ArchitectureDesignPage = () => {
               >
                 Bringing Dreams
                 <br />
-                <motion.span 
+                <motion.span
                   className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent"
                   animate={{ scale: [1, 1.02, 1] }}
                   transition={{ duration: 3, repeat: Infinity }}
@@ -186,20 +186,20 @@ const ArchitectureDesignPage = () => {
               className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             >
               <Link to="/contact">
-              <motion.button
-                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(6, 182, 212, 0.4)" }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-cyan-400/20"
-              >
-                Start Your Project
-                <motion.span 
-                  className="inline-block ml-2"
-                  animate={{ x: [0, 5, 0] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
+                <motion.button
+                  whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(6, 182, 212, 0.4)" }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-cyan-400/20"
                 >
-                  →
-                </motion.span>
-              </motion.button>
+                  Start Your Project
+                  <motion.span
+                    className="inline-block ml-2"
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity }}
+                  >
+                    →
+                  </motion.span>
+                </motion.button>
               </Link>
 
               <motion.button
@@ -256,7 +256,7 @@ const ArchitectureDesignPage = () => {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  whileHover={{ 
+                  whileHover={{
                     y: -10,
                     transition: { type: "spring", stiffness: 300, damping: 20 }
                   }}
@@ -300,13 +300,18 @@ const ArchitectureDesignPage = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
                 <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-4 border border-white/20">
-                  <div className="w-full h-80 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl flex items-center justify-center text-white/60">
-                    <div className="text-center">
-                      <div className="text-6xl mb-4">🎬</div>
-                      <p className="text-xl">3D Walkthrough Preview</p>
-                    </div>
+                  <div className="w-full h-80 rounded-2xl overflow-hidden flex items-center justify-center bg-slate-900">
+                    <video
+                      className="w-full h-full object-cover rounded-2xl"
+                      src="/videos/TEST.mp4" // replace with your video path
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    />
                   </div>
                 </div>
+
               </motion.div>
 
               <motion.div
@@ -322,7 +327,7 @@ const ArchitectureDesignPage = () => {
                 <p className="text-xl text-cyan-100/80 leading-relaxed">
                   Step inside your designs before they're built. Our interactive walkthroughs provide clients with an unforgettable journey through their future spaces.
                 </p>
-                
+
                 <div className="space-y-4">
                   {[
                     "Photorealistic lighting & textures",
@@ -376,14 +381,14 @@ const ArchitectureDesignPage = () => {
                   key={index}
                   initial={{ opacity: 0, y: 50, scale: 0.9 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  transition={{ 
-                    duration: 0.6, 
+                  transition={{
+                    duration: 0.6,
                     delay: benefit.delay,
                     type: "spring",
                     stiffness: 100
                   }}
                   viewport={{ once: true }}
-                  whileHover={{ 
+                  whileHover={{
                     y: -5,
                     scale: 1.02,
                     transition: { duration: 0.2 }
@@ -422,7 +427,7 @@ const ArchitectureDesignPage = () => {
             className="max-w-5xl mx-auto relative"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur-2xl opacity-30" />
-            <motion.div 
+            <motion.div
               className="relative bg-gradient-to-br from-cyan-500/90 via-blue-600/90 to-indigo-700/90 backdrop-blur-xl rounded-3xl p-12 text-center border border-white/20 overflow-hidden"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
@@ -450,7 +455,7 @@ const ArchitectureDesignPage = () => {
               >
                 Ready to Transform Your Vision?
               </motion.h2>
-              
+
               <motion.p
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -460,7 +465,7 @@ const ArchitectureDesignPage = () => {
               >
                 Partner with Brick2Tech for cutting-edge 3D architecture services in Hyderabad that elevate your projects and captivate clients with stunning visualizations.
               </motion.p>
-              
+
               <motion.div
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -469,32 +474,24 @@ const ArchitectureDesignPage = () => {
                 className="flex flex-col sm:flex-row gap-6 justify-center items-center relative z-10"
               >
                 <Link to="/contact">
-                <motion.button
-                  whileHover={{ 
-                    scale: 1.05, 
-                    boxShadow: "0 20px 40px rgba(255, 255, 255, 0.3)" 
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-10 py-4 bg-white text-blue-600 font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-white"
-                >
-                  Book Free Consultation
-                  <motion.span 
-                    className="inline-block ml-2"
-                    animate={{ x: [0, 5, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
+                  <motion.button
+                    whileHover={{
+                      scale: 1.05,
+                      boxShadow: "0 20px 40px rgba(255, 255, 255, 0.3)"
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-10 py-4 bg-white text-blue-600 font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-white"
                   >
-                    🚀
-                  </motion.span>
-                </motion.button>
+                    Book Free Consultation
+                    <motion.span
+                      className="inline-block ml-2"
+                      animate={{ x: [0, 5, 0] }}
+                      transition={{ duration: 1.5, repeat: Infinity }}
+                    >
+                      🚀
+                    </motion.span>
+                  </motion.button>
                 </Link>
-
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-10 py-4 border-2 border-white/70 text-white font-semibold text-lg rounded-2xl hover:bg-white/10 transition-all duration-300 backdrop-blur-sm"
-                >
-                  View Our Work
-                </motion.button>
               </motion.div>
             </motion.div>
           </motion.div>

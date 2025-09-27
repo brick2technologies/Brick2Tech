@@ -17,36 +17,65 @@ const fadeUp = {
 
 const smmFeatures = [
   {
-    icon: <Target className="w-6 h-6 text-sky-500" />,
+    icon: <Target className="w-12 h-12 text-sky-500" />,
     title: "In-Depth Brand Analysis",
-    description: "We analyze your brand values, audience demographics, goals, and competitive landscape to build targeted social media strategies.",
+    description:
+      "We analyze your brand values, audience demographics, goals, and competitive landscape to build targeted social media strategies.",
   },
   {
-    icon: <Image className="w-6 h-6 text-green-500" />,
+    icon: <Image className="w-12 h-12 text-green-500" />,
     title: "Content Creation & Curation",
-    description: "Eye-catching graphics, videos, and curated content optimized for engagement and brand storytelling across platforms.",
+    description:
+      "Eye-catching graphics, videos, and curated content optimized for engagement and brand storytelling across platforms.",
   },
   {
-    icon: <Clock className="w-6 h-6 text-purple-500" />,
+    icon: <Clock className="w-12 h-12 text-purple-500" />,
     title: "Strategic Posting & Scheduling",
-    description: "Structured posting calendars with optimal timing and frequency to maximize reach and maintain consistency.",
+    description:
+      "Structured posting calendars with optimal timing and frequency to maximize reach and maintain consistency.",
   },
   {
-    icon: <Users className="w-6 h-6 text-pink-500" />,
+    icon: <Users className="w-12 h-12 text-pink-500" />,
     title: "Community Engagement & Management",
-    description: "Active monitoring and authentic responses to foster trust, loyalty, and stronger customer relationships.",
+    description:
+      "Active monitoring and authentic responses to foster trust, loyalty, and stronger customer relationships.",
   },
   {
-    icon: <Megaphone className="w-6 h-6 text-yellow-500" />,
+    icon: <Megaphone className="w-12 h-12 text-yellow-500" />,
     title: "Paid Social Media Advertising",
-    description: "Targeted ad campaigns to boost visibility, generate qualified leads, and maximize ROI with precise targeting.",
+    description:
+      "Targeted ad campaigns to boost visibility, generate qualified leads, and maximize ROI with precise targeting.",
   },
   {
-    icon: <BarChart className="w-6 h-6 text-blue-500" />,
+    icon: <BarChart className="w-12 h-12 text-blue-500" />,
     title: "Performance Tracking & Reporting",
-    description: "Detailed analytics on reach, engagement, and conversions to optimize campaigns and ensure measurable results.",
+    description:
+      "Detailed analytics on reach, engagement, and conversions to optimize campaigns and ensure measurable results.",
   },
 ];
+
+const ServiceCard: React.FC<{
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  delay?: number;
+}> = ({ icon, title, description, delay = 0 }) => (
+  <motion.div
+    className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-blue-100 hover:border-blue-200"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay }}
+  >
+    <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
+      {icon}
+    </div>
+    <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
+      {title}
+    </h3>
+    <p className="text-slate-600 leading-relaxed">{description}</p>
+  </motion.div>
+);
 
 const SocialMediaManagementPage: React.FC = () => {
   return (
@@ -163,49 +192,48 @@ const SocialMediaManagementPage: React.FC = () => {
 
 
         {/* Core SMM Services Section */}
-        <motion.section
-          className="py-24 px-6 max-w-7xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          role="region"
-          aria-label="Core Social Media Management Services"
-        >
-          <h2 className="text-4xl font-bold text-center mb-12 text-blue-900">
+       <section
+      className="py-10 px-6 bg-gradient-to-br from-indigo-50 to-blue-50"
+      role="region"
+      aria-label="Core Social Media Management Services"
+    >
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800 mb-6">
             Our Core Social Media Management Services
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            Building Engagement, Loyalty & Growth
           </h2>
-          <p className="text-center text-blue-800 max-w-3xl mx-auto mb-16 text-lg">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             At Brick2Tech, we provide end-to-end social media management services to help your business engage audiences, build loyalty, and achieve sustainable growth.
           </p>
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {smmFeatures.map((feature, index) => (
-              <motion.article
-                key={feature.title}
-                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                aria-label={feature.title}
-              >
-                <div className="flex items-start gap-4">
-                  {feature.icon}
-                  <div>
-                    <h3 className="font-semibold text-xl text-blue-900">{feature.title}</h3>
-                    <p className="mt-2 text-blue-800">{feature.description}</p>
-                  </div>
-                </div>
-              </motion.article>
-            ))}
-          </div>
-          <p className="text-center mt-12 text-lg font-medium text-blue-900">
-            RATED #1 Best SMM Services in Hyderabad – Turning Likes into Leads
-          </p>
-        </motion.section>
+        </div>
+
+        {/* Features Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {smmFeatures.map((feature, index) => (
+            <ServiceCard
+              key={feature.title}
+              icon={feature.icon}
+              title={feature.title}
+              description={feature.description}
+              delay={index * 0.1}
+            />
+          ))}
+        </div>
+
+        {/* Footer Text */}
+        <p className="text-center mt-16 text-lg font-semibold text-blue-700">
+          🚀 RATED #1 Best SMM Services in Hyderabad – Turning Likes into Leads
+        </p>
+      </div>
+    </section>
 
         {/* SMM Process Section */}
         <motion.section
-          className="relative bg-sky-50 py-6 sm:py-20 md:py-24 lg:py-18 px-6 sm:px-6 md:px-16 lg:px-20"
+          className="relative bg-sky-50 py-6 sm:py-20 md:py-10 lg:py-18 px-6 sm:px-6 md:px-16 lg:px-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -359,26 +387,38 @@ const SocialMediaManagementPage: React.FC = () => {
 
         {/* Call to Action Section */}
         <motion.section
-          className="py-24 px-6 bg-sky-100 text-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          role="region"
-          aria-label="Call to Action"
-        >
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-blue-900 mb-6">
-              Turn Likes into Leads with Brick2Tech
-            </h2>
-            <p className="text-lg text-blue-800 mb-8">
-              Partner with Brick2Tech, the best Social Media Management Services provider in Hyderabad, to transform your social media presence into a powerful growth engine.
-            </p>
-            <p className="text-lg font-medium text-blue-900">
-              Ready to elevate your brand? Contact us today!
-            </p>
-          </div>
-        </motion.section>
+  className="py-24 px-6 bg-gradient-to-r from-sky-100 to-sky-200 text-center rounded-2xl shadow-lg"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  role="region"
+  aria-label="Call to Action"
+>
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-4xl font-bold text-blue-900 mb-6 leading-snug">
+      Turn <span className="text-sky-600">Likes</span> into Leads with <span className="text-sky-700">Brick2Tech</span>
+    </h2>
+    <p className="text-lg text-blue-800 mb-6">
+      Partner with <strong>Brick2Tech</strong>, the best Social Media Management Services provider in Hyderabad, 
+      and transform your social media presence into a powerful growth engine 🚀
+    </p>
+    <p className="text-lg font-medium text-blue-900 mb-10">
+      Ready to elevate your brand? Let’s make it happen.
+    </p>
+
+    <motion.a
+      href="/contact"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="inline-block bg-blue-900 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-blue-800 transition-colors"
+      aria-label="Contact Brick2Tech"
+    >
+      Contact Us Today
+    </motion.a>
+  </div>
+</motion.section>
+
       </main>
     </>
   );

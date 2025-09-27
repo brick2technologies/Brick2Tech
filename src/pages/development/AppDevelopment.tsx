@@ -240,7 +240,7 @@ const AppDevelopment = () => {
       {/* Services Section */}
       <section id="services" className="relative z-10 px-6 py-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-white via-sky-200 to-blue-200 bg-clip-text text-transparent">
             Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -271,7 +271,7 @@ const AppDevelopment = () => {
       {/* Why Choose Us */}
       <section id="why-us" className="relative z-10 px-6 py-20">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-16 bg-gradient-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold mb-16 bg-gradient-to-r from-white via-sky-200 to-blue-200 bg-clip-text text-transparent">
             Why Choose Brick2Tech
           </h2>
           <div className="flex flex-wrap justify-center gap-6">
@@ -294,7 +294,7 @@ const AppDevelopment = () => {
       {/* Impact */}
       <section id="impact" className="relative z-10 px-6 py-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-white via-sky-200 to-blue-200 bg-clip-text text-transparent">
             Impact
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -329,7 +329,7 @@ const AppDevelopment = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-6xl font-bold mb-8 bg-gradient-to-r from-sky-400 via-blue-400 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-6xl font-bold mb-8 bg-gradient-to-r from-white via-sky-200 to-blue-200 bg-clip-text text-transparent">
             Get Started Today
           </h2>
           <Link to="/contact">

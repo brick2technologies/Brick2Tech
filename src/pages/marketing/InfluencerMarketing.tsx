@@ -183,13 +183,7 @@ const InfluencerMarketingPage: React.FC = () => {
               </motion.button>
               </Link>
 
-              <motion.button
-                className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                View Our Work
-              </motion.button>
+              
             </motion.div>
           </motion.div>
         </div>
@@ -265,13 +259,13 @@ const InfluencerMarketingPage: React.FC = () => {
               viewport={{ once: true }}
             >
               <motion.h2
-                className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight"
+                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-sky-600 to-darkblue-600 bg-clip-text text-transparent leading-tight"
                 variants={slideIn}
               >
                 Best Influencer Marketing Agency in
-                <span className="bg-gradient-to-r from-sky-600 to-darkblue-600 bg-clip-text text-transparent block">
+                
                   Hyderabad
-                </span>
+                
               </motion.h2>
 
               <motion.p
@@ -339,7 +333,7 @@ const InfluencerMarketingPage: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-sky-600 to-darkblue-600 bg-clip-text text-transparent mb-6">
               Our Core Influencer Marketing Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -407,7 +401,7 @@ const InfluencerMarketingPage: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-sky-600 to-darkblue-600 bg-clip-text text-transparent mb-6">
               Why Choose Brick2Tech?
             </h2>
           </motion.div>
@@ -475,7 +469,7 @@ const InfluencerMarketingPage: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-sky-600 to-darkblue-600 bg-clip-text text-transparent mb-6">
               The Impact of Influencer Marketing
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

@@ -18,7 +18,6 @@ import {
     Palette,
     ArrowRight,
     Star,
-    Play
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -145,14 +144,7 @@ const GraphicDesign = () => {
                                 </motion.button>
                                 </Link>
 
-                                <motion.button
-                                    className="group border-2 border-white/20 hover:border-white/40 px-8 py-4 rounded-full text-lg font-semibold text-white backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 flex items-center justify-center space-x-2"
-                                    whileHover={{ scale: 1.02, y: -1 }}
-                                    whileTap={{ scale: 0.98 }}
-                                >
-                                    <Play size={20} />
-                                    <span>Watch Our Work</span>
-                                </motion.button>
+                                
                             </motion.div>
 
                             <div className="flex items-center space-x-8 pt-4">
@@ -589,14 +581,7 @@ const GraphicDesign = () => {
                             </motion.button>
                             </Link>
 
-                            <motion.button
-                                className="group border-2 border-white/20 hover:border-white/40 px-12 py-5 rounded-full text-lg font-semibold text-white backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300 flex items-center justify-center space-x-2"
-                                whileHover={{ scale: 1.02, y: -1 }}
-                                whileTap={{ scale: 0.98 }}
-                            >
-                                <FileText size={20} />
-                                <span>View Portfolio</span>
-                            </motion.button>
+                            
                         </motion.div>
                     </motion.div>
                 </div>

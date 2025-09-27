@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
-import { CheckCircle, Search, PenTool, Settings, Link, MapPin, BarChart } from "lucide-react";
-// Ensure this path is correct
+import { CheckCircle, Search, PenTool, Settings, Link, MapPin } from "lucide-react";
 
 // Animation variants
 const fadeUp = {
@@ -16,41 +15,65 @@ const fadeUp = {
 
 const seoFeatures = [
   {
-    icon: <Search className="w-6 h-6 text-sky-500" />,
+    icon: <Search className="w-12 h-12 text-sky-500" />,
     title: "Comprehensive Keyword Research",
-    description: "Identify high-volume, low-competition keywords relevant to your industry—helping your business attract the right audience at the right time.",
+    description:
+      "Identify high-volume, low-competition keywords relevant to your industry—helping your business attract the right audience at the right time.",
   },
   {
-    icon: <PenTool className="w-6 h-6 text-green-500" />,
+    icon: <PenTool className="w-12 h-12 text-green-500" />,
     title: "Quality Content Creation",
-    description: "Create SEO-rich blogs, landing pages, and service content that attract traffic, build trust, and convert visitors into customers.",
+    description:
+      "Create SEO-rich blogs, landing pages, and service content that attract traffic, build trust, and convert visitors into customers.",
   },
   {
-    icon: <Settings className="w-6 h-6 text-purple-500" />,
+    icon: <Settings className="w-12 h-12 text-purple-500" />,
     title: "On-Page SEO",
-    description: "Optimize meta tags, headers, titles, URL structures, and internal linking to ensure your website is technically sound and content-rich.",
+    description:
+      "Optimize meta tags, headers, titles, URL structures, and internal linking to ensure your website is technically sound and content-rich.",
   },
   {
-    icon: <Link className="w-6 h-6 text-pink-500" />,
+    icon: <Link className="w-12 h-12 text-pink-500" />,
     title: "Off-Page SEO & Link Building",
-    description: "Enhance domain authority and search engine trust through ethical link-building and outreach campaigns.",
+    description:
+      "Enhance domain authority and search engine trust through ethical link-building and outreach campaigns.",
   },
   {
-    icon: <Settings className="w-6 h-6 text-yellow-500" />,
+    icon: <Settings className="w-12 h-12 text-yellow-500" />,
     title: "Technical SEO",
-    description: "Resolve crawl errors, boost site speed, improve mobile-friendliness, and implement structured data to maximize indexability.",
+    description:
+      "Resolve crawl errors, boost site speed, improve mobile-friendliness, and implement structured data to maximize indexability.",
   },
   {
-    icon: <MapPin className="w-6 h-6 text-blue-500" />,
+    icon: <MapPin className="w-12 h-12 text-blue-500" />,
     title: "Local SEO Expertise",
-    description: "Optimize Google Business Profile, local citations, and location-based keywords to stand out in Hyderabad and surrounding areas.",
-  },
-  {
-    icon: <BarChart className="w-6 h-6 text-indigo-500" />,
-    title: "SEO Audits & Analytics",
-    description: "Detailed audits with actionable insights on site health, ranking performance, and opportunities to improve.",
+    description:
+      "Optimize Google Business Profile, local citations, and location-based keywords to stand out in Hyderabad and surrounding areas.",
   },
 ];
+
+const ServiceCard: React.FC<{
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  delay?: number;
+}> = ({ icon, title, description, delay = 0 }) => (
+  <motion.div
+    className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-sky-100 hover:border-sky-200"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay }}
+  >
+    <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
+      {icon}
+    </div>
+    <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-sky-600 transition-colors">
+      {title}
+    </h3>
+    <p className="text-slate-600 leading-relaxed">{description}</p>
+  </motion.div>
+);
 
 const SEOPage: React.FC = () => {
   return (
@@ -84,13 +107,20 @@ const SEOPage: React.FC = () => {
           content="Boost rankings, traffic, and conversions with Brick2Tech’s expert SEO services in Hyderabad."
         />
         <meta name="twitter:image" content="https://brick2tech.com/images/seo-hero.webp" />
+        <style>
+          {`
+            html, body {
+              overflow-x: hidden;
+              width: 100%;
+            }
+          `}
+        </style>
       </Helmet>
 
       <main
         className="bg-gradient-to-br from-white via-sky-100 to-blue-200 text-gray-800 overflow-x-hidden"
         aria-label="SEO Service Page"
       >
-
         {/* Hero Section */}
         <motion.section
           className="relative min-h-[90vh] flex flex-col md:flex-row items-center justify-center overflow-hidden 
@@ -131,9 +161,6 @@ const SEOPage: React.FC = () => {
           </div>
         </motion.section>
 
-
-
-
         {/* SEO Content Section */}
         <motion.section
           className="relative py-10 px-6 sm:px-12 bg-white text-center"
@@ -145,10 +172,10 @@ const SEOPage: React.FC = () => {
           aria-label="SEO Content Section"
         >
           <div className="max-w-4xl mx-auto space-y-6">
-            <h1 className="text-center font-bold text-2xl">Best SEO Company in Hyderabad</h1>
+            <h1 className="text-4xl font-bold text-center mb-12 text-blue-900">Best SEO Company in Hyderabad</h1>
             <p className="text-lg text-gray-700 leading-relaxed">
               At Brick2Tech, we specialize in delivering advanced SEO services that drive
-              measurable growth and long-term success. As the best SEO company in Hyderabad,
+              measurable growth and long-term success. As the <strong>best SEO company in Hyderabad</strong>,
               we help businesses improve search engine visibility, increase website traffic,
               and generate high-quality leads through ethical, data-driven strategies.
             </p>
@@ -164,49 +191,50 @@ const SEOPage: React.FC = () => {
         </motion.section>
 
         {/* Core SEO Services Section */}
-        <motion.section
-          className="py-24 px-6 max-w-7xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <section
+          className="py-10 px-6 bg-gradient-to-br from-sky-50 to-blue-50"
           role="region"
           aria-label="Core SEO Services"
         >
-          <h2 className="text-4xl font-bold text-center mb-12 text-blue-900">
-            Our Core SEO Services
-          </h2>
-          <p className="text-center text-blue-800 max-w-3xl mx-auto mb-16 text-lg">
-            At Brick2Tech, we provide end-to-end SEO services to help your business rank higher, attract the right audience, and grow sustainably.
-          </p>
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {seoFeatures.map((feature, index) => (
-              <motion.article
-                key={feature.title}
-                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                aria-label={feature.title}
-              >
-                <div className="flex items-start gap-4">
-                  {feature.icon}
-                  <div>
-                    <h3 className="font-semibold text-xl text-blue-900">{feature.title}</h3>
-                    <p className="mt-2 text-blue-800">{feature.description}</p>
-                  </div>
-                </div>
-              </motion.article>
-            ))}
+          <div className="max-w-7xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center px-4 py-2 bg-sky-100 rounded-full text-sm font-medium text-sky-800 mb-6">
+                Our Core SEO Services
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-indigo-900 mb-6">
+                End-to-End SEO Solutions for Growth
+              </h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                At Brick2Tech, we provide comprehensive SEO services to help your
+                business rank higher, attract the right audience, and grow
+                sustainably.
+              </p>
+            </div>
+
+            {/* Features Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {seoFeatures.map((feature, index) => (
+                <ServiceCard
+                  key={feature.title}
+                  icon={feature.icon}
+                  title={feature.title}
+                  description={feature.description}
+                  delay={index * 0.1}
+                />
+              ))}
+            </div>
+
+            {/* Footer Text */}
+            <p className="text-center mt-16 text-lg font-semibold text-sky-700">
+              ⭐ RATED #1 Best SEO Company in Hyderabad – 98.99% Results Guaranteed
+            </p>
           </div>
-          <p className="text-center mt-12 text-lg font-medium text-blue-900">
-            RATED #1 Best SEO Company in Hyderabad – 98.99% Results Guaranteed
-          </p>
-        </motion.section>
+        </section>
 
         {/* SEO Process Section */}
         <motion.section
-          className="py-24 px-6 bg-sky-50"
+          className="py-10 px-6 bg-sky-50"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

@@ -173,37 +173,37 @@ export default function HomePage() {
       icon: <Globe className="text-[#0098d4] w-8 h-8" />,
       title: "Search Engine Optimization",
       description: "Boost your search rankings, drive organic traffic, and make sure your brand gets discovered.",
-      path: "/services/seo",
+      path: "seo-services-hyderabad",
     },
     {
       icon: <Smartphone className="text-[#0098d4] w-8 h-8" />,
       title: "Social Media Marketing",
       description: "Build a strong brand presence on Instagram, Facebook, LinkedIn, and more with creative campaigns.",
-      path: "/services/social-media-marketing",
+      path: "social-media-marketing-services",
     },
     {
       icon: <Megaphone className="text-[#0098d4] w-8 h-8" />,
       title: "Google Ads & Paid Campaigns",
       description: "Get maximum ROI with high-performing ad campaigns across Google, YouTube, Facebook, and Instagram.",
-      path: "/services/paid-ads",
+      path: "search-engine-marketing",
     },
     {
       icon: <Monitor className="text-[#0098d4] w-8 h-8" />,
       title: "Website Design & Development",
       description: "Deliver fast, responsive, and visually compelling websites that turn visitors into customers.",
-      path: "/services/web-development",
+      path: "web-development-services",
     },
     {
       icon: <Brush className="text-[#0098d4] w-8 h-8" />,
       title: "Branding & Creative Design",
       description: "Shape your brand identity with professional logo design, impactful messaging, and storytelling.",
-      path: "/services/branding",
+      path: "graphic-design",
     },
     {
       icon: <BarChart2 className="text-[#0098d4] w-8 h-8" />,
       title: "Content Marketing & Analytics",
       description: "Craft engaging content and leverage analytics to drive conversions and growth.",
-      path: "/services/content-marketing",
+      path: "content-marketing",
     },
   ];
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -485,17 +485,27 @@ export default function HomePage() {
           <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
             <h1 className="text-start font-bold text-2xl md:text-2xl">Best Digital Marketing Agency in Hyderabad</h1>
             {[
-              "Looking to grow your business online? You’ve come to the right place.",
-              "Brick2Tech is recognized as one of the Best Digital Marketing Agency in Hyderabad, delivering ROI-focused digital solutions tailored to your brand’s vision.",
-              "We combine creativity, strategy, and technology to help businesses build strong digital footprints, attract the right audience, and achieve measurable success.",
-              "Whether you’re a startup aiming for visibility, an SME looking to scale, or an enterprise focusing on sustained growth, our customized digital marketing strategies ensure your brand stands out in a competitive online world.",
-            ].map((text, index) => (
-              <p
-                key={index}
-                className="text-md md:text-lg text-gray-700 hover:text-[#142c4c] hover:scale-105 transition-transform duration-300"
-              >
-                {text}
-              </p>
+  "Looking to grow your business online? You’ve come to the right place.",
+  "Brick2Tech is recognized as one of the Best Digital Marketing Agency in Hyderabad, delivering ROI-focused digital solutions tailored to your brand’s vision.",
+  "We combine creativity, strategy, and technology to help businesses build strong digital footprints, attract the right audience, and achieve measurable success.",
+  "Whether you’re a startup aiming for visibility, an SME looking to scale, or an enterprise focusing on sustained growth, our customized digital marketing strategies ensure your brand stands out in a competitive online world.",
+].map((text, index) => (
+  <p
+    key={index}
+    className="text-md md:text-lg text-gray-700 hover:text-[#142c4c] hover:scale-105 transition-transform duration-300"
+  >
+    {text.includes("Best Digital Marketing Agency in Hyderabad") ? (
+      <>
+        {text.split("Best Digital Marketing Agency in Hyderabad")[0]}
+        <span className="font-extrabold text-[#142c4c]">
+          Best Digital Marketing Agency in Hyderabad
+        </span>
+        {text.split("Best Digital Marketing Agency in Hyderabad")[1]}
+      </>
+    ) : (
+      text
+    )}
+  </p>
             ))}
           </div>
         </motion.div>
@@ -560,16 +570,19 @@ export default function HomePage() {
           </p>
         </motion.div>
         <motion.div
-          className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeIn("up", 0.2)}
-        >
-          {services.map((service, idx) => (
-            <ServiceCard key={idx} {...service} />
-          ))}
-        </motion.div>
+  className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={fadeIn("up", 0.2)}
+>
+  {services.map((service, idx) => (
+    <Link to={service.path} key={idx} className="group">
+      <ServiceCard {...service} />
+    </Link>
+  ))}
+</motion.div>
+
         <motion.div
           className="mt-20 max-w-6xl mx-auto"
           initial="hidden"

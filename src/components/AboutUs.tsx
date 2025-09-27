@@ -5,52 +5,61 @@ import {
   MapPin,
   Target,
   Wrench,
-  Search, MousePointerClick, Share2, Monitor, Palette, BarChart3
+  Search, MousePointerClick, Share2, Monitor, Palette, BarChart3, Clock, Users
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
 
-  const services = [
-    {
-      icon: <Search className="w-8 h-8 text-blue-600 mx-auto mb-4" />,
-      title: "SEO & Content Marketing",
-      description:
-        "Improve visibility, attract the right audience, and build authority through smart optimization and storytelling.",
-    },
-    {
-      icon: <MousePointerClick className="w-8 h-8 text-red-600 mx-auto mb-4" />,
-      title: "Paid Advertising (PPC, Google & Meta Ads)",
-      description:
-        "Drive qualified leads and boost ROI with precise targeting and budget-optimized campaigns.",
-    },
-    {
-      icon: <Share2 className="w-8 h-8 text-pink-600 mx-auto mb-4" />,
-      title: "Social Media Marketing & Management",
-      description:
-        "Build meaningful connections, engage communities, and grow your brand across Instagram, Facebook, LinkedIn, and more.",
-    },
-    {
-      icon: <Monitor className="w-8 h-8 text-green-600 mx-auto mb-4" />,
-      title: "Website Design & Development",
-      description:
-        "Create fast, mobile-friendly, and visually stunning websites optimized for conversions and user experience.",
-    },
-    {
-      icon: <Palette className="w-8 h-8 text-purple-600 mx-auto mb-4" />,
-      title: "Branding & Creative Solutions",
-      description:
-        "Establish a unique identity with compelling visuals, strong messaging, and creative design.",
-    },
-    {
-      icon: <BarChart3 className="w-8 h-8 text-yellow-600 mx-auto mb-4" />,
-      title: "Analytics & Reporting",
-      description:
-        "Leverage data insights and performance metrics to optimize strategies and achieve sustainable growth.",
-    },
-  ];
+const iconClasses = "w-8 h-8 mx-auto mb-4";
 
-  
+const services = [
+  {
+    icon: <Search className={`${iconClasses} text-blue-600`} aria-label="SEO Icon" />,
+    title: "SEO & Content Marketing",
+    description:
+      "Improve visibility, attract the right audience, and build authority through smart optimization and storytelling.",
+    path: "/seo-services-hyderabad",
+  },
+  {
+    icon: <MousePointerClick className={`${iconClasses} text-red-600`} aria-label="PPC Ads Icon" />,
+    title: "Paid Advertising (PPC, Google & Meta Ads)",
+    description:
+      "Drive qualified leads and boost ROI with precise targeting and budget-optimized campaigns.",
+    path: "/search-engine-marketing",
+  },
+  {
+    icon: <Share2 className={`${iconClasses} text-pink-600`} aria-label="Social Media Icon" />,
+    title: "Social Media Marketing & Management",
+    description:
+      "Build meaningful connections, engage communities, and grow your brand across Instagram, Facebook, LinkedIn, and more.",
+    path: "/social-media-marketing-services",
+  },
+  {
+    icon: <Monitor className={`${iconClasses} text-green-600`} aria-label="Web Development Icon" />,
+    title: "Website Design & Development",
+    description:
+      "Create fast, mobile-friendly, and visually stunning websites optimized for conversions and user experience.",
+    path: "/web-development-services",
+  },
+  {
+    icon: <Palette className={`${iconClasses} text-purple-600`} aria-label="Branding Icon" />,
+    title: "Branding & Creative Solutions",
+    description:
+      "Establish a unique identity with compelling visuals, strong messaging, and creative design.",
+    path: "/graphic-design",
+  },
+  {
+    icon: <BarChart3 className={`${iconClasses} text-yellow-600`} aria-label="Analytics Icon" />,
+    title: "Analytics & Reporting",
+    description:
+      "Leverage data insights and performance metrics to optimize strategies and achieve sustainable growth.",
+    path: "/digital-marketing-agency",
+  },
+];
+
+
 
   const teamMembers = [
     {
@@ -81,11 +90,24 @@ const AboutUs = () => {
       name: "Karthik Chittibomma",
       position: "Senior Full Stack Developer ",
       image:
-        "https://res.cloudinary.com/diqux3y0a/image/upload/v1753704842/02_t8p32d.jpg",
+        "/images/team/Karthik-Developer.png",
       bio: "MERN stack expert building scalable web apps and AI-integrated solutions for <br /> business efficiency.",
       linkedin: "https://www.linkedin.com/in/karthikch2630",
     },
   ];
+
+  const StandoutCard: React.FC<{ icon: React.ReactNode; title: string; description: string }> = ({ icon, title, description }) => (
+    <div className="group bg-slate-800 hover:bg-slate-700 transition-all duration-300 p-8 rounded-2xl border border-slate-700 hover:border-sky-500 text-center">
+      <div className="bg-slate-700 group-hover:bg-slate-600 rounded-2xl p-8 mb-6 transition-colors duration-300">
+        <div className="mx-auto flex items-center justify-center">
+          {icon}
+        </div>
+      </div>
+      <h3 className="text-xl font-bold text-white mb-4 group-hover:text-sky-300 transition-colors">{title}</h3>
+      <p className="text-slate-300 leading-relaxed">{description}</p>
+    </div>
+  );
+
 
   return (
     <section className="bg-gray-50 w-full min-h-screen">
@@ -121,7 +143,7 @@ const AboutUs = () => {
         <img
           src="/images/About-us-banner.jpg"
           alt="Brick2Tech Hero"
-          className="absolute top-0 left-0 w-full h-full object-contain md:object-cover"
+          className="absolute top-0 left-0 w-full h-full object-cover"
         />
       </div>
 
@@ -135,22 +157,22 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-4 lg:px-8 space-y-12">
           {/* Top Header Centered */}
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-900">
-              About Us 
+            About Us
           </h2>
 
           {/* Two Column Content */}
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left Side Content */}
             <div className="lg:w-1/2 space-y-6">
-            <h2 className="text-1xl lg:text-2xl font-bold text-start text-gray-900">
-              Top Digital Marketing Agency in Hyderabad
-          </h2>
+              <h2 className="text-1xl lg:text-2xl font-bold text-start text-gray-900">
+                Top Digital Marketing Agency in Hyderabad
+              </h2>
               <h1 className="sr-only">Best Digital Marketing Companies in Hyderabad</h1>
 
               <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
                 At Brick2Tech, we blend creativity, technology, and strategy to help
-                businesses thrive in the digital world. Recognized as a <strong> Top Digital
-                  Marketing Company in Hyderabad</strong>, we specialize in delivering
+                businesses thrive in the digital world. Recognized as a <span className="font-extrabold text-[#142c4c]"> Top Digital
+                  Marketing Company in Hyderabad</span>, we specialize in delivering
                 full-scale digital solutions aligned with your brand goals and
                 designed to achieve measurable growth.
               </p>
@@ -177,9 +199,9 @@ const AboutUs = () => {
               className="lg:w-1/2 flex justify-center"
             >
               <img
-                src="/images/About-us-hero.png"
+                src="/images/Team.jpg"
                 alt="Digital Marketing Illustration"
-                className=" max-w-full h-auto"
+                className=" max-w-full rounded-xl shadow-lg object-cover aspect-[16/9] md:aspect-[4/3]"
               />
             </motion.div>
           </div>
@@ -204,7 +226,7 @@ const AboutUs = () => {
 
           {/* Cards: Motto, Vision, Mission */}
           <div className="grid gap-8 md:grid-cols-3 w-full">
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -253,7 +275,7 @@ const AboutUs = () => {
             className="bg-white p-6 rounded-xl shadow w-full md:w-3/4 text-center"
           >
             <MapPin className="text-green-600 w-8 h-8 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">🗺️ Proudly Rooted in Hyderabad</h3>
+            <h3 className="text-xl font-semibold mb-2">Proudly Rooted in Hyderabad</h3>
             <p className="text-gray-600 leading-relaxed">
               We take pride in being a Hyderabad-based agency that supports local businesses while also catering to clients across India and beyond.
             </p>
@@ -281,6 +303,8 @@ const AboutUs = () => {
           {/* Services Grid */}
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
+
+              <Link to={service.path} key={index} className="no-underline">
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
@@ -288,44 +312,53 @@ const AboutUs = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center"
               >
-                {service.icon}
+                <motion.div
+                  animate={{ rotate: [0, 5, -5, 0] }}
+                  transition={{ duration: 3, repeat: Infinity, delay: index }}
+                  className="text-4xl mb-4"
+                >
+                  {service.icon}
+                </motion.div>
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{service.description}</p>
               </motion.div>
+              </Link>
             ))}
           </div>
         </div>
       </motion.section>
 
+      <section className="py-20 px-6 bg-slate-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              What Makes Us Stand Out
+            </h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+              Our commitment to excellence and innovation sets us apart from the competition
+            </p>
+          </div>
 
-      {/* Our Approach Section */}
-      <section className="relative w-full min-h-[500px] bg-gray-50 py-16 px-4">
-  {/* Title */}
-  <motion.h2
-    className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8"
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
-    viewport={{ once: true }}
-  >
-    🔁 Our Approach
-  </motion.h2>
-
-  {/* Full-width Image with motion */}
-  <motion.div
-    className="max-w-4xl mx-auto"
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, delay: 0.2 }}
-    viewport={{ once: true }}
-  >
-    <img
-      src="/images/Our-Approach.png"
-      alt="Our Approach"
-      className="w-full h-auto  object-contain"
-    />
-  </motion.div>
-</section>
+          <div className="grid md:grid-cols-3 gap-8">
+            <StandoutCard
+              icon={<Users className="w-12 h-12 text-sky-400" />}
+              title="Experienced Team"
+              description="Our team of seasoned developers, designers, and digital strategists brings years of industry expertise to every project we undertake."
+            />
+            <StandoutCard
+              icon={<Target className="w-12 h-12 text-blue-400" />}
+              title="Client-Focused Approach"
+              description="We prioritize client communication, transparency, and collaboration throughout the development process for optimal results."
+            />
+            <StandoutCard
+              icon={<Clock className="w-12 h-12 text-sky-400" />}
+              title="On-Time Delivery"
+              description="Quality web development delivered on schedule. We respect deadlines and ensure your project launches when you need it."
+            />
+          </div>
+        </div>
+      </section>
 
 
 

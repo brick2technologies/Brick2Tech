@@ -17,31 +17,59 @@ const fadeUp = {
 
 const contentFeatures = [
   {
-    icon: <Target className="w-6 h-6 text-sky-500" />,
+    icon: <Target className="w-12 h-12 text-sky-500" />,
     title: "Content Strategy Development",
-    description: "Custom strategies built on keyword research, competitor insights, and audience behavior to align with your business goals.",
+    description:
+      "Custom strategies built on keyword research, competitor insights, and audience behavior to align with your business goals.",
   },
   {
-    icon: <PenTool className="w-6 h-6 text-green-500" />,
+    icon: <PenTool className="w-12 h-12 text-green-500" />,
     title: "Content Creation",
-    description: "High-quality blogs, articles, case studies, infographics, and social posts designed to engage and rank.",
+    description:
+      "High-quality blogs, articles, case studies, infographics, and social posts designed to engage and rank.",
   },
   {
-    icon: <Calendar className="w-6 h-6 text-purple-500" />,
+    icon: <Calendar className="w-12 h-12 text-purple-500" />,
     title: "Content Planning & Scheduling",
-    description: "Structured calendars to maintain consistency across platforms and campaigns, ensuring timely content delivery.",
+    description:
+      "Structured calendars to maintain consistency across platforms and campaigns, ensuring timely content delivery.",
   },
   {
-    icon: <Megaphone className="w-6 h-6 text-pink-500" />,
+    icon: <Megaphone className="w-12 h-12 text-pink-500" />,
     title: "Content Distribution & Promotion",
-    description: "Smart promotion through SEO, email, social media, and influencer collaborations to maximize reach.",
+    description:
+      "Smart promotion through SEO, email, social media, and influencer collaborations to maximize reach.",
   },
   {
-    icon: <BarChart className="w-6 h-6 text-yellow-500" />,
+    icon: <BarChart className="w-12 h-12 text-yellow-500" />,
     title: "Content Performance Tracking",
-    description: "Actionable insights from analytics—measuring reach, engagement, and conversions to optimize performance.",
+    description:
+      "Actionable insights from analytics—measuring reach, engagement, and conversions to optimize performance.",
   },
 ];
+
+const ServiceCard: React.FC<{
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  delay?: number;
+}> = ({ icon, title, description, delay = 0 }) => (
+  <motion.div
+    className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-blue-100 hover:border-blue-200"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay }}
+  >
+    <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
+      {icon}
+    </div>
+    <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
+      {title}
+    </h3>
+    <p className="text-slate-600 leading-relaxed">{description}</p>
+  </motion.div>
+);
 
 const ContentMarketingPage: React.FC = () => {
   return (
@@ -149,45 +177,44 @@ const ContentMarketingPage: React.FC = () => {
 
 
         {/* Core Content Marketing Services Section */}
-        <motion.section
-          className="py-24 px-6 max-w-7xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          role="region"
-          aria-label="Core Content Marketing Services"
-        >
-          <h2 className="text-4xl font-bold text-center mb-12 text-blue-900">
+       <section
+      className="py-24 px-6 bg-gradient-to-br from-blue-50 to-indigo-50"
+      role="region"
+      aria-label="Core Content Marketing Services"
+    >
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800 mb-6">
             Our Core Content Marketing Services
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-indigo-900 mb-6">
+            Engaging Content That Drives Growth
           </h2>
-          <p className="text-center text-blue-800 max-w-3xl mx-auto mb-16 text-lg">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             At Brick2Tech, we provide end-to-end content marketing services to help your business engage audiences, build authority, and drive sustainable growth.
           </p>
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {contentFeatures.map((feature, index) => (
-              <motion.article
-                key={feature.title}
-                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                aria-label={feature.title}
-              >
-                <div className="flex items-start gap-4">
-                  {feature.icon}
-                  <div>
-                    <h3 className="font-semibold text-xl text-blue-900">{feature.title}</h3>
-                    <p className="mt-2 text-blue-800">{feature.description}</p>
-                  </div>
-                </div>
-              </motion.article>
-            ))}
-          </div>
-          <p className="text-center mt-12 text-lg font-medium text-blue-900">
-            RATED #1 Best Content Marketing Services in Hyderabad – Driving Measurable Impact
-          </p>
-        </motion.section>
+        </div>
+
+        {/* Features Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {contentFeatures.map((feature, index) => (
+            <ServiceCard
+              key={feature.title}
+              icon={feature.icon}
+              title={feature.title}
+              description={feature.description}
+              delay={index * 0.1}
+            />
+          ))}
+        </div>
+
+        {/* Footer Text */}
+        <p className="text-center mt-16 text-lg font-semibold text-blue-700">
+          📈 RATED #1 Best Content Marketing Services in Hyderabad – Driving Measurable Impact
+        </p>
+      </div>
+    </section>
 
         {/* Content Marketing Process Section */}
         <motion.section

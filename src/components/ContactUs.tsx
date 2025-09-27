@@ -187,7 +187,7 @@ const ContactUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
-              className="mx-1 max-w-4xl rounded-2xl shadow-lg border-4 border-[#0098d4]"
+              className="mx-1 max-w-4xl rounded-2xl shadow-lg border-4 border-[#0098d4] md:h-2/4"
             >
               <iframe
                 title="Brick2Tech office location on Google Maps"
@@ -216,7 +216,7 @@ const ContactUs = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-2">
                   Thank you!
                 </h2>
-                <p className="text-gray-600 text-base">
+                <p className="text-[#142c4c] text-base">
                   Your message has been received. Our team will reach out soon.
                 </p>
               </div>
@@ -339,7 +339,7 @@ const ContactUs = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-10"
+            className="text-3xl md:text-4xl font-bold text-center text-[#142c4c] mb-10"
           >
             Why Reach Out to Brick2Tech?
           </motion.h2>
@@ -363,7 +363,7 @@ const ContactUs = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="mt-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-10 rounded-3xl shadow-lg text-center"
+            className="mt-20 bg-gradient-to-b from-[#142c4c] to-[#0096d4] text-white p-10 rounded-3xl shadow-lg text-center"
           >
             <MessageCircle className="w-10 h-10 mx-auto mb-4" />
             <h3 className="text-2xl md:text-3xl font-bold mb-4">

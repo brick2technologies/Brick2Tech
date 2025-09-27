@@ -18,10 +18,10 @@ const XIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
 
 export default function SocialMediaBar() {
   const socialLinks = [
-    { icon: <Linkedin className="w-7 h-7" />, url: "https://www.linkedin.com/company/brick-2-technologies/", name: "LinkedIn" },
-    { icon: <XIcon className="w-7 h-7 text-center " />, url: "https://x.com/brick2tech", name: "Twitter" },
     { icon: <Instagram className="w-7 h-7" />, url: "https://instagram.com/brick2technologies/", name: "Instagram" },
     { icon: <Facebook className="w-7 h-7" />, url: "https://facebook.com/brick2technologies", name: "Facebook" },
+    { icon: <Linkedin className="w-7 h-7" />, url: "https://www.linkedin.com/company/brick-2-technologies/", name: "LinkedIn" },
+    { icon: <XIcon className="w-7 h-7 text-center " />, url: "https://x.com/brick2tech", name: "Twitter" },
     { icon: <Youtube className="w-7 h-7" />, url: "https://youtube.com/@brick2tech", name: "YouTube" },
   ];
 

@@ -266,7 +266,7 @@ const DigitalMarketingPage = () => (
     >
       <motion.h2
         variants={sectionVariants}
-        className="text-2xl sm:text-3xl font-semibold text-blue-700 mb-6"
+        className="text-2xl sm:text-3xl font-semibold text-indigo-900 mb-6"
       >
         Grow Your Brand with Expert Strategies and Proven Results
       </motion.h2>
@@ -275,7 +275,7 @@ const DigitalMarketingPage = () => (
         variants={sectionVariants}
         className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6"
       >
-        In an increasingly competitive online landscape, having a strong digital presence is essential to drive growth and connect with your audience. At Brick2Tech, we are proud to be recognized as a leading digital marketing agency in Hyderabad, helping businesses of all sizes achieve their goals through customized, data-driven strategies.
+        In an increasingly competitive online landscape, having a strong digital presence is essential to drive growth and connect with your audience. At Brick2Tech, we are proud to be recognized as a leading <strong> digital marketing agency in Hyderabad</strong>, helping businesses of all sizes achieve their goals through customized, data-driven strategies.
       </motion.p>
 
       <motion.p

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import socialMediaBg from "/images/smm-BG.jpg";
+import socialMediaBg from "/images/smm-banner.png";
 
 import {
   Users,
@@ -142,7 +142,7 @@ const SocialMediaMarketingPage = () => {
   aria-label="Social Media Marketing Overview Section"
 >
   {/* Heading: Top & Center */}
-  <h1 className="absolute top-10 left-1/2 transform -translate-x-1/2 text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center">
+  <h1 className="absolute top-10 left-1/2 transform -translate-x-1/2 text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center">
     Best Social Media Marketing Agency in Hyderabad
   </h1>
 
@@ -153,7 +153,7 @@ const SocialMediaMarketingPage = () => {
       <img
         src="/images/social-media-marketing-about.jpg"
         alt="Social Media Marketing"
-        className="w-full max-w-md h-auto object-contain"
+        className="w-full h-auto object-contain p-4"
       />
     </div>
 
@@ -377,7 +377,7 @@ const SocialMediaMarketingPage = () => {
 
       {/* CTA Section */}
       <motion.section
-        className="py-20 px-6 bg-gradient-to-r from-pink-100 via-blue-50 to-purple-100 text-center"
+        className="py-20 px-6 bg-gradient-to-r from-sky-100 via-blue-50 to-indigo-100 text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
