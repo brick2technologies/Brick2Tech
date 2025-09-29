@@ -4,6 +4,9 @@ import { motion, easeInOut, AnimatePresence } from "framer-motion";
 import { Lightbulb, Rocket, Settings, TrendingUp, Brush, Megaphone, Globe, Monitor, Smartphone, BarChart2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Hero from "./Hero";
+import CoreStrategies from "./CoreStrategies";
+import Industries from "./Industries";
+import DigitalTransformation from "./Digitaltransformation";
 
 
 const fadeIn = (direction: "up" | "left" = "up", delay = 0) => ({
@@ -590,12 +593,12 @@ export default function HomePage() {
           viewport={{ once: true }}
           variants={fadeIn("up", 0.4)}
         >
-          <h3 className="text-3xl font-bold text-[#0098d4] mb-8 text-center hover:scale-105 transition-transform duration-300">
+          <h3 className="text-3xl font-bold text-[#0098d4]  text-center hover:scale-105 transition-transform duration-300">
             Why Choose <span className="text-[#0098d4]">Brick2Tech?</span>
           </h3>
 
           {/* Row wrapper for both images */}
-          <div className="grid grid-cols-1 gap-10 justify-items-center">
+          <div className="grid grid-cols-1 justify-items-center">
             {/* First Image */}
             <motion.div
               className="w-full flex justify-center"
@@ -604,14 +607,7 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <img
-                src="/images/whatwedo.svg"
-                alt="Best Digital Marketing Agency in Hyderabad"
-                className="w-11/12 max-w-2xl h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                decoding="async"
-                fetchPriority="low"
-              />
+              <CoreStrategies />
             </motion.div>
 
             {/* Second Image */}
@@ -622,14 +618,7 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <img
-                src="/images/Industries-We-Serve.svg"
-                alt="Best Digital Marketing Agency in Hyderabad"
-                className="w-11/12 max-w-2xl h-auto object-contain rounded-2xl hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                decoding="async"
-                fetchPriority="low"
-              />
+              <Industries />
             </motion.div>
           </div>
 
@@ -648,14 +637,7 @@ export default function HomePage() {
 
           {/* Single SVG Image Instead of Mapping Steps */}
           <div className="flex justify-center">
-            <img
-              src="/images/Our-process.png" // <-- replace with your SVG file path
-              alt="Best Digital Marketing Agency in Hyderabad"
-              className="w-full max-w-3xl"
-              loading="lazy"
-              decoding="async"
-              fetchPriority="low"
-            />
+            <DigitalTransformation />
           </div>
         </motion.div>
 

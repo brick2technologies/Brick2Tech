@@ -218,7 +218,7 @@ const ContentMarketingPage: React.FC = () => {
 
         {/* Content Marketing Process Section */}
         <motion.section
-          className="py-24 px-6 bg-sky-50"
+          className="py-12 px-6 bg-blue-900"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -228,14 +228,14 @@ const ContentMarketingPage: React.FC = () => {
           aria-label="Content Marketing Process"
         >
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-blue-900">
+            <h2 className="text-4xl font-bold text-center mb-12 text-white">
               Our Content Marketing Process at Brick2Tech
             </h2>
-            <p className="text-center text-blue-800 max-w-3xl mx-auto mb-16 text-lg">
+            <p className="text-center text-white max-w-3xl mx-auto mb-16 text-lg">
               Recognized as the best content marketing Services in Hyderabad, Brick2Tech follows a strategic, data-driven approach to deliver measurable content success.
             </p>
             <motion.section
-              className="py-2 px-6"
+              className="py-2 px-6 "
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -243,11 +243,11 @@ const ContentMarketingPage: React.FC = () => {
               role="region"
               aria-label="Content Marketing Features"
             >
-              <div className="max-w-6xl mx-auto flex justify-center">
+              <div className="max-w-6xl mx-auto flex justify-center p-0">
                 <img
-                  src="/images/Content-Marketing-approach.png"
+                  src="/images/our-approch-content.png"
                   alt="Content marketing process illustration"
-                  className="w-full max-w-4xl "
+                  className="w-full max-w-4xl  "
                 />
               </div>
             </motion.section>
