@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Menu, X, Globe, Smartphone, Megaphone, Monitor, Brush, BarChart2, Mail, Users, Search, ShoppingCart, Code, Server, Palette, FileText, PenTool, Building } from "lucide-react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, } from "react-router-dom";
 
 const Header: React.FC = () => {
   const location = useLocation();
-  const navigate = useNavigate();
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -254,19 +253,7 @@ const Header: React.FC = () => {
                             </div>
                           </div>
 
-                          {/* View All Services Button */}
-                          <div className="border-t border-gray-200 mt-4 pt-4 px-8">
-                            <button
-                              onClick={() => {
-                                setShowServicesDropdown(false);
-                                navigate("/services");
-                              }}
-                              className="flex items-center justify-center w-full px-4 py-2 bg-[#0098d4] text-white rounded-md hover:bg-[#142c4c] transition-colors duration-200 font-medium"
-                              aria-label="View all services"
-                            >
-                              View All Services
-                            </button>
-                          </div>
+                          
                         </motion.div>
                       )}
                     </AnimatePresence>
@@ -422,19 +409,7 @@ const Header: React.FC = () => {
                             ))}
                           </div>
 
-                          <div>
-                            <button
-                              onClick={() => {
-                                setMobileMenuOpen(false);
-                                setShowServicesDropdown(false);
-                                navigate("/services");
-                              }}
-                              className="block w-full text-center px-3 py-2 text-sm font-medium bg-[#0098d4] text-white hover:bg-[#142c4c] rounded-md"
-                              aria-label="View all services"
-                            >
-                              View All Services
-                            </button>
-                          </div>
+                          
                         </motion.div>
                       )}
                     </AnimatePresence>
