@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Hero from "./Hero";
 import CoreStrategies from "./CoreStrategies";
 import Industries from "./Industries";
-import DigitalTransformation from "./Digitaltransformation";
+import DigitalTransformation from "./DigitalTransformation";
 
 
 const fadeIn = (direction: "up" | "left" = "up", delay = 0) => ({
