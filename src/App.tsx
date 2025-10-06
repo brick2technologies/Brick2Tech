@@ -24,8 +24,6 @@ import SocialMediaMarketingPage from "./pages/marketing/SocialMediaPage";
 
 import ArchitectureDesignPage from "./pages/designing/ArchitectureDesign";
 
-
-
 {/* Marketing imports*/ }
 import PPCPage from "./pages/marketing/PPCPage";
 import ContentMarketingPage from "./pages/marketing/ContentMarketing";
@@ -72,14 +70,6 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<ContactUs />} />
-
-            {/* ✅ Services Pages */}
-
-
-
-
-
-
 
             {/* Marketing pages */}
             <Route path="/services/marketing/branding" element={<BrandingPage />} />
