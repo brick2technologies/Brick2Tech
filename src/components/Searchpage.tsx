@@ -8,7 +8,7 @@ const SearchPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="index, follow" />
         <title>Search results for "{query}" | Brick2Tech</title>
         <meta
           name="description"

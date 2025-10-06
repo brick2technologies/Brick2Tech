@@ -135,54 +135,73 @@ const AboutUs = () => {
   return (
     <section className="bg-gray-50 w-full min-h-screen">
       <Helmet>
-        <title>Best Digital Marketing Companies in Hyderabad | Brick2Tech</title>
+        <title>About Us | Brick2Tech – Leading Digital Marketing Company in Hyderabad</title>
         <meta
           name="description"
-          content="Looking for the top digital marketing companies in Hyderabad? Brick2Tech offers expert SEO, SMM, paid ads & web design to boost your business online."
+          content="Learn more about Brick2Tech – Hyderabad’s leading digital marketing company specializing in SEO, SMM, and paid advertising. Meet the experts behind your brand’s growth."
         />
         <meta
           name="keywords"
-          content="best digital marketing companies in hyderabad, digital marketing companies in manikoda, top digital marketing agency in hyderabad"
+          content="best digital marketing companies in hyderabad, digital marketing agency hyderabad, seo services in hyderabad, brick2tech"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="About Us | Brick2Tech Digital Marketing Company" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="About Us | Brick2Tech – Leading Digital Marketing Company in Hyderabad" />
         <meta
           property="og:description"
-          content="Meet the experts at Brick2Tech who are redefining digital growth through innovation, strategy, and creativity."
+          content="Discover Brick2Tech’s mission, values, and team dedicated to helping businesses grow through strategy and creativity."
         />
         <meta
           property="og:image"
           content="https://res.cloudinary.com/diqux3y0a/image/upload/v1753695670/Who-we-are_mf2cny.png?f_auto"
         />
-        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://brick2tech.com/about" />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us | Brick2Tech Digital Marketing Company" />
+        <meta name="twitter:title" content="About Us | Brick2Tech – Leading Digital Marketing Company in Hyderabad" />
+        <meta
+          name="twitter:description"
+          content="Meet the experts at Brick2Tech – driving innovation and digital success for businesses across Hyderabad and beyond."
+        />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/diqux3y0a/image/upload/v1753695670/Who-we-are_mf2cny.png?f_auto"
+        />
+
         <link rel="canonical" href="https://brick2tech.com/about" />
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Brick2Tech",
-            url: "https://brick2tech.com/about",
-            logo: "/logo.png",
-            description:
-              "Brick2Tech is a top digital marketing agency in Hyderabad offering SEO, SMM, paid ads, and web design services.",
-            address: {
+            "name": "Brick2Tech",
+            "url": "https://brick2tech.com/",
+            "logo": "https://brick2tech.com/logo.png",
+            "description":
+              "Brick2Tech is a leading digital marketing company in Hyderabad offering SEO, SMM, paid ads, and web design services.",
+            "address": {
               "@type": "PostalAddress",
-              addressLocality: "Hyderabad",
-              addressCountry: "IN",
+              "addressLocality": "Hyderabad",
+              "addressRegion": "Telangana",
+              "addressCountry": "IN"
             },
-            employee: teamMembers.map((member) => ({
+            "sameAs": [
+              "https://www.linkedin.com/company/brick2tech",
+              "https://www.instagram.com/brick2tech",
+              "https://www.facebook.com/brick2tech"
+            ],
+            "employee": teamMembers.map((member) => ({
               "@type": "Person",
-              name: member.name,
-              jobTitle: member.position,
-              url: member.linkedin,
-              image: member.image,
-            })),
+              "name": member.name,
+              "jobTitle": member.position,
+              "url": member.linkedin,
+              "image": member.image
+            }))
           })}
         </script>
       </Helmet>
+
 
       {/* Hero Section */}
       <div className="relative w-full h-[70vh] overflow-hidden">
@@ -245,7 +264,7 @@ const AboutUs = () => {
               className="lg:w-1/2 flex justify-center"
             >
               <img
-                src="https://res.cloudinary.com/di1bfo7ma/image/upload/v1759749789/Team_k7wgud.jpg?f_auto"
+                src="https://res.cloudinary.com/di1bfo7ma/image/upload/v1759750207/Team_k7wgud.jpg?f_auto"
                 alt="Brick2Tech team collaborating on digital projects"
                 className="max-w-full rounded-xl shadow-lg object-cover aspect-[16/9] md:aspect-[4/3]"
                 width={600}
