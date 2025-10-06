@@ -116,7 +116,7 @@ const AboutUs = () => {
     {
       name: "Karthik Chittibomma",
       position: "Senior Full Stack Developer",
-      image: "/images/team/Karthik-Developer.png?f_auto",
+      image: "https://res.cloudinary.com/di1bfo7ma/image/upload/v1759749765/Karthik-Developer_mokpb0.png?f_auto",
       bio: "MERN stack expert building scalable web apps and AI-integrated solutions for business efficiency.",
       linkedin: "https://www.linkedin.com/in/karthikch2630",
     },
@@ -165,7 +165,7 @@ const AboutUs = () => {
             "@type": "Organization",
             name: "Brick2Tech",
             url: "https://brick2tech.com/about",
-            logo: "https://res.cloudinary.com/diqux3y0a/image/upload/v1753695670/Who-we-are_mf2cny.png?f_auto",
+            logo: "/logo.png",
             description:
               "Brick2Tech is a top digital marketing agency in Hyderabad offering SEO, SMM, paid ads, and web design services.",
             address: {
@@ -187,7 +187,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <div className="relative w-full h-[70vh] overflow-hidden">
         <img
-          src="/images/About-us-banner.jpg?f_auto"
+          src="https://res.cloudinary.com/di1bfo7ma/image/upload/v1759749778/About-us-banner_rat5xe.jpg?f_auto"
           alt="Brick2Tech team working on digital marketing solutions"
           className="absolute top-0 left-0 w-full h-full object-cover"
           width={1920}
@@ -245,7 +245,7 @@ const AboutUs = () => {
               className="lg:w-1/2 flex justify-center"
             >
               <img
-                src="/images/Team.jpg?f_auto"
+                src="https://res.cloudinary.com/di1bfo7ma/image/upload/v1759749789/Team_k7wgud.jpg?f_auto"
                 alt="Brick2Tech team collaborating on digital projects"
                 className="max-w-full rounded-xl shadow-lg object-cover aspect-[16/9] md:aspect-[4/3]"
                 width={600}
