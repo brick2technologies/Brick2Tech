@@ -31,12 +31,12 @@ const quickLinks = [
 ];
 
 const services = [
-  { name: "Digital Marketing", path: "/services/digital-marketing" },
+  { name: "Digital Marketing", path: "/digital-marketing-agency" },
   { name: "Branding", path: "/services/branding" },
-  { name: "SEO", path: "/services/seo" },
-  { name: "Social Media Marketing", path: "/services/social-media-marketing" },
-  { name: "Web Development", path: "/services/web-development" },
-  { name: "Mobile App Development", path: "/services/app-development" },
+  { name: "SEO", path: "/seo-services-hyderabad" },
+  { name: "Social Media Marketing", path: "/social-media-marketing-services" },
+  { name: "Web Development", path: "/web-development-services" },
+  { name: "Mobile App Development", path: "/app-development-services" },
 ];
 
 const Footer = () => {
