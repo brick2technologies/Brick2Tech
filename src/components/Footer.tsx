@@ -32,7 +32,7 @@ const quickLinks = [
 
 const services = [
   { name: "Digital Marketing", path: "/digital-marketing-agency" },
-  { name: "Branding", path: "//services/marketing/branding" },
+  { name: "Branding", path: "/services/marketing/branding" },
   { name: "SEO", path: "/seo-services-hyderabad" },
   { name: "Social Media Marketing", path: "/social-media-marketing-services" },
   { name: "Web Development", path: "/web-development-services" },
