@@ -49,6 +49,10 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 {/* web analytics vercel */ }
 import { Analytics } from "@vercel/analytics/react"
 
+import BlogPage from "./components/Blogs.tsx";
+import FirstBlog from "./components/FirstBlog.tsx";
+import SecondBlog from "./components/SecondBlog.tsx";
+
 
 function App() {
   return (
@@ -69,7 +73,12 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/services" element={<Services />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/blogs" element={<BlogPage />} />          
             <Route path="/contact" element={<ContactUs />} />
+
+            {/* Blogs */}
+            <Route path="/blog/struggling-to-get-leads-online" element={<FirstBlog />} />
+            <Route path="/blog/why-your-brand-needs-the-right-social-media-marketing-agency-in-hyderabad" element={<SecondBlog />} />
 
             {/* Marketing pages */}
             <Route path="/services/marketing/branding" element={<BrandingPage />} />

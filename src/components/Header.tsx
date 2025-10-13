@@ -113,6 +113,7 @@ const Header: React.FC = () => {
     { name: "About Us", path: "/about" },
     { name: "Services", hasDropdown: true },
     { name: "Careers", path: "/careers" },
+    {name:"Blogs", path:"/blogs"},
     { name: "Contact Us", path: "/contact" },
   ];
 
