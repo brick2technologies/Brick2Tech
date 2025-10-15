@@ -1,8 +1,7 @@
 'use client';
 
-
-import { ArrowLeft, ChevronRight } from 'lucide-react';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface Blog {
   id: number;
@@ -26,7 +25,7 @@ export const blogs: Blog[] = [
     id: 1,
     title: 'Struggling to Get Leads Online? Here’s Why You Need the Best Digital Marketing Agency in Hyderabad',
     category: 'Inspiration',
-    image: 'bg-gradient-to-br from-slate-400 to-slate-600',
+    image: 'https://res.cloudinary.com/di1bfo7ma/image/upload/v1760510077/Struggling-to-get-Leads-Online_vgpqma.jpg',
     content:
       "Explore the latest design trends and learn from industry experts about what's shaping the future of creative work. Discover timeless principles that never go out of style.",
     slug: generateSlug('Struggling to Get Leads Online?'),
@@ -35,69 +34,15 @@ export const blogs: Blog[] = [
     id: 2,
     title: 'Why Your Brand Needs the Right Social Media Marketing Agency in Hyderabad',
     category: 'Design',
-    image: 'bg-gradient-to-br from-orange-300 to-orange-500',
+    image: 'https://res.cloudinary.com/di1bfo7ma/image/upload/v1760509115/Why-Brands-need-right-Digital-Marketing-Ststegy_p1lrg0.jpg',
     content:
       "Minimalism isn't just an aesthetic—it's a philosophy. Learn how to strip away the unnecessary and focus on what truly matters in your product design.",
     slug: generateSlug('Why Your Brand Needs the Right Social Media Marketing Agency in Hyderabad'),
   },
-  
 ];
 
-
-
-export const BlogDetail: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const navigate = useNavigate();
-  const blog = blogs.find((b) => b.slug === slug);
-
-  if (!blog) {
-    return <div>Blog not found</div>;
-  }
-
-  return (
-    <div className="min-h-screen bg-white flex flex-col">
-   
-      <section className="flex-1 py-16 px-6">
-        <div className="max-w-3xl mx-auto">
-          <button
-            onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-blue-600 font-semibold mb-8 hover:gap-3 transition"
-          >
-            <ArrowLeft size={20} /> Back to Blogs
-          </button>
-          <div className={`${blog.image} h-96 rounded-lg mb-8`}></div>
-          <div className="space-y-6">
-            <span className="inline-block text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
-              {blog.category}
-            </span>
-            <h1 className="text-4xl font-bold text-gray-900">{blog.title}</h1>
-            <div className="text-gray-600 space-y-4">
-              <p>{blog.content}</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            <button
-              onClick={() => navigate('/')}
-              className="mt-8 bg-blue-600 text-white px-6 py-3 rounded font-semibold hover:bg-blue-700 transition"
-            >
-              Back to All Blogs
-            </button>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-};
-
-export const BlogGrid: React.FC = () => (
+const BlogCards: React.FC = () => (
   <div className="min-h-screen bg-white flex flex-col">
-    
     <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20 px-6">
       <div className="max-w-7xl mx-auto text-center">
         <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-sm mb-6"></span>
@@ -122,11 +67,13 @@ export const BlogGrid: React.FC = () => (
             <Link
               key={blog.id}
               to={`/blog/${blog.slug}`}
-              target="_blank"
-              rel="noopener noreferrer"
               className="group cursor-pointer"
             >
-              <div className={`${blog.image} h-48 rounded-lg mb-4 transition-transform group-hover:scale-105`}></div>
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="h-48 w-full object-cover rounded-lg mb-4 transition-transform group-hover:scale-105"
+              />
               <div className="space-y-3">
                 <span className="inline-block text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
                   {blog.category}
@@ -142,32 +89,9 @@ export const BlogGrid: React.FC = () => (
             </Link>
           ))}
         </div>
-        <div className="flex justify-center gap-2 mt-12">
-          <button className="px-3 py-2 text-sm border border-gray-300 rounded hover:bg-gray-100">
-            ← Previous
-          </button>
-          <button className="px-4 py-2 text-sm bg-blue-600 text-white rounded">1</button>
-          <button className="px-4 py-2 text-sm border border-gray-300 rounded hover:bg-gray-100">2</button>
-          <button className="px-3 py-2 text-sm border border-gray-300 rounded hover:bg-gray-100">
-            Next →
-          </button>
-        </div>
-      </div>
-    </section>
-    <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-6">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">Ready to level up your business?</h2>
-        <p className="text-blue-100 mb-6">Start your journey with us today</p>
-        <button className="bg-white text-blue-600 px-8 py-3 rounded font-semibold hover:bg-blue-50 transition">
-          Subscribe
-        </button>
       </div>
     </section>
   </div>
 );
 
-const BlogPage: React.FC = () => {
-  return <BlogGrid />;
-};
-
-export default BlogPage;
+export default BlogCards;

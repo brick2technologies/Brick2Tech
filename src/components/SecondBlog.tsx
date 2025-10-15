@@ -4,7 +4,7 @@ const SecondBlog: React.FC = () => {
   return (
     <div className="bg-gray-50 font-serif">
       {/* Main Picture */}
-      <div className="w-full h-72 bg-cover bg-center border-b-4 border-blue-500" style={{ backgroundImage: 'url(https://via.placeholder.com/1200x400?text=Social+Media+Marketing+Hyderabad)' }}></div>
+      <div className="w-full h-[90vh] bg-cover bg-center border-b-4 border-blue-500 bg-no-repeat" style={{ backgroundImage: 'url(https://res.cloudinary.com/di1bfo7ma/image/upload/v1760509115/Why-Brands-need-right-Digital-Marketing-Ststegy_p1lrg0.jpg)' }}></div>
 
       {/* Content */}
       <div className="max-w-3xl mx-auto px-6 py-16">
