@@ -6,21 +6,25 @@ const SecondBlog: React.FC = () => {
     <div className="bg-gray-50 font-serif text-gray-800">
       {/* SEO Metadata */}
       <Helmet>
-        <title>Best Digital Marketing Agency in Hyderabad | Brick2Tech</title>
+        <title>
+          Best Social Media Marketing Agency in Hyderabad | Brick2Tech
+        </title>
         <meta
           name="description"
-          content="Grow your business with Brick2Tech — the best digital marketing agency in Hyderabad. We deliver expert SEO, Meta Ads, branding & website design services."
+          content="Boost your brand online with Brick2Tech — the leading social media marketing agency in Hyderabad. Get tailored strategies, engaging content & real results!"
         />
         <meta
           name="keywords"
-          content="best digital marketing agency in hyderabad, digital marketing company hyderabad, seo services hyderabad, social media marketing hyderabad, ppc agency hyderabad, branding agency hyderabad, top marketing companies in hyderabad, meta ads agency hyderabad, google ads experts hyderabad, website development agency hyderabad"
+          content="social media marketing agency in hyderabad, best social media agency hyderabad, digital marketing agency hyderabad, social media management services, facebook ads agency hyderabad, instagram marketing company hyderabad, hyderabad marketing agencies, branding agency hyderabad, social media experts hyderabad, meta ads management hyderabad"
         />
-        <meta property="og:title" content="Best Digital Marketing Agency in Hyderabad | Brick2Tech" />
-        <meta property="og:description" content="Grow your business with Brick2Tech — the best digital marketing agency in Hyderabad. We deliver expert SEO, Meta Ads, branding & website design services." />
-        <meta property="og:image" content="https://res.cloudinary.com/di1bfo7ma/image/upload/v1760509115/Why-Brands-need-right-Digital-Marketing-Ststegy_p1lrg0.jpg" />
-        <meta property="og:url" content="https://brick2tech.com/best-digital-marketing-agency-hyderabad" />
-        <link rel="canonical" href="https://brick2tech.com/best-digital-marketing-agency-hyderabad" />
+        <meta property="og:title" content="Best Social Media Marketing Agency in Hyderabad | Brick2Tech" />
+        <meta property="og:description" content="Boost your brand online with Brick2Tech — the leading social media marketing agency in Hyderabad. Get tailored strategies, engaging content & real results!" />
+        <meta property="og:image" content="https://res.cloudinary.com/di1bfo7ma/image/upload/v1760510077/Struggling-to-get-Leads-Online_vgpqma.jpg" />
+        <meta property="og:url" content="https://brick2tech.com/social-media-marketing-agency-hyderabad" />
+        <link rel="canonical" href="https://brick2tech.com/social-media-marketing-agency-hyderabad" />
       </Helmet>
+
+
 
       {/* Hero Image */}
       <div
