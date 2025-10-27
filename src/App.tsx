@@ -82,8 +82,8 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
 
             {/* Blogs */}
-            <Route path="/blog/struggling-to-get-leads-online" element={<FirstBlog />} />
-            <Route path="/blog/why-your-brand-needs-the-right-social-media-marketing-agency-in-hyderabad" element={<SecondBlog />} />
+            <Route path="/blog/digital-marketing-agency-in-hyderabad" element={<FirstBlog />} />
+            <Route path="/blog/social-media-marketing-agency-in-hyderabad" element={<SecondBlog />} />
 
             {/* Marketing pages */}
             <Route path="/services/marketing/branding" element={<BrandingPage />} />
