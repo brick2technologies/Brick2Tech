@@ -24,7 +24,7 @@ const services = [
       "Typography",
       "Trademark Registration",
     ],
-    link: "/services/branding",
+    link: "/services/marketing/branding",
   },
   {
     name: "SEO",
@@ -36,7 +36,7 @@ const services = [
       "Technical SEO",
       "Link Building",
     ],
-    link: "/services/seo",
+    link: "/seo-services-hyderabad",
   },
   {
     name: "Digital Marketing",
@@ -48,7 +48,7 @@ const services = [
       "Content Marketing",
       "Analytics",
     ],
-    link: "/services/digital-marketing",
+    link: "/digital-marketing-agency",
   },
   {
     name: "Social Media Marketing",
@@ -60,7 +60,7 @@ const services = [
       "Social Advertising",
       "Influencer Marketing",
     ],
-    link: "/services/social-media-marketing",
+    link: "/social-media-marketing-services",
   },
   {
     name: "Virtual Walkthrough",
@@ -72,7 +72,7 @@ const services = [
       "Interactive Presentations",
       "Interactive Experiences",
     ],
-    link: "/services/Architecture-Design",
+    link: "/architecture-design",
   },
   {
     name: "Business Websites",
@@ -84,7 +84,7 @@ const services = [
       "CMS Integration",
       "Performance Optimization",
     ],
-    link: "/services/web-development",
+    link: "/web-development-services",
   },
   {
     name: "E-commerce Websites",
@@ -96,7 +96,7 @@ const services = [
       "Inventory Management",
       "Order Tracking",
     ],
-    link: "/services/web-development",
+    link: "/web-development-services",
   },
   {
     name: "Brochure Design",
@@ -108,7 +108,7 @@ const services = [
       "Infographics",
       "Marketing Materials",
     ],
-    link: "/services/Graphic-Design",
+    link: "/graphic-design",
   },
 ];
 
