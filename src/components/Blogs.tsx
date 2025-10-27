@@ -28,7 +28,7 @@ export const blogs: Blog[] = [
     image: 'https://res.cloudinary.com/di1bfo7ma/image/upload/v1760510077/Struggling-to-get-Leads-Online_vgpqma.jpg',
     content:
       "Explore the latest design trends and learn from industry experts about what's shaping the future of creative work. Discover timeless principles that never go out of style.",
-    slug: generateSlug('Struggling to Get Leads Online?'),
+    slug: generateSlug('social media marketing agency hyderabad'),
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ export const blogs: Blog[] = [
     image: 'https://res.cloudinary.com/di1bfo7ma/image/upload/v1760509115/Why-Brands-need-right-Digital-Marketing-Ststegy_p1lrg0.jpg',
     content:
       "Minimalism isn't just an aesthetic—it's a philosophy. Learn how to strip away the unnecessary and focus on what truly matters in your product design.",
-    slug: generateSlug('Why Your Brand Needs the Right Social Media Marketing Agency in Hyderabad'),
+    slug: generateSlug('Digital Marketing Agency in Hyderabad'),
   },
 ];
 
