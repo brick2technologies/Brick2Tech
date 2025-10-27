@@ -49,6 +49,9 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 {/* web analytics vercel */ }
 import { Analytics } from "@vercel/analytics/react"
 
+{/* Metapixel Analytics */ }
+import MetaPixel, { MetaPixelRouteTracker } from "./components/MetaPixel";
+
 import BlogPage from "./components/Blogs.tsx";
 import FirstBlog from "./components/FirstBlog.tsx";
 import SecondBlog from "./components/SecondBlog.tsx";
@@ -61,6 +64,8 @@ function App() {
       <ScrollToTop />
       <SocialMediaBar />
       <main className="relative">
+        <MetaPixel />
+        <MetaPixelRouteTracker />
         <SpeedInsights />
         <Analytics />
         <AnimatePresence mode="wait">
