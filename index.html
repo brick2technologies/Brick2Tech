@@ -1,159 +1,93 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- ✅ Essential Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ✅ Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="DnOJoW1EOqfGu4rUoEfxBJMW-JLDCrpJmW1960AE51I"
+    />
 
-  <!-- ✅ Google Site Verification -->
-  <meta name="google-site-verification" content="DnOJoW1EOqfGu4rUoEfxBJMW-JLDCrpJmW1960AE51I" />
+    <!-- ✅ Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://res.cloudinary.com/diqux3y0a/image/upload/v1752756459/B2T_favicon_ay32ty.svg"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://res.cloudinary.com/diqux3y0a/image/upload/v1752756459/B2T_favicon_ay32ty.svg"
+    />
 
+    <!-- ✅ Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ✅ Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0JB6T4BW6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- ✅ PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0f172a" />
 
-    gtag('config', 'G-V0JB6T4BW6');
-  </script>
+    <!-- ✅ GEO Tags (for local SEO; these can stay global) -->
+    <meta name="geo.region" content="IN-TG" />
+    <meta name="geo.placename" content="Hyderabad, Telangana, India" />
+    <meta name="geo.position" content="17.385044;78.486671" />
+    <meta name="ICBM" content="17.385044, 78.486671" />
 
-  <!--
-  Meta Pixel Code
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1298951935246236');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1298951935246236&ev=PageView&noscript=1" />
-  </noscript>
--->
+    <!-- ✅ Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-V0JB6T4BW6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-V0JB6T4BW6");
+    </script>
 
+    <!-- ✅ Structured Data (Organization) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Brick2Tech",
+        "url": "https://brick2tech.com",
+        "logo": "https://brick2tech.com/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/brick2technologies",
+          "https://www.instagram.com/brick2technologies/",
+          "https://www.youtube.com/@brick2tech",
+          "https://x.com/brick2tech",
+          "https://in.pinterest.com/brick2technologies/",
+          "https://www.linkedin.com/company/brick-2-technologies/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sunrise Residency, Plot-no:38/201",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "postalCode": "500001",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-900-003-5647",
+          "contactType": "customer support"
+        }
+      }
+    </script>
+  </head>
 
-  <!-- ✅ SEO Meta Tags -->
-  <title>Best Digital Marketing Agency in Hyderabad - Brick2Tech</title>
-  <link rel="icon" type="image/svg+xml"
-    href="https://res.cloudinary.com/diqux3y0a/image/upload/v1752756459/B2T_favicon_ay32ty.svg" />
-  <meta name="description"
-    content="Brick2Tech – Hyderabad’s leading digital marketing agency for SEO, SMM, branding & web solutions that boost leads, sales, and ROI.">
-  <meta name="keywords"
-    content="best digital marketing agency in hyderabad, digital marketing companies in hyderabad, digital advertising company in hyderabad, seo agency hyderabad, web design hyderabad">
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Brick2Tech" />
-  <link rel="canonical" href="https://brick2tech.com/" />
-
-  <!-- ✅ GEO Tags (Local SEO) -->
-  <meta name="geo.region" content="IN-TG" />
-  <meta name="geo.placename" content="Hyderabad, Telangana, India" />
-  <meta name="geo.position" content="17.385044;78.486671" />
-  <meta name="ICBM" content="17.385044, 78.486671" />
-
-  <!-- ✅ Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180"
-    href="https://res.cloudinary.com/diqux3y0a/image/upload/v1752756459/B2T_favicon_ay32ty.svg">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="manifest" href="/manifest.json" />
-
-  <!-- ✅ Open Graph (Facebook / LinkedIn) -->
-  <meta property="og:title" content="Brick2Tech – Digital Marketing Company" />
-  <meta property="og:description"
-    content="We deliver top-tier services in branding, digital marketing, and web development. Elevate your business with B2T." />
-  <meta property="og:image"
-    content="https://res.cloudinary.com/diqux3y0a/image/upload/v1752756459/B2T_favicon_ay32ty.svg" />
-  <meta property="og:url" content="https://brick2tech.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_IN" />
-
-  <!-- ✅ Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Brick2Tech – Your Growth Partner" />
-  <meta name="twitter:description" content="Digital marketing, branding, and web design tailored for results." />
-  <meta name="twitter:image"
-    content="https://res.cloudinary.com/diqux3y0a/image/upload/v1752756459/B2T_favicon_ay32ty.svg" />
-  <meta name="twitter:site" content="@brick2tech" />
-  <meta name="twitter:creator" content="@brick2tech" />
-
-  <!-- ✅ PWA -->
-  <meta name="theme-color" content="#0f172a" />
-  <link rel="manifest" href="/manifest.json" />
-
-  <!-- ✅ Structured Data (Organization) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Brick2Tech",
-    "url": "https://brick2tech.com",
-    "logo": "https://brick2tech.com/logo.png",
-    "sameAs": [
-      "https://www.facebook.com/brick2technologies",
-      "https://www.instagram.com/brick2technologies/",
-      "https://www.youtube.com/@brick2tech",
-      "https://x.com/brick2tech",
-      "https://in.pinterest.com/brick2technologies/",
-      "https://www.linkedin.com/company/brick-2-technologies/"
-    ],
-    "description": "Brick2Tech is a leading digital marketing company in Hyderabad, specializing in SEO, branding, and web development. We help businesses grow with innovative solutions.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Sunrise Residency, Plot-no:38/201",
-      "addressLocality": "Hyderabad",
-      "addressRegion": "Telangana",
-      "postalCode": "500001",
-      "addressCountry": "IN"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-900-003-5647",
-      "contactType": "customer support"
-    }
-  }
-  </script>
-
-  <!-- ✅ LocalBusiness Schema (GEO SEO) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Brick2Tech Digital Marketing Agency",
-    "image": "https://brick2tech.com/og-image.jpg",
-    "url": "https://brick2tech.com",
-    "telephone": "+91-900-003-5647",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Sunrise Residency, Plot-no:38/201",
-      "addressLocality": "Hyderabad",
-      "addressRegion": "Telangana",
-      "postalCode": "500001",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "17.385044",
-      "longitude": "78.486671"
-    }
-  }
-  </script>
-
-</head>
-
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
-
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
