@@ -22,7 +22,7 @@ const EnquiryForm = () => {
 
     emailjs
       .send(
-        "service_zmgawi8", // ✅ use your SMTP service ID
+        "service_zmgawi8", // ✅ your EmailJS service ID
         "template_6vcx90t", // ✅ your template ID
         formData,
         "GYcSN3NRVSUEk-a54" // ✅ your public key
@@ -39,28 +39,28 @@ const EnquiryForm = () => {
   };
 
   const services = [
-    { category: "Marketing", items: [
-      "Digital Marketing", "SEO", "Content Marketing", "Social Media Management",
-      "Social Media Marketing", "Search Engine Marketing", "Email Marketing", "Influencer Marketing"
-    ]},
-    { category: "Development", items: [
-      "Ecommerce Website", "Web Development", "Web Hosting", "App Development"
-    ]},
-    { category: "Designing", items: [
-      "Brochure Design", "Graphic Design", "Logo Design", "Architecture Design", "UI/UX Design"
-    ]}
+    "Branding & Strategy",
+    "Digital Marketing",
+    "Website Development",
+    "Ecommerce Development",
+    "Graphic Design",
+    "3D Design & Visualization",
+    "Motion Graphics"
   ];
 
   return (
     <motion.div
-      initial={{ x: 200, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.6 }}
-      className="fixed top-1/4 right-0 z-50 bg-white border-l-4 border-[#0098d4] shadow-2xl rounded-l-xl w-64 p-3 max-h-[80vh] overflow-y-auto hidden lg:block"
+      drag
+      dragMomentum={false}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="fixed bottom-10 right-10 z-50 bg-white border-l-4 border-[#0098d4] shadow-2xl rounded-xl w-72 p-3 cursor-grab active:cursor-grabbing"
     >
-      <h3 className="text-lg font-bold text-[#142c4c] mb-3 text-center">
-        Enquiry Form
-      </h3>
+      {/* Draggable Header */}
+      <div className="bg-[#0098d4] text-white text-center py-2 rounded-md mb-3 font-semibold cursor-move select-none">
+        🧩 Enquiry Form
+      </div>
 
       <form onSubmit={handleSubmit} className="space-y-2">
         <input
@@ -101,12 +101,10 @@ const EnquiryForm = () => {
           className="w-full px-2 py-1 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0098d4] focus:outline-none text-sm"
         >
           <option value="">Select a Service</option>
-          {services.map((group, i) => (
-            <optgroup key={i} label={group.category}>
-              {group.items.map((item, j) => (
-                <option key={j} value={item}>{item}</option>
-              ))}
-            </optgroup>
+          {services.map((service, i) => (
+            <option key={i} value={service}>
+              {service}
+            </option>
           ))}
         </select>
 
