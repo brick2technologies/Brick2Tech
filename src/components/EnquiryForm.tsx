@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
+import { FiPlayCircle } from "react-icons/fi";
 
 const EnquiryForm = () => {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ const EnquiryForm = () => {
     "Website Development",
     "Ecommerce Development",
     "Graphic Design",
-    "3D Design & Visualization",
+    "3D/VR Visualization",
     "Motion Graphics"
   ];
 
@@ -58,9 +59,11 @@ const EnquiryForm = () => {
       className="fixed bottom-10 right-10 z-50 bg-white border-l-4 border-[#0098d4] shadow-2xl rounded-xl w-72 p-3 cursor-grab active:cursor-grabbing"
     >
       {/* Draggable Header */}
-      <div className="bg-[#0098d4] text-white text-center py-2 rounded-md mb-3 font-semibold cursor-move select-none">
-        🧩 Enquiry Form
-      </div>
+      <div className="flex items-center justify-center gap-2 bg-[#0098d4] text-white text-center py-2 rounded-md mb-3 font-semibold cursor-pointer select-none hover:bg-[#007bb5] transition-all duration-300 shadow-md hover:shadow-lg">
+      <FiPlayCircle className="text-xl" />
+      <span>Get a Free Demo</span>
+    </div>
+
 
       <form onSubmit={handleSubmit} className="space-y-2">
         <input
