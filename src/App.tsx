@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import ChatBot from "./components/ChatBot";
+// import ChatBot from "./components/ChatBot";
 
 // ✅ Optimized HomePage with SEO, AEO, GEO, Schemas
 import HomePage from "./components/Homepage";
@@ -55,6 +55,7 @@ import MetaPixel, { MetaPixelRouteTracker } from "./components/MetaPixel";
 import BlogPage from "./components/Blogs.tsx";
 import FirstBlog from "./components/FirstBlog.tsx";
 import SecondBlog from "./components/SecondBlog.tsx";
+import EnquiryForm from "./components/EnquiryForm";
 
 
 function App() {
@@ -62,7 +63,9 @@ function App() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Header />
       <ScrollToTop />
+      
       <SocialMediaBar />
+      <EnquiryForm />
       <main className="relative">
         <MetaPixel />
         <MetaPixelRouteTracker />
@@ -179,7 +182,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </main>
-      <ChatBot />
+      {/* <ChatBot /> */}
       <Footer />
     </div>
   );
