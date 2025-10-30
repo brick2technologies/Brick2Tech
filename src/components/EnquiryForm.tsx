@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
-import { FiPlayCircle } from "react-icons/fi";
+import { FiMessageSquare } from "react-icons/fi";
 
 const EnquiryForm = () => {
   const [formData, setFormData] = useState({
@@ -60,9 +60,9 @@ const EnquiryForm = () => {
     >
       {/* Draggable Header */}
       <div className="flex items-center justify-center gap-2 bg-[#0098d4] text-white text-center py-2 rounded-md mb-3 font-semibold cursor-pointer select-none hover:bg-[#007bb5] transition-all duration-300 shadow-md hover:shadow-lg">
-      <FiPlayCircle className="text-xl" />
-      <span>Get a Free Demo</span>
-    </div>
+        <FiMessageSquare className="text-xl" />
+        <span>Get Your Free Consultation</span>
+      </div>
 
 
       <form onSubmit={handleSubmit} className="space-y-2">
