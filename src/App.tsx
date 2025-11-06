@@ -14,7 +14,7 @@ import SearchPage from "./components/Searchpage";
 
 // Other Pages
 import AboutUs from "./components/AboutUs";
-import Services from "./components/Services";
+// import Services from "./components/Services";
 import Careers from "./components/Careers";
 import ContactUs from "./components/ContactUs";
 import BrandingPage from "./pages/marketing/BrandingPage.tsx";
@@ -79,7 +79,7 @@ function App() {
             {/* ✅ Static Pages */}
             <Route path="/search" element={<SearchPage />} />
             <Route path="/about" element={<AboutUs />} />
-            <Route path="/services" element={<Services />} />
+            {/* <Route path="/services" element={<Services />} /> */}
             <Route path="/careers" element={<Careers />} />
             <Route path="/blogs" element={<BlogPage />} />          
             <Route path="/contact" element={<ContactUs />} />
