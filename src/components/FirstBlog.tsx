@@ -33,128 +33,132 @@ const Blog: React.FC = () => {
 
       {/* Main Content */}
       <div className="max-w-3xl mx-auto px-6 py-16">
-        {/* Introduction */}
-        <section className="mb-12 bg-white p-8 rounded-lg shadow-md border-l-4 border-indigo-600">
+        {/* Intro */}
+        <section className="mb-12 bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-600">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
-            Best Social Media Marketing Agency in Hyderabad
+            Best Digital Marketing Agency in Hyderabad
           </h1>
           <p className="text-lg mb-6 leading-relaxed">
-            <span className="text-2xl mr-2">📱</span> Social media is no longer
-            just a platform for sharing updates—it’s the heart of modern brand
-            building. From Instagram stories to LinkedIn thought leadership,
-            your audience is engaging every day. But standing out requires a
-            strategy that blends creativity with data. That’s where{" "}
-            <strong>Brick2Tech</strong>, a premier{" "}
-            <strong>social media marketing agency in Hyderabad</strong>, comes
-            in. We help your brand cut through the noise, connect with your
-            audience, and drive real business growth.
+            <span className="text-2xl mr-2">🌐</span> In today’s digital era,
+            your audience isn’t just browsing—they’re immersed in social media,
+            search engines, and digital content every day. But simply posting
+            online isn’t enough. To truly stand out, your brand needs a
+            strategic mix of creativity and data-driven execution. That’s where{" "}
+            <strong>Brick2Tech</strong>, the{" "}
+            <strong>best digital marketing agency in Hyderabad</strong>, steps
+            in to elevate your brand and connect with your audience through
+            meaningful, result-oriented campaigns.
           </p>
           <a
             href="https://brick2tech.com"
-            className="text-indigo-600 hover:underline font-semibold"
+            className="text-blue-600 hover:underline font-semibold"
           >
-            Discover how we can transform your brand
+            Visit brick2tech.com to get started
           </a>
         </section>
 
-        {/* Importance */}
+        {/* Importance of Digital Marketing */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-indigo-300 pb-2">
-            The Power of Social Media Marketing Today
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-blue-300 pb-2">
+            Why Digital Marketing Matters More Than Ever
           </h2>
           <p className="text-lg mb-6 leading-relaxed">
-            <span className="text-2xl mr-2">🌟</span> Social media has become a
-            game-changer for businesses, offering unmatched opportunities to
-            connect with audiences. A well-crafted strategy amplifies visibility
-            and builds trust through authentic communication. Social platforms
-            also drive traffic, conversions, and provide valuable feedback to
-            refine your approach in real time.
+            <span className="text-2xl mr-2">📢</span> Digital marketing is now
+            the backbone of business success. A well-crafted strategy enhances
+            visibility, increases brand trust, and drives targeted traffic to
+            your website. It helps businesses of all sizes reach customers where
+            they spend most of their time—online. From SEO and social media to
+            PPC and content marketing, Brick2Tech ensures your digital presence
+            is optimized for engagement, conversions, and measurable ROI.
           </p>
         </section>
 
-        {/* Brick2Tech Offerings */}
-        <section className="mb-12 bg-white p-8 rounded-lg shadow-md border-l-4 border-indigo-600">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-indigo-300 pb-2">
-            How Brick2Tech Drives Your Social Media Success
+        {/* Services */}
+        <section className="mb-12 bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-600">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-blue-300 pb-2">
+            What Brick2Tech – Your Digital Marketing Partner – Offers
           </h2>
           <ul className="list-disc ml-6 space-y-4">
             <li>
-              <strong>📸 Engaging Content Creation:</strong> Eye-catching
-              visuals and videos tailored for each platform.
+              <strong>✍️ Content Strategy That Converts:</strong> We create
+              compelling visuals, videos, and blogs that speak directly to your
+              audience.
             </li>
             <li>
-              <strong>🎯 Targeted Paid Advertising:</strong> Data-driven ad
-              campaigns across Meta, LinkedIn & YouTube for maximum ROI.
+              <strong>💸 Paid Campaigns with Precision:</strong> Our expert
+              Meta, Google, and LinkedIn ad campaigns ensure you reach high-intent
+              audiences at the best ROI.
             </li>
             <li>
-              <strong>👥 Authentic Community Growth:</strong> We grow your
-              follower base with real, engaged audiences.
+              <strong>🔍 SEO & Local Optimization:</strong> We improve your
+              Google ranking and visibility with effective on-page and off-page
+              SEO strategies.
             </li>
             <li>
-              <strong>📈 Data-Driven Optimization:</strong> We track metrics and
-              continuously refine campaigns.
+              <strong>🤝 Community Engagement:</strong> We build authentic
+              followers and convert them into loyal customers.
             </li>
             <li>
-              <strong>✨ Memorable Branding:</strong> Consistent design and
-              storytelling for strong identity.
+              <strong>🎨 Branding & Design Support:</strong> From logo creation
+              to website design, we help shape a consistent and memorable
+              identity for your business.
             </li>
           </ul>
         </section>
 
         {/* Why Choose Brick2Tech */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-indigo-300 pb-2">
-            Why Brick2Tech Stands Out in Hyderabad
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-blue-300 pb-2">
+            Why Choose Brick2Tech – The Best Digital Marketing Agency in Hyderabad
           </h2>
           <p className="text-lg mb-6 leading-relaxed">
-            <span className="text-2xl mr-2">🏆</span> Brick2Tech combines
-            creativity, strategy, and technology to deliver exceptional social
-            media marketing in Hyderabad. With transparent reporting, in-house
-            creative teams, and tailored strategies, we ensure your brand grows
-            authentically and sustainably.
+            <span className="text-2xl mr-2">🌟</span> Brick2Tech merges
+            creativity, data, and innovation to deliver digital strategies that
+            convert. With transparent reporting, dedicated account managers, and
+            in-house creative teams, we ensure that every campaign aligns with
+            your business goals and achieves measurable growth.
           </p>
         </section>
 
-        {/* Results Section */}
-        <section className="mb-12 bg-white p-8 rounded-lg shadow-md border-l-4 border-indigo-600">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-indigo-300 pb-2">
-            The Results of a Strong Social Media Strategy
+        {/* Impact */}
+        <section className="mb-12 bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-600">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-blue-300 pb-2">
+            The Impact of a Strong Digital Marketing Strategy
           </h2>
           <p className="text-lg mb-6 leading-relaxed">
-            <span className="text-2xl mr-2">🚀</span> A strategic social media
-            presence delivers measurable results — 3X engagement, steady
-            follower growth, and increased leads. These outcomes go beyond
-            metrics—they strengthen loyalty and position your brand as a leader.
+            <span className="text-2xl mr-2">🚀</span> Businesses that partner
+            with Brick2Tech experience 3X higher engagement, better conversion
+            rates, and significant lead growth. Our goal is simple — to help you
+            build authority, boost revenue, and sustain long-term brand success.
           </p>
         </section>
 
-        {/* Final CTA */}
+        {/* CTA */}
         <section className="text-center mb-12">
           <p className="text-lg mb-6 leading-relaxed">
-            <span className="text-2xl mr-2">📣</span> Don’t let your brand fade
-            into the social media noise. With Brick2Tech, every post is
-            purposeful and impactful. Visit{" "}
+            <span className="text-2xl mr-2">📱</span> Ready to grow your
+            business online? Let Brick2Tech craft a winning digital marketing
+            strategy for your brand. Visit{" "}
             <a
               href="https://brick2tech.com"
-              className="text-indigo-600 hover:underline font-semibold"
+              className="text-blue-600 hover:underline font-semibold"
             >
               brick2tech.com
             </a>{" "}
             or{" "}
             <a
               href="/contact"
-              className="text-indigo-600 hover:underline font-semibold"
+              className="text-blue-600 hover:underline font-semibold"
             >
               contact us
             </a>{" "}
-            today to start your journey to social media success!
+            today to get started.
           </p>
         </section>
 
         {/* Closing Title */}
-        <h2 className="text-3xl font-bold text-gray-900 text-center border-t-2 border-indigo-300 pt-6">
-          Why Your Brand Needs the Right Social Media Marketing Agency in
-          Hyderabad
+        <h2 className="text-3xl font-bold text-gray-900 text-center border-t-2 border-blue-300 pt-6">
+          Why Your Brand Needs the Best Digital Marketing Agency in Hyderabad
         </h2>
       </div>
     </div>
@@ -162,3 +166,4 @@ const Blog: React.FC = () => {
 };
 
 export default Blog;
+
