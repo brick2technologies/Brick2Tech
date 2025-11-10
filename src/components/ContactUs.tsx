@@ -182,7 +182,7 @@ const ContactUs = () => {
                 </li>
               </ul>
             </div>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -199,7 +199,7 @@ const ContactUs = () => {
                 allowFullScreen
                 className="w-full h-full rounded-lg"
               ></iframe>
-            </motion.div>
+            </motion.div> */}
           </motion.aside>
 
           {/* Contact Form Card */}
