@@ -92,7 +92,7 @@ const ContactUs = () => {
           name="keywords"
           content="digital marketing Hyderabad, SEO services Hyderabad, web development Hyderabad, branding agency Hyderabad"
         />
-        <link rel="canonical" href="https://brick2tech.com/contact" />
+        <link rel="canonical" href="https://www.brick2tech.com/contact" />
         <meta property="og:title" content="Contact Brick2Tech | Digital Experts in Hyderabad" />
         <meta
           property="og:description"

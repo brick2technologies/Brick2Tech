@@ -132,7 +132,7 @@ const DigitalMarketingPage = () => (
       <meta name="keywords" content="top digital marketing agency in hyderabad, advertising agency in hyderabad, online marketing companies in hyderabad" />
 
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://brick2tech.com/digital-marketing-agency" />
+      <link rel="canonical" href="https://www.brick2tech.com/digital-marketing-agency" />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />

@@ -116,7 +116,7 @@ const Brick2TechBrandingPage: React.FC = () => {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index,follow" />
-        <link rel="canonical" href="https://brick2tech.com/services/branding" />
+        <link rel="canonical" href="https://www.brick2tech.com/services/branding" />
         <meta
           property="og:title"
           content="Build an Unstoppable Brand with Hyderabad’s Best – Brick2Tech Branding"

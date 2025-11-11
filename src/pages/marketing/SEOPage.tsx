@@ -88,7 +88,7 @@ const SEOPage: React.FC = () => {
           name="keywords"
           content="best seo services in hyderabad, seo agency in hyderabad, search engine optimization companies in hyderabad, seo company in hyderabad, top seo companies in hyderabad, affordable seo services in hyderabad, local seo services in hyderabad, professional seo services in hyderabad"
         />
-        <meta name="canonical" content="https://brick2tech.com/seo-services-hyderabad" />
+        <meta name="canonical" content="https://www.brick2tech.com/seo-services-hyderabad" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
         <meta property="og:title" content="Best SEO Company in Hyderabad | Brick2Tech" />

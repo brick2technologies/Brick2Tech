@@ -103,7 +103,7 @@ const AppDevelopment = () => {
         />
         <link
           rel="canonical"
-          href="https://brick2tech.com/services/app-development"
+          href="https://www.brick2tech.com/app-development-services"
         />
         <meta name="robots" content="index, follow" />
       </Helmet>

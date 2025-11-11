@@ -69,7 +69,7 @@ const SocialMediaMarketingPage = () => {
         />
         <meta
           name="canonical"
-          content="https://brick2tech.com/social-media-marketing-services"
+          content="https://www.brick2tech.com/social-media-marketing-services"
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />

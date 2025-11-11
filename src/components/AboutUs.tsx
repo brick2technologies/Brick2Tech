@@ -158,7 +158,7 @@ const AboutUs = () => {
   <meta property="og:url" content="https://brick2tech.com/about" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About Us | Brick2Tech Digital Marketing Company" />
-  <link rel="canonical" href="https://brick2tech.com/about" />
+  <link rel="canonical" href="https://www.brick2tech.com/about" />
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org",

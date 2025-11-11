@@ -109,7 +109,7 @@ export default function BrochureDesignPage() {
           name="keywords"
           content="top brochure design companies in Hyderabad, best brochure design companies in hyderabad, brochure design companies in Hyderabad, brochure design Hyderabad, brochure designing services in Hyderabad, Brick2Tech brochure design"
         />
-        <link rel="canonical" href="https://brick2tech.com/services/brochure-designing" />
+        <link rel="canonical" href="https://www.brick2tech.com/brochure-design-services" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 

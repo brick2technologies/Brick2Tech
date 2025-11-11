@@ -33,7 +33,7 @@ const EcommerceLanding = () => {
           name="keywords"
           content="best e-commerce web development company in Hyderabad, e-commerce web development company in Hyderabad, best e-commerce web development services in Hyderabad, e-commerce web development development Hyderabad, online store development Hyderabad, Brick2Tech e-commerce web development"
         />
-        <link rel="canonical" href="https://brick2tech.com/services/ecommerce-web-development-development" />
+        <link rel="canonical" href="https://www.brick2tech.com/ecommerce-website-services" />
         <meta name="robots" content="index, follow" />
 
         <meta property="og:title" content="Best E-commerce Web Development Company in Hyderabad | Brick2Tech" />

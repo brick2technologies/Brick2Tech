@@ -201,7 +201,7 @@ const LogoDesign = () => {
                     name="keywords"
                     content="best logo design company in Hyderabad, logo design services in Hyderabad, custom logo design Hyderabad, brand identity design Hyderabad, professional logo designers Hyderabad, Brick2Tech logo design,best logo design company in hyderabad, logo makers in hyderabad, logo design services in hyderabad"
                 />
-                <link rel="canonical" href="https://brick2tech.com/logo-design" />
+                <link rel="canonical" href="https://www.brick2tech.com/logo-design" />
                 <meta name="robots" content="index, follow" />
             </Helmet>
 

@@ -57,7 +57,7 @@ const PPCPage = () => {
         />
         <meta
           name="canonical"
-          content="https://brick2tech.com/social-engine-marketing"
+          content="https://www.brick2tech.com/social-engine-marketing"
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Brick2Tech Technologies" />
