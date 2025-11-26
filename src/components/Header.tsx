@@ -18,7 +18,7 @@ const Header: React.FC = () => {
     {
       icon: <Monitor className="text-[#0098d4] w-5 h-5" />,
       title: "Digital Marketing",
-      path: "/digital-marketing-agency",
+      path: "/digital-marketing-companies",
     },
     {
       icon: <Search className="text-[#0098d4] w-5 h-5" />,
