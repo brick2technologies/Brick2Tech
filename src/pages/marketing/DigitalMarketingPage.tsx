@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Search, BarChart3, MousePointerClick, ShoppingCart, PieChart, Smartphone, Globe2, Zap, UserCheck, TrendingUp, Check } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const services = [
   { icon: <Search className="w-6 h-6" />, title: "SEO Optimization", desc: "Boost organic traffic with robust on-page and off-page SEO strategies." },
@@ -579,6 +580,7 @@ const DigitalMarketingPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
+            <Link to="/contact">
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(255, 255, 255, 0.3)" }}
               whileTap={{ scale: 0.98 }}
@@ -586,6 +588,7 @@ const DigitalMarketingPage = () => {
             >
               Get Free Digital Audit
             </motion.button>
+            </Link>
           </motion.div>
 
           <motion.p
