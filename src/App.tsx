@@ -92,7 +92,7 @@ function App() {
             <Route path="/services/marketing/branding" element={<BrandingPage />} />
             <Route path="/services/marketing/seo" element={<SEOPage />} />
             <Route
-              path="/digital-marketing-agency"
+              path="/digital-marketing-companies"
               element={<DigitalMarketingPage />}
             />
             <Route path="/seo-services-hyderabad" element={<SEOPage />} />

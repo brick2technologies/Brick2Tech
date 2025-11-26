@@ -48,3 +48,21 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+@keyframes wave-slow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes wave-fast {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-60%); }
+}
+
+.animate-wave-slow {
+  animation: wave-slow 15s linear infinite;
+}
+
+.animate-wave-fast {
+  animation: wave-fast 8s linear infinite;
+}
