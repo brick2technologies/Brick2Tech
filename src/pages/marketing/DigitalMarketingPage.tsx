@@ -309,7 +309,7 @@ const DigitalMarketingPage = () => {
               Our Digital Marketing Services
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Comprehensive services tailored to your business needs
+              As one of the trusted Digital Marketing Companies in Hyderabad, we offer comprehensive services tailored to your business needs:
             </p>
           </motion.div>
 
@@ -444,6 +444,10 @@ const DigitalMarketingPage = () => {
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#142c4c] font-bold mb-4">
               Industries We Serve
             </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              As one of the versatile Digital Marketing Companies in Hyderabad, we work with:
+            </p>
+
             <div className="w-24 h-1 bg-gradient-to-r from-[#0098d4] to-[#00caff] mx-auto rounded-full" />
           </motion.div>
 
@@ -559,9 +563,9 @@ const DigitalMarketingPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="text-2xl sm:text-2xl md:text-2xl lg:text-4xl font-bold mb-6"
           >
-            Ready to Grow Your Business?
+            Grow Your Business with the Best Digital Marketing Companies in Hyderabad | Brick2Tech
           </motion.h2>
           
           <motion.p
@@ -571,7 +575,7 @@ const DigitalMarketingPage = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-lg sm:text-xl text-gray-200 mb-10 leading-relaxed"
           >
-            Partner with Brick2Tech and experience a marketing approach engineered for growth.
+           If you want digital marketing strategies that produce real results, you’re in the right place. Our experienced team focuses on quality, innovation, and customer success.
           </motion.p>
 
           <motion.div
