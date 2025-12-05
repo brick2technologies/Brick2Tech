@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Home -->
+  <url><loc>https://www.brick2tech.com/</loc></url>
 
-<url>
-  <loc>https://www.brick2tech.com/</loc>
-  <lastmod>2025-09-20T07:04:37+00:00</lastmod>
-</url>
+  <!-- Static Pages -->
+  <url><loc>https://www.brick2tech.com/search</loc></url>
+  <url><loc>https://www.brick2tech.com/about</loc></url>
+  <url><loc>https://www.brick2tech.com/careers</loc></url>
+  <url><loc>https://www.brick2tech.com/contact</loc></url>
+  <url><loc>https://www.brick2tech.com/blogs</loc></url>
 
+  <!-- Blog Articles -->
+  <url><loc>https://www.brick2tech.com/blog/digital-marketing-agency-in-hyderabad</loc></url>
+  <url><loc>https://www.brick2tech.com/blog/social-media-marketing-agency-in-hyderabad</loc></url>
+
+  <!-- Marketing Services -->
+  <url><loc>https://www.brick2tech.com/services/marketing/branding</loc></url>
+  <url><loc>https://www.brick2tech.com/services/marketing/seo</loc></url>
+  <url><loc>https://www.brick2tech.com/digital-marketing-companies</loc></url>
+  <url><loc>https://www.brick2tech.com/seo-services-hyderabad</loc></url>
+  <url><loc>https://www.brick2tech.com/content-marketing</loc></url>
+  <url><loc>https://www.brick2tech.com/social-media-management</loc></url>
+  <url><loc>https://www.brick2tech.com/social-media-marketing-services</loc></url>
+  <url><loc>https://www.brick2tech.com/search-engine-marketing</loc></url>
+  <url><loc>https://www.brick2tech.com/email-marketing</loc></url>
+  <url><loc>https://www.brick2tech.com/influencer-marketing</loc></url>
+
+  <!-- Web Development Services -->
+  <url><loc>https://www.brick2tech.com/ecommerce-website-services</loc></url>
+  <url><loc>https://www.brick2tech.com/web-development-services</loc></url>
+  <url><loc>https://www.brick2tech.com/web-hosting-services/</loc></url>
+  <url><loc>https://www.brick2tech.com/app-development-services</loc></url>
+
+  <!-- Designing Services -->
+  <url><loc>https://www.brick2tech.com/brochure-design-services</loc></url>
+  <url><loc>https://www.brick2tech.com/graphic-design</loc></url>
+  <url><loc>https://www.brick2tech.com/logo-design</loc></url>
+  <url><loc>https://www.brick2tech.com/architecture-design</loc></url>
 
 </urlset>
