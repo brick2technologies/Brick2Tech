@@ -131,7 +131,7 @@ function App() {
               element={<WebDevelopmentPage />}
             />
             <Route
-              path="/web-hosting-services/"
+              path="/web-hosting-services"
               element={<WebHosting />}
             />
 
